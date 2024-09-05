@@ -9,6 +9,7 @@
 
 - FSD(Feature-Sliced Design)
 - 폴더 구조
+
   - app
   - entities
   - features
@@ -16,4 +17,18 @@
   - shared
   - types
   - utils
-  
+
+- git commit convention
+
+  - feat: 새로운 기능 추가
+  - fix: 버그 수정
+  - docs: 문서 변경 (예: README 수정)
+  - style: 코드 포맷팅, 세미콜론 누락 등 비즈니스 로직에 영향을 주지 않는 변경
+  - refactor: 코드 리팩토링
+  - test: 테스트 추가 또는 기존 테스트 수정
+  - chore: 빌드 프로세스 또는 보조 도구와 관련된 변경 (예: 패키지 매니저 설정)
+
+- git flow
+  - feature branch: 기능 개발
+  - develop branch: 개발 브랜치
+  - master branch: 배포 브랜치
