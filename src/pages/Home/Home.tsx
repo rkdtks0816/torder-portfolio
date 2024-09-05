@@ -21,8 +21,7 @@ const Home: React.FC = () => {
     <HomeContainer>
       <Canvas>
         <Model url="sso_ong.glb" />
-        <OrbitControls enableZoom={false} enablePan={false} />{" "}
-        {/* 스크롤 및 팬 비활성화 */}
+        <OrbitControls enableZoom={false} enablePan={false} />
       </Canvas>
     </HomeContainer>
   );
