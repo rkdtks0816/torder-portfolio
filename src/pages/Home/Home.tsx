@@ -10,12 +10,12 @@ const HomeContainer = styled.div`
   overflow: hidden;
 `;
 
-const BoardContainer = styled.div<{ translateY: number }>`
+const BoardContainer = styled.div<{ $translateY: number }>`
   position: absolute;
-  top: ${(props) => props.translateY}vh; /* translateY 값에 따라 위치 변경 */
+  top: ${(props) => props.$translateY}vh; /* translateY 값에 따라 위치 변경 */
   left: 0;
   width: 100%;
-  height: 100%; /* 5% 더 보이게 설정 */
+  height: 100%;
   background-color: #f7feff;
   z-index: 100;
   transition: top 0.5s ease-in-out; /* 부드러운 애니메이션 */
@@ -50,7 +50,7 @@ const Home: React.FC = () => {
       <OpenBoardButtonContainer onClick={toggleBoard}>
         <OpenBoardButton />
       </OpenBoardButtonContainer>
-      <BoardContainer translateY={isOpen ? 0 : 100}>
+      <BoardContainer $translateY={isOpen ? 0 : 100}>
         <Board />
       </BoardContainer>
     </HomeContainer>
