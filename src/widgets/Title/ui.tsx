@@ -5,6 +5,9 @@ import { useModel } from "./model/useModel";
 import styled from "styled-components";
 
 const HomeContainer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -35,7 +38,7 @@ const Title: React.FC = () => {
     <HomeContainer>
       <Canvas>
         <ambientLight intensity={3} />
-        <pointLight position={[1, 2, 1]} intensity={6} />
+        <pointLight position={[1, 2.3, 1]} intensity={6} />
         <Model url="sso_ong.glb" />
         <OrbitControls enableZoom={false} enablePan={false} />
       </Canvas>
