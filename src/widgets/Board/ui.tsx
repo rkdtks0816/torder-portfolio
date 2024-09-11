@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { Card } from "@/features/Card";
+import { COLORS } from "@/shared/constants/colors";
+import { useState } from "react";
 
 const BoardContainer = styled.div`
   width: 100%;
@@ -36,14 +38,35 @@ const BoardContent = styled.div`
   }
 `;
 
-const BoardTitle = styled.div`
+const BoardHeader = styled.div`
   width: 100%;
-  font-size: 20px;
-  font-weight: bold;
   margin-bottom: 20px;
   margin: 50px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+`;
+
+const BoardTitle = styled.div`
+  font-size: 20px;
+  font-weight: bold;
+  color: ${COLORS.text};
+`;
+
+const BoardMenus = styled.div`
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const BoardMenu = styled.div<{ isActive: boolean }>`
+  cursor: pointer;
+  color: ${(props) => (props.isActive ? COLORS.text : COLORS.primary)};
+  border-bottom: ${(props) =>
+    props.isActive ? `2px solid ${COLORS.text}` : "none"};
 `;
 
 const CardContainer = styled.div`
@@ -54,14 +77,19 @@ const CardContainer = styled.div`
   gap: 20px;
 `;
 
-const Board: React.FC = () => {
+const Board: React.FC<{ toggleBoard: () => void }> = ({ toggleBoard }) => {
+  const [isActive, setIsActive] = useState(false);
   return (
     <BoardContainer>
       <BoardContent>
-        <BoardTitle>
-          <div>ssO_Ong</div>
-          <div>ssO_Ong</div>
-        </BoardTitle>
+        <BoardHeader>
+          <BoardTitle onClick={toggleBoard}>ssO_Ong</BoardTitle>
+          <BoardMenus>
+            <BoardMenu isActive={true}>소개</BoardMenu>
+            <BoardMenu isActive={false}>블로그</BoardMenu>
+            <BoardMenu isActive={false}>프로젝트</BoardMenu>
+          </BoardMenus>
+        </BoardHeader>
         <CardContainer>
           <Card />
           <Card />

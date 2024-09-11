@@ -51,7 +51,7 @@ const Home: React.FC = () => {
         <OpenBoardButton />
       </OpenBoardButtonContainer>
       <BoardContainer $translateY={isOpen ? 0 : 100}>
-        <Board />
+        <Board toggleBoard={toggleBoard} />
       </BoardContainer>
     </HomeContainer>
   );
