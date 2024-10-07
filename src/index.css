@@ -16,11 +16,27 @@
   font-style: normal;
 }
 
+/* Bold 폰트 */
+@font-face {
+  font-family: "HakgyoansimSantteutdotum";
+  src: url("./shared/fonts/HakgyoansimSantteutdotumM.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Light 폰트 */
+@font-face {
+  font-family: "HakgyoansimSantteutdotum";
+  src: url("./shared/fonts/HakgyoansimSantteutdotumL.ttf") format("truetype");
+  font-weight: normal; /* Light는 300으로 설정 */
+  font-style: normal;
+}
 body,
 #root {
   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: "HakgyoansimByeolbichhaneul", sans-serif;
+  font-family: "HakgyoansimSantteutdotum", "HakgyoansimByeolbichhaneul",
+    sans-serif;
 }
