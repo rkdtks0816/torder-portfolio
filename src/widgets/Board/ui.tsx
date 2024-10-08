@@ -1,9 +1,9 @@
+import React, { useState } from "react";
 import styled from "styled-components";
-import { Card } from "@/features/Card";
 import { COLORS } from "@/shared/constants/colors";
-import { useState } from "react";
 import { BOARD_TYPES } from "@/shared/constants/boardTypes";
 import Intro from "../Intro";
+import Blog from "../Blog";
 
 const BoardContainer = styled.div`
   width: 100%;
@@ -71,13 +71,6 @@ const BoardMenu = styled.div<{ $isActive: boolean }>`
     props.$isActive ? `2px solid ${COLORS.text}` : "none"};
 `;
 
-const CardContainer = styled.div`
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-`;
 
 const Board: React.FC<{ toggleBoard: () => void }> = ({ toggleBoard }) => {
   const [boardType, setBoardType] = useState(BOARD_TYPES.intro);
@@ -108,19 +101,8 @@ const Board: React.FC<{ toggleBoard: () => void }> = ({ toggleBoard }) => {
           </BoardMenus>
         </BoardHeader>
         {boardType == BOARD_TYPES.intro && <Intro />}
-        {boardType != BOARD_TYPES.intro && (
-          <CardContainer>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-          </CardContainer>
-        )}
+        {boardType == BOARD_TYPES.blog && <Blog />}
+        {boardType == BOARD_TYPES.project && <div />}
       </BoardContent>
     </BoardContainer>
   );
