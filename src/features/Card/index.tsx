@@ -1,1 +1,1 @@
-export { default as Card } from "./ui";
+export { default } from "./ui";

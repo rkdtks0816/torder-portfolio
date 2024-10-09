@@ -21,11 +21,11 @@ export const StyledMarkdown = styled(ReactMarkdown)`
     padding: 0;
     border-radius: 5px;
     overflow-x: auto;
+    margin: 0;
   }
   code {
     font-family: "Fira Code", monospace;
     background-color: #f0f0f0;
-    padding: 2px 4px;
     border-radius: 4px;
   }
   table {
@@ -48,14 +48,18 @@ export const StyledMarkdown = styled(ReactMarkdown)`
   }
 `;
 
-// 기본 플러그인이 적용된 Markdown 컴포넌트 생성
+const removeIndentation = (content: string) => {
+  return content.replace(/^[ \t]+/gm, ""); // 각 줄의 앞부분 공백 제거
+};
+
 const MarkdownStyles: React.FC<{ children: string }> = ({ children }) => {
+  const processedContent = removeIndentation(children);
   return (
     <StyledMarkdown
       remarkPlugins={[remarkGfm, remarkBreaks]}
       rehypePlugins={[rehypeHighlight]}
     >
-      {children}
+      {processedContent}
     </StyledMarkdown>
   );
 };
