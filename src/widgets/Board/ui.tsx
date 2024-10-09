@@ -1,7 +1,9 @@
+import React, { useState } from "react";
 import styled from "styled-components";
-import { Card } from "@/features/Card";
 import { COLORS } from "@/shared/constants/colors";
-import { useState } from "react";
+import { BOARD_TYPES } from "@/shared/constants/boardTypes";
+import Intro from "../Intro";
+import Blog from "../Blog";
 
 const BoardContainer = styled.div`
   width: 100%;
@@ -40,11 +42,11 @@ const BoardContent = styled.div`
 
 const BoardHeader = styled.div`
   width: 100%;
-  margin-bottom: 20px;
   margin: 50px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "HakgyoansimByeolbichhaneul";
 `;
 
 const BoardTitle = styled.div`
@@ -62,45 +64,45 @@ const BoardMenus = styled.div`
   align-items: center;
 `;
 
-const BoardMenu = styled.div<{ isActive: boolean }>`
+const BoardMenu = styled.div<{ $isActive: boolean }>`
   cursor: pointer;
-  color: ${(props) => (props.isActive ? COLORS.text : COLORS.primary)};
+  color: ${(props) => (props.$isActive ? COLORS.text : COLORS.primary)};
   border-bottom: ${(props) =>
-    props.isActive ? `2px solid ${COLORS.text}` : "none"};
+    props.$isActive ? `2px solid ${COLORS.text}` : "none"};
 `;
 
-const CardContainer = styled.div`
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-`;
 
 const Board: React.FC<{ toggleBoard: () => void }> = ({ toggleBoard }) => {
-  const [isActive, setIsActive] = useState(false);
+  const [boardType, setBoardType] = useState(BOARD_TYPES.intro);
   return (
     <BoardContainer>
       <BoardContent>
         <BoardHeader>
           <BoardTitle onClick={toggleBoard}>ssO_Ong</BoardTitle>
           <BoardMenus>
-            <BoardMenu isActive={true}>소개</BoardMenu>
-            <BoardMenu isActive={false}>블로그</BoardMenu>
-            <BoardMenu isActive={false}>프로젝트</BoardMenu>
+            <BoardMenu
+              onClick={() => setBoardType(BOARD_TYPES.intro)}
+              $isActive={boardType == BOARD_TYPES.intro}
+            >
+              소개
+            </BoardMenu>
+            <BoardMenu
+              onClick={() => setBoardType(BOARD_TYPES.blog)}
+              $isActive={boardType == BOARD_TYPES.blog}
+            >
+              블로그
+            </BoardMenu>
+            <BoardMenu
+              onClick={() => setBoardType(BOARD_TYPES.project)}
+              $isActive={boardType == BOARD_TYPES.project}
+            >
+              프로젝트
+            </BoardMenu>
           </BoardMenus>
         </BoardHeader>
-        <CardContainer>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </CardContainer>
+        {boardType == BOARD_TYPES.intro && <Intro />}
+        {boardType == BOARD_TYPES.blog && <Blog />}
+        {boardType == BOARD_TYPES.project && <div />}
       </BoardContent>
     </BoardContainer>
   );
