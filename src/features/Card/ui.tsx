@@ -13,14 +13,13 @@ const CardContainer = styled.div`
   padding: 20px;
   cursor: pointer;
 `;
-const Title = styled.div`
+const Title = styled.h2`
   margin: 0;
-  font-weight: bold;
-  font-size: 1.8rem;
 `;
 
-const Tag = styled.div`
+const Tag = styled.p`
   color: gray;
+  margin: 0;
   margin-top: 10px;
 `;
 const BackButtonContainer = styled.div`
@@ -80,7 +79,7 @@ const ContentHeader = styled.div`
   width: 100%;
   padding-bottom: 20px;
   border-bottom: 1px dashed ${COLORS.text};
-`
+`;
 
 interface Post {
   title: string;

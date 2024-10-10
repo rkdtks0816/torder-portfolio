@@ -1,14 +1,9 @@
-export interface Post {
-  title: string;
-  tag: string;
-  content: string;
-}
+import { Post } from ".";
 
-export const posts: Post[] = [
-  {
-    title: `ssO_Ong 내 맘대로 사이트`,
-    tag: `#포트폴리오 #리액트`,
-    content: `
+const post: Post = {
+  title: `ssO_Ong 내 맘대로 사이트`,
+  tag: `#포트폴리오 #리액트`,
+  content: `
         ## 프로젝트 설명  
 
         - 프로젝트 명: ssO_Ong  
@@ -43,5 +38,6 @@ export const posts: Post[] = [
         - develop branch: 개발 브랜치  
         - master branch: 배포 브랜치  
     `,
-  },
-];
+};
+
+export default post;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Card from "@/features/Card";
-import {posts, Post} from "@/shared/constants/posts";
+import { posts, Post } from "@/shared/posts";
 
 // CardContainer 스타일 정의
 const CardContainer = styled.div`
