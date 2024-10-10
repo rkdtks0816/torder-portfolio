@@ -53,6 +53,7 @@ const BoardTitle = styled.div`
   font-size: 20px;
   font-weight: bold;
   color: ${COLORS.text};
+  cursor: pointer;
 `;
 
 const BoardMenus = styled.div`
