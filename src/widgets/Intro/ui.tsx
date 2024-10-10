@@ -45,7 +45,7 @@ const IntroTitle = styled.div`
 `;
 const IntroBox = styled.div`
   width: calc(100% - 20px);
-  padding: 10px;
+  padding: 0 10px;
   background-color: #ffffff;
   border-radius: 10px;
 `;
