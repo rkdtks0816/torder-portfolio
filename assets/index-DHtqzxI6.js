@@ -4045,7 +4045,6 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Gt,Bt=wt),Lt===void
     padding: 8px 12px;
     margin: 12px 0;
     border-radius: 6px;
-    font-size: 10px;
     overflow-x: auto;
   }
 
@@ -4053,7 +4052,6 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Gt,Bt=wt),Lt===void
     background-color: rgba(255, 165, 0, 0.1);
     padding: 2px 4px;
     border-radius: 4px;
-    font-size: 10px;
     font-family: "Fira Code", monospace;
   }
 
@@ -4274,7 +4272,7 @@ age = int(data[1])
 print(f"Hello, {name}! You are {age} years old.")
 \`\`\`
 
-### 2. **JavaScript (Node.js) with \`fs\`**
+### 2. **JavaScript**
 
 \`\`\`javascript
 const fs = require('fs');
