@@ -23,16 +23,16 @@ readdir(postsDirectory, (err, files) => {
   });
 
   const indexContent = `
-    export interface Post {
-        title: string;
-        tag: string;
-        content: string;
-    }
-    ${postImports.join("\n")}
+export interface Post {
+    title: string;
+    tag: string;
+    content: string;
+}
+${postImports.join("\n")}
 
-    export const posts = [
-        ${postExports.join(",\n")}
-    ];
+export const posts = [
+    ${postExports.join(",\n")}
+];
   `;
 
   writeFileSync(indexFile, indexContent, "utf8");
