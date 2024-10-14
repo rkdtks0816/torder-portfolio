@@ -30,10 +30,9 @@ jobs:
 
       # 5. gh-pages를 이용한 배포
       - name: Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub Token 환경 변수 설정
         run: |
           git config user.name "rkdtks0816"
           git config user.email "rkdtks0816@naver.com"
-          git remote set-url origin https://${{ secrets.ACTIONS_DEPLOY_KEY }}@github.com/rkdtks0816/ssong-page.git
-          npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          npx gh-pages -d dist -r https://${GITHUB_TOKEN}@github.com/rkdtks0816/ssong-page.git
