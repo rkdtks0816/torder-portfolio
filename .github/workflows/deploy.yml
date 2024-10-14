@@ -1,0 +1,33 @@
+name: Build and Deploy on Develop Merge
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 저장소 클론
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Node.js 설치
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'  # Node.js 버전은 필요에 맞게 조정
+
+      # 3. 의존성 설치
+      - name: Install dependencies
+        run: npm install
+
+      # 4. 프로젝트 빌드
+      - name: Build project
+        run: npm run build
+
+      # 5. 빌드 후 배포
+      - name: Deploy
+        run: npm run deploy
