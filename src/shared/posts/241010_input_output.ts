@@ -19,7 +19,7 @@ age = int(data[1])
 print(f"Hello, {name}! You are {age} years old.")
 \`\`\`
 
-### 2. **JavaScript (Node.js) with \`fs\`**
+### 2. **JavaScript**
 
 \`\`\`javascript
 const fs = require('fs');

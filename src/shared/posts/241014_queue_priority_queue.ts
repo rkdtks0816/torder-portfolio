@@ -1,8 +1,8 @@
 import { Post } from ".";
 
 const post: Post = {
-  title: `Queue / Priority Queue`,
-  tag: `#언어 #비교`,
+  title: "Queue / Priority Queue",
+  tag: "#언어 #비교",
   content: `
 ### 1. **Python**
 
@@ -63,7 +63,7 @@ let copiedQueue = [...queue];
 
 #### **Priority Queue (Custom Implementation)**
 
-JavaScript는 기본적으로 `Priority Queue`를 제공하지 않으므로 직접 구현할 수 있습니다.
+JavaScript는 기본적으로 \`Priority Queue\`를 제공하지 않으므로 직접 구현할 수 있습니다.
 
 \`\`\`javascript
 class PriorityQueue {
@@ -346,7 +346,7 @@ class Program {
 
 #### **Priority Queue (SortedSet 사용)**
 
-C#에는 `PriorityQueue`가 없으므로 `SortedSet`을 사용하거나, .NET 5 이후 `PriorityQueue`를 사용할 수 있습니다.
+C#에는 \`PriorityQueue\`가 없으므로 \`SortedSet\`을 사용하거나, .NET 5 이후 \`PriorityQueue\`를 사용할 수 있습니다.
 
 \`\`\`csharp
 using System;
@@ -441,8 +441,6 @@ var copiedQueue = queue
 #### **Priority Queue (Heap 구현 필요)**
 
 ### 9. **Rust**
-
-
 
 #### **Queue (VecDeque 사용)**
 

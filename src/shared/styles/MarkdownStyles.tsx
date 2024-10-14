@@ -62,7 +62,6 @@ export const StyledMarkdown = styled(ReactMarkdown)`
     padding: 8px 12px;
     margin: 12px 0;
     border-radius: 6px;
-    font-size: 10px;
     overflow-x: auto;
   }
 
@@ -70,7 +69,6 @@ export const StyledMarkdown = styled(ReactMarkdown)`
     background-color: rgba(255, 165, 0, 0.1);
     padding: 2px 4px;
     border-radius: 4px;
-    font-size: 10px;
     font-family: "Fira Code", monospace;
   }
 
