@@ -29,6 +29,10 @@ const OpenBoardButtonContainer = styled.div`
   cursor: pointer;
   width: 200px;
   height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media (max-width: 768px) {
     width: 100px;

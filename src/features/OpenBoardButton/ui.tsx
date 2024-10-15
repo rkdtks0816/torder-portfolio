@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Lottie from "lottie-react";
-import tornado from "./tornado.json";
+import clickTornado from "./click_rornado.json";
 
 const OpenBoardButton: React.FC = () => {
-  return <Lottie animationData={tornado} loop={true} autoplay={true} />;
+  const lottieRef = useRef<any>(null);
+
+  useEffect(() => {
+    if (lottieRef.current) {
+      lottieRef.current.setSpeed(0.5); // 속도 조절
+    }
+  }, []);
+
+  return (
+    <Lottie
+      lottieRef={lottieRef}
+      animationData={clickTornado}
+      loop={true}
+      autoplay={true}
+    />
+  );
 };
 
 export default OpenBoardButton;
