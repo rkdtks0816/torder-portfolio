@@ -7,7 +7,7 @@ const post: Post = {
     ### 1. **프로그래밍 언어 기초**
        1.1 **C/C++**  
        - 포인터와 참조, 메모리 주소 다루기  
-       - 동적 메모리 할당 및 해제 (`malloc`, `free`, `new`, `delete`)  
+       - 동적 메모리 할당 및 해제 (\`malloc\`, \`free\`, \`new\`, \`delete\`)  
        - 구조체와 클래스의 차이, 객체 지향 프로그래밍(OOP) 기본 개념  
        - 함수 포인터와 콜백 함수  
        - 비트 연산, 비트 필드  
@@ -16,7 +16,7 @@ const post: Post = {
        1.2 **JavaScript**  
        - 기본 문법: 변수 선언, 조건문, 반복문  
        - 스코프와 클로저 개념  
-       - 비동기 처리: 콜백, Promise, `async`/`await`  
+       - 비동기 처리: 콜백, Promise, \`async\`/\`await\`  
        - 이벤트 루프와 태스크 큐  
        - 함수형 프로그래밍: 고차 함수, 화살표 함수  
        - DOM(Document Object Model) 조작: 이벤트 핸들링, DOM API 활용  
@@ -47,7 +47,7 @@ const post: Post = {
        - CSS 애니메이션 및 전환 효과  
     
        3.2 **JavaScript(프론트엔드)**  
-       - DOM 조작 및 이벤트 처리: `addEventListener`, 이벤트 버블링/캡처링  
+       - DOM 조작 및 이벤트 처리: \`addEventListener\`, 이벤트 버블링/캡처링  
        - 브라우저 저장소: LocalStorage, SessionStorage, 쿠키 관리  
        - Ajax 및 Fetch API: 서버와 비동기 통신, JSON 처리  
        - ES6+ 기능: 화살표 함수, 디스트럭처링, 템플릿 리터럴, 클래스  
@@ -55,7 +55,7 @@ const post: Post = {
     
        3.3 **React.js/Vue.js**  
        - 컴포넌트 기반 개발: 상태(state)와 속성(props)의 개념  
-       - React 훅(Hooks): `useState`, `useEffect`, `useContext`  
+       - React 훅(Hooks): \`useState\`, \`useEffect\`, \`useContext\`  
        - 라우팅: React Router 또는 Vue Router로 페이지 전환 처리  
        - 상태 관리 라이브러리: Redux, Vuex의 동작 원리 및 활용  
        - 컴포넌트 생명주기 및 데이터 흐름 이해
@@ -111,7 +111,7 @@ const post: Post = {
     
     ### 7. **버전 관리 및 협업 도구**
        7.1 **Git**  
-       - `clone`, `branch`, `commit`, `merge`, `pull`, `push` 등 기본 명령어  
+       - \`clone\`, \`branch\`, \`commit\`, \`merge\`, \`pull\`, \`push\` 등 기본 명령어  
        - Git 브랜치 전략: Git Flow, GitHub Flow  
        - 협업을 위한 Pull Request(PR)와 코드 리뷰 절차  
     
