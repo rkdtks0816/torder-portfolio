@@ -1,6 +1,6 @@
 {
-  "name": "ssO_Ong",
-  "short_name": "ssong",
+  "name": "ssong-page",
+  "short_name": "ssO_Ong",
   "description": "songkangsan",
   "start_url": "/ssong-page/",
   "display": "standalone",
