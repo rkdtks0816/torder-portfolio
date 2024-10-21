@@ -42,7 +42,7 @@ const BoardContent = styled.div`
 
 const BoardHeader = styled.div`
   width: 100%;
-  margin: 50px 0;
+  margin: 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,7 +71,6 @@ const BoardMenu = styled.div<{ $isActive: boolean }>`
   border-bottom: ${(props) =>
     props.$isActive ? `2px solid ${COLORS.text}` : "none"};
 `;
-
 
 const Board: React.FC<{ toggleBoard: () => void }> = ({ toggleBoard }) => {
   const [boardType, setBoardType] = useState(BOARD_TYPES.intro);
