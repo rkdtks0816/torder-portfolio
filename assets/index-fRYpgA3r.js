@@ -4184,7 +4184,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Gt,Dt=Rt),Bt===void
   ***
   2016.03 ~ 2023.02
   **전북대학교** 전자공학부
-  `})})]}),jsxRuntimeExports.jsxs(IntroStack,{children:[jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:"프론트엔드"}),jsxRuntimeExports.jsxs("div",{className:"score",children:[jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"})]})]}),jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:"백엔드"}),jsxRuntimeExports.jsxs("div",{className:"score",children:[jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"})]})]}),jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:"임베디드"}),jsxRuntimeExports.jsxs("div",{className:"score",children:[jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"})]})]})]})]})]}),CardContainer$1=dt.div`
+  `})})]}),jsxRuntimeExports.jsxs(IntroStack,{children:[jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:"프론트엔드"}),jsxRuntimeExports.jsxs("div",{className:"score",children:[jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"})]})]}),jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:"백엔드"}),jsxRuntimeExports.jsxs("div",{className:"score",children:[jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"})]})]}),jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:"임베디드"}),jsxRuntimeExports.jsxs("div",{className:"score",children:[jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"})]})]})]})]})]}),CardContainer=dt.div`
   width: fit-content;
   height: fit-content;
   background-color: #fff;
@@ -4224,7 +4224,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Gt,Dt=Rt),Bt===void
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-`,ModalContent=dt.div`
+`,ModalContent$1=dt.div`
   background-color: #fff;
   width: 100%;
   height: 100%;
@@ -4248,7 +4248,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Gt,Dt=Rt),Bt===void
   width: 100%;
   padding-bottom: 20px;
   border-bottom: 1px dashed ${COLORS.text};
-`,Card=({post:s})=>{const[e,a]=reactExports.useState(!1),o=()=>{a(!0)},d=()=>{a(!1)};return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsxs(CardContainer$1,{onClick:o,children:[jsxRuntimeExports.jsx(Title,{children:s.title}),jsxRuntimeExports.jsx(Tag,{children:s.tag})]}),e&&jsxRuntimeExports.jsx(Modal,{children:jsxRuntimeExports.jsxs(ModalContent,{children:[jsxRuntimeExports.jsx(BackButtonContainer,{children:jsxRuntimeExports.jsx(BackButton,{onClick:d,children:"⫷"})}),jsxRuntimeExports.jsxs(Content,{children:[jsxRuntimeExports.jsxs(ContentHeader,{children:[jsxRuntimeExports.jsx(Title,{children:s.title}),jsxRuntimeExports.jsx(Tag,{children:s.tag})]}),jsxRuntimeExports.jsx(MarkdownStyles,{children:s.content})]})]})})]})},post$4={title:"공부 순서",tag:"#프론트엔드 #백엔드 #임베디드",content:`
+`,Card=({post:s})=>{const[e,a]=reactExports.useState(!1),o=()=>{a(!0)},d=()=>{a(!1)};return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsxs(CardContainer,{onClick:o,children:[jsxRuntimeExports.jsx(Title,{children:s.title}),jsxRuntimeExports.jsx(Tag,{children:s.tag})]}),e&&jsxRuntimeExports.jsx(Modal,{children:jsxRuntimeExports.jsxs(ModalContent$1,{children:[jsxRuntimeExports.jsx(BackButtonContainer,{children:jsxRuntimeExports.jsx(BackButton,{onClick:d,children:"⫷"})}),jsxRuntimeExports.jsxs(Content,{children:[jsxRuntimeExports.jsxs(ContentHeader,{children:[jsxRuntimeExports.jsx(Title,{children:s.title}),jsxRuntimeExports.jsx(Tag,{children:s.tag})]}),jsxRuntimeExports.jsx(MarkdownStyles,{children:s.content})]})]})})]})},post$4={title:"공부 순서",tag:"#프론트엔드 #백엔드 #임베디드",content:`
     ### 1. **프로그래밍 언어 기초**
        1.1 **C/C++**  
        - 포인터와 참조, 메모리 주소 다루기  
@@ -5604,13 +5604,82 @@ void main() {
   print(vector);
 }
 \`\`\`
-`},posts=[post$4,post$3,post$2,post$1,post],CardContainer=dt.div`
+`},posts=[post$4,post$3,post$2,post$1,post],SpiralContainer=dt.div`
   width: 100%;
+  max-width: 720px;
+  height: calc(100vh - 84px);
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+`,SpiralSquareContainer=dt.div`
+  position: relative;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`,SpiralSquare=dt.div`
+  position: absolute;
+  width: fit-content;
   height: fit-content;
+  transform: rotate(${s=>s.$rotation}deg)
+    translateY(${s=>-1*s.$distance}vh);
+  font-size: ${s=>s.$size*.03}vh;
+  z-index: ${s=>s.$size};
+  background-color: ${s=>s.$isEven?COLORS.secondary:COLORS.accent};
+  border-bottom: 1px solid ${COLORS.text};
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+`,RotatedButtonContainer=dt.div`
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 720px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+`,RotatedButton=dt.h1`
+  cursor: pointer;
+  width: 20%;
+  text-align: center;
+  font-size: 5vh;
+  color: ${COLORS.text};
+  z-index: 1000;
+`,ModalOverlay=dt.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+`,ModalContent=dt.div`
+  background: ${COLORS.background};
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-height: 80%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-`,Blog=()=>jsxRuntimeExports.jsx(CardContainer,{children:posts.map((s,e)=>jsxRuntimeExports.jsx(Card,{post:s},e))}),BoardContainer$1=dt.div`
+  overflow: auto;
+`,CloseButton=dt.button`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: ${COLORS.text};
+  font-size: 2rem;
+  cursor: pointer;
+`,Blog=()=>{const[s,e]=reactExports.useState(0),[a,o]=reactExports.useState(!1),d=["1. 프로그래밍 언어","2. 자료구조와 알고리즘","3. 운영체제","4. 네트워크","5. 데이터베이스","6. 컴퓨터 구조","7. 소프트웨어 공학","8. 디자인 패턴","9. 시스템 설계","10. 컴파일러 이론","11. 분산 시스템","12. 클라우드 컴퓨팅","13. 보안","14. DevOps와 CI/CD","15. 버전 관리","16. 소프트웨어 테스트","17. 객체 지향 설계 원칙","18. 메모리 관리","19. API 설계","20. 블록체인 기술","21. 데이터 처리 및 분석","22. 머신러닝/AI","23. 프론트엔드 개발","24. 백엔드 개발","25. 임베디드 시스템","26. 게임 개발"],b=nt=>{s+nt<0?e(0):s+nt>=d.length?e(d.length-1):e(s+nt)},tt=d.slice(s,Math.min(d.length,s+20)).map((nt,st)=>{const ot=70-st*3,ht=st*45,ft=20-.8*st,mt=(s+st+1)%2===0;return jsxRuntimeExports.jsx(SpiralSquare,{$size:ot,$rotation:ht,$distance:ft,$isEven:mt,onClick:()=>{st!==0&&e(s+st),o(!0)},children:nt},st)});return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsxs(SpiralContainer,{children:[jsxRuntimeExports.jsx(SpiralSquareContainer,{children:tt}),jsxRuntimeExports.jsxs(RotatedButtonContainer,{children:[jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>b(-1),children:"⫷"}),jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>e(0),children:"↻"}),jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>b(1),children:"⫸"})]})]}),a&&jsxRuntimeExports.jsx(ModalOverlay,{onClick:()=>o(!1),children:jsxRuntimeExports.jsxs(ModalContent,{onClick:nt=>nt.stopPropagation(),children:[jsxRuntimeExports.jsx(CloseButton,{onClick:()=>o(!1),children:"✕"}),posts.map((nt,st)=>jsxRuntimeExports.jsx(Card,{post:nt},st))]})})]})},BoardContainer$1=dt.div`
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -5643,7 +5712,7 @@ void main() {
   }
 `,BoardHeader=dt.div`
   width: 100%;
-  margin: 50px 0;
+  margin: 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
