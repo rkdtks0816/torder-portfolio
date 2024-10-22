@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { useModel } from "./model/useModel";
+import { useModel } from "@/entities/model";
 import styled from "styled-components";
+import TitleHeader from "@/features/TitleHeader";
 
-const HomeContainer = styled.div`
+const TitleContainer = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -21,28 +22,32 @@ type ModelProps = {
 const Model: React.FC<ModelProps> = ({ url }) => {
   const scene = useModel(url);
   const [scale, setScale] = useState(0.8);
-  const { size } = useThree(); // 화면 크기를 가져오기
+  const { size } = useThree();
 
   useEffect(() => {
-    // 화면 크기에 따른 스케일 동적 조정
     const newScale = size.width < 768 ? 0.8 : 1.6;
     setScale(newScale);
   }, [size.width]);
 
-  scene.scale.set(scale, scale, scale); // 동적으로 스케일 적용
+  scene.scale.set(scale, scale, scale);
   return <primitive object={scene} />;
 };
 
 const Title: React.FC = () => {
+  const controlsRef = useRef<any>(null);
+  const handleRefresh = () => {
+    controlsRef.current.reset();
+  };
   return (
-    <HomeContainer>
+    <TitleContainer>
       <Canvas>
         <ambientLight intensity={3} />
         <pointLight position={[1, 2.3, 1]} intensity={6} />
         <Model url="sso_ong.glb" />
-        <OrbitControls enableZoom={false} enablePan={false} />
+        <OrbitControls ref={controlsRef} enableZoom={false} enablePan={false} />
       </Canvas>
-    </HomeContainer>
+      <TitleHeader onRefresh={handleRefresh} />
+    </TitleContainer>
   );
 };
 
