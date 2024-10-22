@@ -1,4 +1,4 @@
-import { Post } from ".";
+import { Post } from "../index";
 
 const post: Post = {
   title: `Input / Output`,
