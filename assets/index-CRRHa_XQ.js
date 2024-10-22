@@ -4184,209 +4184,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Gt,Dt=Rt),Bt===void
   ***
   2016.03 ~ 2023.02
   **전북대학교** 전자공학부
-  `})})]}),jsxRuntimeExports.jsxs(IntroStack,{children:[jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:"프론트엔드"}),jsxRuntimeExports.jsxs("div",{className:"score",children:[jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"})]})]}),jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:"백엔드"}),jsxRuntimeExports.jsxs("div",{className:"score",children:[jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"})]})]}),jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:"임베디드"}),jsxRuntimeExports.jsxs("div",{className:"score",children:[jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"})]})]})]})]})]}),CardContainer=dt.div`
-  width: fit-content;
-  height: fit-content;
-  background-color: #fff;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  padding: 20px;
-  cursor: pointer;
-`,Title=dt.h2`
-  margin: 0;
-`,Tag=dt.p`
-  color: gray;
-  margin: 0;
-  margin-top: 10px;
-`,BackButtonContainer=dt.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  background-color: #fff;
-`,BackButton=dt.div`
-  width: fit-content;
-  margin-left: 15px;
-  font-size: 24px;
-  cursor: pointer;
-  color: ${COLORS.text};
-`,Modal=dt.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 999;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-`,ModalContent$1=dt.div`
-  background-color: #fff;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  ::-webkit-scrollbar {
-    width: 0;
-  }
-
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-`,Content=dt.div`
-  margin: 50px auto 0 auto;
-  padding: 20px;
-  width: 60%;
-  height: fit-content;
-
-  @media (max-width: 760px) {
-    width: calc(100% - 40px);
-  }
-`,ContentHeader=dt.div`
-  width: 100%;
-  padding-bottom: 20px;
-  border-bottom: 1px dashed ${COLORS.text};
-`,Card=({post:s})=>{const[e,a]=reactExports.useState(!1),o=()=>{a(!0)},d=()=>{a(!1)};return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsxs(CardContainer,{onClick:o,children:[jsxRuntimeExports.jsx(Title,{children:s.title}),jsxRuntimeExports.jsx(Tag,{children:s.tag})]}),e&&jsxRuntimeExports.jsx(Modal,{children:jsxRuntimeExports.jsxs(ModalContent$1,{children:[jsxRuntimeExports.jsx(BackButtonContainer,{children:jsxRuntimeExports.jsx(BackButton,{onClick:d,children:"⫷"})}),jsxRuntimeExports.jsxs(Content,{children:[jsxRuntimeExports.jsxs(ContentHeader,{children:[jsxRuntimeExports.jsx(Title,{children:s.title}),jsxRuntimeExports.jsx(Tag,{children:s.tag})]}),jsxRuntimeExports.jsx(MarkdownStyles,{children:s.content})]})]})})]})},post$4={title:"공부 순서",tag:"#프론트엔드 #백엔드 #임베디드",content:`
-    ### 1. **프로그래밍 언어 기초**
-       1.1 **C/C++**  
-       - 포인터와 참조, 메모리 주소 다루기  
-       - 동적 메모리 할당 및 해제 (\`malloc\`, \`free\`, \`new\`, \`delete\`)  
-       - 구조체와 클래스의 차이, 객체 지향 프로그래밍(OOP) 기본 개념  
-       - 함수 포인터와 콜백 함수  
-       - 비트 연산, 비트 필드  
-       - STL(표준 템플릿 라이브러리)의 사용: 벡터, 리스트, 맵, 세트 등  
-       
-       1.2 **JavaScript**  
-       - 기본 문법: 변수 선언, 조건문, 반복문  
-       - 스코프와 클로저 개념  
-       - 비동기 처리: 콜백, Promise, \`async\`/\`await\`  
-       - 이벤트 루프와 태스크 큐  
-       - 함수형 프로그래밍: 고차 함수, 화살표 함수  
-       - DOM(Document Object Model) 조작: 이벤트 핸들링, DOM API 활용  
-       - JavaScript 객체와 프로토타입 상속
-    
-    ### 2. **자료구조와 알고리즘**
-       2.1 **자료구조**  
-       - 배열과 연결 리스트: 동적 배열, 이중 연결 리스트  
-       - 스택과 큐: LIFO, FIFO 개념 및 구현  
-       - 해시 테이블: 충돌 해결 방법(체이닝, 오픈 어드레싱)  
-       - 트리: 이진 트리, 이진 탐색 트리, AVL 트리, 힙(Heap)  
-       - 그래프: 인접 리스트, 인접 행렬 표현, DFS, BFS, 최단 경로 알고리즘(Dijkstra, Floyd-Warshall)
-    
-       2.2 **알고리즘**  
-       - 정렬 알고리즘: 버블, 선택, 삽입, 퀵, 병합 정렬, 힙 정렬의 구현과 시간 복잡도  
-       - 탐색 알고리즘: 선형 탐색, 이진 탐색  
-       - 재귀와 백트래킹: 재귀 호출의 이해, 문제 해결 전략(예: N-Queen, 미로 탐색)  
-       - 동적 프로그래밍(DP): 메모이제이션, 최적 부분 구조(예: 피보나치, 배낭 문제)  
-       - 그리디 알고리즘: 탐욕적 선택, 최적해 도출(예: 최소 신장 트리, 다익스트라)  
-       - 분할 정복: 퀵 정렬, 병합 정렬 등에서 사용되는 문제 해결 방법
-    
-    ### 3. **웹 개발 기초**
-       3.1 **HTML/CSS**  
-       - HTML 태그 구조 및 시맨틱 태그  
-       - CSS 박스 모델: margin, padding, border  
-       - Flexbox와 Grid 레이아웃  
-       - 반응형 디자인: 미디어 쿼리  
-       - CSS 애니메이션 및 전환 효과  
-    
-       3.2 **JavaScript(프론트엔드)**  
-       - DOM 조작 및 이벤트 처리: \`addEventListener\`, 이벤트 버블링/캡처링  
-       - 브라우저 저장소: LocalStorage, SessionStorage, 쿠키 관리  
-       - Ajax 및 Fetch API: 서버와 비동기 통신, JSON 처리  
-       - ES6+ 기능: 화살표 함수, 디스트럭처링, 템플릿 리터럴, 클래스  
-       - 프론트엔드 상태 관리: 클로저, 모듈 패턴  
-    
-       3.3 **React.js/Vue.js**  
-       - 컴포넌트 기반 개발: 상태(state)와 속성(props)의 개념  
-       - React 훅(Hooks): \`useState\`, \`useEffect\`, \`useContext\`  
-       - 라우팅: React Router 또는 Vue Router로 페이지 전환 처리  
-       - 상태 관리 라이브러리: Redux, Vuex의 동작 원리 및 활용  
-       - 컴포넌트 생명주기 및 데이터 흐름 이해
-    
-    ### 4. **백엔드 및 데이터베이스**
-       4.1 **Node.js/Express.js 또는 Django**  
-       - 서버 설정 및 라우팅 처리  
-       - 미들웨어의 역할과 활용: 인증, 로깅, 오류 처리  
-       - RESTful API 설계: CRUD 동작, 경로 설계, 쿼리 파라미터와 바디 데이터 처리  
-       - 비동기 처리: 비동기 함수와 데이터베이스 연동  
-    
-       4.2 **RESTful API 설계**  
-       - HTTP 메소드(GET, POST, PUT, DELETE)의 의미와 활용  
-       - API 응답 형식(JSON, XML), 상태 코드(200, 400, 404, 500 등)  
-       - 인증 방식: JWT(Json Web Token), OAuth 2.0  
-       - REST API의 버전 관리와 문서화(Swagger 사용)  
-    
-       4.3 **SQL 및 NoSQL(MongoDB)**  
-       - 기본 SQL 쿼리 작성: SELECT, INSERT, UPDATE, DELETE  
-       - JOIN, 서브쿼리, 집계 함수(GROUP BY, COUNT 등)  
-       - 데이터베이스 정규화와 비정규화  
-       - 인덱스의 개념 및 성능 최적화  
-       - NoSQL(MongoDB) 기초: 컬렉션, 도큐먼트, Mongoose ORM 사용법
-    
-    ### 5. **임베디드 시스템 기초**
-       5.1 **RTOS(Real-Time Operating System)**  
-       - RTOS의 개념과 실시간 태스크 스케줄링  
-       - 스레드 동기화: 뮤텍스, 세마포어, 큐  
-       - 인터럽트 처리 및 ISR(Interrupt Service Routine) 개념  
-    
-       5.2 **마이크로컨트롤러(MCU)**  
-       - 마이크로컨트롤러의 구조 및 동작 원리  
-       - 통신 프로토콜(UART, I2C, SPI)의 이해와 구현  
-       - GPIO 제어 및 센서 인터페이스  
-    
-       5.3 **펌웨어 개발**  
-       - 하드웨어 초기화 및 메모리 맵 구성  
-       - 드라이버 작성 및 인터럽트 처리  
-       - 펌웨어 업데이트 방법과 보안 처리
-    
-    ### 6. **네트워크와 운영체제**
-       6.1 **네트워크 기본**  
-       - OSI 7계층 모델과 각 계층의 역할  
-       - TCP/IP, UDP 프로토콜의 차이  
-       - HTTP/HTTPS의 차이점과 SSL/TLS 보안 프로토콜  
-       - DNS의 동작 원리 및 라우팅 기본 개념
-    
-       6.2 **운영체제**  
-       - 프로세스와 스레드의 차이점  
-       - 멀티스레딩, 동기화 문제(뮤텍스, 세마포어)  
-       - 메모리 관리: 페이징, 세그멘테이션, 가상 메모리  
-       - 파일 시스템의 기본 개념 및 디스크 스케줄링
-    
-    ### 7. **버전 관리 및 협업 도구**
-       7.1 **Git**  
-       - \`clone\`, \`branch\`, \`commit\`, \`merge\`, \`pull\`, \`push\` 등 기본 명령어  
-       - Git 브랜치 전략: Git Flow, GitHub Flow  
-       - 협업을 위한 Pull Request(PR)와 코드 리뷰 절차  
-    
-       7.2 **CI/CD 도구**  
-       - Jenkins를 이용한 자동 빌드 및 테스트 설정  
-       - Docker를 이용한 컨테이너화 및 배포 자동화  
-       - Kubernetes를 이용한 컨테이너 오케스트레이션
-    
-    ### 8. **시스템 설계**
-       8.1 **확장성 및 성능 최적화**  
-       - 데이터베이스 샤딩과 레플리케이션  
-       - 캐싱을 통한 성능 최적화(Redis, Memcached)  
-       - 부하 분산: 로드 밸런서의 개념과 사용법  
-    
-       8.2 **RESTful API 설계 및 마이크로서비스 아키텍처**  
-       - 마이크로서비스의 개념과 모놀리식 아키텍처와의 차이  
-       - 서비스 간 통신(gRPC, RabbitMQ)  
-       - API 게이트웨이의 역할 및 구현 방법
-    
-    ### 9. **임베디드 및 웹 관련 프로젝트**
-       9.1 **웹 개발 프로젝트**  
-       - 프론트엔드와 백엔드를 통합한 풀스택 웹 애플리케이션 개발  
-       - 실시간 데이터 처리 및 웹 소켓(WebSocket) 사용 사례  
-       - 데이터베이스 설계 및 RESTful API 구축 경험  
-    
-       9.2 **임베디드 시스템 프로젝트**  
-       - 센서를 활용한 IoT 디바이스 개발  
-       - 마이크로컨트롤러를 이용한 하드웨어 제어 프로젝트  
-       - 실시간 운영체제를 활용한 태스크 관리 프로젝트
-  `},post$3={title:"Input / Output",tag:"#언어 #비교",content:`
+  `})})]}),jsxRuntimeExports.jsxs(IntroStack,{children:[jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:"프론트엔드"}),jsxRuntimeExports.jsxs("div",{className:"score",children:[jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"})]})]}),jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:"백엔드"}),jsxRuntimeExports.jsxs("div",{className:"score",children:[jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"})]})]}),jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:"임베디드"}),jsxRuntimeExports.jsxs("div",{className:"score",children:[jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"filled"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"}),jsxRuntimeExports.jsx("div",{className:"empty"})]})]})]})]})]}),post$3={title:"Input / Output",tag:"#언어 #비교",content:`
 ### 1. **Python**
 
 \`\`\`python
@@ -5604,7 +5402,7 @@ void main() {
   print(vector);
 }
 \`\`\`
-`},posts=[post$4,post$3,post$2,post$1,post],SpiralContainer=dt.div`
+`},posts=[[post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
   width: 100%;
   max-width: 720px;
   height: calc(100vh - 84px);
@@ -5649,7 +5447,7 @@ void main() {
   font-size: 5vh;
   color: ${COLORS.text};
   z-index: 1000;
-`,ModalOverlay=dt.div`
+`,Spiral=({titles:s,onSquareClick:e})=>{const[a,o]=reactExports.useState(0),d=tt=>{a+tt<0?o(0):a+tt>=s.length?o(s.length-1):o(a+tt)},b=s.slice(a,Math.min(s.length,a+20)).map((tt,nt)=>{const st=70-nt*3,ot=nt*45,ht=20-.8*nt,ft=(a+nt+1)%2===0;return jsxRuntimeExports.jsx(SpiralSquare,{$size:st,$rotation:ot,$distance:ht,$isEven:ft,onClick:()=>{nt!==0&&o(a+nt),e(a+nt)},children:tt},nt)});return jsxRuntimeExports.jsxs(SpiralContainer,{children:[jsxRuntimeExports.jsx(SpiralSquareContainer,{children:b}),jsxRuntimeExports.jsxs(RotatedButtonContainer,{children:[jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>d(-1),children:"⫷"}),jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>o(0),children:"↻"}),jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>d(1),children:"⫸"})]})]})},ModalOverlay=dt.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -5658,18 +5456,30 @@ void main() {
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   z-index: 10000;
-`,ModalContent=dt.div`
+`,ModalTitle=dt.h2`
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: ${COLORS.text};
+  margin-bottom: 20px;
+`,ModalContent$1=dt.div`
   background: ${COLORS.background};
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
-  max-height: 80%;
+  margin-top: 5%;
+  max-width: 90%;
+  max-height: 90%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   overflow: auto;
+`,EmptyMessage=dt.p`
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: ${COLORS.text};
 `,CloseButton=dt.button`
   position: absolute;
   top: 10px;
@@ -5679,7 +5489,71 @@ void main() {
   color: ${COLORS.text};
   font-size: 2rem;
   cursor: pointer;
-`,Blog=()=>{const[s,e]=reactExports.useState(0),[a,o]=reactExports.useState(!1),d=["1. 프로그래밍 언어","2. 자료구조와 알고리즘","3. 운영체제","4. 네트워크","5. 데이터베이스","6. 컴퓨터 구조","7. 소프트웨어 공학","8. 디자인 패턴","9. 시스템 설계","10. 컴파일러 이론","11. 분산 시스템","12. 클라우드 컴퓨팅","13. 보안","14. DevOps와 CI/CD","15. 버전 관리","16. 소프트웨어 테스트","17. 객체 지향 설계 원칙","18. 메모리 관리","19. API 설계","20. 블록체인 기술","21. 데이터 처리 및 분석","22. 머신러닝/AI","23. 프론트엔드 개발","24. 백엔드 개발","25. 임베디드 시스템","26. 게임 개발"],b=nt=>{s+nt<0?e(0):s+nt>=d.length?e(d.length-1):e(s+nt)},tt=d.slice(s,Math.min(d.length,s+20)).map((nt,st)=>{const ot=70-st*3,ht=st*45,ft=20-.8*st,mt=(s+st+1)%2===0;return jsxRuntimeExports.jsx(SpiralSquare,{$size:ot,$rotation:ht,$distance:ft,$isEven:mt,onClick:()=>{st!==0&&e(s+st),o(!0)},children:nt},st)});return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsxs(SpiralContainer,{children:[jsxRuntimeExports.jsx(SpiralSquareContainer,{children:tt}),jsxRuntimeExports.jsxs(RotatedButtonContainer,{children:[jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>b(-1),children:"⫷"}),jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>e(0),children:"↻"}),jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>b(1),children:"⫸"})]})]}),a&&jsxRuntimeExports.jsx(ModalOverlay,{onClick:()=>o(!1),children:jsxRuntimeExports.jsxs(ModalContent,{onClick:nt=>nt.stopPropagation(),children:[jsxRuntimeExports.jsx(CloseButton,{onClick:()=>o(!1),children:"✕"}),posts.map((nt,st)=>jsxRuntimeExports.jsx(Card,{post:nt},st))]})})]})},BoardContainer$1=dt.div`
+`,CardContainer=dt.div`
+  width: fit-content;
+  height: fit-content;
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+`,Title=dt.h2`
+  margin: 0;
+`,Tag=dt.p`
+  color: gray;
+  margin: 0;
+  margin-top: 10px;
+`,BackButtonContainer=dt.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #fff;
+`,BackButton=dt.div`
+  width: fit-content;
+  margin-left: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: ${COLORS.text};
+`,Modal=dt.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+`,ModalContent=dt.div`
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+`,Content=dt.div`
+  margin: 50px auto 0 auto;
+  padding: 20px;
+  width: 60%;
+  height: fit-content;
+
+  @media (max-width: 760px) {
+    width: calc(100% - 40px);
+  }
+`,ContentHeader=dt.div`
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed ${COLORS.text};
+`,Card=({post:s})=>{const[e,a]=reactExports.useState(!1),o=()=>{a(!0)},d=()=>{a(!1)};return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsxs(CardContainer,{onClick:o,children:[jsxRuntimeExports.jsx(Title,{children:s.title}),jsxRuntimeExports.jsx(Tag,{children:s.tag})]}),e&&jsxRuntimeExports.jsx(Modal,{children:jsxRuntimeExports.jsxs(ModalContent,{children:[jsxRuntimeExports.jsx(BackButtonContainer,{children:jsxRuntimeExports.jsx(BackButton,{onClick:d,children:"⫷"})}),jsxRuntimeExports.jsxs(Content,{children:[jsxRuntimeExports.jsxs(ContentHeader,{children:[jsxRuntimeExports.jsx(Title,{children:s.title}),jsxRuntimeExports.jsx(Tag,{children:s.tag})]}),jsxRuntimeExports.jsx(MarkdownStyles,{children:s.content})]})]})})]})},Blog=()=>{const[s,e]=reactExports.useState(0),[a,o]=reactExports.useState(!1),d=["1. 프로그래밍 언어","2. 알고리즘","3. 운영체제","4. 네트워크","5. 데이터베이스","6. 컴퓨터 구조","7. 소프트웨어 공학","8. 디자인 패턴","9. 시스템 설계","10. 컴파일러 이론","11. 분산 시스템","12. 클라우드 컴퓨팅","13. 보안","14. DevOps와 CI/CD","15. 버전 관리","16. 소프트웨어 테스트","17. 객체 지향 설계 원칙","18. 메모리 관리","19. API 설계","20. 블록체인 기술","21. 데이터 처리 및 분석","22. 머신러닝/AI","23. 프론트엔드 개발","24. 백엔드 개발","25. 임베디드 시스템","26. 게임 개발"],b=tt=>{e(tt),o(!0)};return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsx(Spiral,{titles:d,onSquareClick:b}),a&&jsxRuntimeExports.jsx(ModalOverlay,{onClick:()=>o(!1),children:jsxRuntimeExports.jsxs(ModalContent$1,{onClick:tt=>tt.stopPropagation(),children:[jsxRuntimeExports.jsx(CloseButton,{onClick:()=>o(!1),children:"✕"}),jsxRuntimeExports.jsx(ModalTitle,{children:d[s]}),posts[s].length===0?jsxRuntimeExports.jsx(EmptyMessage,{children:"아직 게시글이 없습니다."}):posts[s].map((tt,nt)=>jsxRuntimeExports.jsx(Card,{post:tt},nt))]})})]})},BoardContainer$1=dt.div`
   width: 100%;
   height: 100%;
   overflow: auto;
