@@ -1,4 +1,4 @@
-import { Post } from ".";
+import { Post } from "..";
 
 const post: Post = {
   title: `int, char, bool, string`,
