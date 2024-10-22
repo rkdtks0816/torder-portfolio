@@ -12,13 +12,13 @@ const HomeContainer = styled.div`
 
 const BoardContainer = styled.div<{ $translateY: number }>`
   position: absolute;
-  top: ${(props) => props.$translateY}vh; /* translateY 값에 따라 위치 변경 */
+  top: ${(props) => props.$translateY}vh;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: #f7feff;
   z-index: 100;
-  transition: top 0.5s ease-in-out; /* 부드러운 애니메이션 */
+  transition: top 0.5s ease-in-out;
 `;
 
 const OpenBoardButtonContainer = styled.div`
@@ -41,11 +41,10 @@ const OpenBoardButtonContainer = styled.div`
 `;
 
 const Home: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false); // 보드가 열렸는지 여부
+  const [isOpen, setIsOpen] = useState(false);
 
-  // 클릭하면 보드가 올라가거나 내려가는 함수
   const toggleBoard = () => {
-    setIsOpen(!isOpen); // 현재 상태를 반전시킴
+    setIsOpen(!isOpen);
   };
 
   return (
