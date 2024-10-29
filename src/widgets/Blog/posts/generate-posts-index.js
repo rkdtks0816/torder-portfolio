@@ -1,9 +1,9 @@
-// node ./src/shared/posts/generate-posts-index.js
+// node ./src/widgets/Blog/posts/generate-posts-index.js
 import { readdirSync, writeFileSync, statSync, existsSync } from "fs";
 import { join, basename } from "path";
 
 // posts 디렉토리 경로 설정
-const postsDirectory = join(process.cwd(), "src", "shared", "posts");
+const postsDirectory = join(process.cwd(), "src", "widgets", "Blog", "posts");
 const indexFile = join(postsDirectory, "index.ts");
 
 // 파일을 읽고 index.ts 파일을 생성하는 함수
