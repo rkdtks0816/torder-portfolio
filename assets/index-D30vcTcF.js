@@ -5505,10 +5505,10 @@ void main() {
   padding: 20px;
   padding-top: 0;
   gap: 20px;
-`,CloseButton=dt.button`
-  background: transparent;
-  border: none;
-  font-size: 1.2rem;
+`,CloseButton=dt.div`
+  color: ${COLORS.text};
+  font-weight: bold;
+  font-size: 1.3rem;
   cursor: pointer;
 `,Modal$1=({isOpen:s,onClose:e,title:a,children:o})=>s?jsxRuntimeExports.jsx(ModalOverlay,{onClick:e,children:jsxRuntimeExports.jsxs(ModalContainer,{children:[jsxRuntimeExports.jsxs(ModalTitle,{children:[a,jsxRuntimeExports.jsx(CloseButton,{onClick:e,children:"✕"})]}),jsxRuntimeExports.jsx(ModalContent$1,{onClick:d=>d.stopPropagation(),children:o})]})}):null,CardContainer=dt.div`
   width: fit-content;
