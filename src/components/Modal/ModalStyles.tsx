@@ -48,9 +48,9 @@ export const ModalContent = styled.div`
   gap: 20px;
 `;
 
-export const CloseButton = styled.button`
-  background: transparent;
-  border: none;
-  font-size: 1.2rem;
+export const CloseButton = styled.div`
+  color: ${COLORS.text};
+  font-weight: bold;
+  font-size: 1.3rem;
   cursor: pointer;
 `;
