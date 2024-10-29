@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-import {
-  SpiralContainer,
-  SpiralSquareContainer,
-  SpiralSquare,
-  RotatedButtonContainer,
-  RotatedButton,
-} from "@/features/Spiral/SpiralStyles";
+import * as SpiralStyles from "./SpiralStyles";
 
 interface SpiralProps {
   titles: string[];
@@ -30,7 +24,7 @@ const Spiral: React.FC<SpiralProps> = ({ titles, onSquareClick }) => {
       const isEven = (nowIndex + i + 1) % 2 === 0;
 
       return (
-        <SpiralSquare
+        <SpiralStyles.SpiralSquare
           key={i}
           $size={size}
           $rotation={rotation}
@@ -44,19 +38,27 @@ const Spiral: React.FC<SpiralProps> = ({ titles, onSquareClick }) => {
           }}
         >
           {title}
-        </SpiralSquare>
+        </SpiralStyles.SpiralSquare>
       );
     });
 
   return (
-    <SpiralContainer>
-      <SpiralSquareContainer>{squares}</SpiralSquareContainer>
-      <RotatedButtonContainer>
-        <RotatedButton onClick={() => rotateSquare(-1)}>⫷</RotatedButton>
-        <RotatedButton onClick={() => setNowIndex(0)}>↻</RotatedButton>
-        <RotatedButton onClick={() => rotateSquare(1)}>⫸</RotatedButton>
-      </RotatedButtonContainer>
-    </SpiralContainer>
+    <SpiralStyles.SpiralContainer>
+      <SpiralStyles.SpiralSquareContainer>
+        {squares}
+      </SpiralStyles.SpiralSquareContainer>
+      <SpiralStyles.RotatedButtonContainer>
+        <SpiralStyles.RotatedButton onClick={() => rotateSquare(-1)}>
+          ⫷
+        </SpiralStyles.RotatedButton>
+        <SpiralStyles.RotatedButton onClick={() => setNowIndex(0)}>
+          ↻
+        </SpiralStyles.RotatedButton>
+        <SpiralStyles.RotatedButton onClick={() => rotateSquare(1)}>
+          ⫸
+        </SpiralStyles.RotatedButton>
+      </SpiralStyles.RotatedButtonContainer>
+    </SpiralStyles.SpiralContainer>
   );
 };
 
