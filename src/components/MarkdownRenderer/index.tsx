@@ -9,7 +9,18 @@ interface MarkdownRendererProps {
 }
 
 const removeIndentation = (content: string) => {
-  return content.replace(/^[ \t]+/gm, ""); // 각 줄의 앞부분 공백 제거
+  // 모든 라인에서 공백을 유지하기 위해 첫 번째 라인 공백을 기준으로 조정
+  const lines = content.split("\n");
+  const minIndentation = Math.min(
+      ...lines
+          .filter((line) => line.trim().length > 0) // 빈 줄 제외
+          .map((line) => line.match(/^\s*/)?.[0].length || 0)
+  );
+
+  // 최소 공백을 기준으로 모든 줄에서 공백 제거
+  return lines
+      .map((line) => (line.startsWith(" ") ? line.slice(minIndentation) : line))
+      .join("\n");
 };
 
 const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content }) => {

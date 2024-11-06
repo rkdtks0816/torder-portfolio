@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { posts, Post } from "./posts";
+import { posts, Post } from "@/posts";
 import Spiral from "@/features/Spiral";
 import Modal from "@/components/Modal";
 import Card from "@/features/Card";
