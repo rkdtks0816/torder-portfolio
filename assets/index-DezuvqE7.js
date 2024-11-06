@@ -4024,7 +4024,7 @@ o.goToAndStop(Et-o.firstFrame-1,!0)}xt.type==="loop"&&(ht===null||ht!==xt.frames
     /* 리스트 스타일 */
     ul,
     ol {
-        padding-left: 24px;
+        padding-left: 12px;
         margin: 8px 0;
         line-height: 1.5;
     }
@@ -4158,7 +4158,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Gt,Dt=Rt),Lt===void
   gap: 10px;
   background-color: #d7fbe8;
   opacity: 0.8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   padding: 15px;
   border-radius: 10px;
 `,IntroTitle=dt.div`
@@ -4168,8 +4168,8 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Gt,Dt=Rt),Lt===void
     font-family: "HakgyoansimByeolbichhaneul";
   }
 `,IntroBox=dt.div`
-  width: calc(100% - 20px);
-  padding: 0 10px;
+  width: calc(100% - 12px);
+  padding-right: 12px;
   background-color: #ffffff;
   border-radius: 10px;
 `,IntroStack=dt.div`
