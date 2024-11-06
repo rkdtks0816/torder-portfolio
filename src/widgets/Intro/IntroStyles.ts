@@ -29,7 +29,7 @@ export const IntroInfo = styled.div`
   gap: 10px;
   background-color: #d7fbe8;
   opacity: 0.8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   padding: 15px;
   border-radius: 10px;
 `;
@@ -43,8 +43,8 @@ export const IntroTitle = styled.div`
 `;
 
 export const IntroBox = styled.div`
-  width: calc(100% - 20px);
-  padding: 0 10px;
+  width: calc(100% - 12px);
+  padding-right: 12px;
   background-color: #ffffff;
   border-radius: 10px;
 `;

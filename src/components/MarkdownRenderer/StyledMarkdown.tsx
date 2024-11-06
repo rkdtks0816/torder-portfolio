@@ -42,7 +42,7 @@ export const StyledMarkdown = styled(ReactMarkdown)`
     /* 리스트 스타일 */
     ul,
     ol {
-        padding-left: 24px;
+        padding-left: 12px;
         margin: 8px 0;
         line-height: 1.5;
     }
