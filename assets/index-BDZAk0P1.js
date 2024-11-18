@@ -3984,129 +3984,130 @@ d.goToAndStop(At-d.firstFrame-1,!0)}Tt.type==="loop"&&(ft===null||ft!==Tt.frames
 `}),o.push(a[d]);return e&&a.length>0&&o.push({type:"text",value:`
 `}),o}function trimMarkdownSpaceStart(a){let e=0,o=a.charCodeAt(e);for(;o===9||o===32;)e++,o=a.charCodeAt(e);return a.slice(e)}function toHast(a,e){const o=createState(a,e),d=o.one(a,void 0),b=footer(o),tt=Array.isArray(d)?{type:"root",children:d}:d||{type:"root",children:[]};return b&&tt.children.push({type:"text",value:`
 `},b),tt}function remarkRehype(a,e){return a&&"run"in a?async function(o,d){const b=toHast(o,{file:d,...e});await a.run(b,d)}:function(o,d){return toHast(o,{file:d,...a||e})}}function bail(a){if(a)throw a}var hasOwn=Object.prototype.hasOwnProperty,toStr=Object.prototype.toString,defineProperty=Object.defineProperty,gOPD=Object.getOwnPropertyDescriptor,isArray=function a(e){return typeof Array.isArray=="function"?Array.isArray(e):toStr.call(e)==="[object Array]"},isPlainObject$1=function a(e){if(!e||toStr.call(e)!=="[object Object]")return!1;var o=hasOwn.call(e,"constructor"),d=e.constructor&&e.constructor.prototype&&hasOwn.call(e.constructor.prototype,"isPrototypeOf");if(e.constructor&&!o&&!d)return!1;var b;for(b in e);return typeof b>"u"||hasOwn.call(e,b)},setProperty=function a(e,o){defineProperty&&o.name==="__proto__"?defineProperty(e,o.name,{enumerable:!0,configurable:!0,value:o.newValue,writable:!0}):e[o.name]=o.newValue},getProperty=function a(e,o){if(o==="__proto__")if(hasOwn.call(e,o)){if(gOPD)return gOPD(e,o).value}else return;return e[o]},extend=function a(){var e,o,d,b,tt,nt,st=arguments[0],ot=1,ht=arguments.length,ft=!1;for(typeof st=="boolean"&&(ft=st,st=arguments[1]||{},ot=2),(st==null||typeof st!="object"&&typeof st!="function")&&(st={});ot<ht;++ot)if(e=arguments[ot],e!=null)for(o in e)d=getProperty(st,o),b=getProperty(e,o),st!==b&&(ft&&b&&(isPlainObject$1(b)||(tt=isArray(b)))?(tt?(tt=!1,nt=d&&isArray(d)?d:[]):nt=d&&isPlainObject$1(d)?d:{},setProperty(st,{name:o,newValue:a(ft,nt,b)})):typeof b<"u"&&setProperty(st,{name:o,newValue:b}));return st};const extend$1=getDefaultExportFromCjs(extend);function isPlainObject(a){if(typeof a!="object"||a===null)return!1;const e=Object.getPrototypeOf(a);return(e===null||e===Object.prototype||Object.getPrototypeOf(e)===null)&&!(Symbol.toStringTag in a)&&!(Symbol.iterator in a)}function trough(){const a=[],e={run:o,use:d};return e;function o(...b){let tt=-1;const nt=b.pop();if(typeof nt!="function")throw new TypeError("Expected function as last argument, not "+nt);st(null,...b);function st(ot,...ht){const ft=a[++tt];let mt=-1;if(ot){nt(ot);return}for(;++mt<b.length;)(ht[mt]===null||ht[mt]===void 0)&&(ht[mt]=b[mt]);b=ht,ft?wrap(ft,st)(...ht):nt(null,...ht)}}function d(b){if(typeof b!="function")throw new TypeError("Expected `middelware` to be a function, not "+b);return a.push(b),e}}function wrap(a,e){let o;return d;function d(...nt){const st=a.length>nt.length;let ot;st&&nt.push(b);try{ot=a.apply(this,nt)}catch(ht){const ft=ht;if(st&&o)throw ft;return b(ft)}st||(ot&&ot.then&&typeof ot.then=="function"?ot.then(tt,b):ot instanceof Error?b(ot):tt(ot))}function b(nt,...st){o||(o=!0,e(nt,...st))}function tt(nt){b(null,nt)}}const minpath={basename,dirname,extname,join,sep:"/"};function basename(a,e){if(e!==void 0&&typeof e!="string")throw new TypeError('"ext" argument must be a string');assertPath$1(a);let o=0,d=-1,b=a.length,tt;if(e===void 0||e.length===0||e.length>a.length){for(;b--;)if(a.codePointAt(b)===47){if(tt){o=b+1;break}}else d<0&&(tt=!0,d=b+1);return d<0?"":a.slice(o,d)}if(e===a)return"";let nt=-1,st=e.length-1;for(;b--;)if(a.codePointAt(b)===47){if(tt){o=b+1;break}}else nt<0&&(tt=!0,nt=b+1),st>-1&&(a.codePointAt(b)===e.codePointAt(st--)?st<0&&(d=b):(st=-1,d=nt));return o===d?d=nt:d<0&&(d=a.length),a.slice(o,d)}function dirname(a){if(assertPath$1(a),a.length===0)return".";let e=-1,o=a.length,d;for(;--o;)if(a.codePointAt(o)===47){if(d){e=o;break}}else d||(d=!0);return e<0?a.codePointAt(0)===47?"/":".":e===1&&a.codePointAt(0)===47?"//":a.slice(0,e)}function extname(a){assertPath$1(a);let e=a.length,o=-1,d=0,b=-1,tt=0,nt;for(;e--;){const st=a.codePointAt(e);if(st===47){if(nt){d=e+1;break}continue}o<0&&(nt=!0,o=e+1),st===46?b<0?b=e:tt!==1&&(tt=1):b>-1&&(tt=-1)}return b<0||o<0||tt===0||tt===1&&b===o-1&&b===d+1?"":a.slice(b,o)}function join(...a){let e=-1,o;for(;++e<a.length;)assertPath$1(a[e]),a[e]&&(o=o===void 0?a[e]:o+"/"+a[e]);return o===void 0?".":normalize(o)}function normalize(a){assertPath$1(a);const e=a.codePointAt(0)===47;let o=normalizeString(a,!e);return o.length===0&&!e&&(o="."),o.length>0&&a.codePointAt(a.length-1)===47&&(o+="/"),e?"/"+o:o}function normalizeString(a,e){let o="",d=0,b=-1,tt=0,nt=-1,st,ot;for(;++nt<=a.length;){if(nt<a.length)st=a.codePointAt(nt);else{if(st===47)break;st=47}if(st===47){if(!(b===nt-1||tt===1))if(b!==nt-1&&tt===2){if(o.length<2||d!==2||o.codePointAt(o.length-1)!==46||o.codePointAt(o.length-2)!==46){if(o.length>2){if(ot=o.lastIndexOf("/"),ot!==o.length-1){ot<0?(o="",d=0):(o=o.slice(0,ot),d=o.length-1-o.lastIndexOf("/")),b=nt,tt=0;continue}}else if(o.length>0){o="",d=0,b=nt,tt=0;continue}}e&&(o=o.length>0?o+"/..":"..",d=2)}else o.length>0?o+="/"+a.slice(b+1,nt):o=a.slice(b+1,nt),d=nt-b-1;b=nt,tt=0}else st===46&&tt>-1?tt++:tt=-1}return o}function assertPath$1(a){if(typeof a!="string")throw new TypeError("Path must be a string. Received "+JSON.stringify(a))}const minproc={cwd};function cwd(){return"/"}function isUrl(a){return!!(a!==null&&typeof a=="object"&&"href"in a&&a.href&&"protocol"in a&&a.protocol&&a.auth===void 0)}function urlToPath(a){if(typeof a=="string")a=new URL(a);else if(!isUrl(a)){const e=new TypeError('The "path" argument must be of type string or an instance of URL. Received `'+a+"`");throw e.code="ERR_INVALID_ARG_TYPE",e}if(a.protocol!=="file:"){const e=new TypeError("The URL must be of scheme file");throw e.code="ERR_INVALID_URL_SCHEME",e}return getPathFromURLPosix(a)}function getPathFromURLPosix(a){if(a.hostname!==""){const d=new TypeError('File URL host must be "localhost" or empty on darwin');throw d.code="ERR_INVALID_FILE_URL_HOST",d}const e=a.pathname;let o=-1;for(;++o<e.length;)if(e.codePointAt(o)===37&&e.codePointAt(o+1)===50){const d=e.codePointAt(o+2);if(d===70||d===102){const b=new TypeError("File URL path must not include encoded / characters");throw b.code="ERR_INVALID_FILE_URL_PATH",b}}return decodeURIComponent(e)}const order=["history","path","basename","stem","extname","dirname"];class VFile{constructor(e){let o;e?isUrl(e)?o={path:e}:typeof e=="string"||isUint8Array$1(e)?o={value:e}:o=e:o={},this.cwd="cwd"in o?"":minproc.cwd(),this.data={},this.history=[],this.messages=[],this.value,this.map,this.result,this.stored;let d=-1;for(;++d<order.length;){const tt=order[d];tt in o&&o[tt]!==void 0&&o[tt]!==null&&(this[tt]=tt==="history"?[...o[tt]]:o[tt])}let b;for(b in o)order.includes(b)||(this[b]=o[b])}get basename(){return typeof this.path=="string"?minpath.basename(this.path):void 0}set basename(e){assertNonEmpty(e,"basename"),assertPart(e,"basename"),this.path=minpath.join(this.dirname||"",e)}get dirname(){return typeof this.path=="string"?minpath.dirname(this.path):void 0}set dirname(e){assertPath(this.basename,"dirname"),this.path=minpath.join(e||"",this.basename)}get extname(){return typeof this.path=="string"?minpath.extname(this.path):void 0}set extname(e){if(assertPart(e,"extname"),assertPath(this.dirname,"extname"),e){if(e.codePointAt(0)!==46)throw new Error("`extname` must start with `.`");if(e.includes(".",1))throw new Error("`extname` cannot contain multiple dots")}this.path=minpath.join(this.dirname,this.stem+(e||""))}get path(){return this.history[this.history.length-1]}set path(e){isUrl(e)&&(e=urlToPath(e)),assertNonEmpty(e,"path"),this.path!==e&&this.history.push(e)}get stem(){return typeof this.path=="string"?minpath.basename(this.path,this.extname):void 0}set stem(e){assertNonEmpty(e,"stem"),assertPart(e,"stem"),this.path=minpath.join(this.dirname||"",e+(this.extname||""))}fail(e,o,d){const b=this.message(e,o,d);throw b.fatal=!0,b}info(e,o,d){const b=this.message(e,o,d);return b.fatal=void 0,b}message(e,o,d){const b=new VFileMessage(e,o,d);return this.path&&(b.name=this.path+":"+b.name,b.file=this.path),b.fatal=!1,this.messages.push(b),b}toString(e){return this.value===void 0?"":typeof this.value=="string"?this.value:new TextDecoder(e||void 0).decode(this.value)}}function assertPart(a,e){if(a&&a.includes(minpath.sep))throw new Error("`"+e+"` cannot be a path: did not expect `"+minpath.sep+"`")}function assertNonEmpty(a,e){if(!a)throw new Error("`"+e+"` cannot be empty")}function assertPath(a,e){if(!a)throw new Error("Setting `"+e+"` requires `path` to be set too")}function isUint8Array$1(a){return!!(a&&typeof a=="object"&&"byteLength"in a&&"byteOffset"in a)}const CallableInstance=function(a){const d=this.constructor.prototype,b=d[a],tt=function(){return b.apply(tt,arguments)};return Object.setPrototypeOf(tt,d),tt},own$4={}.hasOwnProperty;class Processor extends CallableInstance{constructor(){super("copy"),this.Compiler=void 0,this.Parser=void 0,this.attachers=[],this.compiler=void 0,this.freezeIndex=-1,this.frozen=void 0,this.namespace={},this.parser=void 0,this.transformers=trough()}copy(){const e=new Processor;let o=-1;for(;++o<this.attachers.length;){const d=this.attachers[o];e.use(...d)}return e.data(extend$1(!0,{},this.namespace)),e}data(e,o){return typeof e=="string"?arguments.length===2?(assertUnfrozen("data",this.frozen),this.namespace[e]=o,this):own$4.call(this.namespace,e)&&this.namespace[e]||void 0:e?(assertUnfrozen("data",this.frozen),this.namespace=e,this):this.namespace}freeze(){if(this.frozen)return this;const e=this;for(;++this.freezeIndex<this.attachers.length;){const[o,...d]=this.attachers[this.freezeIndex];if(d[0]===!1)continue;d[0]===!0&&(d[0]=void 0);const b=o.call(e,...d);typeof b=="function"&&this.transformers.use(b)}return this.frozen=!0,this.freezeIndex=Number.POSITIVE_INFINITY,this}parse(e){this.freeze();const o=vfile(e),d=this.parser||this.Parser;return assertParser("parse",d),d(String(o),o)}process(e,o){const d=this;return this.freeze(),assertParser("process",this.parser||this.Parser),assertCompiler("process",this.compiler||this.Compiler),o?b(void 0,o):new Promise(b);function b(tt,nt){const st=vfile(e),ot=d.parse(st);d.run(ot,st,function(ft,mt,gt){if(ft||!mt||!gt)return ht(ft);const yt=mt,Tt=d.stringify(yt,gt);looksLikeAValue(Tt)?gt.value=Tt:gt.result=Tt,ht(ft,gt)});function ht(ft,mt){ft||!mt?nt(ft):tt?tt(mt):o(void 0,mt)}}}processSync(e){let o=!1,d;return this.freeze(),assertParser("processSync",this.parser||this.Parser),assertCompiler("processSync",this.compiler||this.Compiler),this.process(e,b),assertDone("processSync","process",o),d;function b(tt,nt){o=!0,bail(tt),d=nt}}run(e,o,d){assertNode(e),this.freeze();const b=this.transformers;return!d&&typeof o=="function"&&(d=o,o=void 0),d?tt(void 0,d):new Promise(tt);function tt(nt,st){const ot=vfile(o);b.run(e,ot,ht);function ht(ft,mt,gt){const yt=mt||e;ft?st(ft):nt?nt(yt):d(void 0,yt,gt)}}}runSync(e,o){let d=!1,b;return this.run(e,o,tt),assertDone("runSync","run",d),b;function tt(nt,st){bail(nt),b=st,d=!0}}stringify(e,o){this.freeze();const d=vfile(o),b=this.compiler||this.Compiler;return assertCompiler("stringify",b),assertNode(e),b(e,d)}use(e,...o){const d=this.attachers,b=this.namespace;if(assertUnfrozen("use",this.frozen),e!=null)if(typeof e=="function")ot(e,o);else if(typeof e=="object")Array.isArray(e)?st(e):nt(e);else throw new TypeError("Expected usable value, not `"+e+"`");return this;function tt(ht){if(typeof ht=="function")ot(ht,[]);else if(typeof ht=="object")if(Array.isArray(ht)){const[ft,...mt]=ht;ot(ft,mt)}else nt(ht);else throw new TypeError("Expected usable value, not `"+ht+"`")}function nt(ht){if(!("plugins"in ht)&&!("settings"in ht))throw new Error("Expected usable value but received an empty preset, which is probably a mistake: presets typically come with `plugins` and sometimes with `settings`, but this has neither");st(ht.plugins),ht.settings&&(b.settings=extend$1(!0,b.settings,ht.settings))}function st(ht){let ft=-1;if(ht!=null)if(Array.isArray(ht))for(;++ft<ht.length;){const mt=ht[ft];tt(mt)}else throw new TypeError("Expected a list of plugins, not `"+ht+"`")}function ot(ht,ft){let mt=-1,gt=-1;for(;++mt<d.length;)if(d[mt][0]===ht){gt=mt;break}if(gt===-1)d.push([ht,...ft]);else if(ft.length>0){let[yt,...Tt]=ft;const At=d[gt][1];isPlainObject(At)&&isPlainObject(yt)&&(yt=extend$1(!0,At,yt)),d[gt]=[ht,yt,...Tt]}}}}const unified=new Processor().freeze();function assertParser(a,e){if(typeof e!="function")throw new TypeError("Cannot `"+a+"` without `parser`")}function assertCompiler(a,e){if(typeof e!="function")throw new TypeError("Cannot `"+a+"` without `compiler`")}function assertUnfrozen(a,e){if(e)throw new Error("Cannot call `"+a+"` on a frozen processor.\nCreate a new processor first, by calling it: use `processor()` instead of `processor`.")}function assertNode(a){if(!isPlainObject(a)||typeof a.type!="string")throw new TypeError("Expected node, got `"+a+"`")}function assertDone(a,e,o){if(!o)throw new Error("`"+a+"` finished async. Use `"+e+"` instead")}function vfile(a){return looksLikeAVFile(a)?a:new VFile(a)}function looksLikeAVFile(a){return!!(a&&typeof a=="object"&&"message"in a&&"messages"in a)}function looksLikeAValue(a){return typeof a=="string"||isUint8Array(a)}function isUint8Array(a){return!!(a&&typeof a=="object"&&"byteLength"in a&&"byteOffset"in a)}const changelog="https://github.com/remarkjs/react-markdown/blob/main/changelog.md",emptyPlugins=[],emptyRemarkRehypeOptions={allowDangerousHtml:!0},safeProtocol=/^(https?|ircs?|mailto|xmpp)$/i,deprecations=[{from:"astPlugins",id:"remove-buggy-html-in-markdown-parser"},{from:"allowDangerousHtml",id:"remove-buggy-html-in-markdown-parser"},{from:"allowNode",id:"replace-allownode-allowedtypes-and-disallowedtypes",to:"allowElement"},{from:"allowedTypes",id:"replace-allownode-allowedtypes-and-disallowedtypes",to:"allowedElements"},{from:"disallowedTypes",id:"replace-allownode-allowedtypes-and-disallowedtypes",to:"disallowedElements"},{from:"escapeHtml",id:"remove-buggy-html-in-markdown-parser"},{from:"includeElementIndex",id:"#remove-includeelementindex"},{from:"includeNodeIndex",id:"change-includenodeindex-to-includeelementindex"},{from:"linkTarget",id:"remove-linktarget"},{from:"plugins",id:"change-plugins-to-remarkplugins",to:"remarkPlugins"},{from:"rawSourcePos",id:"#remove-rawsourcepos"},{from:"renderers",id:"change-renderers-to-components",to:"components"},{from:"source",id:"change-source-to-children",to:"children"},{from:"sourcePos",id:"#remove-sourcepos"},{from:"transformImageUri",id:"#add-urltransform",to:"urlTransform"},{from:"transformLinkUri",id:"#add-urltransform",to:"urlTransform"}];function Markdown(a){const e=a.allowedElements,o=a.allowElement,d=a.children||"",b=a.className,tt=a.components,nt=a.disallowedElements,st=a.rehypePlugins||emptyPlugins,ot=a.remarkPlugins||emptyPlugins,ht=a.remarkRehypeOptions?{...a.remarkRehypeOptions,...emptyRemarkRehypeOptions}:emptyRemarkRehypeOptions,ft=a.skipHtml,mt=a.unwrapDisallowed,gt=a.urlTransform||defaultUrlTransform,yt=unified().use(remarkParse).use(ot).use(remarkRehype,ht).use(st),Tt=new VFile;typeof d=="string"&&(Tt.value=d);for(const xt of deprecations)Object.hasOwn(a,xt.from)&&(""+xt.from+(xt.to?"use `"+xt.to+"` instead":"remove it")+changelog+xt.id,void 0);const At=yt.parse(Tt);let bt=yt.runSync(At,Tt);return b&&(bt={type:"element",tagName:"div",properties:{className:b},children:bt.type==="root"?bt.children:[bt]}),visit(bt,vt),toJsxRuntime(bt,{Fragment:jsxRuntimeExports.Fragment,components:tt,ignoreInvalidStyle:!0,jsx:jsxRuntimeExports.jsx,jsxs:jsxRuntimeExports.jsxs,passKeys:!0,passNode:!0});function vt(xt,St,Ct){if(xt.type==="raw"&&Ct&&typeof St=="number")return ft?Ct.children.splice(St,1):Ct.children[St]={type:"text",value:xt.value},St;if(xt.type==="element"){let Pt;for(Pt in urlAttributes)if(Object.hasOwn(urlAttributes,Pt)&&Object.hasOwn(xt.properties,Pt)){const It=xt.properties[Pt],Dt=urlAttributes[Pt];(Dt===null||Dt.includes(xt.tagName))&&(xt.properties[Pt]=gt(String(It||""),Pt,xt))}}if(xt.type==="element"){let Pt=e?!e.includes(xt.tagName):nt?nt.includes(xt.tagName):!1;if(!Pt&&o&&typeof St=="number"&&(Pt=!o(xt,St,Ct)),Pt&&Ct&&typeof St=="number")return mt&&xt.children?Ct.children.splice(St,1,...xt.children):Ct.children.splice(St,1),St}}}function defaultUrlTransform(a){const e=a.indexOf(":"),o=a.indexOf("?"),d=a.indexOf("#"),b=a.indexOf("/");return e<0||b>-1&&e>b||o>-1&&e>o||d>-1&&e>d||safeProtocol.test(a.slice(0,e))?a:""}const StyledMarkdown=dt(Markdown)`
-    /* 본문 텍스트 스타일 */
-    p {
-        margin: 8px 0;
-        line-height: 1.6;
-        font-size: 15px;
-        color: #3a3a3a;
-    }
+  /* 본문 텍스트 스타일 */
+  p {
+    margin: 8px 0;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #3a3a3a;
+  }
 
-    /* 헤더 스타일 */
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin: 16px 0 8px;
-        font-weight: 600;
-        line-height: 1.4;
-        color: #1f2937;
-    }
+  /* 헤더 스타일 */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 16px 0 8px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1f2937;
+  }
 
-    h1 {
-        font-size: 26px;
-    }
+  h1 {
+    font-size: 26px;
+  }
 
-    h2 {
-        font-size: 22px;
-    }
+  h2 {
+    font-size: 22px;
+  }
 
-    h3 {
-        font-size: 18px;
-    }
+  h3 {
+    font-size: 18px;
+  }
 
-    h4, h5, h6 {
-        font-size: 16px;
-    }
+  h4,
+  h5,
+  h6 {
+    font-size: 16px;
+  }
 
-    /* 리스트 스타일 */
-    ul,
-    ol {
-        padding-left: 12px;
-        margin: 8px 0;
-        line-height: 1.5;
-    }
+  /* 리스트 스타일 */
+  ul,
+  ol {
+    padding-left: 12px;
+    margin: 8px 0;
+    line-height: 1.5;
+  }
 
-    ul li {
-        list-style-type: disc;
-        margin-left: 16px;
-    }
+  ul li {
+    list-style-type: disc;
+    margin-left: 16px;
+  }
 
-    ol li {
-        list-style-type: decimal;
-        margin-left: 16px;
-    }
+  ol li {
+    list-style-type: decimal;
+    margin-left: 16px;
+  }
 
-    /* 코드 블록 스타일 */
-    pre {
-        background-color: #f3f4f6;
-        border-left: 4px solid #3b82f6;
-        padding: 10px 14px;
-        margin: 12px 0;
-        border-radius: 8px;
-        overflow-x: auto;
-        font-size: 14px;
-    }
+  /* 코드 블록 스타일 */
+  pre {
+    background-color: #f3f4f6;
+    padding: 10px 14px;
+    margin: 12px 0;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 14px;
+  }
 
-    code {
-        background-color: #e2e8f0;
-        padding: 2px 6px;
-        border-radius: 4px;
-        font-family: "Fira Code", monospace;
-        font-size: 14px;
-        color: #374151;
-    }
+  code {
+    background-color: #e2e8f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: "Fira Code", monospace;
+    font-size: 14px;
+    color: #374151;
+  }
 
-    /* 인라인 코드 */
-    pre > code {
-        background-color: inherit;
-        padding: 0;
-    }
+  /* 인라인 코드 */
+  pre > code {
+    background-color: inherit;
+    padding: 0;
+  }
 
-    /* 테이블 스타일 */
-    table {
-        width: 100%;
-        margin: 12px 0;
-        border-collapse: collapse;
-    }
+  /* 테이블 스타일 */
+  table {
+    width: 100%;
+    margin: 12px 0;
+    border-collapse: collapse;
+  }
 
-    th,
-    td {
-        padding: 10px 12px;
-        border: 1px solid #e5e7eb;
-        text-align: left;
-        font-size: 14px;
-    }
+  th,
+  td {
+    padding: 10px 12px;
+    border: 1px solid #e5e7eb;
+    text-align: left;
+    font-size: 14px;
+  }
 
-    th {
-        background-color: #f9fafb;
-        font-weight: 600;
-        color: #111827;
-    }
+  th {
+    background-color: #f9fafb;
+    font-weight: 600;
+    color: #111827;
+  }
 
-    /* 링크 스타일 */
-    a {
-        color: #2563eb;
-        text-decoration: none;
-        font-weight: 500;
-        &:hover {
-            text-decoration: underline;
-            color: #1e40af;
-        }
+  /* 링크 스타일 */
+  a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    &:hover {
+      text-decoration: underline;
+      color: #1e40af;
     }
+  }
 
-    /* 인용문 스타일 */
-    blockquote {
-        margin: 10px 0;
-        padding-left: 16px;
-        border-left: 4px solid #10b981;
-        color: #4b5563;
-        background-color: #f0fdf4;
-        font-style: italic;
-        font-size: 15px;
-    }
+  /* 인용문 스타일 */
+  blockquote {
+    margin: 10px 0;
+    padding-left: 16px;
+    border-left: 4px solid #10b981;
+    color: #4b5563;
+    background-color: #f0fdf4;
+    font-style: italic;
+    font-size: 15px;
+  }
 `;function ccount(a,e){const o=String(a);if(typeof e!="string")throw new TypeError("Expected character");let d=0,b=o.indexOf(e);for(;b!==-1;)d++,b=o.indexOf(e,b+e.length);return d}function escapeStringRegexp(a){if(typeof a!="string")throw new TypeError("Expected a string");return a.replace(/[|\\{}()[\]^$+*?.]/g,"\\$&").replace(/-/g,"\\x2d")}function findAndReplace(a,e,o){const b=convert((o||{}).ignore||[]),tt=toPairs(e);let nt=-1;for(;++nt<tt.length;)visitParents(a,"text",st);function st(ht,ft){let mt=-1,gt;for(;++mt<ft.length;){const yt=ft[mt],Tt=gt?gt.children:void 0;if(b(yt,Tt?Tt.indexOf(yt):void 0,gt))return;gt=yt}if(gt)return ot(ht,ft)}function ot(ht,ft){const mt=ft[ft.length-1],gt=tt[nt][0],yt=tt[nt][1];let Tt=0;const bt=mt.children.indexOf(ht);let vt=!1,xt=[];gt.lastIndex=0;let St=gt.exec(ht.value);for(;St;){const Ct=St.index,Pt={index:St.index,input:St.input,stack:[...ft,ht]};let It=yt(...St,Pt);if(typeof It=="string"&&(It=It.length>0?{type:"text",value:It}:void 0),It===!1?gt.lastIndex=Ct+1:(Tt!==Ct&&xt.push({type:"text",value:ht.value.slice(Tt,Ct)}),Array.isArray(It)?xt.push(...It):It&&xt.push(It),Tt=Ct+St[0].length,vt=!0),!gt.global)break;St=gt.exec(ht.value)}return vt?(Tt<ht.value.length&&xt.push({type:"text",value:ht.value.slice(Tt)}),mt.children.splice(bt,1,...xt)):xt=[ht],bt+xt.length}}function toPairs(a){const e=[];if(!Array.isArray(a))throw new TypeError("Expected find and replace tuple or list of tuples");const o=!a[0]||Array.isArray(a[0])?a:[a];let d=-1;for(;++d<o.length;){const b=o[d];e.push([toExpression(b[0]),toFunction(b[1])])}return e}function toExpression(a){return typeof a=="string"?new RegExp(escapeStringRegexp(a),"g"):a}function toFunction(a){return typeof a=="function"?a:function(){return a}}const inConstruct="phrasing",notInConstruct=["autolink","link","image","label"];function gfmAutolinkLiteralFromMarkdown(){return{transforms:[transformGfmAutolinkLiterals],enter:{literalAutolink:enterLiteralAutolink,literalAutolinkEmail:enterLiteralAutolinkValue,literalAutolinkHttp:enterLiteralAutolinkValue,literalAutolinkWww:enterLiteralAutolinkValue},exit:{literalAutolink:exitLiteralAutolink,literalAutolinkEmail:exitLiteralAutolinkEmail,literalAutolinkHttp:exitLiteralAutolinkHttp,literalAutolinkWww:exitLiteralAutolinkWww}}}function gfmAutolinkLiteralToMarkdown(){return{unsafe:[{character:"@",before:"[+\\-.\\w]",after:"[\\-.\\w]",inConstruct,notInConstruct},{character:".",before:"[Ww]",after:"[\\-.\\w]",inConstruct,notInConstruct},{character:":",before:"[ps]",after:"\\/",inConstruct,notInConstruct}]}}function enterLiteralAutolink(a){this.enter({type:"link",title:null,url:"",children:[]},a)}function enterLiteralAutolinkValue(a){this.config.enter.autolinkProtocol.call(this,a)}function exitLiteralAutolinkHttp(a){this.config.exit.autolinkProtocol.call(this,a)}function exitLiteralAutolinkWww(a){this.config.exit.data.call(this,a);const e=this.stack[this.stack.length-1];e.type,e.url="http://"+this.sliceSerialize(a)}function exitLiteralAutolinkEmail(a){this.config.exit.autolinkEmail.call(this,a)}function exitLiteralAutolink(a){this.exit(a)}function transformGfmAutolinkLiterals(a){findAndReplace(a,[[/(https?:\/\/|www(?=\.))([-.\w]+)([^ \t\r\n]*)/gi,findUrl],[new RegExp("(?<=^|\\s|\\p{P}|\\p{S})([-.\\w+]+)@([-\\w]+(?:\\.[-\\w]+)+)","gu"),findEmail]],{ignore:["link","linkReference"]})}function findUrl(a,e,o,d,b){let tt="";if(!previous(b)||(/^w/i.test(e)&&(o=e+o,e="",tt="http://"),!isCorrectDomain(o)))return!1;const nt=splitUrl(o+d);if(!nt[0])return!1;const st={type:"link",title:null,url:tt+e+nt[0],children:[{type:"text",value:e+nt[0]}]};return nt[1]?[st,{type:"text",value:nt[1]}]:st}function findEmail(a,e,o,d){return!previous(d,!0)||/[-\d_]$/.test(o)?!1:{type:"link",title:null,url:"mailto:"+e+"@"+o,children:[{type:"text",value:e+"@"+o}]}}function isCorrectDomain(a){const e=a.split(".");return!(e.length<2||e[e.length-1]&&(/_/.test(e[e.length-1])||!/[a-zA-Z\d]/.test(e[e.length-1]))||e[e.length-2]&&(/_/.test(e[e.length-2])||!/[a-zA-Z\d]/.test(e[e.length-2])))}function splitUrl(a){const e=/[!"&'),.:;<>?\]}]+$/.exec(a);if(!e)return[a,void 0];a=a.slice(0,e.index);let o=e[0],d=o.indexOf(")");const b=ccount(a,"(");let tt=ccount(a,")");for(;d!==-1&&b>tt;)a+=o.slice(0,d+1),o=o.slice(d+1),d=o.indexOf(")"),tt++;return[a,o]}function previous(a,e){const o=a.input.charCodeAt(a.index-1);return(a.index===0||unicodeWhitespace(o)||unicodePunctuation(o))&&(!e||o!==47)}footnoteReference.peek=footnoteReferencePeek;function gfmFootnoteFromMarkdown(){return{enter:{gfmFootnoteDefinition:enterFootnoteDefinition,gfmFootnoteDefinitionLabelString:enterFootnoteDefinitionLabelString,gfmFootnoteCall:enterFootnoteCall,gfmFootnoteCallString:enterFootnoteCallString},exit:{gfmFootnoteDefinition:exitFootnoteDefinition,gfmFootnoteDefinitionLabelString:exitFootnoteDefinitionLabelString,gfmFootnoteCall:exitFootnoteCall,gfmFootnoteCallString:exitFootnoteCallString}}}function gfmFootnoteToMarkdown(){return{unsafe:[{character:"[",inConstruct:["phrasing","label","reference"]}],handlers:{footnoteDefinition,footnoteReference}}}function enterFootnoteDefinition(a){this.enter({type:"footnoteDefinition",identifier:"",label:"",children:[]},a)}function enterFootnoteDefinitionLabelString(){this.buffer()}function exitFootnoteDefinitionLabelString(a){const e=this.resume(),o=this.stack[this.stack.length-1];o.type,o.label=e,o.identifier=normalizeIdentifier(this.sliceSerialize(a)).toLowerCase()}function exitFootnoteDefinition(a){this.exit(a)}function enterFootnoteCall(a){this.enter({type:"footnoteReference",identifier:"",label:""},a)}function enterFootnoteCallString(){this.buffer()}function exitFootnoteCallString(a){const e=this.resume(),o=this.stack[this.stack.length-1];o.type,o.label=e,o.identifier=normalizeIdentifier(this.sliceSerialize(a)).toLowerCase()}function exitFootnoteCall(a){this.exit(a)}function footnoteReference(a,e,o,d){const b=o.createTracker(d);let tt=b.move("[^");const nt=o.enter("footnoteReference"),st=o.enter("reference");return tt+=b.move(o.safe(o.associationId(a),{...b.current(),before:tt,after:"]"})),st(),nt(),tt+=b.move("]"),tt}function footnoteReferencePeek(){return"["}function footnoteDefinition(a,e,o,d){const b=o.createTracker(d);let tt=b.move("[^");const nt=o.enter("footnoteDefinition"),st=o.enter("label");return tt+=b.move(o.safe(o.associationId(a),{...b.current(),before:tt,after:"]"})),st(),tt+=b.move("]:"+(a.children&&a.children.length>0?" ":"")),b.shift(4),tt+=b.move(o.indentLines(o.containerFlow(a,b.current()),map$2)),nt(),tt}function map$2(a,e,o){return e===0?a:(o?"":"    ")+a}const constructsWithoutStrikethrough=["autolink","destinationLiteral","destinationRaw","reference","titleQuote","titleApostrophe"];handleDelete.peek=peekDelete;function gfmStrikethroughFromMarkdown(){return{canContainEols:["delete"],enter:{strikethrough:enterStrikethrough},exit:{strikethrough:exitStrikethrough}}}function gfmStrikethroughToMarkdown(){return{unsafe:[{character:"~",inConstruct:"phrasing",notInConstruct:constructsWithoutStrikethrough}],handlers:{delete:handleDelete}}}function enterStrikethrough(a){this.enter({type:"delete",children:[]},a)}function exitStrikethrough(a){this.exit(a)}function handleDelete(a,e,o,d){const b=o.createTracker(d),tt=o.enter("strikethrough");let nt=b.move("~~");return nt+=o.containerPhrasing(a,{...b.current(),before:nt,after:"~"}),nt+=b.move("~~"),tt(),nt}function peekDelete(){return"~"}function markdownTable(a,e={}){const o=(e.align||[]).concat(),d=e.stringLength||defaultStringLength,b=[],tt=[],nt=[],st=[];let ot=0,ht=-1;for(;++ht<a.length;){const Tt=[],At=[];let bt=-1;for(a[ht].length>ot&&(ot=a[ht].length);++bt<a[ht].length;){const vt=serialize(a[ht][bt]);if(e.alignDelimiters!==!1){const xt=d(vt);At[bt]=xt,(st[bt]===void 0||xt>st[bt])&&(st[bt]=xt)}Tt.push(vt)}tt[ht]=Tt,nt[ht]=At}let ft=-1;if(typeof o=="object"&&"length"in o)for(;++ft<ot;)b[ft]=toAlignment(o[ft]);else{const Tt=toAlignment(o);for(;++ft<ot;)b[ft]=Tt}ft=-1;const mt=[],gt=[];for(;++ft<ot;){const Tt=b[ft];let At="",bt="";Tt===99?(At=":",bt=":"):Tt===108?At=":":Tt===114&&(bt=":");let vt=e.alignDelimiters===!1?1:Math.max(1,st[ft]-At.length-bt.length);const xt=At+"-".repeat(vt)+bt;e.alignDelimiters!==!1&&(vt=At.length+vt+bt.length,vt>st[ft]&&(st[ft]=vt),gt[ft]=vt),mt[ft]=xt}tt.splice(1,0,mt),nt.splice(1,0,gt),ht=-1;const yt=[];for(;++ht<tt.length;){const Tt=tt[ht],At=nt[ht];ft=-1;const bt=[];for(;++ft<ot;){const vt=Tt[ft]||"";let xt="",St="";if(e.alignDelimiters!==!1){const Ct=st[ft]-(At[ft]||0),Pt=b[ft];Pt===114?xt=" ".repeat(Ct):Pt===99?Ct%2?(xt=" ".repeat(Ct/2+.5),St=" ".repeat(Ct/2-.5)):(xt=" ".repeat(Ct/2),St=xt):St=" ".repeat(Ct)}e.delimiterStart!==!1&&!ft&&bt.push("|"),e.padding!==!1&&!(e.alignDelimiters===!1&&vt==="")&&(e.delimiterStart!==!1||ft)&&bt.push(" "),e.alignDelimiters!==!1&&bt.push(xt),bt.push(vt),e.alignDelimiters!==!1&&bt.push(St),e.padding!==!1&&bt.push(" "),(e.delimiterEnd!==!1||ft!==ot-1)&&bt.push("|")}yt.push(e.delimiterEnd===!1?bt.join("").replace(/ +$/,""):bt.join(""))}return yt.join(`
 `)}function serialize(a){return a==null?"":String(a)}function defaultStringLength(a){return a.length}function toAlignment(a){const e=typeof a=="string"?a.codePointAt(0):0;return e===67||e===99?99:e===76||e===108?108:e===82||e===114?114:0}const own$3={}.hasOwnProperty;function zwitch(a,e){const o=e||{};function d(b,...tt){let nt=d.invalid;const st=d.handlers;if(b&&own$3.call(b,a)){const ot=String(b[a]);nt=own$3.call(st,ot)?st[ot]:d.unknown}if(nt)return nt.call(this,b,...tt)}return d.handlers=o.handlers||{},d.invalid=o.invalid,d.unknown=o.unknown,d}function blockquote(a,e,o,d){const b=o.enter("blockquote"),tt=o.createTracker(d);tt.move("> "),tt.shift(2);const nt=o.indentLines(o.containerFlow(a,tt.current()),map$1);return b(),nt}function map$1(a,e,o){return">"+(o?"":" ")+a}function patternInScope(a,e){return listInScope(a,e.inConstruct,!0)&&!listInScope(a,e.notInConstruct,!1)}function listInScope(a,e,o){if(typeof e=="string"&&(e=[e]),!e||e.length===0)return o;let d=-1;for(;++d<e.length;)if(a.includes(e[d]))return!0;return!1}function hardBreak(a,e,o,d){let b=-1;for(;++b<o.unsafe.length;)if(o.unsafe[b].character===`
 `&&patternInScope(o.stack,o.unsafe[b]))return/[ \t]/.test(d.before)?"":" ";return`\\
@@ -4218,66 +4219,30 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   .empty {
     background-color: ${COLORS.accent};
   }
-`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$2={title:"집에서 쉴 때",tag:"#집 #휴식",content:`
-  1. 집에서 쉴 때는 보통 소파에 편하게 앉아 TV를 시청해요.  
-    *When I relax at home, I usually sit comfortably on the sofa and watch TV.*
-
-  2. 주말에는 침대에서 늦잠을 자며 휴식을 취하는 걸 좋아해요.  
-    *On weekends, I like to rest by sleeping in late in bed.*
-
-  3. 커피를 한 잔 타서 책을 읽으며 시간을 보내곤 해요.  
-    *I often make a cup of coffee and spend time reading a book.*
-
-  4. 집에서 쉴 때 주로 유튜브나 넷플릭스를 보면서 시간을 보내요.  
-    *When I'm at home, I usually spend time watching YouTube or Netflix.*
-
-  5. 집에 있을 때는 음악을 크게 틀고 편하게 누워있어요.  
-    *I like to play music loudly and lie down comfortably when I'm at home.*
-
-  6. 향초를 켜고 조용한 분위기에서 힐링하는 걸 좋아해요.  
-    *I enjoy lighting candles and relaxing in a peaceful atmosphere.*
-
-  7. 혼자 있을 때는 간단한 요리를 해 먹으며 여유를 즐겨요.  
-    *When I'm alone, I enjoy cooking simple meals and taking my time.*
-
-  8. 때로는 그림을 그리거나 글을 쓰며 시간을 보내요.  
-    *Sometimes I spend time drawing or writing.*
-
-  9. 반신욕을 하면서 피로를 풀고, 마음을 정리해요.  
-    *I relax and clear my mind by taking a warm bath.*
-
-  10. 스트레칭을 하면서 몸을 풀고 가벼운 운동을 즐겨요.  
-      *I enjoy doing some stretching and light exercise to relax.*
-
-  11. 집에서 쉴 때는 주로 간단한 집안일을 하면서 시간을 보내요.  
-      *When I'm relaxing at home, I often do some light housework.*
-
-  12. 반려동물과 놀아주면서 스트레스를 해소해요.  
-      *I relieve stress by playing with my pet.*
-
-  13. 취미 활동으로는 퍼즐을 맞추거나 보드게임을 하기도 해요.  
-      *For hobbies, I sometimes do puzzles or play board games.*
-
-  14. 베란다에서 식물을 돌보며 자연을 느끼는 시간을 가져요.  
-      *I spend time on the balcony, taking care of my plants and enjoying nature.*
-
-  15. 영화나 드라마를 몰아보면서 긴 시간을 보내곤 해요.  
-      *I often binge-watch movies or dramas for hours.*
-
-  16. 차분한 음악을 틀어 놓고 명상하며 마음을 편안하게 해요.  
-      *I put on calming music and meditate to relax my mind.*
-
-  17. 사진 정리나 추억을 되새기며 시간을 보내기도 해요.  
-      *Sometimes I organize photos and reminisce about memories.*
-
-  18. 간단한 디저트를 만들어서 먹으면서 행복을 느껴요.  
-      *I feel happy making and enjoying simple desserts.*
-
-  19. 집에서 쉴 때는 보통 아무 것도 안 하고 멍을 때리는 걸 즐겨요.  
-      *When relaxing at home, I enjoy doing nothing and just zoning out.*
-
-  20. 하루 종일 방콕하며, 온전히 나만의 시간을 가져요.  
-      *I stay in all day, fully enjoying my own time.*
+`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$2={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+      1. I like my neighborhood because it's a quiet and convenient place to live.
+      2. I live in an apartment complex near the downtown area.
+      3. Although it's close to downtown, my town is pretty quiet.
+      4. I use public transportation to get around.
+      5. The only neighbor I talk to is Mr.Lee who lives upstairs.
+      6. We run into each other about once a week.
+      7. We usually have a conversation when we both get into the elevator.
+      8. Sometimes they meet up with their friends and chat for a while at a coffee shop or go shopping together.
+      9. She played it for five straight hours, and I couldn't stand it.
+      10. I called the building superintendent and complained about it.
+      11. It is still in good condition.
+      12. My mom put some paintings in the living room.
+      13. When I first moved into my house, everything was brand new.
+      14. First of all, I bought a new refrigerator.
+      15. The old one broke down and made a weird sound.
+      16. The new one is a lot bigger than the old one, so we can put more stuff inside.
+      17. My new bed is really big and takes up a lot of space.
+      18. My apartment is small and cozy.
+      19. I hope I could get a top-floor apartment so that nobody lives above me.
+      20. When it gets really cold in Korea, the water pipes can freeze.
   `},post$1={title:"개요",tag:"#데이터 #명령어 #핵심부품",content:`
         ## 컴퓨터는 0과 1만 이해할 수 있다!
         > 0과 1로 이루어진 데이터와 명령어에 의해 작동
