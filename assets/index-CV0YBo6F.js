@@ -4219,7 +4219,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   .empty {
     background-color: ${COLORS.accent};
   }
-`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$2={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
+`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$4={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
@@ -4243,7 +4243,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       18. My apartment is small and cozy.
       19. I hope I could get a top-floor apartment so that nobody lives above me.
       20. When it gets really cold in Korea, the water pipes can freeze.
-  `},post$1={title:"개요",tag:"#데이터 #명령어 #핵심부품",content:`
+  `},post$3={title:"개요",tag:"#데이터 #명령어 #핵심부품",content:`
         ## 컴퓨터는 0과 1만 이해할 수 있다!
         > 0과 1로 이루어진 데이터와 명령어에 의해 작동
         ### 데이터
@@ -4281,45 +4281,61 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         이것이 취업을 위한 컴퓨터 과학이다 
         with CS 기술 면접을 기반으로 작성한 글입니다.
         \`\`\`
-    `},post={title:"아래첨자",tag:"#데이터 #명령어 #핵심부품",content:`
-        ## 컴퓨터는 0^2^과 1만 이해할 수 있다!
-        > 0과 1로 이루어진 데이터와 명령어에 의해 작동
-        ### 데이터
-        - 문자, 숫자
-        ### 명령어
-        - 종류, 사이클
-        ## 컴퓨터는 기계다!
-        > 부품들의 역할과 상호작용에 대해 알아야 한다
-        ### CPU(중앙처리장치)
-        - 연산 수행(ALU: 산술논리연산장치)
-        - 제어(CU: 제어장치)
-        - 임시 저장장치(register: 레지스터)
-        - 레지스터 값을 통해 연산과정 관찰
-        ### 메모리(기억장치)
-        - 실행 중인 프로그램을 저장(메인 메모리: RAM)
-        - 빠른 메모리 접근을 보조(캐시 메모리)
-        - 주소를 통해 데이터 접근(address: 주소)
-        - 전원이 꺼지면 모두 삭제(volatile: 휘발성)
-        ### 보조기억장치
-        - 보관할 프로그램을 저장
-        - 전원이 꺼져도 정보 저장(non-volatile: 비휘발성)
-        - RAID: 안전하고 안정적으로 장치를 구성하는 기술
-        - CD-ROM, DVD, 하드 디스크 드라이브
-        - 플래시 메모리(SSD, USB 메모리), 플로피 디스크
-        ### 입출력장치
-        - 컴퓨터 외부에서 내부와 정보를 교환하는 장치
-        ### *주변장치: 보조기억장치 + 입출력장치*
-        ### 메인보드
-        - 부품들을 고정하고 연결하는 기판
-        ### 버스
-        - 정보를 주고받는 통로
-        - 시스템 버스: 핵심 부품들을 연결
+    `},post$2={title:"비트와 바이트",tag:"#워드",content:`
+        ## 8비트는 1바이트!
+        - 이전 단위 1000개
+            - kB, MB, GB, TB
+        - 이전 단위 1024개
+            - kiB, MiB, GiB, TiB
+        - 워드
+            > CPU가 한번에 처리할 수 있는 데이터의 크기
+            - 현대 컴퓨터는 32비트 또는 64비트
         
         \`\`\`
         이것이 취업을 위한 컴퓨터 과학이다 
         with CS 기술 면접을 기반으로 작성한 글입니다.
         \`\`\`
-    `},posts=[[post$2],[],[],[post$1,post],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
+    `},post$1={title:"데이터",tag:"#진법 #부동소수점 #유니코드 #base64",content:`
+        ## 2진수는 너무 길다!
+        > 10진수를 2진수, 16진수로
+        - 2진법: 0b~
+        - 16진법: 0x~
+            - MAC 주소, IPv6주소
+        ## 데이터 크기가 한정적!
+        > 부호 - 지수 - 가수 + 바이어스
+        - 부동소수점: 필요에 따라 소수점 위치가 이동
+        - 부호: 0 - 양수, 1 - 음수
+        - 지수: 2^지수^
+        - 가수: 1.XXX~
+        - 바이어스: 2^k-1^ - 1 ( k는 지수의 비트 수 )
+        ## 문자는 인코딩 디코딩
+        > 숫자를 문자집합으로 문자로
+        - 아스키 코드: 패리티 비트 + 7비트 = 2^7^개의 문자표현
+        - KUC-KR: 2바이트 코드로 한글 표현 (0x0000)
+        - 유니코드: 통일된 문자 집합
+            - 가변 길이 인코딩: UTF - 8, 16, 32
+                
+                | 특성                     | **UTF-8**                                    | **UTF-16**                                  | **UTF-32**                                   |
+                |--------------------------|---------------------------------------------|---------------------------------------------|---------------------------------------------|
+                | **인코딩 방식**          | 가변 길이 (1~4바이트)                       | 가변 길이 (2 또는 4바이트)                  | 고정 길이 (4바이트)                          |
+                | **주요 특징**            | ASCII와 완전 호환<br>- 저장 공간 효율적     | BMP(기본 다국어 평면) 문자는 2바이트<br> Supplementary Plane 문자는 4바이트 | 모든 문자를 4바이트로 인코딩<br> 고정 길이로 단순한 처리 |
+                | **바이트 수**            | 1바이트: U+0000 - U+007F<br> 2바이트: U+0080 - U+07FF<br> 3바이트: U+0800 - U+FFFF<br> 4바이트: U+10000 - U+10FFFF | 2바이트: U+0000 - U+FFFF(BMP 문자)<br> 4바이트: U+10000 - U+10FFFF (Surrogate Pair) | 모든 문자는 4바이트 |
+                | **장점**                | 저장 공간 효율적<br> ASCII와 호환<br> 인터넷과 파일 전송에 적합 | 동아시아 언어에 효율적<br> BMP 문자 처리 속도가 빠름 | 고정 길이로 문자 접근 및 인덱싱 간단 |
+                | **단점**                | 가변 길이로 인덱싱 복잡<br> BMP 외 문자는 더 많은 바이트 필요 | 가변 길이로 일부 문자 처리 복잡<br> ASCII 데이터에서 비효율적 | 저장 공간 낭비가 심함<br> 네트워크 전송에 부적합 |
+                | **주요 사용 사례**      | 웹 표준(HTML, JSON, XML 등)<br> 네트워크 데이터 전송<br> 파일 저장 (텍스트 기반) | Windows, Java, .NET 등의 내부 문자열 처리<br> 동아시아 언어 중심 응용 | 고정 길이 처리 시스템<br> 특정 과학 응용 및 내부 처리 |
+                | **ASCII 호환성**         | 완전 호환                                   | 부분 호환                                  | 비호환                                      |
+                | **공간 효율성**         | 높은 효율 (특히 ASCII 문자 기반)             | 중간 효율 (BMP 문자에 적합)                | 낮음 (모든 문자가 4바이트)                  |
+                | **문자 인덱싱**          | 가변 길이로 인해 복잡                       | 가변 길이로 BMP 문자 이외는 복잡           | 고정 길이로 단순                             |
+                | **주요 플랫폼 지원**     | 웹 브라우저, Linux 시스템<br> JSON, XML   | Windows API, Java, .NET                  | 특정 내부 처리 시스템 및 과학 응용         |
+        - base64: 이진 데이터까지 변환
+            - 64진법 6비트
+            - 4개씩 변환
+            - 패딩: 부족한 비트 0 추가
+        \`\`\`
+        이것이 취업을 위한 컴퓨터 과학이다 
+        with CS 기술 면접을 기반으로 작성한 글입니다.
+        \`\`\`
+    `},post={title:"명령어",tag:"#연산 코드 #오퍼랜드",content:"\n        ## 일해라 + 컴퓨터!\n        > 연산코드 + 오퍼랜드\n        - 오퍼랜드: 데이터 저장 위치\n        - 연산코드\n        \n            | **분류**        | **연산 코드**       | **설명**                                                                                              | **예시**                    |\n            |------------------|---------------------|------------------------------------------------------------------------------------------------------|-----------------------------|\n            | **데이터 전송** | `MOV`               | 데이터 복사. 레지스터, 메모리, 즉시값 간의 데이터 이동.                                                | `MOV AX, BX` (AX ← BX)      |\n            |                  | `PUSH` / `POP`     | 스택에 데이터를 저장(`PUSH`)하거나 꺼냄(`POP`).                                                        | `PUSH AX`, `POP BX`         |\n            |                  | `LOAD` / `STORE`   | 메모리에서 레지스터로 데이터 로드(`LOAD`), 레지스터에서 메모리로 저장(`STORE`).                          | `LOAD R1, 0x1000`           |\n            |                  | `LEA`              | 메모리 주소 계산 및 로드.                                                                             | `LEA DX, [BX+SI]`           |\n            | **산술 연산**   | `ADD`               | 두 값을 더함.                                                                                        | `ADD AX, BX` (AX ← AX + BX) |\n            |                  | `SUB`               | 두 값을 뺌.                                                                                          | `SUB AX, BX` (AX ← AX - BX) |\n            |                  | `MUL` / `DIV`      | 곱셈(`MUL`), 나눗셈(`DIV`).                                                                           | `MUL AX`                    |\n            |                  | `INC` / `DEC`      | 값을 1 증가(`INC`), 1 감소(`DEC`).                                                                    | `INC AX`, `DEC BX`          |\n            | **논리 연산**   | `AND`               | 비트 단위로 AND 연산.                                                                                 | `AND AX, BX`                |\n            |                  | `OR`                | 비트 단위로 OR 연산.                                                                                  | `OR AX, BX`                 |\n            |                  | `XOR`               | 비트 단위로 XOR 연산.                                                                                 | `XOR AX, BX`                |\n            |                  | `NOT`               | 비트를 반전.                                                                                         | `NOT AX`                    |\n            |                  | `SHL` / `SHR`      | 비트를 왼쪽으로 이동(`SHL`), 오른쪽으로 이동(`SHR`).                                                   | `SHL AX, 1`                 |\n            | **제어 흐름 변경** | `JMP`               | 무조건적인 분기.                                                                                      | `JMP 0x200`                 |\n            |                  | `JE` / `JNE`       | 조건부 분기: 값이 같으면 점프(`JE`), 값이 다르면 점프(`JNE`).                                          | `JE 0x300`                  |\n            |                  | `CALL` / `RET`     | 서브루틴 호출(`CALL`), 서브루틴에서 복귀(`RET`).                                                       | `CALL FUNC`, `RET`          |\n            |                  | `LOOP`             | 반복 실행: 카운터 레지스터(`CX`) 값이 0이 될 때까지 점프.                                              | `LOOP 0x400`                |\n            |                  | `CMP`              | 두 값을 비교. 조건부 점프와 함께 사용.                                                                 | `CMP AX, BX`                |\n            | **입출력 제어** | `IN`                | 지정된 포트에서 데이터를 읽음.                                                                        | `IN AL, 0x60`               |\n            |                  | `OUT`               | 지정된 포트로 데이터를 출력.                                                                          | `OUT 0x60, AL`              |\n            |                  | `HLT`              | 시스템을 중지하거나 대기 상태로 전환.                                                                  | `HLT`                       |\n            |                  | `NOP`              | 아무 작업도 하지 않음 (대기).                                                                          | `NOP`                       |\n        ## 기계어 몰라 번역해줘!\n        > 어셈블리어로 변역\n        - 비교\n            | **특성/기능**          | **CISC (Complex Instruction Set Computer)**                | **RISC (Reduced Instruction Set Computer)**                |\n            |-----------------------|-----------------------------------------------------------|-----------------------------------------------------------|\n            | **설계 철학**         | 복잡한 명령어를 포함하여 한 번에 많은 작업을 처리.           | 단순하고 적은 수의 명령어를 빠르게 실행.                   |\n            | **명령어 수**         | 수백 개에서 수천 개.                                       | 수십 개에서 백여 개.                                       |\n            | **명령어 구조**       | 다양한 길이의 명령어를 지원.                                | 고정 길이 명령어.                                           |\n            | **명령어 처리 속도**  | 상대적으로 느림(복잡한 디코딩).                             | 매우 빠름(파이프라이닝 최적화).                             |\n            | **주요 사용 사례**    | x86(인텔, AMD), VAX, IBM 메인프레임 등.                    | ARM, MIPS, RISC-V, PowerPC 등.                             |\n            | **데이터 전송**       | `MOV AX, [1000H]` (메모리에서 레지스터로 이동)             | `LW R1, 0(R2)` (메모리에서 레지스터로 이동)               |\n            | **산술 연산**         | `ADD AX, BX` (두 레지스터 덧셈)                            | `ADD R1, R2, R3` (두 레지스터 덧셈)                       |\n            | **메모리 접근**       | `ADD AX, [1000H]` (메모리 값과 덧셈)                        | `LW R1, 0(R2)`<br>`ADD R3, R1, R4` (로드 후 계산)         |\n            | **스택 연산**         | `PUSH AX` (레지스터 값을 스택에 저장)                       | `SW R1, -4(SP)`<br>`ADDI SP, SP, -4` (메모리 저장 후 스택 포인터 조정) |\n            | **조건부 분기**       | `JZ 0x100` (값이 0이면 분기)                              | `BEQ R1, R2, 0x100` (값이 같으면 분기)                    |\n            | **함수 호출**         | `CALL 0x200` (서브루틴 호출)                              | `JAL 0x200` (서브루틴 호출)                               |\n            | **비트 연산**         | `AND AX, BX` (두 값의 비트 AND)                            | `AND R1, R2, R3` (두 값의 비트 AND)                       |\n        ## 읽고 읽고 실행!\n        > 명령어를 읽고 데이터를 읽고 실행\n        - 인출 사이클: 명령어를 CPU로\n        - 실행 사이클: CPU가 명령 실행\n        - 간접 사이클: 데이터를 CPU로\n        - 데이터가 필요없다면 간접 스킵\n        ```\n        이것이 취업을 위한 컴퓨터 과학이다 \n        with CS 기술 면접을 기반으로 작성한 글입니다.\n        ```\n    "},posts=[[post$4],[],[],[post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
   width: 100%;
   max-width: 720px;
   height: calc(100vh - 84px);
