@@ -4,9 +4,6 @@ const post: Post = {
   title: `241112`,
   tag: `#집 #가구 #가전 #영화`,
   content: `
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
       1. In my house, there is a huge sofa in the middle of the living room.
       2. When I'm at home, I spend most of my time on the sofa.
       3. In my room. I have a desk a bed and a closet.
@@ -27,6 +24,9 @@ const post: Post = {
       18. I checked from the internet to see what's recently been released.
       19. I wanted to see the film because I had read quite good compliments on the movie.
       20. The actress, Natalie Portman also won the Best Actress Oscar.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
   `,
 };
 

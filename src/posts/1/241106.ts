@@ -4,9 +4,6 @@ const post: Post = {
   title: `241119`,
   tag: `#집 #동네 #이웃 #가구 #가전`,
   content: `
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
       1. I like my neighborhood because it's a quiet and convenient place to live.
       2. I live in an apartment complex near the downtown area.
       3. Although it's close to downtown, my town is pretty quiet.
@@ -27,6 +24,9 @@ const post: Post = {
       18. My apartment is small and cozy.
       19. I hope I could get a top-floor apartment so that nobody lives above me.
       20. When it gets really cold in Korea, the water pipes can freeze.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
   `,
 };
 
