@@ -4219,10 +4219,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   .empty {
     background-color: ${COLORS.accent};
   }
-`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$d={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
+`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$e={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
       1. I like my neighborhood because it's a quiet and convenient place to live.
       2. I live in an apartment complex near the downtown area.
       3. Although it's close to downtown, my town is pretty quiet.
@@ -4243,10 +4240,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       18. My apartment is small and cozy.
       19. I hope I could get a top-floor apartment so that nobody lives above me.
       20. When it gets really cold in Korea, the water pipes can freeze.
-  `},post$c={title:"241112",tag:"#집 #가구 #가전 #영화",content:`
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
+  `},post$d={title:"241112",tag:"#집 #가구 #가전 #영화",content:`
       1. In my house, there is a huge sofa in the middle of the living room.
       2. When I'm at home, I spend most of my time on the sofa.
       3. In my room. I have a desk a bed and a closet.
@@ -4267,6 +4264,33 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       18. I checked from the internet to see what's recently been released.
       19. I wanted to see the film because I had read quite good compliments on the movie.
       20. The actress, Natalie Portman also won the Best Actress Oscar.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$c={title:"241112",tag:"#집 #가구 #가전 #영화",content:`
+      1. My best friend, Kim and I have the same taste in music.
+      2. We usually go for a drink and share our feelings about the concert.
+      3. I like to attend the concerts of my favorite singers.
+      4. I like musicians who play hip hop and dance music.
+      5. I may not be able to see them in person ever again in my life.
+      6. I often go to classic concerts like symphony or piano recitals.
+      7. Since then, I've become a huge fan of live concerts.
+      8. At the concert hall, we saw many Korean musicians came to see Lady Gaga.
+      9. She was actually really good at singing and the concert was amazing.
+      10. Kim and I were so impressed, and I definitely want to go see her again.
+      11. When you walk through the gate, you can see a lot of trees and lawn.
+      12. There is a small pond inside the park.
+      13. When I go to the park, I usually take a walk first.
+      14. It takes about 15 minutes to walk around the whole park, So, I walk a few laps around the park.
+      15. We have a nice conversation while walking back home.
+      16. I lie down on the grass and read a book.
+      17. I want to jog there but end up just walking.
+      18. We found a nice spot to sit and put a blanket on the grass.
+      19. We spent a whole afternoon in the park.
+      20. When I visited the park that I usually go to, I actually ran into my ex-girlfriend.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
   `},post$b={title:"개요",tag:"#데이터 #명령어 #핵심부품",content:`
         ## 컴퓨터는 0과 1만 이해할 수 있다!
         > 0과 1로 이루어진 데이터와 명령어에 의해 작동
@@ -4575,7 +4599,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},posts=[[post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
+    `},posts=[[post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
   width: 100%;
   max-width: 720px;
   height: calc(100vh - 84px);
