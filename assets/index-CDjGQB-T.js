@@ -4219,7 +4219,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   .empty {
     background-color: ${COLORS.accent};
   }
-`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$5={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
+`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$d={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
@@ -4243,7 +4243,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       18. My apartment is small and cozy.
       19. I hope I could get a top-floor apartment so that nobody lives above me.
       20. When it gets really cold in Korea, the water pipes can freeze.
-  `},post$4={title:"241112",tag:"#집 #가구 #가전 #영화",content:`
+  `},post$c={title:"241112",tag:"#집 #가구 #가전 #영화",content:`
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
@@ -4267,7 +4267,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       18. I checked from the internet to see what's recently been released.
       19. I wanted to see the film because I had read quite good compliments on the movie.
       20. The actress, Natalie Portman also won the Best Actress Oscar.
-  `},post$3={title:"개요",tag:"#데이터 #명령어 #핵심부품",content:`
+  `},post$b={title:"개요",tag:"#데이터 #명령어 #핵심부품",content:`
         ## 컴퓨터는 0과 1만 이해할 수 있다!
         > 0과 1로 이루어진 데이터와 명령어에 의해 작동
         ### 데이터
@@ -4305,7 +4305,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         이것이 취업을 위한 컴퓨터 과학이다 
         with CS 기술 면접을 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$2={title:"비트와 바이트",tag:"#워드",content:`
+    `},post$a={title:"비트와 바이트",tag:"#워드",content:`
         ## 8비트는 1바이트!
         - 이전 단위 1000개
             - kB, MB, GB, TB
@@ -4319,7 +4319,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         이것이 취업을 위한 컴퓨터 과학이다 
         with CS 기술 면접을 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$1={title:"데이터",tag:"#진법 #부동소수점 #유니코드 #base64",content:`
+    `},post$9={title:"데이터",tag:"#진법 #부동소수점 #유니코드 #base64",content:`
         ## 2진수는 너무 길다!
         > 10진수를 2진수, 16진수로
         - 2진법: 0b~
@@ -4359,7 +4359,223 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         이것이 취업을 위한 컴퓨터 과학이다 
         with CS 기술 면접을 기반으로 작성한 글입니다.
         \`\`\`
-    `},post={title:"명령어",tag:"#연산 코드 #오퍼랜드",content:"\n        ## 일해라 + 컴퓨터!\n        > 연산코드 + 오퍼랜드\n        - 오퍼랜드: 데이터 저장 위치\n        - 연산코드\n        \n            | **분류**        | **연산 코드**       | **설명**                                                                                              | **예시**                    |\n            |------------------|---------------------|------------------------------------------------------------------------------------------------------|-----------------------------|\n            | **데이터 전송** | `MOV`               | 데이터 복사. 레지스터, 메모리, 즉시값 간의 데이터 이동.                                                | `MOV AX, BX` (AX ← BX)      |\n            |                  | `PUSH` / `POP`     | 스택에 데이터를 저장(`PUSH`)하거나 꺼냄(`POP`).                                                        | `PUSH AX`, `POP BX`         |\n            |                  | `LOAD` / `STORE`   | 메모리에서 레지스터로 데이터 로드(`LOAD`), 레지스터에서 메모리로 저장(`STORE`).                          | `LOAD R1, 0x1000`           |\n            |                  | `LEA`              | 메모리 주소 계산 및 로드.                                                                             | `LEA DX, [BX+SI]`           |\n            | **산술 연산**   | `ADD`               | 두 값을 더함.                                                                                        | `ADD AX, BX` (AX ← AX + BX) |\n            |                  | `SUB`               | 두 값을 뺌.                                                                                          | `SUB AX, BX` (AX ← AX - BX) |\n            |                  | `MUL` / `DIV`      | 곱셈(`MUL`), 나눗셈(`DIV`).                                                                           | `MUL AX`                    |\n            |                  | `INC` / `DEC`      | 값을 1 증가(`INC`), 1 감소(`DEC`).                                                                    | `INC AX`, `DEC BX`          |\n            | **논리 연산**   | `AND`               | 비트 단위로 AND 연산.                                                                                 | `AND AX, BX`                |\n            |                  | `OR`                | 비트 단위로 OR 연산.                                                                                  | `OR AX, BX`                 |\n            |                  | `XOR`               | 비트 단위로 XOR 연산.                                                                                 | `XOR AX, BX`                |\n            |                  | `NOT`               | 비트를 반전.                                                                                         | `NOT AX`                    |\n            |                  | `SHL` / `SHR`      | 비트를 왼쪽으로 이동(`SHL`), 오른쪽으로 이동(`SHR`).                                                   | `SHL AX, 1`                 |\n            | **제어 흐름 변경** | `JMP`               | 무조건적인 분기.                                                                                      | `JMP 0x200`                 |\n            |                  | `JE` / `JNE`       | 조건부 분기: 값이 같으면 점프(`JE`), 값이 다르면 점프(`JNE`).                                          | `JE 0x300`                  |\n            |                  | `CALL` / `RET`     | 서브루틴 호출(`CALL`), 서브루틴에서 복귀(`RET`).                                                       | `CALL FUNC`, `RET`          |\n            |                  | `LOOP`             | 반복 실행: 카운터 레지스터(`CX`) 값이 0이 될 때까지 점프.                                              | `LOOP 0x400`                |\n            |                  | `CMP`              | 두 값을 비교. 조건부 점프와 함께 사용.                                                                 | `CMP AX, BX`                |\n            | **입출력 제어** | `IN`                | 지정된 포트에서 데이터를 읽음.                                                                        | `IN AL, 0x60`               |\n            |                  | `OUT`               | 지정된 포트로 데이터를 출력.                                                                          | `OUT 0x60, AL`              |\n            |                  | `HLT`              | 시스템을 중지하거나 대기 상태로 전환.                                                                  | `HLT`                       |\n            |                  | `NOP`              | 아무 작업도 하지 않음 (대기).                                                                          | `NOP`                       |\n        ## 기계어 몰라 번역해줘!\n        > 어셈블리어로 변역\n        - 비교\n            | **특성/기능**          | **CISC (Complex Instruction Set Computer)**                | **RISC (Reduced Instruction Set Computer)**                |\n            |-----------------------|-----------------------------------------------------------|-----------------------------------------------------------|\n            | **설계 철학**         | 복잡한 명령어를 포함하여 한 번에 많은 작업을 처리.           | 단순하고 적은 수의 명령어를 빠르게 실행.                   |\n            | **명령어 수**         | 수백 개에서 수천 개.                                       | 수십 개에서 백여 개.                                       |\n            | **명령어 구조**       | 다양한 길이의 명령어를 지원.                                | 고정 길이 명령어.                                           |\n            | **명령어 처리 속도**  | 상대적으로 느림(복잡한 디코딩).                             | 매우 빠름(파이프라이닝 최적화).                             |\n            | **주요 사용 사례**    | x86(인텔, AMD), VAX, IBM 메인프레임 등.                    | ARM, MIPS, RISC-V, PowerPC 등.                             |\n            | **데이터 전송**       | `MOV AX, [1000H]` (메모리에서 레지스터로 이동)             | `LW R1, 0(R2)` (메모리에서 레지스터로 이동)               |\n            | **산술 연산**         | `ADD AX, BX` (두 레지스터 덧셈)                            | `ADD R1, R2, R3` (두 레지스터 덧셈)                       |\n            | **메모리 접근**       | `ADD AX, [1000H]` (메모리 값과 덧셈)                        | `LW R1, 0(R2)`<br>`ADD R3, R1, R4` (로드 후 계산)         |\n            | **스택 연산**         | `PUSH AX` (레지스터 값을 스택에 저장)                       | `SW R1, -4(SP)`<br>`ADDI SP, SP, -4` (메모리 저장 후 스택 포인터 조정) |\n            | **조건부 분기**       | `JZ 0x100` (값이 0이면 분기)                              | `BEQ R1, R2, 0x100` (값이 같으면 분기)                    |\n            | **함수 호출**         | `CALL 0x200` (서브루틴 호출)                              | `JAL 0x200` (서브루틴 호출)                               |\n            | **비트 연산**         | `AND AX, BX` (두 값의 비트 AND)                            | `AND R1, R2, R3` (두 값의 비트 AND)                       |\n        ## 읽고 읽고 실행!\n        > 명령어를 읽고 데이터를 읽고 실행\n        - 인출 사이클: 명령어를 CPU로\n        - 실행 사이클: CPU가 명령 실행\n        - 간접 사이클: 데이터를 CPU로\n        - 데이터가 필요없다면 간접 스킵\n        ```\n        이것이 취업을 위한 컴퓨터 과학이다 \n        with CS 기술 면접을 기반으로 작성한 글입니다.\n        ```\n    "},posts=[[post$5,post$4],[],[],[post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
+    `},post$8={title:"명령어",tag:"#연산 코드 #오퍼랜드",content:"\n        ## 일해라 + 컴퓨터!\n        > 연산코드 + 오퍼랜드\n        - 오퍼랜드: 데이터 저장 위치\n        - 연산코드\n        \n            | **분류**        | **연산 코드**       | **설명**                                                                                              | **예시**                    |\n            |------------------|---------------------|------------------------------------------------------------------------------------------------------|-----------------------------|\n            | **데이터 전송** | `MOV`               | 데이터 복사. 레지스터, 메모리, 즉시값 간의 데이터 이동.                                                | `MOV AX, BX` (AX ← BX)      |\n            |                  | `PUSH` / `POP`     | 스택에 데이터를 저장(`PUSH`)하거나 꺼냄(`POP`).                                                        | `PUSH AX`, `POP BX`         |\n            |                  | `LOAD` / `STORE`   | 메모리에서 레지스터로 데이터 로드(`LOAD`), 레지스터에서 메모리로 저장(`STORE`).                          | `LOAD R1, 0x1000`           |\n            |                  | `LEA`              | 메모리 주소 계산 및 로드.                                                                             | `LEA DX, [BX+SI]`           |\n            | **산술 연산**   | `ADD`               | 두 값을 더함.                                                                                        | `ADD AX, BX` (AX ← AX + BX) |\n            |                  | `SUB`               | 두 값을 뺌.                                                                                          | `SUB AX, BX` (AX ← AX - BX) |\n            |                  | `MUL` / `DIV`      | 곱셈(`MUL`), 나눗셈(`DIV`).                                                                           | `MUL AX`                    |\n            |                  | `INC` / `DEC`      | 값을 1 증가(`INC`), 1 감소(`DEC`).                                                                    | `INC AX`, `DEC BX`          |\n            | **논리 연산**   | `AND`               | 비트 단위로 AND 연산.                                                                                 | `AND AX, BX`                |\n            |                  | `OR`                | 비트 단위로 OR 연산.                                                                                  | `OR AX, BX`                 |\n            |                  | `XOR`               | 비트 단위로 XOR 연산.                                                                                 | `XOR AX, BX`                |\n            |                  | `NOT`               | 비트를 반전.                                                                                         | `NOT AX`                    |\n            |                  | `SHL` / `SHR`      | 비트를 왼쪽으로 이동(`SHL`), 오른쪽으로 이동(`SHR`).                                                   | `SHL AX, 1`                 |\n            | **제어 흐름 변경** | `JMP`               | 무조건적인 분기.                                                                                      | `JMP 0x200`                 |\n            |                  | `JE` / `JNE`       | 조건부 분기: 값이 같으면 점프(`JE`), 값이 다르면 점프(`JNE`).                                          | `JE 0x300`                  |\n            |                  | `CALL` / `RET`     | 서브루틴 호출(`CALL`), 서브루틴에서 복귀(`RET`).                                                       | `CALL FUNC`, `RET`          |\n            |                  | `LOOP`             | 반복 실행: 카운터 레지스터(`CX`) 값이 0이 될 때까지 점프.                                              | `LOOP 0x400`                |\n            |                  | `CMP`              | 두 값을 비교. 조건부 점프와 함께 사용.                                                                 | `CMP AX, BX`                |\n            | **입출력 제어** | `IN`                | 지정된 포트에서 데이터를 읽음.                                                                        | `IN AL, 0x60`               |\n            |                  | `OUT`               | 지정된 포트로 데이터를 출력.                                                                          | `OUT 0x60, AL`              |\n            |                  | `HLT`              | 시스템을 중지하거나 대기 상태로 전환.                                                                  | `HLT`                       |\n            |                  | `NOP`              | 아무 작업도 하지 않음 (대기).                                                                          | `NOP`                       |\n        ## 기계어 몰라 번역해줘!\n        > 어셈블리어로 변역\n        - 비교\n            | **특성/기능**          | **CISC (Complex Instruction Set Computer)**                | **RISC (Reduced Instruction Set Computer)**                |\n            |-----------------------|-----------------------------------------------------------|-----------------------------------------------------------|\n            | **설계 철학**         | 복잡한 명령어를 포함하여 한 번에 많은 작업을 처리.           | 단순하고 적은 수의 명령어를 빠르게 실행.                   |\n            | **명령어 수**         | 수백 개에서 수천 개.                                       | 수십 개에서 백여 개.                                       |\n            | **명령어 구조**       | 다양한 길이의 명령어를 지원.                                | 고정 길이 명령어.                                           |\n            | **명령어 처리 속도**  | 상대적으로 느림(복잡한 디코딩).                             | 매우 빠름(파이프라이닝 최적화).                             |\n            | **주요 사용 사례**    | x86(인텔, AMD), VAX, IBM 메인프레임 등.                    | ARM, MIPS, RISC-V, PowerPC 등.                             |\n            | **데이터 전송**       | `MOV AX, [1000H]` (메모리에서 레지스터로 이동)             | `LW R1, 0(R2)` (메모리에서 레지스터로 이동)               |\n            | **산술 연산**         | `ADD AX, BX` (두 레지스터 덧셈)                            | `ADD R1, R2, R3` (두 레지스터 덧셈)                       |\n            | **메모리 접근**       | `ADD AX, [1000H]` (메모리 값과 덧셈)                        | `LW R1, 0(R2)`<br>`ADD R3, R1, R4` (로드 후 계산)         |\n            | **스택 연산**         | `PUSH AX` (레지스터 값을 스택에 저장)                       | `SW R1, -4(SP)`<br>`ADDI SP, SP, -4` (메모리 저장 후 스택 포인터 조정) |\n            | **조건부 분기**       | `JZ 0x100` (값이 0이면 분기)                              | `BEQ R1, R2, 0x100` (값이 같으면 분기)                    |\n            | **함수 호출**         | `CALL 0x200` (서브루틴 호출)                              | `JAL 0x200` (서브루틴 호출)                               |\n            | **비트 연산**         | `AND AX, BX` (두 값의 비트 AND)                            | `AND R1, R2, R3` (두 값의 비트 AND)                       |\n        ## 읽고 읽고 실행!\n        > 명령어를 읽고 데이터를 읽고 실행\n        - 인출 사이클: 명령어를 CPU로\n        - 실행 사이클: CPU가 명령 실행\n        - 간접 사이클: 데이터를 CPU로\n        - 데이터가 필요없다면 간접 스킵\n        ```\n        이것이 취업을 위한 컴퓨터 과학이다 \n        with CS 기술 면접을 기반으로 작성한 글입니다.\n        ```\n    "},post$7={title:"플랫폼",tag:"#기능분석 #성능분석",content:`
+        ## 애플리케이션 구동에 필요한 SW 환경!
+        > 플랫폼 내에서는 상호 호환이 가능한 결합체
+        - 유형: 싱글, 투, 멀티
+        - 기능: 비용 감소, 생산성 향상, 네트워크 효과
+        - 기능 분석 절차
+            1. 현행 플랫폼 자료 수집
+            2. 수집 자료 분석
+            3. 결과 산출물 작성
+        - 성능 특성 분석
+            - 기법: 사용자 인터뷰, 성능 테스트, 산출물 점검
+            - 항목: 경과 시간, 사용률, 응답시간, 가용성
+        
+        \`\`\`
+        수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
+        \`\`\`
+    `},post$6={title:"운영체제",tag:"#시스템 분석 #종류",content:`
+        ## 컴퓨터를 더 쉽게 사용하기 위한 SW!
+        > 하드웨어 및 소프트웨어 자원을 효율적으로 관리하며 공통된 기능 제공
+        - 현행 시스템 분석
+            - 품질: 신뢰도, 성능
+            - 지원: 기술 지원, 주변 기기, 구축 비용
+        - 종류: 윈도즈, 유닉스, 리눅스, 안드로이드, ios
+        
+        \`\`\`
+        수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
+        \`\`\`
+    `},post$5={title:"네트워크",tag:"#데이터 #방식 #망 #장비 #시스템",content:`
+        ## 서로 데이터를 교환하는 기술!
+        > 데이터 링크는 유무선 매체로 성립
+        - 현행 시스템 분석
+            - 네트워크 구성도: 서버 위치, 연결 방식
+            - 백본망: 각 LAN, 부분망 간에 정보 교환 망
+            - 라우터: 3계층 데이터 패킷을 경로를 지정해 전달하는 장비
+            - 스위치: 2계층 장비, 출발지에서 MAC 주소 기반으로 목적지로 데이터 전달하는 장비
+            - 게이트웨이: 다른 통신망, 프로토콜을 사용하는 네트워크 간의 통신을 가능하게 하는 장비
+            - 방화벽: 내외부 네트워크의 영향을 차단하기 위한 보안 시스템
+        
+        \`\`\`
+        수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
+        \`\`\`
+    `},post$4={title:"DBMS",tag:"#기능 #분석",content:`
+        ## 데이터 집합, 저장, 관리 제공!
+        > 데이터베이스 기능 제공하는 응용 프로그램
+        - 기능
+            - 중복제어
+            - 접근 통제
+            - 인터페이스 제공
+            - 관계 표현
+            - 샤딩/파티셔닝
+            - 무결성 제약조건
+            - 백업 및 회복
+        - 현행 시스템 분석
+            - 성능: 가용성, 성능, 상호 호환성
+            - 지원: 기술 지원, 구축 비용
+        
+        \`\`\`
+        수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
+        \`\`\`
+    `},post$3={title:"비즈니스 융합",tag:"#유형 #절차",content:`
+        ## 혁신을 위한 기업 활동!
+        > 새로운 비즈니스 모델로 범위 확대
+        - 유형
+            - 고객 가치(Why)
+            - 시장 유통(Whom)
+            - 가치 제안(What)
+            - 공급 역량(Who)
+            - 생산 방식(How)
+        - 절차
+            1. 기업전략 분석
+            2. 영역 및 방향 설정
+            3. 포트폴리오 선정
+            4. 융합모델 설계/평가
+            5. 비즈니스 융합 실행/개선
+        
+        \`\`\`
+        수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
+        \`\`\`
+    `},post$2={title:"요구분석",tag:"#특징 #절차 #기술 #모델링 기법",content:`
+        ## 사용자의 요구를 목표!
+        > 모호한 부분 거르기, 방식 정하기
+        - 특징: 요구 이해, 문서화, 소단위 명세서, 도메인 분석
+        - 절차
+            1. 요구사항 분류
+            2. 개념 모델링 생성 및 분석
+            3. 요구사항 할당
+            4. 요구사항 협상
+            5. 정형 분석
+        - 기술
+            - 청취
+            - 질문
+            - 분석
+            - 중재
+            - 관찰
+            - 작성
+            - 조직 
+            - 모델 작성
+        - 모델링 기법
+            - 데이터 흐름도
+                > 데이터가 변환되는 모습
+                - 특징: 구조적 분석 기법, 시간 흐름을 명확히 표현할 수 없음
+                - 구성요소: 처리기( ◦ ), 데이터 흐름( → ), 데이터 저장소( = ), 단말( □ )
+            - 자료 사전
+                > 자료 용어를 문서로 명확히 하기 위함
+                - 기호: 정의( = ), 연결( + ), 생략( ( ) ), 반복( { } ), 선택( [ ] ), 설명( ** )
+                - 원칙
+                    - 자료의 의미 기술
+                    - 자료 구성항목의 기술
+                    - 동의어 규정 준수
+                    - 자료 정의의 중복 제거
+        요구 분석 어려운 이유
+            - 사용자간 이해 차이
+            - 요구사항 모호
+            - 요구사항 변경
+            - 예외 처리
+         
+        \`\`\`
+        수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
+        \`\`\`
+    `},post$1={title:"UML",tag:"#다이어그램 #관계 #스테레오 타입",content:`
+        ## 객체 지향 SW 개발 표준화 범용 모델링 언어!
+        > 명세화, 시각화, 문서화, 모델링 기술, 방법론
+        - 특징: 가시화, 구축, 명세화, 문서화
+        - 구성요소: 사물, 관계, 다이어그램
+        - 다이어그램
+            - 구조적 다이어그램/정적 다이어그램
+                : 클래스, 객체, 컴포넌트, 배치, 복합체 구조, 패키지
+                - 클래스 다이어그램
+                    > 클래스와 클래스 속성 사이의 관계 표현
+                    - 구성요소: 클래스 이름, 속성, 연산, 접근 제어자( -, +, #, ~ )
+            - 행위적 다이어그램/동적 다이어그램
+                : 유스케이스, 시퀸스, 커뮤니케이션, 상태, 활동, 타이밍
+                - 유스케이스 다이어그램
+                    > 기능과 외부 요소를 사용자의 관점에서 표현
+                    - 구성요소: 유스케이스, 액터, 시스템
+                    - 관계: 연관, 포함, 확장, 일반화
+                - 시퀸스 다이어그램
+                    > 객체 간 상호 작용을 메시지 흐름으로 표현
+                    - 구성요소: 객체, 생명선, 실행, 메시지, 회귀 메시지
+        - 관계: 사물과 사물 사이의 연관성 표현
+            - 연관
+            - 의존
+            - 일반화
+            - 실체화
+            - 포함
+            - 집합
+        - 스테레오 타입
+            > 기본 요소 외 확장 메커니즘
+            - 길러멧: << >>
+            - 유형
+                - <<include>>
+                - <<extend>>
+                - <<interface>>
+                - <<entity>>
+                - <<boundary>>
+                - <<control>>
+         
+        \`\`\`
+        수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
+        \`\`\`
+    `},post={title:"에자일",tag:"#특징 #유형",content:`
+        ## 개발과 함께 즉시 피드백!
+        > 잦은 배포, 변화에 신속한 대응
+        - 특징: 기능 중심, 개인과 소통, 짧은 계획, 실행에 가치, 피드백
+        - 선언문
+            - 공정과 도구보다 개인과 상호 작용
+            - 계획을 따르기보다 변화에 대응하기
+            - 포괄적인 문서보다 동작하는 소프트웨어
+            - 계약 협상보다 고객과의 협력
+        - 유형
+            - XP
+                > 의사소통 개선, 즉각적 피드백
+                - 가치: 용기, 단순성, 의사소통, 피드백, 존중
+                - 기본원리
+                    - 짝 프로그래밍
+                    - 공동 코드 소유
+                    - 지속적인 통합
+                    - 계획 세우기
+                    - 작은 릴리즈
+                    - 메타포어
+                    - 간단한 디자인
+                    - 테스트 기반 개발
+                    - 리팩토링
+                    - 40시간 작업
+                    - 고객 상주
+                    - 코드 표준
+            - 스크럼
+                > 매일 정해진 시간, 장소에서 짧은 시간의 개발
+                - 용어
+                    - 제품 책임자
+                    - 제품 백로그
+                    - 스프린트
+                    - 스크럼 미팅
+                    - 스크럼 마스터
+                    - 스프린트 회고
+                    - 번다운 차트
+            - 린
+                > 낭비 요소를 제거, 품질 향상
+                - 원칙
+                    - 낭비제거
+                    - 품질 내재화
+                    - 지식 창출
+                    - 늦은 확정
+                    - 빠른 인도
+                    - 사람 존중
+                    - 전체 최적화
+            - 크리스탈
+                > 사람 중심
+            - ASD
+                > 개발은 혼란, 이에 적응
+            - FDD
+                > 신규 기능 단위로 개발
+         
+        \`\`\`
+        수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
+        \`\`\`
+    `},posts=[[post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
   width: 100%;
   max-width: 720px;
   height: calc(100vh - 84px);
