@@ -4219,7 +4219,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   .empty {
     background-color: ${COLORS.accent};
   }
-`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$e={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
+`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$f={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
       1. I like my neighborhood because it's a quiet and convenient place to live.
       2. I live in an apartment complex near the downtown area.
       3. Although it's close to downtown, my town is pretty quiet.
@@ -4243,7 +4243,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$d={title:"241112",tag:"#집 #가구 #가전 #영화",content:`
+  `},post$e={title:"241112",tag:"#집 #가구 #가전 #영화",content:`
       1. In my house, there is a huge sofa in the middle of the living room.
       2. When I'm at home, I spend most of my time on the sofa.
       3. In my room. I have a desk a bed and a closet.
@@ -4267,7 +4267,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$c={title:"241112",tag:"#집 #가구 #가전 #영화",content:`
+  `},post$d={title:"241112",tag:"#집 #가구 #가전 #영화",content:`
       1. My best friend, Kim and I have the same taste in music.
       2. We usually go for a drink and share our feelings about the concert.
       3. I like to attend the concerts of my favorite singers.
@@ -4288,6 +4288,30 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       18. We found a nice spot to sit and put a blanket on the grass.
       19. We spent a whole afternoon in the park.
       20. When I visited the park that I usually go to, I actually ran into my ex-girlfriend.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$c={title:"241112",tag:"#요리 #집 #음악 #콘서트",content:`
+      1. You can make any kind of fried rice by adding whatever you want.
+      2. To make it, you need a bowl of rice and egg and any ingredients you want to put in the rice.
+      3. Stir fry them until they look good.
+      4. When it's ready, put an egg fried Sunnyside on the top and enjoy your dish.
+      5. They're easy to make but the taste isn't guaranteed.
+      6. The first time I cooked was when I made dinner for my family.
+      7. I decided to make seafood pasta for the main dish.
+      8. It was her first time to actually cook besides instant noodles.
+      9. She googled the recipe and bought every ingredient she needed.
+      10. When she got home after the delivery, her brother told her how salty her chocolate was.
+      11. My MP3 player is very small and light, but it contains thousands of songs I like.
+      12. I like dance and Hip-hop music the most because they cheer me up.
+      13. Sometimes I listen to Jazz and classical music before I go to bed.
+      14. My favorite singer and composer is JYP.
+      15. I love his music because he composes great melodies and lyrics.
+      16. I just like the way he thinks and expresses himself.
+      17. Most of his songs are very popular in Korea.
+      18. I was so excited to have a portable music device.
+      19. I always carried it with me, and I was always listening to music.
+      20. I could focus well with some background music.
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
@@ -4599,7 +4623,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},posts=[[post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
+    `},posts=[[post$f,post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
   width: 100%;
   max-width: 720px;
   height: calc(100vh - 84px);
