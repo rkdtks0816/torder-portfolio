@@ -1,7 +1,7 @@
 import { Post } from "../index";
 
 const post: Post = {
-  title: `241112`,
+  title: `241126`,
   tag: `#운동`,
   content: `
       1. I don't need a companion to jog because I just like running and listening to music.

@@ -1,7 +1,7 @@
 import { Post } from "../index";
 
 const post: Post = {
-  title: `241112`,
+  title: `241121`,
   tag: `#집 #가구 #가전 #영화`,
   content: `
       1. My best friend, Kim and I have the same taste in music.

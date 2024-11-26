@@ -1,7 +1,7 @@
 import { Post } from "../index";
 
 const post: Post = {
-  title: `241112`,
+  title: `241125`,
   tag: `#요리 #집 #음악 #콘서트`,
   content: `
       1. You can make any kind of fried rice by adding whatever you want.
