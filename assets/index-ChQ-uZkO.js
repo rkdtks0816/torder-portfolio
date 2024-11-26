@@ -4219,7 +4219,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   .empty {
     background-color: ${COLORS.accent};
   }
-`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$g={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
+`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$h={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
       1. I like my neighborhood because it's a quiet and convenient place to live.
       2. I live in an apartment complex near the downtown area.
       3. Although it's close to downtown, my town is pretty quiet.
@@ -4243,7 +4243,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$f={title:"241112",tag:"#집 #가구 #가전 #영화",content:`
+  `},post$g={title:"241120",tag:"#집 #가구 #가전 #영화",content:`
       1. In my house, there is a huge sofa in the middle of the living room.
       2. When I'm at home, I spend most of my time on the sofa.
       3. In my room. I have a desk a bed and a closet.
@@ -4267,7 +4267,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$e={title:"241112",tag:"#집 #가구 #가전 #영화",content:`
+  `},post$f={title:"241121",tag:"#집 #가구 #가전 #영화",content:`
       1. My best friend, Kim and I have the same taste in music.
       2. We usually go for a drink and share our feelings about the concert.
       3. I like to attend the concerts of my favorite singers.
@@ -4291,7 +4291,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$d={title:"241112",tag:"#요리 #집 #음악 #콘서트",content:`
+  `},post$e={title:"241125",tag:"#요리 #집 #음악 #콘서트",content:`
       1. You can make any kind of fried rice by adding whatever you want.
       2. To make it, you need a bowl of rice and egg and any ingredients you want to put in the rice.
       3. Stir fry them until they look good.
@@ -4315,7 +4315,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$c={title:"241112",tag:"#운동",content:`
+  `},post$d={title:"241126",tag:"#운동",content:`
       1. I don't need a companion to jog because I just like running and listening to music.
       2. I like to run on a treadmill.
       3. When I jog, I need a good pair of running shoes.
@@ -4336,6 +4336,30 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       18. Without anyone spotting you, you might drop the dumbbell.
       19. At the gym, I first do stretch, so I won't get hurt during my workout.
       20. After I'm done with running, I do weight training to build up some muscles.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$c={title:"241127",tag:"#수영 #여행",content:`
+      1. I once won the race in the women's 100m freestyle.
+      2. I know all the strokes, and my favorite stroke is freestyle.
+      3. My mom signed me up for swimming lessons at a sports center.
+      4. He actually was a really good swimmer, and I learned from him a lot.
+      5. I think of him is a great instructor, but I'm still a little scared of him.
+      6. Indoor pools were boring. So, I asked my parents to take me to the beach.
+      7. My mom made me wear a life jacket.
+      8. I got very tired and had no energy to swim, and of course, I was pretty far from the shore.
+      9. I started to drown and I was so scared.
+      10. It was the scariest thing ever. And since then, I don't really like to swim in the ocean.
+      11. It's a used mountain bike with 24 gears.
+      12. I usually go riding on my bike along the bank.
+      13. I always wear my helmet when I ride my bike.
+      14. My dad put two training wheels on the reer wheel so that I would't fall down.
+      15. Bicycles with four wheels don't go as fast as two wheeled ones.
+      16. He held my bike from the back until I could ride by myself.
+      17. He showed me wounds he got from mountain biking.
+      18. I decided to give it a try.
+      19. Suddenly, a dog jumped in front of me, and I had to slam on the brakes.
+      20. I couldn't hear his owner calling out the dog's name.
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
@@ -4647,7 +4671,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},posts=[[post$g,post$f,post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
+    `},posts=[[post$h,post$g,post$f,post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
   width: 100%;
   max-width: 720px;
   height: calc(100vh - 84px);
