@@ -1,11 +1,15 @@
 import React, { useState } from "react";
-import { posts, Post } from "@/posts";
-import Spiral from "@/features/Spiral";
+import { posts, Post } from "@/projects";
 import Modal from "@/components/Modal";
 import Card from "@/components/Card";
-import { titles } from "./BlogTitles";
+import { Title, titles } from "./ProjectTitles";
+import {
+  ProjectContainer,
+  ProjectImg,
+  ProjectImgContainer,
+} from "./ProjectStyles";
 
-const Blog: React.FC = () => {
+const Project: React.FC = () => {
   const [nowIndex, setNowIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,11 +20,23 @@ const Blog: React.FC = () => {
 
   return (
     <>
-      <Spiral titles={titles} onSquareClick={handleSquareClick} />
+      <ProjectContainer>
+        <ProjectImgContainer>
+          {titles.map((title: Title, index: number) => (
+            <ProjectImg
+              onClick={() => {
+                handleSquareClick(index);
+              }}
+              key={index}
+              $imgUrl={title.url}
+            />
+          ))}
+        </ProjectImgContainer>
+      </ProjectContainer>
       <Modal
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
-        title={titles[nowIndex]}
+        title={titles[nowIndex].name}
       >
         {posts[nowIndex].length === 0 ? (
           <p>아직 게시글이 없습니다.</p>
@@ -34,4 +50,4 @@ const Blog: React.FC = () => {
   );
 };
 
-export default Blog;
+export default Project;

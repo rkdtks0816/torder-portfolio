@@ -10,6 +10,7 @@ import {
   BoardMenus,
   BoardMenu,
 } from "./BoardStyles";
+import Project from "../Project";
 
 const MENU_ITEMS = [
   { type: BOARD_TYPES.intro, label: "소개" },
@@ -39,7 +40,7 @@ const Board: React.FC<{ toggleBoard: () => void }> = ({ toggleBoard }) => {
         </BoardHeader>
         {boardType === BOARD_TYPES.intro && <Intro />}
         {boardType === BOARD_TYPES.blog && <Blog />}
-        {boardType === BOARD_TYPES.project && <div />}
+        {boardType === BOARD_TYPES.project && <Project />}
       </BoardContent>
     </BoardContainer>
   );
