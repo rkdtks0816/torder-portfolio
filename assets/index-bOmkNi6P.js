@@ -4671,7 +4671,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},posts=[[post$h,post$g,post$f,post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
+    `},posts$1=[[post$h,post$g,post$f,post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
   width: 100%;
   max-width: 720px;
   height: calc(100vh - 84px);
@@ -4823,7 +4823,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   width: 100%;
   padding-bottom: 20px;
   border-bottom: 1px dashed ${COLORS.text};
-`,Card=({post:a})=>{const[e,o]=reactExports.useState(!1),d=()=>o(!0),b=()=>o(!1);return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsxs(CardContainer,{onClick:d,children:[jsxRuntimeExports.jsx(Title,{children:a.title}),jsxRuntimeExports.jsx(Tag,{children:a.tag})]}),e&&jsxRuntimeExports.jsx(Modal,{children:jsxRuntimeExports.jsxs(ModalContent,{children:[jsxRuntimeExports.jsx(BackButtonContainer,{children:jsxRuntimeExports.jsx(BackButton,{onClick:b,children:"⫷"})}),jsxRuntimeExports.jsxs(Content,{children:[jsxRuntimeExports.jsxs(ContentHeader,{children:[jsxRuntimeExports.jsx(Title,{children:a.title}),jsxRuntimeExports.jsx(Tag,{children:a.tag})]}),jsxRuntimeExports.jsx(MarkdownRenderer,{content:a.content})]})]})})]})},titles=["영어회화","용어정리","알고리즘","컴퓨터 구조","운영체제","자료구조","네트워크","데이터베이스","컴퓨터 구조","소프트웨어 설계","소프트웨어 개발","데이터베이스 구축","프로그래밍 언어 활용","정보시스템 구축관리"].map((a,e)=>`${e+1}. ${a}`),Blog=()=>{const[a,e]=reactExports.useState(0),[o,d]=reactExports.useState(!1),b=tt=>{e(tt),d(!0)};return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsx(Spiral,{titles,onSquareClick:b}),jsxRuntimeExports.jsx(Modal$1,{isOpen:o,onClose:()=>d(!1),title:titles[a],children:posts[a].length===0?jsxRuntimeExports.jsx("p",{children:"아직 게시글이 없습니다."}):posts[a].map((tt,nt)=>jsxRuntimeExports.jsx(Card,{post:tt},nt))})]})},BoardContainer$1=dt.div`
+`,Card=({post:a})=>{const[e,o]=reactExports.useState(!1),d=()=>o(!0),b=()=>o(!1);return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsxs(CardContainer,{onClick:d,children:[jsxRuntimeExports.jsx(Title,{children:a.title}),jsxRuntimeExports.jsx(Tag,{children:a.tag})]}),e&&jsxRuntimeExports.jsx(Modal,{children:jsxRuntimeExports.jsxs(ModalContent,{children:[jsxRuntimeExports.jsx(BackButtonContainer,{children:jsxRuntimeExports.jsx(BackButton,{onClick:b,children:"⫷"})}),jsxRuntimeExports.jsxs(Content,{children:[jsxRuntimeExports.jsxs(ContentHeader,{children:[jsxRuntimeExports.jsx(Title,{children:a.title}),jsxRuntimeExports.jsx(Tag,{children:a.tag})]}),jsxRuntimeExports.jsx(MarkdownRenderer,{content:a.content})]})]})})]})},titles$1=["영어회화","용어정리","알고리즘","컴퓨터 구조","운영체제","자료구조","네트워크","데이터베이스","컴퓨터 구조","소프트웨어 설계","소프트웨어 개발","데이터베이스 구축","프로그래밍 언어 활용","정보시스템 구축관리"].map((a,e)=>`${e+1}. ${a}`),Blog=()=>{const[a,e]=reactExports.useState(0),[o,d]=reactExports.useState(!1),b=tt=>{e(tt),d(!0)};return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsx(Spiral,{titles:titles$1,onSquareClick:b}),jsxRuntimeExports.jsx(Modal$1,{isOpen:o,onClose:()=>d(!1),title:titles$1[a],children:posts$1[a].length===0?jsxRuntimeExports.jsx("p",{children:"아직 게시글이 없습니다."}):posts$1[a].map((tt,nt)=>jsxRuntimeExports.jsx(Card,{post:tt},nt))})]})},BoardContainer$1=dt.div`
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -4878,7 +4878,31 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   cursor: pointer;
   color: ${a=>a.$isActive?COLORS.text:COLORS.primary};
   border-bottom: ${a=>a.$isActive?`2px solid ${COLORS.text}`:"none"};
-`,MENU_ITEMS=[{type:BOARD_TYPES.intro,label:"소개"},{type:BOARD_TYPES.blog,label:"블로그"},{type:BOARD_TYPES.project,label:"프로젝트"}],Board=({toggleBoard:a})=>{const[e,o]=reactExports.useState(BOARD_TYPES.intro);return jsxRuntimeExports.jsx(BoardContainer$1,{children:jsxRuntimeExports.jsxs(BoardContent,{children:[jsxRuntimeExports.jsxs(BoardHeader,{children:[jsxRuntimeExports.jsx(BoardTitle,{onClick:a,children:"ssO_Ong"}),jsxRuntimeExports.jsx(BoardMenus,{children:MENU_ITEMS.map(d=>jsxRuntimeExports.jsx(BoardMenu,{onClick:()=>o(d.type),$isActive:e===d.type,children:d.label},d.type))})]}),e===BOARD_TYPES.intro&&jsxRuntimeExports.jsx(Intro,{}),e===BOARD_TYPES.blog&&jsxRuntimeExports.jsx(Blog,{}),e===BOARD_TYPES.project&&jsxRuntimeExports.jsx("div",{})]})})},HomeContainer=dt.div`
+`,posts=[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],BASE_URL="projects/",titles=[{url:BASE_URL+"CNN.png",name:"수화 번역을 위한 CNN 하드웨어 가속기"},{url:BASE_URL+"CNN.png",name:"수화 번역을 위한 CNN 하드웨어 가속기"},{url:BASE_URL+"CNN.png",name:"수화 번역을 위한 CNN 하드웨어 가속기"},{url:BASE_URL+"CNN.png",name:"수화 번역을 위한 CNN 하드웨어 가속기"},{url:BASE_URL+"CNN.png",name:"수화 번역을 위한 CNN 하드웨어 가속기"},{url:BASE_URL+"CNN.png",name:"수화 번역을 위한 CNN 하드웨어 가속기"},{url:BASE_URL+"CNN.png",name:"수화 번역을 위한 CNN 하드웨어 가속기"},{url:BASE_URL+"CNN.png",name:"수화 번역을 위한 CNN 하드웨어 가속기"},{url:BASE_URL+"CNN.png",name:"수화 번역을 위한 CNN 하드웨어 가속기"},{url:BASE_URL+"CNN.png",name:"수화 번역을 위한 CNN 하드웨어 가속기"},{url:BASE_URL+"CNN.png",name:"수화 번역을 위한 CNN 하드웨어 가속기"}],ProjectContainer=dt.div`
+  max-width: 720px;
+  width: 100%;
+  height: calc(100vh - 84px);
+  overflow: auto;
+`,ProjectImgContainer=dt.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  gap: 20px;
+`,ProjectImg=dt.div`
+  width: calc(50% - 10px);
+  background-image: url(${a=>a.$imgUrl});
+  background-size: contain;
+  background-position: center;
+  aspect-ratio: 1;
+
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+  @media (max-width: 720px) {
+    width: 100%;
+  }
+`,Project=()=>{const[a,e]=reactExports.useState(0),[o,d]=reactExports.useState(!1),b=tt=>{e(tt),d(!0)};return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsx(ProjectContainer,{children:jsxRuntimeExports.jsx(ProjectImgContainer,{children:titles.map((tt,nt)=>jsxRuntimeExports.jsx(ProjectImg,{onClick:()=>{b(nt)},$imgUrl:tt.url},nt))})}),jsxRuntimeExports.jsx(Modal$1,{isOpen:o,onClose:()=>d(!1),title:titles[a].name,children:posts[a].length===0?jsxRuntimeExports.jsx("p",{children:"아직 게시글이 없습니다."}):posts[a].map((tt,nt)=>jsxRuntimeExports.jsx(Card,{post:tt},nt))})]})},MENU_ITEMS=[{type:BOARD_TYPES.intro,label:"소개"},{type:BOARD_TYPES.blog,label:"블로그"},{type:BOARD_TYPES.project,label:"프로젝트"}],Board=({toggleBoard:a})=>{const[e,o]=reactExports.useState(BOARD_TYPES.intro);return jsxRuntimeExports.jsx(BoardContainer$1,{children:jsxRuntimeExports.jsxs(BoardContent,{children:[jsxRuntimeExports.jsxs(BoardHeader,{children:[jsxRuntimeExports.jsx(BoardTitle,{onClick:a,children:"ssO_Ong"}),jsxRuntimeExports.jsx(BoardMenus,{children:MENU_ITEMS.map(d=>jsxRuntimeExports.jsx(BoardMenu,{onClick:()=>o(d.type),$isActive:e===d.type,children:d.label},d.type))})]}),e===BOARD_TYPES.intro&&jsxRuntimeExports.jsx(Intro,{}),e===BOARD_TYPES.blog&&jsxRuntimeExports.jsx(Blog,{}),e===BOARD_TYPES.project&&jsxRuntimeExports.jsx(Project,{})]})})},HomeContainer=dt.div`
   width: 100%;
   height: 100%;
   position: relative;
