@@ -4219,7 +4219,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   .empty {
     background-color: ${COLORS.accent};
   }
-`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$j={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
+`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$k={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
       1. I like my neighborhood because it's a quiet and convenient place to live.
       2. I live in an apartment complex near the downtown area.
       3. Although it's close to downtown, my town is pretty quiet.
@@ -4243,7 +4243,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$i={title:"241120",tag:"#집 #가구 #가전 #영화",content:`
+  `},post$j={title:"241120",tag:"#집 #가구 #가전 #영화",content:`
       1. In my house, there is a huge sofa in the middle of the living room.
       2. When I'm at home, I spend most of my time on the sofa.
       3. In my room. I have a desk a bed and a closet.
@@ -4267,7 +4267,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$h={title:"241121",tag:"#집 #가구 #가전 #영화",content:`
+  `},post$i={title:"241121",tag:"#집 #가구 #가전 #영화",content:`
       1. My best friend, Kim and I have the same taste in music.
       2. We usually go for a drink and share our feelings about the concert.
       3. I like to attend the concerts of my favorite singers.
@@ -4291,7 +4291,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$g={title:"241125",tag:"#요리 #집 #음악 #콘서트",content:`
+  `},post$h={title:"241125",tag:"#요리 #집 #음악 #콘서트",content:`
       1. You can make any kind of fried rice by adding whatever you want.
       2. To make it, you need a bowl of rice and egg and any ingredients you want to put in the rice.
       3. Stir fry them until they look good.
@@ -4315,7 +4315,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$f={title:"241126",tag:"#운동",content:`
+  `},post$g={title:"241126",tag:"#운동",content:`
       1. I don't need a companion to jog because I just like running and listening to music.
       2. I like to run on a treadmill.
       3. When I jog, I need a good pair of running shoes.
@@ -4339,7 +4339,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$e={title:"241127",tag:"#수영 #여행",content:`
+  `},post$f={title:"241127",tag:"#수영 #여행",content:`
       1. I once won the race in the women's 100m freestyle.
       2. I know all the strokes, and my favorite stroke is freestyle.
       3. My mom signed me up for swimming lessons at a sports center.
@@ -4363,7 +4363,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$d={title:"241128",tag:"#국내 #해외 #여행",content:`
+  `},post$e={title:"241128",tag:"#국내 #해외 #여행",content:`
       1. My first international trip was to Canada.
       2. I had traveled to many different spots in Korea, but it was my first time traveling overseas.
       3. I had made my first passport as well because it was our first family vacation outside Korea.
@@ -4387,7 +4387,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$c={title:"241129",tag:"#롤플레이 #질문",content:`
+  `},post$d={title:"241129",tag:"#롤플레이 #질문",content:`
       1. What are your operating hours?
       2. Do I need a reservation, or can I walk in?
       3. Are you open on weekends or holidays?
@@ -4408,6 +4408,41 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       18. Do you have gift cards available for purchase?
       19. How do I reach your customer service department?
       20. Is there a lost and found service on the premises?
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$c={title:"241202",tag:"#롤플레이 #질문",content:`
+      1. Excuse me, I purchased this item recently and it doesn't fit. Can I exchange it for a different size?
+      2. Hi, I ordered this online, but there seeems to be a defect. Can I get a replacement or a refund?
+      3. I received the wrong item in my online order. How can we proceed with correcting this?
+      4. This product is not what I expected. Can I return it and get a refund?
+      5. I have a receipt for this purchase, and it's within the return period. Can I get a refund?
+      6. My online order hasn't arrived, and it's past the estimated delivery date. Can you assist me?
+      7. I'd like to cancel my online order. How can I go about doing that?
+      8. There was an issue with my meel, it's not what I ordered. Can you replace it or refund me?
+      9. My food order was delivered cold. Can I get a replacement or a refund.
+      10. I found a defect in this product I bought in-store. Can I exchange it or get a refund?
+      11. The quality of this item doesn't meet my expectations. Can I return it for a refund?
+      12. I booked tickets for the wrong date for the theater. Is there any way to exchange them?
+      13. There was an issue with my hotel room, it doesn't match my reservation. Can it be corrected?
+      14. I accidentally made a duplicate online purchase. Can I cancel one of the orders?
+      15. I bought this item as a gift, but the recipient already has one. Can I return it for store credit?
+      16. The shoes I ordered  online are uncomfortable. Can I return or exchange them?
+      17. The item I received online doesn't match the description. Can I get a refund?
+      18. I accidentally ordered the wrong size online. Can I exchange it for the correct size?
+      19. The movie I purchased online won't play. Can you help troubleshoot the issue?
+      20. I was overcharged for my hotel stay. Can you review the charges and correct the billing?
+      21. I lost my receipt, but I'd like to return this item. Is there an alternative way to process the return?
+      22. I bought this item in-store, but it's damaged. Can I get a replacement or a refund?
+      23. The online item I received is not the color I expected. Can I exchange it for a different color?
+      24. My theater tickets were charged twice. Can you help resolve this billing issue?
+      25. I made a mistake in my online order, can I modify it before it ships?
+      26. I received a damaged product in my online order. How can we proceed with a replacement?
+      27. The hotel room doesn't match the amenities described in the reservation. Can this be addressed?
+      28. i accidentally spilled something on the clothing I just bought. Can I still return it?
+      29. The online order confirmation email hasn't arrived. Can you resend it or confirm my order status?
+      30. The service at the restaurant was unsatisfactory. Can the bill be adjusted accordinglY?
+
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
@@ -4719,7 +4754,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},posts$1=[[post$j,post$i,post$h,post$g,post$f,post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
+    `},posts$1=[[post$k,post$j,post$i,post$h,post$g,post$f,post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
   width: 100%;
   max-width: 720px;
   height: calc(100vh - 84px);
