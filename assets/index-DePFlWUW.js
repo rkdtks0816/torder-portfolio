@@ -4219,7 +4219,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   .empty {
     background-color: ${COLORS.accent};
   }
-`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$k={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
+`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$l={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
       1. I like my neighborhood because it's a quiet and convenient place to live.
       2. I live in an apartment complex near the downtown area.
       3. Although it's close to downtown, my town is pretty quiet.
@@ -4243,7 +4243,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$j={title:"241120",tag:"#집 #가구 #가전 #영화",content:`
+  `},post$k={title:"241120",tag:"#집 #가구 #가전 #영화",content:`
       1. In my house, there is a huge sofa in the middle of the living room.
       2. When I'm at home, I spend most of my time on the sofa.
       3. In my room. I have a desk a bed and a closet.
@@ -4267,7 +4267,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$i={title:"241121",tag:"#집 #가구 #가전 #영화",content:`
+  `},post$j={title:"241121",tag:"#집 #가구 #가전 #영화",content:`
       1. My best friend, Kim and I have the same taste in music.
       2. We usually go for a drink and share our feelings about the concert.
       3. I like to attend the concerts of my favorite singers.
@@ -4291,7 +4291,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$h={title:"241125",tag:"#요리 #집 #음악 #콘서트",content:`
+  `},post$i={title:"241125",tag:"#요리 #집 #음악 #콘서트",content:`
       1. You can make any kind of fried rice by adding whatever you want.
       2. To make it, you need a bowl of rice and egg and any ingredients you want to put in the rice.
       3. Stir fry them until they look good.
@@ -4315,7 +4315,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$g={title:"241126",tag:"#운동",content:`
+  `},post$h={title:"241126",tag:"#운동",content:`
       1. I don't need a companion to jog because I just like running and listening to music.
       2. I like to run on a treadmill.
       3. When I jog, I need a good pair of running shoes.
@@ -4339,7 +4339,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$f={title:"241127",tag:"#수영 #여행",content:`
+  `},post$g={title:"241127",tag:"#수영 #여행",content:`
       1. I once won the race in the women's 100m freestyle.
       2. I know all the strokes, and my favorite stroke is freestyle.
       3. My mom signed me up for swimming lessons at a sports center.
@@ -4363,7 +4363,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$e={title:"241128",tag:"#국내 #해외 #여행",content:`
+  `},post$f={title:"241128",tag:"#국내 #해외 #여행",content:`
       1. My first international trip was to Canada.
       2. I had traveled to many different spots in Korea, but it was my first time traveling overseas.
       3. I had made my first passport as well because it was our first family vacation outside Korea.
@@ -4387,7 +4387,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$d={title:"241129",tag:"#롤플레이 #질문",content:`
+  `},post$e={title:"241129",tag:"#롤플레이 #질문",content:`
       1. What are your operating hours?
       2. Do I need a reservation, or can I walk in?
       3. Are you open on weekends or holidays?
@@ -4411,7 +4411,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$c={title:"241202",tag:"#롤플레이 #질문",content:`
+  `},post$d={title:"241202",tag:"#롤플레이 #질문",content:`
       1. Excuse me, I purchased this item recently and it doesn't fit. Can I exchange it for a different size?
       2. Hi, I ordered this online, but there seeems to be a defect. Can I get a replacement or a refund?
       3. I received the wrong item in my online order. How can we proceed with correcting this?
@@ -4443,6 +4443,45 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       29. The online order confirmation email hasn't arrived. Can you resend it or confirm my order status?
       30. The service at the restaurant was unsatisfactory. Can the bill be adjusted accordinglY?
 
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$c={title:"241203",tag:"#롤플레이 #질문",content:`
+      1. Once, I purchased a smartphone online, expecting top-notch performance basedon the advertised specifications.
+      However, upon receiving it, I realized the battery life was significantly shorter thanexpected, and the camera quality was subpar. Despite the promising features
+      listed, they didn't meet my standards. It was frustrating because I heavily relied onthese aspects for work and personal use. I had to go through the hassle of
+      returning the device and finding an alternative that better suited my needs,
+      emphasizing the importance of thorough research before making tech purchases.
+      2. Yes, I remember a time when I had planned a trip to attend a music festival with some friends during the summer. We had bought the concert tickets months in advance and were eagerly looking forward to it. However, just a week before the trip, an unexpected family emergency arose, and I had to cancel my plans at the last minute.
+      I immediately contacted my friends and informed them about the situation. They were understanding but disappointed, as we had all been excited about the trip. Then, I reached out to the festival organizers to inquire about the possibility of
+      getting a refund or rescheduling the tickets. Thankfully, they had a policy for emergencies like mine, and they allowed me to either get a refund or transfer my tickets to next year's festival.
+      After weighing my options, I decided to transfer my tickets to the next year's event since I didn't want to miss out on the
+      experience entirely. I made sure to note the new dates and put them in my calendar. Although it was disappointing to miss out on the trip with my friends, I was relieved that I could still attend the festival the following year. It taught me the
+      importance of being flexible and proactive when dealing with unexpected changes in plans.
+      3. Certainly! One particularly memorable travel experience happened during a trip to Japan a couple of years ago. It was a solo journey, and I was exploring the beautiful city of Kyoto during the cherry blossom season.
+      I vividly remember walking through the historic streets of Gion, admiring the traditional wooden machiya houses and the serene
+      atmosphere. As I turned a corner, I stumbled upon a small, hidden temple tucked away from the bustling crowds. Intrigued, I
+      decided to explore it further.
+      Inside the temple grounds, I discovered a group of local musicians setting up for a traditional Japanese music performance. It was
+      completely unexpected, and I felt like I had stumbled upon a hidden gem. As the musicians began to play, the tranquil melody of the shamisen and the haunting sound of the shakuhachi flute filled the air, creating a magical atmosphere.
+      I sat down on a nearby bench and allowed myself to be fully immersed in the experience. The combination of the music, the cherryblossoms swaying gently in the breeze, and the peaceful surroundings created a moment of pure serenity and beauty.
+      What made this experience truly unforgettable was the spontaneity and serendipity of the encounter. It was a reminder that
+      sometimes the most memorable moments happen when we least expect them, and it left me with a deep appreciation for the
+      beauty and wonder of travel.
+      4. Once, during a trip from New York City to London, my flight got canceled unexpectedly
+      due to bad weather in London. It was a chaotic scene at the airport as passengers
+      scrambled to find solutions. After a long wait, I managed to secure a seat on the next day's
+      flight. I had to quickly arrange accommodation for the night and explore the city in the
+      meantime. Despite the inconvenience, I made the most of it, enjoying the local cuisine and
+      atmosphere. The following day, I finally boarded the flight to London, grateful to continue
+      my journey. This experience taught me the importance of patience and resilience when
+      dealing with unexpected travel challenges.
+      5. Once, I was traveling to Paris for a business conference. However, upon arriving at the airport, I
+      realized I had misread the departure time, and I had missed my flight. Panicked, I quickly
+      contacted the airline to explore my options. After some tense moments, they managed to
+      rebook me on a later flight with a layover. I had to endure a longer journey with the layover, but eventually, I made it to Paris just in time for the conference. It was a stressful experience, but it
+      taught me the importance of double-checking travel details and staying calm in unexpected
+      situations.
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
@@ -4754,7 +4793,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},posts$1=[[post$k,post$j,post$i,post$h,post$g,post$f,post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
+    `},posts$1=[[post$l,post$k,post$j,post$i,post$h,post$g,post$f,post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
   width: 100%;
   max-width: 720px;
   height: calc(100vh - 84px);
