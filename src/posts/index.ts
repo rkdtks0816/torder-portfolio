@@ -10,6 +10,10 @@ import index_1_241121 from './1/241121';
 import index_1_241125 from './1/241125';
 import index_1_241126 from './1/241126';
 import index_1_241127 from './1/241127';
+import index_1_241128 from './1/241128';
+import index_1_241129 from './1/241129';
+import index_1_241202 from './1/241202';
+import index_1_241203 from './1/241203';
 import index_4_241106_1 from './4/241106_1';
 import index_4_241119_1 from './4/241119_1';
 import index_4_241119_2 from './4/241119_2';
@@ -24,7 +28,7 @@ import index_10_241120_7 from './10/241120_7';
 import index_10_241120_8 from './10/241120_8';
 
 export const posts = [
-    [index_1_241119, index_1_241120, index_1_241121, index_1_241125, index_1_241126, index_1_241127],
+    [index_1_241119, index_1_241120, index_1_241121, index_1_241125, index_1_241126, index_1_241127, index_1_241128, index_1_241129, index_1_241202, index_1_241203],
 [],
 [],
 [index_4_241106_1, index_4_241119_1, index_4_241119_2, index_4_241119_3],
