@@ -28,7 +28,7 @@ export const SpiralSquare = styled.div<{
   $isEven: boolean;
 }>`
   position: absolute;
-  width: fit-content;
+  width: ${(props) => props.$size * 0.16}vh;
   height: fit-content;
   transform: rotate(${(props) => props.$rotation}deg)
     translateY(${(props) => -1 * props.$distance}vh);
@@ -40,6 +40,15 @@ export const SpiralSquare = styled.div<{
   padding: 10px;
   border-radius: 10px 10px 0 0;
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:nth-child(1) {
+    font-size: ${(props) => props.$size * 0.044}vh;
+    transform: rotate(${(props) => props.$rotation}deg)
+      translateY(${(props) => -1 * props.$distance - 4}vh); /* 5vh 추가 이동 */
+    width: fit-content;
+  }
 `;
 
 export const RotatedButtonContainer = styled.div`
