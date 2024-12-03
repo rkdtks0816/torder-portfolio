@@ -4219,7 +4219,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   .empty {
     background-color: ${COLORS.accent};
   }
-`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$l={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
+`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$m={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
       1. I like my neighborhood because it's a quiet and convenient place to live.
       2. I live in an apartment complex near the downtown area.
       3. Although it's close to downtown, my town is pretty quiet.
@@ -4243,7 +4243,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$k={title:"241120",tag:"#집 #가구 #가전 #영화",content:`
+  `},post$l={title:"241120",tag:"#집 #가구 #가전 #영화",content:`
       1. In my house, there is a huge sofa in the middle of the living room.
       2. When I'm at home, I spend most of my time on the sofa.
       3. In my room. I have a desk a bed and a closet.
@@ -4267,7 +4267,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$j={title:"241121",tag:"#집 #가구 #가전 #영화",content:`
+  `},post$k={title:"241121",tag:"#집 #가구 #가전 #영화",content:`
       1. My best friend, Kim and I have the same taste in music.
       2. We usually go for a drink and share our feelings about the concert.
       3. I like to attend the concerts of my favorite singers.
@@ -4291,7 +4291,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$i={title:"241125",tag:"#요리 #집 #음악 #콘서트",content:`
+  `},post$j={title:"241125",tag:"#요리 #집 #음악 #콘서트",content:`
       1. You can make any kind of fried rice by adding whatever you want.
       2. To make it, you need a bowl of rice and egg and any ingredients you want to put in the rice.
       3. Stir fry them until they look good.
@@ -4315,7 +4315,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$h={title:"241126",tag:"#운동",content:`
+  `},post$i={title:"241126",tag:"#운동",content:`
       1. I don't need a companion to jog because I just like running and listening to music.
       2. I like to run on a treadmill.
       3. When I jog, I need a good pair of running shoes.
@@ -4339,7 +4339,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$g={title:"241127",tag:"#수영 #여행",content:`
+  `},post$h={title:"241127",tag:"#수영 #여행",content:`
       1. I once won the race in the women's 100m freestyle.
       2. I know all the strokes, and my favorite stroke is freestyle.
       3. My mom signed me up for swimming lessons at a sports center.
@@ -4363,7 +4363,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$f={title:"241128",tag:"#국내 #해외 #여행",content:`
+  `},post$g={title:"241128",tag:"#국내 #해외 #여행",content:`
       1. My first international trip was to Canada.
       2. I had traveled to many different spots in Korea, but it was my first time traveling overseas.
       3. I had made my first passport as well because it was our first family vacation outside Korea.
@@ -4387,7 +4387,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$e={title:"241129",tag:"#롤플레이 #질문",content:`
+  `},post$f={title:"241129",tag:"#롤플레이 #질문",content:`
       1. What are your operating hours?
       2. Do I need a reservation, or can I walk in?
       3. Are you open on weekends or holidays?
@@ -4411,7 +4411,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$d={title:"241202",tag:"#롤플레이 #질문",content:`
+  `},post$e={title:"241202",tag:"#롤플레이 #질문",content:`
       1. Excuse me, I purchased this item recently and it doesn't fit. Can I exchange it for a different size?
       2. Hi, I ordered this online, but there seeems to be a defect. Can I get a replacement or a refund?
       3. I received the wrong item in my online order. How can we proceed with correcting this?
@@ -4446,7 +4446,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$c={title:"241203",tag:"#롤플레이 #질문",content:`
+  `},post$d={title:"241203",tag:"#롤플레이 #질문",content:`
       1. Once, I purchased a smartphone online, expecting top-notch performance basedon the advertised specifications.
       However, upon receiving it, I realized the battery life was significantly shorter thanexpected, and the camera quality was subpar. Despite the promising features
       listed, they didn't meet my standards. It was frustrating because I heavily relied onthese aspects for work and personal use. I had to go through the hassle of
@@ -4482,6 +4482,52 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       rebook me on a later flight with a layover. I had to endure a longer journey with the layover, but eventually, I made it to Paris just in time for the conference. It was a stressful experience, but it
       taught me the importance of double-checking travel details and staying calm in unexpected
       situations.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$c={title:"241204",tag:"#롤플레이 #질문",content:`
+      1. Yes, I've had the opportunity to travel to several countries, including Japan. One striking
+      difference I noticed in Japan compared to my home country is the geography. While my
+      country has vast open plains and mountain ranges, Japan is characterized by its
+      mountainous terrain and dense urban areas. The landscape in Japan is incredibly diverse,
+      with lush forests, volcanic peaks, and coastal regions. Additionally, Japan's unique
+      geography influences its culture and lifestyle, with traditions like hot spring bathing and
+      terraced rice paddies flourishing in the mountainous regions. Overall, experiencing Japan's
+      geography firsthand was both fascinating and enriching, offering a different perspective on
+      natural landscapes and human interaction with the environment.
+      2. Yes, I've rented a car from a rental agency before. It was during a family vacation to
+      California. We rented the car to have the flexibility to explore various attractions and
+      scenic routes along the coast. We picked up the car at the airport upon our arrival. The
+      rental process was smooth, and the staff provided helpful information about the vehicle
+      and driving regulations. Throughout our trip, the car offered convenience and freedom,
+      allowing us to visit remote destinations and travel at our own pace. Returning the car was
+      equally straightforward, and overall, the experience enhanced our travel experience,
+      making it more enjoyable and memorable.
+      3. During a vacation to Thailand with friends, we decided to explore the lesser-known island
+      of Koh Lanta. One evening, while strolling along the beach, we stumbled upon a gathering
+      of locals and tourists celebrating a traditional Thai festival called Loy Krathong. Intrigued,
+      we joined in the festivities, which included floating candle-lit baskets on the water to pay
+      respect to the goddess of water. As the night progressed, we found ourselves immersed in
+      the vibrant atmosphere, surrounded by the glow of lanterns and the sound of traditional
+      music. It was a magical and unexpected experience that allowed us to connect with the
+      local culture in a meaningful way, leaving us with cherished memories of our time in
+      Thailand.
+      4. One special experience that taught me a lot about Korea was during the 2018 Winter
+      Olympics held in Pyeongchang. It was a moment of national pride and excitement as the
+      world turned its attention to Korea. Through this event, I learned about Korea's ability to
+      host large-scale international events with precision and hospitality. I witnessed the unity
+      and enthusiasm of the Korean people as they cheered for their athletes and celebrated
+      their cultural heritage. The Olympics showcased Korea's rich history, modern
+      infrastructure, and commitment to excellence on a global stage. It was a reminder of
+      Korea's capacity to inspire and unite people from diverse backgrounds through the power
+      of sports and shared values.
+      5. Yes, I've had an experience where I lost something important. It was during a trip to Europe
+      when I misplaced my passport. I realized it was missing just as I was about to check in for my
+      flight back home. Panic set in as I frantically searched through my belongings and retraced my
+      steps. Eventually, I remembered leaving it at a café I had visited earlier that day. I rushed back
+      to the café, and thankfully, they had kept it safe for me. It was a stressful experience, but it
+      taught me the importance of being vigilant with important documents and double-checking
+      before leaving any place.
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
@@ -4793,7 +4839,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},posts$1=[[post$l,post$k,post$j,post$i,post$h,post$g,post$f,post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
+    `},posts$1=[[post$m,post$l,post$k,post$j,post$i,post$h,post$g,post$f,post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
   width: 100%;
   max-width: 720px;
   height: calc(100vh - 84px);
@@ -4811,7 +4857,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   align-items: center;
 `,SpiralSquare=dt.div`
   position: absolute;
-  width: fit-content;
+  width: ${a=>a.$size*.16}vh;
   height: fit-content;
   transform: rotate(${a=>a.$rotation}deg)
     translateY(${a=>-1*a.$distance}vh);
@@ -4822,6 +4868,15 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   padding: 10px;
   border-radius: 10px 10px 0 0;
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  &:nth-child(1) {
+    font-size: ${a=>a.$size*.044}vh;
+    transform: rotate(${a=>a.$rotation}deg)
+      translateY(${a=>-1*a.$distance-4}vh); /* 5vh 추가 이동 */
+    width: fit-content;
+  }
 `,RotatedButtonContainer=dt.div`
   position: absolute;
   bottom: 10%;
