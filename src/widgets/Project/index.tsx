@@ -10,8 +10,10 @@ import {
 } from "./ProjectStyles";
 
 const Project: React.FC = () => {
+  const BASE_URL = "projects/";
   const [nowIndex, setNowIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
+
 
   const handleSquareClick = (index: number) => {
     setNowIndex(index);
@@ -28,7 +30,7 @@ const Project: React.FC = () => {
                 handleSquareClick(index);
               }}
               key={index}
-              $imgUrl={title.url}
+              $imgUrl={BASE_URL + title.url + ".png"}
             />
           ))}
         </ProjectImgContainer>
