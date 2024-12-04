@@ -4219,7 +4219,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   .empty {
     background-color: ${COLORS.accent};
   }
-`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$m={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
+`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$n={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
       1. I like my neighborhood because it's a quiet and convenient place to live.
       2. I live in an apartment complex near the downtown area.
       3. Although it's close to downtown, my town is pretty quiet.
@@ -4243,7 +4243,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$l={title:"241120",tag:"#집 #가구 #가전 #영화",content:`
+  `},post$m={title:"241120",tag:"#집 #가구 #가전 #영화",content:`
       1. In my house, there is a huge sofa in the middle of the living room.
       2. When I'm at home, I spend most of my time on the sofa.
       3. In my room. I have a desk a bed and a closet.
@@ -4267,7 +4267,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$k={title:"241121",tag:"#집 #가구 #가전 #영화",content:`
+  `},post$l={title:"241121",tag:"#집 #가구 #가전 #영화",content:`
       1. My best friend, Kim and I have the same taste in music.
       2. We usually go for a drink and share our feelings about the concert.
       3. I like to attend the concerts of my favorite singers.
@@ -4291,7 +4291,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$j={title:"241125",tag:"#요리 #집 #음악 #콘서트",content:`
+  `},post$k={title:"241125",tag:"#요리 #집 #음악 #콘서트",content:`
       1. You can make any kind of fried rice by adding whatever you want.
       2. To make it, you need a bowl of rice and egg and any ingredients you want to put in the rice.
       3. Stir fry them until they look good.
@@ -4315,7 +4315,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$i={title:"241126",tag:"#운동",content:`
+  `},post$j={title:"241126",tag:"#운동",content:`
       1. I don't need a companion to jog because I just like running and listening to music.
       2. I like to run on a treadmill.
       3. When I jog, I need a good pair of running shoes.
@@ -4339,7 +4339,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$h={title:"241127",tag:"#수영 #여행",content:`
+  `},post$i={title:"241127",tag:"#수영 #여행",content:`
       1. I once won the race in the women's 100m freestyle.
       2. I know all the strokes, and my favorite stroke is freestyle.
       3. My mom signed me up for swimming lessons at a sports center.
@@ -4363,7 +4363,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$g={title:"241128",tag:"#국내 #해외 #여행",content:`
+  `},post$h={title:"241128",tag:"#국내 #해외 #여행",content:`
       1. My first international trip was to Canada.
       2. I had traveled to many different spots in Korea, but it was my first time traveling overseas.
       3. I had made my first passport as well because it was our first family vacation outside Korea.
@@ -4387,7 +4387,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$f={title:"241129",tag:"#롤플레이 #질문",content:`
+  `},post$g={title:"241129",tag:"#롤플레이 #질문",content:`
       1. What are your operating hours?
       2. Do I need a reservation, or can I walk in?
       3. Are you open on weekends or holidays?
@@ -4411,7 +4411,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$e={title:"241202",tag:"#롤플레이 #질문",content:`
+  `},post$f={title:"241202",tag:"#롤플레이 #질문",content:`
       1. Excuse me, I purchased this item recently and it doesn't fit. Can I exchange it for a different size?
       2. Hi, I ordered this online, but there seeems to be a defect. Can I get a replacement or a refund?
       3. I received the wrong item in my online order. How can we proceed with correcting this?
@@ -4446,7 +4446,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$d={title:"241203",tag:"#롤플레이 #질문",content:`
+  `},post$e={title:"241203",tag:"#롤플레이 #질문",content:`
       1. Once, I purchased a smartphone online, expecting top-notch performance basedon the advertised specifications.
       However, upon receiving it, I realized the battery life was significantly shorter thanexpected, and the camera quality was subpar. Despite the promising features
       listed, they didn't meet my standards. It was frustrating because I heavily relied onthese aspects for work and personal use. I had to go through the hassle of
@@ -4485,7 +4485,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$c={title:"241204",tag:"#롤플레이 #질문",content:`
+  `},post$d={title:"241204",tag:"#롤플레이 #질문",content:`
       1. Yes, I've had the opportunity to travel to several countries, including Japan. One striking
       difference I noticed in Japan compared to my home country is the geography. While my
       country has vast open plains and mountain ranges, Japan is characterized by its
@@ -4528,6 +4528,30 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
       to the café, and thankfully, they had kept it safe for me. It was a stressful experience, but it
       taught me the importance of being vigilant with important documents and double-checking
       before leaving any place.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$c={title:"241205",tag:"#영화 #콘서트",content:`
+      1. My favorite actor is Matt Damon.
+      2. He actually becomes the character, and it's so believable.
+      3. He studied for his undergraduate degree at Harvard, and he even writes scenarios.
+      4. I usually go to the theater in my neighborhood.
+      5. It's very big with lots of screenings. So I can always watch a movie whenever I want.
+      6. At the theater, I get my ticket from the ticket booth.
+      7. I never let my friend talk because it really distracts me.
+      8. I checked from the internet to see what's recently been released.
+      9. I wanted to see the film because I had read quite good compliments on the movie.
+      10. The actress, Natalie Portman also won the Best Actress Oscar.
+      11. My best friend, Kim and I have the same taste in music.
+      12. We usually go for a drink and share our feelings about the convert.
+      13. I like to attend the concerts of my favorite singers.
+      14. I like musicians who play hip hop and dance music.
+      15. I may not be able to see them in person ever again in my life.
+      16. I often go to classic concerts like symphony or piano recitals.
+      17. Since then, I've become a huge fan of live concerts.
+      18. At the concert hall, we saw many Korean musicians came to see Lady Gaga.
+      19. She was actually really good at singing, and the concert was amazing.
+      20. Kim and I were so impressed, and I definitely want to go see her again.
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
@@ -4839,7 +4863,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},posts$1=[[post$m,post$l,post$k,post$j,post$i,post$h,post$g,post$f,post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
+    `},posts$1=[[post$n,post$m,post$l,post$k,post$j,post$i,post$h,post$g,post$f,post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
   width: 100%;
   max-width: 720px;
   height: calc(100vh - 84px);
