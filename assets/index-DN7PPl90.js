@@ -4219,343 +4219,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   .empty {
     background-color: ${COLORS.accent};
   }
-`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),post$n={title:"241119",tag:"#집 #동네 #이웃 #가구 #가전",content:`
-      1. I like my neighborhood because it's a quiet and convenient place to live.
-      2. I live in an apartment complex near the downtown area.
-      3. Although it's close to downtown, my town is pretty quiet.
-      4. I use public transportation to get around.
-      5. The only neighbor I talk to is Mr.Lee who lives upstairs.
-      6. We run into each other about once a week.
-      7. We usually have a conversation when we both get into the elevator.
-      8. Sometimes they meet up with their friends and chat for a while at a coffee shop or go shopping together.
-      9. She played it for five straight hours, and I couldn't stand it.
-      10. I called the building superintendent and complained about it.
-      11. It is still in good condition.
-      12. My mom put some paintings in the living room.
-      13. When I first moved into my house, everything was brand new.
-      14. First of all, I bought a new refrigerator.
-      15. The old one broke down and made a weird sound.
-      16. The new one is a lot bigger than the old one, so we can put more stuff inside.
-      17. My new bed is really big and takes up a lot of space.
-      18. My apartment is small and cozy.
-      19. I hope I could get a top-floor apartment so that nobody lives above me.
-      20. When it gets really cold in Korea, the water pipes can freeze.
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
-  `},post$m={title:"241120",tag:"#집 #가구 #가전 #영화",content:`
-      1. In my house, there is a huge sofa in the middle of the living room.
-      2. When I'm at home, I spend most of my time on the sofa.
-      3. In my room. I have a desk a bed and a closet.
-      4. My closet is pretty big because I share it with my sister.
-      5. In the kitchen, there is a big dining table where we have dinner together
-      6. It's a big closet with small drawers. So I store most of my wardrobe in it.
-      7. There are so many useful home appliances.
-      8. I always use the microwave to heat up my food and drinks.
-      9. There are many smaller devices I like such as the blender and the kettle.
-      10. I use the blender every morning to make some apple juice.
-      11. My favorite actor is Matt Damon.
-      12. He actually becomes the charactor, and it's so believable.
-      13. He studied for his undergraduate degree at Harvard, and he even writes scenarios.
-      14. I usually go to the theater in my neighborhood.
-      15. It's very big with lots of screenings. So I can always watch a movie whenever I want.
-      16. At the theater, I get my tickets from the ticket booth.
-      17. I never let my friend talk because it really distracts me.
-      18. I checked from the internet to see what's recently been released.
-      19. I wanted to see the film because I had read quite good compliments on the movie.
-      20. The actress, Natalie Portman also won the Best Actress Oscar.
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
-  `},post$l={title:"241121",tag:"#집 #가구 #가전 #영화",content:`
-      1. My best friend, Kim and I have the same taste in music.
-      2. We usually go for a drink and share our feelings about the concert.
-      3. I like to attend the concerts of my favorite singers.
-      4. I like musicians who play hip hop and dance music.
-      5. I may not be able to see them in person ever again in my life.
-      6. I often go to classic concerts like symphony or piano recitals.
-      7. Since then, I've become a huge fan of live concerts.
-      8. At the concert hall, we saw many Korean musicians came to see Lady Gaga.
-      9. She was actually really good at singing and the concert was amazing.
-      10. Kim and I were so impressed, and I definitely want to go see her again.
-      11. When you walk through the gate, you can see a lot of trees and lawn.
-      12. There is a small pond inside the park.
-      13. When I go to the park, I usually take a walk first.
-      14. It takes about 15 minutes to walk around the whole park, So, I walk a few laps around the park.
-      15. We have a nice conversation while walking back home.
-      16. I lie down on the grass and read a book.
-      17. I want to jog there but end up just walking.
-      18. We found a nice spot to sit and put a blanket on the grass.
-      19. We spent a whole afternoon in the park.
-      20. When I visited the park that I usually go to, I actually ran into my ex-girlfriend.
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
-  `},post$k={title:"241125",tag:"#요리 #집 #음악 #콘서트",content:`
-      1. You can make any kind of fried rice by adding whatever you want.
-      2. To make it, you need a bowl of rice and egg and any ingredients you want to put in the rice.
-      3. Stir fry them until they look good.
-      4. When it's ready, put an egg fried Sunnyside on the top and enjoy your dish.
-      5. They're easy to make but the taste isn't guaranteed.
-      6. The first time I cooked was when I made dinner for my family.
-      7. I decided to make seafood pasta for the main dish.
-      8. It was her first time to actually cook besides instant noodles.
-      9. She googled the recipe and bought every ingredient she needed.
-      10. When she got home after the delivery, her brother told her how salty her chocolate was.
-      11. My MP3 player is very small and light, but it contains thousands of songs I like.
-      12. I like dance and Hip-hop music the most because they cheer me up.
-      13. Sometimes I listen to Jazz and classical music before I go to bed.
-      14. My favorite singer and composer is JYP.
-      15. I love his music because he composes great melodies and lyrics.
-      16. I just like the way he thinks and expresses himself.
-      17. Most of his songs are very popular in Korea.
-      18. I was so excited to have a portable music device.
-      19. I always carried it with me, and I was always listening to music.
-      20. I could focus well with some background music.
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
-  `},post$j={title:"241126",tag:"#운동",content:`
-      1. I don't need a companion to jog because I just like running and listening to music.
-      2. I like to run on a treadmill.
-      3. When I jog, I need a good pair of running shoes.
-      4. I also put on some sunblock before I jog.
-      5. I decided to jog because I was gaining weight.
-      6. I wanted to lose some weight and I decided to jog
-      7. I jog because I want to keep in shape.
-      8. I knew I'd be more tired if I skipped exercising.
-      9. I turned around and ran back home, but I was already soaked in the heavy rain.
-      10. I learned to check the weather before I go jogging.
-      11. I go to a gym at least three times a week to work out.
-      12. When I first started to work out, I was extremely tired.
-      13. The main purpose of going to a gym is to stay fit.
-      14. I was a little overweight when I was a kid.
-      15. It was not easy to lose weight. So I never miss my workout.
-      16. The gym I go to has a lot of exercise equipment.
-      17. I often have difficulties because in order to do weight training properly.
-      18. Without anyone spotting you, you might drop the dumbbell.
-      19. At the gym, I first do stretch, so I won't get hurt during my workout.
-      20. After I'm done with running, I do weight training to build up some muscles.
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
-  `},post$i={title:"241127",tag:"#수영 #여행",content:`
-      1. I once won the race in the women's 100m freestyle.
-      2. I know all the strokes, and my favorite stroke is freestyle.
-      3. My mom signed me up for swimming lessons at a sports center.
-      4. He actually was a really good swimmer, and I learned from him a lot.
-      5. I think of him is a great instructor, but I'm still a little scared of him.
-      6. Indoor pools were boring. So, I asked my parents to take me to the beach.
-      7. My mom made me wear a life jacket.
-      8. I got very tired and had no energy to swim, and of course, I was pretty far from the shore.
-      9. I started to drown and I was so scared.
-      10. It was the scariest thing ever. And since then, I don't really like to swim in the ocean.
-      11. It's a used mountain bike with 24 gears.
-      12. I usually go riding on my bike along the bank.
-      13. I always wear my helmet when I ride my bike.
-      14. My dad put two training wheels on the reer wheel so that I would't fall down.
-      15. Bicycles with four wheels don't go as fast as two wheeled ones.
-      16. He held my bike from the back until I could ride by myself.
-      17. He showed me wounds he got from mountain biking.
-      18. I decided to give it a try.
-      19. Suddenly, a dog jumped in front of me, and I had to slam on the brakes.
-      20. I couldn't hear his owner calling out the dog's name.
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
-  `},post$h={title:"241128",tag:"#국내 #해외 #여행",content:`
-      1. My first international trip was to Canada.
-      2. I had traveled to many different spots in Korea, but it was my first time traveling overseas.
-      3. I had made my first passport as well because it was our first family vacation outside Korea.
-      4. I don't know why  my dad chose Canada as our first destination.
-      5. I always try to pack light when I travel.
-      6. Having a heavy or big suitcase actually could be a big hassle.
-      7. I also pack an emergency medical kit whenever I travel.
-      8. I'd like to travel there because I want to see pyramids and other ancient building.
-      9. I've always had an admiration for Egypt.
-      10. When I get there, I would like to take pictures of the great ancient architecture.
-      11. I love going to Jeju Island because I think it is the most beautiful island in Korea.
-      12. A lot of movie and drama scenes were filmed there.
-      13. Since it is an island seafood, that is extremely fresh and delicious.
-      14. I would most likely go to Jeju Island for my domestic trip.
-      15. I always bring at least one sweater to a trip even if the place is hot.
-      16. After packing clothes, I packed all the toiletries and cosmetics.
-      17. The last things I pack or my passport, travel guide and wallet.
-      18. My passport is not necessary, if I am traveling within my country.
-      19. A travel guide is always useful even if you know the place well.
-      20. I would love to go to places I've been, which I do not remember.
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
-  `},post$g={title:"241129",tag:"#롤플레이 #질문",content:`
-      1. What are your operating hours?
-      2. Do I need a reservation, or can I walk in?
-      3. Are you open on weekends or holidays?
-      4. Do you offer any discounts or promotions?
-      5. What forms of payment do you accept?
-      6. Is there parking available nearby?
-      7. Do you have Wi-Fi access for customers?
-      8. Are there any upcoming events or specials?
-      9. Can I place an order for takeout or delivery?
-      10. Are there any vegetarian or vegan options on the menu?
-      11. How far in advance do I need to book for the service?
-      12. Are pets allowed in your establishment?
-      13. What is the average wait time during peak hours?
-      14. Do you have a customer loyalty program?
-      15. Are there any age restrictions for entry?
-      16. Can I bring my own food or drink?
-      17. What is your cancellation policy?
-      18. Do you have gift cards available for purchase?
-      19. How do I reach your customer service department?
-      20. Is there a lost and found service on the premises?
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
-  `},post$f={title:"241202",tag:"#롤플레이 #질문",content:`
-      1. Excuse me, I purchased this item recently and it doesn't fit. Can I exchange it for a different size?
-      2. Hi, I ordered this online, but there seeems to be a defect. Can I get a replacement or a refund?
-      3. I received the wrong item in my online order. How can we proceed with correcting this?
-      4. This product is not what I expected. Can I return it and get a refund?
-      5. I have a receipt for this purchase, and it's within the return period. Can I get a refund?
-      6. My online order hasn't arrived, and it's past the estimated delivery date. Can you assist me?
-      7. I'd like to cancel my online order. How can I go about doing that?
-      8. There was an issue with my meel, it's not what I ordered. Can you replace it or refund me?
-      9. My food order was delivered cold. Can I get a replacement or a refund.
-      10. I found a defect in this product I bought in-store. Can I exchange it or get a refund?
-      11. The quality of this item doesn't meet my expectations. Can I return it for a refund?
-      12. I booked tickets for the wrong date for the theater. Is there any way to exchange them?
-      13. There was an issue with my hotel room, it doesn't match my reservation. Can it be corrected?
-      14. I accidentally made a duplicate online purchase. Can I cancel one of the orders?
-      15. I bought this item as a gift, but the recipient already has one. Can I return it for store credit?
-      16. The shoes I ordered  online are uncomfortable. Can I return or exchange them?
-      17. The item I received online doesn't match the description. Can I get a refund?
-      18. I accidentally ordered the wrong size online. Can I exchange it for the correct size?
-      19. The movie I purchased online won't play. Can you help troubleshoot the issue?
-      20. I was overcharged for my hotel stay. Can you review the charges and correct the billing?
-      21. I lost my receipt, but I'd like to return this item. Is there an alternative way to process the return?
-      22. I bought this item in-store, but it's damaged. Can I get a replacement or a refund?
-      23. The online item I received is not the color I expected. Can I exchange it for a different color?
-      24. My theater tickets were charged twice. Can you help resolve this billing issue?
-      25. I made a mistake in my online order, can I modify it before it ships?
-      26. I received a damaged product in my online order. How can we proceed with a replacement?
-      27. The hotel room doesn't match the amenities described in the reservation. Can this be addressed?
-      28. i accidentally spilled something on the clothing I just bought. Can I still return it?
-      29. The online order confirmation email hasn't arrived. Can you resend it or confirm my order status?
-      30. The service at the restaurant was unsatisfactory. Can the bill be adjusted accordinglY?
-
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
-  `},post$e={title:"241203",tag:"#롤플레이 #질문",content:`
-      1. Once, I purchased a smartphone online, expecting top-notch performance basedon the advertised specifications.
-      However, upon receiving it, I realized the battery life was significantly shorter thanexpected, and the camera quality was subpar. Despite the promising features
-      listed, they didn't meet my standards. It was frustrating because I heavily relied onthese aspects for work and personal use. I had to go through the hassle of
-      returning the device and finding an alternative that better suited my needs,
-      emphasizing the importance of thorough research before making tech purchases.
-      2. Yes, I remember a time when I had planned a trip to attend a music festival with some friends during the summer. We had bought the concert tickets months in advance and were eagerly looking forward to it. However, just a week before the trip, an unexpected family emergency arose, and I had to cancel my plans at the last minute.
-      I immediately contacted my friends and informed them about the situation. They were understanding but disappointed, as we had all been excited about the trip. Then, I reached out to the festival organizers to inquire about the possibility of
-      getting a refund or rescheduling the tickets. Thankfully, they had a policy for emergencies like mine, and they allowed me to either get a refund or transfer my tickets to next year's festival.
-      After weighing my options, I decided to transfer my tickets to the next year's event since I didn't want to miss out on the
-      experience entirely. I made sure to note the new dates and put them in my calendar. Although it was disappointing to miss out on the trip with my friends, I was relieved that I could still attend the festival the following year. It taught me the
-      importance of being flexible and proactive when dealing with unexpected changes in plans.
-      3. Certainly! One particularly memorable travel experience happened during a trip to Japan a couple of years ago. It was a solo journey, and I was exploring the beautiful city of Kyoto during the cherry blossom season.
-      I vividly remember walking through the historic streets of Gion, admiring the traditional wooden machiya houses and the serene
-      atmosphere. As I turned a corner, I stumbled upon a small, hidden temple tucked away from the bustling crowds. Intrigued, I
-      decided to explore it further.
-      Inside the temple grounds, I discovered a group of local musicians setting up for a traditional Japanese music performance. It was
-      completely unexpected, and I felt like I had stumbled upon a hidden gem. As the musicians began to play, the tranquil melody of the shamisen and the haunting sound of the shakuhachi flute filled the air, creating a magical atmosphere.
-      I sat down on a nearby bench and allowed myself to be fully immersed in the experience. The combination of the music, the cherryblossoms swaying gently in the breeze, and the peaceful surroundings created a moment of pure serenity and beauty.
-      What made this experience truly unforgettable was the spontaneity and serendipity of the encounter. It was a reminder that
-      sometimes the most memorable moments happen when we least expect them, and it left me with a deep appreciation for the
-      beauty and wonder of travel.
-      4. Once, during a trip from New York City to London, my flight got canceled unexpectedly
-      due to bad weather in London. It was a chaotic scene at the airport as passengers
-      scrambled to find solutions. After a long wait, I managed to secure a seat on the next day's
-      flight. I had to quickly arrange accommodation for the night and explore the city in the
-      meantime. Despite the inconvenience, I made the most of it, enjoying the local cuisine and
-      atmosphere. The following day, I finally boarded the flight to London, grateful to continue
-      my journey. This experience taught me the importance of patience and resilience when
-      dealing with unexpected travel challenges.
-      5. Once, I was traveling to Paris for a business conference. However, upon arriving at the airport, I
-      realized I had misread the departure time, and I had missed my flight. Panicked, I quickly
-      contacted the airline to explore my options. After some tense moments, they managed to
-      rebook me on a later flight with a layover. I had to endure a longer journey with the layover, but eventually, I made it to Paris just in time for the conference. It was a stressful experience, but it
-      taught me the importance of double-checking travel details and staying calm in unexpected
-      situations.
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
-  `},post$d={title:"241204",tag:"#롤플레이 #질문",content:`
-      1. Yes, I've had the opportunity to travel to several countries, including Japan. One striking
-      difference I noticed in Japan compared to my home country is the geography. While my
-      country has vast open plains and mountain ranges, Japan is characterized by its
-      mountainous terrain and dense urban areas. The landscape in Japan is incredibly diverse,
-      with lush forests, volcanic peaks, and coastal regions. Additionally, Japan's unique
-      geography influences its culture and lifestyle, with traditions like hot spring bathing and
-      terraced rice paddies flourishing in the mountainous regions. Overall, experiencing Japan's
-      geography firsthand was both fascinating and enriching, offering a different perspective on
-      natural landscapes and human interaction with the environment.
-      2. Yes, I've rented a car from a rental agency before. It was during a family vacation to
-      California. We rented the car to have the flexibility to explore various attractions and
-      scenic routes along the coast. We picked up the car at the airport upon our arrival. The
-      rental process was smooth, and the staff provided helpful information about the vehicle
-      and driving regulations. Throughout our trip, the car offered convenience and freedom,
-      allowing us to visit remote destinations and travel at our own pace. Returning the car was
-      equally straightforward, and overall, the experience enhanced our travel experience,
-      making it more enjoyable and memorable.
-      3. During a vacation to Thailand with friends, we decided to explore the lesser-known island
-      of Koh Lanta. One evening, while strolling along the beach, we stumbled upon a gathering
-      of locals and tourists celebrating a traditional Thai festival called Loy Krathong. Intrigued,
-      we joined in the festivities, which included floating candle-lit baskets on the water to pay
-      respect to the goddess of water. As the night progressed, we found ourselves immersed in
-      the vibrant atmosphere, surrounded by the glow of lanterns and the sound of traditional
-      music. It was a magical and unexpected experience that allowed us to connect with the
-      local culture in a meaningful way, leaving us with cherished memories of our time in
-      Thailand.
-      4. One special experience that taught me a lot about Korea was during the 2018 Winter
-      Olympics held in Pyeongchang. It was a moment of national pride and excitement as the
-      world turned its attention to Korea. Through this event, I learned about Korea's ability to
-      host large-scale international events with precision and hospitality. I witnessed the unity
-      and enthusiasm of the Korean people as they cheered for their athletes and celebrated
-      their cultural heritage. The Olympics showcased Korea's rich history, modern
-      infrastructure, and commitment to excellence on a global stage. It was a reminder of
-      Korea's capacity to inspire and unite people from diverse backgrounds through the power
-      of sports and shared values.
-      5. Yes, I've had an experience where I lost something important. It was during a trip to Europe
-      when I misplaced my passport. I realized it was missing just as I was about to check in for my
-      flight back home. Panic set in as I frantically searched through my belongings and retraced my
-      steps. Eventually, I remembered leaving it at a café I had visited earlier that day. I rushed back
-      to the café, and thankfully, they had kept it safe for me. It was a stressful experience, but it
-      taught me the importance of being vigilant with important documents and double-checking
-      before leaving any place.
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
-  `},post$c={title:"241205",tag:"#영화 #콘서트",content:`
-      1. My favorite actor is Matt Damon.
-      2. He actually becomes the character, and it's so believable.
-      3. He studied for his undergraduate degree at Harvard, and he even writes scenarios.
-      4. I usually go to the theater in my neighborhood.
-      5. It's very big with lots of screenings. So I can always watch a movie whenever I want.
-      6. At the theater, I get my ticket from the ticket booth.
-      7. I never let my friend talk because it really distracts me.
-      8. I checked from the internet to see what's recently been released.
-      9. I wanted to see the film because I had read quite good compliments on the movie.
-      10. The actress, Natalie Portman also won the Best Actress Oscar.
-      11. My best friend, Kim and I have the same taste in music.
-      12. We usually go for a drink and share our feelings about the convert.
-      13. I like to attend the concerts of my favorite singers.
-      14. I like musicians who play hip hop and dance music.
-      15. I may not be able to see them in person ever again in my life.
-      16. I often go to classic concerts like symphony or piano recitals.
-      17. Since then, I've become a huge fan of live concerts.
-      18. At the concert hall, we saw many Korean musicians came to see Lady Gaga.
-      19. She was actually really good at singing, and the concert was amazing.
-      20. Kim and I were so impressed, and I definitely want to go see her again.
-      \`\`\`
-      강지완 오픽TV를 기반으로 작성한 글입니다.
-      \`\`\`
-  `},post$b={title:"개요",tag:"#데이터 #명령어 #핵심부품",content:`
+`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(a=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:a.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,o)=>jsxRuntimeExports.jsx("div",{className:o<a.level?"filled":"empty"},o))})]},a.label))})]})]}),tags={all:"전체 게시글",englishConversation:"영어회화",algorithm:"알고리즘",computerArchitecture:"컴퓨터 구조",operatingSystem:"운영체제",dataStructure:"자료구조",network:"네트워크",database:"데이터베이스",softwareDesign:"소프트웨어 설계",softwareDevelopment:"소프트웨어 개발",databaseConstruction:"데이터베이스 구축",programmingLanguages:"프로그래밍 언어 활용",informationSystemManagement:"정보시스템 구축관리"},tagValues=Object.values(tags),post$o={title:"컴퓨터 구조 개요",time:"241106_1",tags:[tags.computerArchitecture],content:`
         ## 컴퓨터는 0과 1만 이해할 수 있다!
         > 0과 1로 이루어진 데이터와 명령어에 의해 작동
         ### 데이터
@@ -4593,7 +4257,31 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         이것이 취업을 위한 컴퓨터 과학이다 
         with CS 기술 면접을 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$a={title:"비트와 바이트",tag:"#워드",content:`
+    `},post$n={title:"오픽241119",time:"241119_0",tags:[tags.englishConversation],content:`
+      1. I like my neighborhood because it's a quiet and convenient place to live.
+      2. I live in an apartment complex near the downtown area.
+      3. Although it's close to downtown, my town is pretty quiet.
+      4. I use public transportation to get around.
+      5. The only neighbor I talk to is Mr.Lee who lives upstairs.
+      6. We run into each other about once a week.
+      7. We usually have a conversation when we both get into the elevator.
+      8. Sometimes they meet up with their friends and chat for a while at a coffee shop or go shopping together.
+      9. She played it for five straight hours, and I couldn't stand it.
+      10. I called the building superintendent and complained about it.
+      11. It is still in good condition.
+      12. My mom put some paintings in the living room.
+      13. When I first moved into my house, everything was brand new.
+      14. First of all, I bought a new refrigerator.
+      15. The old one broke down and made a weird sound.
+      16. The new one is a lot bigger than the old one, so we can put more stuff inside.
+      17. My new bed is really big and takes up a lot of space.
+      18. My apartment is small and cozy.
+      19. I hope I could get a top-floor apartment so that nobody lives above me.
+      20. When it gets really cold in Korea, the water pipes can freeze.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$m={title:"비트와 바이트",time:"241119_1",tags:[tags.computerArchitecture],content:`
         ## 8비트는 1바이트!
         - 이전 단위 1000개
             - kB, MB, GB, TB
@@ -4607,7 +4295,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         이것이 취업을 위한 컴퓨터 과학이다 
         with CS 기술 면접을 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$9={title:"데이터",tag:"#진법 #부동소수점 #유니코드 #base64",content:`
+    `},post$l={title:"데이터",time:"241119_2",tags:[tags.computerArchitecture],content:`
         ## 2진수는 너무 길다!
         > 10진수를 2진수, 16진수로
         - 2진법: 0b~
@@ -4647,7 +4335,31 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         이것이 취업을 위한 컴퓨터 과학이다 
         with CS 기술 면접을 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$8={title:"명령어",tag:"#연산 코드 #오퍼랜드",content:"\n        ## 일해라 + 컴퓨터!\n        > 연산코드 + 오퍼랜드\n        - 오퍼랜드: 데이터 저장 위치\n        - 연산코드\n        \n            | **분류**        | **연산 코드**       | **설명**                                                                                              | **예시**                    |\n            |------------------|---------------------|------------------------------------------------------------------------------------------------------|-----------------------------|\n            | **데이터 전송** | `MOV`               | 데이터 복사. 레지스터, 메모리, 즉시값 간의 데이터 이동.                                                | `MOV AX, BX` (AX ← BX)      |\n            |                  | `PUSH` / `POP`     | 스택에 데이터를 저장(`PUSH`)하거나 꺼냄(`POP`).                                                        | `PUSH AX`, `POP BX`         |\n            |                  | `LOAD` / `STORE`   | 메모리에서 레지스터로 데이터 로드(`LOAD`), 레지스터에서 메모리로 저장(`STORE`).                          | `LOAD R1, 0x1000`           |\n            |                  | `LEA`              | 메모리 주소 계산 및 로드.                                                                             | `LEA DX, [BX+SI]`           |\n            | **산술 연산**   | `ADD`               | 두 값을 더함.                                                                                        | `ADD AX, BX` (AX ← AX + BX) |\n            |                  | `SUB`               | 두 값을 뺌.                                                                                          | `SUB AX, BX` (AX ← AX - BX) |\n            |                  | `MUL` / `DIV`      | 곱셈(`MUL`), 나눗셈(`DIV`).                                                                           | `MUL AX`                    |\n            |                  | `INC` / `DEC`      | 값을 1 증가(`INC`), 1 감소(`DEC`).                                                                    | `INC AX`, `DEC BX`          |\n            | **논리 연산**   | `AND`               | 비트 단위로 AND 연산.                                                                                 | `AND AX, BX`                |\n            |                  | `OR`                | 비트 단위로 OR 연산.                                                                                  | `OR AX, BX`                 |\n            |                  | `XOR`               | 비트 단위로 XOR 연산.                                                                                 | `XOR AX, BX`                |\n            |                  | `NOT`               | 비트를 반전.                                                                                         | `NOT AX`                    |\n            |                  | `SHL` / `SHR`      | 비트를 왼쪽으로 이동(`SHL`), 오른쪽으로 이동(`SHR`).                                                   | `SHL AX, 1`                 |\n            | **제어 흐름 변경** | `JMP`               | 무조건적인 분기.                                                                                      | `JMP 0x200`                 |\n            |                  | `JE` / `JNE`       | 조건부 분기: 값이 같으면 점프(`JE`), 값이 다르면 점프(`JNE`).                                          | `JE 0x300`                  |\n            |                  | `CALL` / `RET`     | 서브루틴 호출(`CALL`), 서브루틴에서 복귀(`RET`).                                                       | `CALL FUNC`, `RET`          |\n            |                  | `LOOP`             | 반복 실행: 카운터 레지스터(`CX`) 값이 0이 될 때까지 점프.                                              | `LOOP 0x400`                |\n            |                  | `CMP`              | 두 값을 비교. 조건부 점프와 함께 사용.                                                                 | `CMP AX, BX`                |\n            | **입출력 제어** | `IN`                | 지정된 포트에서 데이터를 읽음.                                                                        | `IN AL, 0x60`               |\n            |                  | `OUT`               | 지정된 포트로 데이터를 출력.                                                                          | `OUT 0x60, AL`              |\n            |                  | `HLT`              | 시스템을 중지하거나 대기 상태로 전환.                                                                  | `HLT`                       |\n            |                  | `NOP`              | 아무 작업도 하지 않음 (대기).                                                                          | `NOP`                       |\n        ## 기계어 몰라 번역해줘!\n        > 어셈블리어로 변역\n        - 비교\n            | **특성/기능**          | **CISC (Complex Instruction Set Computer)**                | **RISC (Reduced Instruction Set Computer)**                |\n            |-----------------------|-----------------------------------------------------------|-----------------------------------------------------------|\n            | **설계 철학**         | 복잡한 명령어를 포함하여 한 번에 많은 작업을 처리.           | 단순하고 적은 수의 명령어를 빠르게 실행.                   |\n            | **명령어 수**         | 수백 개에서 수천 개.                                       | 수십 개에서 백여 개.                                       |\n            | **명령어 구조**       | 다양한 길이의 명령어를 지원.                                | 고정 길이 명령어.                                           |\n            | **명령어 처리 속도**  | 상대적으로 느림(복잡한 디코딩).                             | 매우 빠름(파이프라이닝 최적화).                             |\n            | **주요 사용 사례**    | x86(인텔, AMD), VAX, IBM 메인프레임 등.                    | ARM, MIPS, RISC-V, PowerPC 등.                             |\n            | **데이터 전송**       | `MOV AX, [1000H]` (메모리에서 레지스터로 이동)             | `LW R1, 0(R2)` (메모리에서 레지스터로 이동)               |\n            | **산술 연산**         | `ADD AX, BX` (두 레지스터 덧셈)                            | `ADD R1, R2, R3` (두 레지스터 덧셈)                       |\n            | **메모리 접근**       | `ADD AX, [1000H]` (메모리 값과 덧셈)                        | `LW R1, 0(R2)`<br>`ADD R3, R1, R4` (로드 후 계산)         |\n            | **스택 연산**         | `PUSH AX` (레지스터 값을 스택에 저장)                       | `SW R1, -4(SP)`<br>`ADDI SP, SP, -4` (메모리 저장 후 스택 포인터 조정) |\n            | **조건부 분기**       | `JZ 0x100` (값이 0이면 분기)                              | `BEQ R1, R2, 0x100` (값이 같으면 분기)                    |\n            | **함수 호출**         | `CALL 0x200` (서브루틴 호출)                              | `JAL 0x200` (서브루틴 호출)                               |\n            | **비트 연산**         | `AND AX, BX` (두 값의 비트 AND)                            | `AND R1, R2, R3` (두 값의 비트 AND)                       |\n        ## 읽고 읽고 실행!\n        > 명령어를 읽고 데이터를 읽고 실행\n        - 인출 사이클: 명령어를 CPU로\n        - 실행 사이클: CPU가 명령 실행\n        - 간접 사이클: 데이터를 CPU로\n        - 데이터가 필요없다면 간접 스킵\n        ```\n        이것이 취업을 위한 컴퓨터 과학이다 \n        with CS 기술 면접을 기반으로 작성한 글입니다.\n        ```\n    "},post$7={title:"플랫폼",tag:"#기능분석 #성능분석",content:`
+    `},post$k={title:"명령어",time:"241119_3",tags:[tags.computerArchitecture],content:"\n        ## 일해라 + 컴퓨터!\n        > 연산코드 + 오퍼랜드\n        - 오퍼랜드: 데이터 저장 위치\n        - 연산코드\n        \n            | **분류**        | **연산 코드**       | **설명**                                                                                              | **예시**                    |\n            |------------------|---------------------|------------------------------------------------------------------------------------------------------|-----------------------------|\n            | **데이터 전송** | `MOV`               | 데이터 복사. 레지스터, 메모리, 즉시값 간의 데이터 이동.                                                | `MOV AX, BX` (AX ← BX)      |\n            |                  | `PUSH` / `POP`     | 스택에 데이터를 저장(`PUSH`)하거나 꺼냄(`POP`).                                                        | `PUSH AX`, `POP BX`         |\n            |                  | `LOAD` / `STORE`   | 메모리에서 레지스터로 데이터 로드(`LOAD`), 레지스터에서 메모리로 저장(`STORE`).                          | `LOAD R1, 0x1000`           |\n            |                  | `LEA`              | 메모리 주소 계산 및 로드.                                                                             | `LEA DX, [BX+SI]`           |\n            | **산술 연산**   | `ADD`               | 두 값을 더함.                                                                                        | `ADD AX, BX` (AX ← AX + BX) |\n            |                  | `SUB`               | 두 값을 뺌.                                                                                          | `SUB AX, BX` (AX ← AX - BX) |\n            |                  | `MUL` / `DIV`      | 곱셈(`MUL`), 나눗셈(`DIV`).                                                                           | `MUL AX`                    |\n            |                  | `INC` / `DEC`      | 값을 1 증가(`INC`), 1 감소(`DEC`).                                                                    | `INC AX`, `DEC BX`          |\n            | **논리 연산**   | `AND`               | 비트 단위로 AND 연산.                                                                                 | `AND AX, BX`                |\n            |                  | `OR`                | 비트 단위로 OR 연산.                                                                                  | `OR AX, BX`                 |\n            |                  | `XOR`               | 비트 단위로 XOR 연산.                                                                                 | `XOR AX, BX`                |\n            |                  | `NOT`               | 비트를 반전.                                                                                         | `NOT AX`                    |\n            |                  | `SHL` / `SHR`      | 비트를 왼쪽으로 이동(`SHL`), 오른쪽으로 이동(`SHR`).                                                   | `SHL AX, 1`                 |\n            | **제어 흐름 변경** | `JMP`               | 무조건적인 분기.                                                                                      | `JMP 0x200`                 |\n            |                  | `JE` / `JNE`       | 조건부 분기: 값이 같으면 점프(`JE`), 값이 다르면 점프(`JNE`).                                          | `JE 0x300`                  |\n            |                  | `CALL` / `RET`     | 서브루틴 호출(`CALL`), 서브루틴에서 복귀(`RET`).                                                       | `CALL FUNC`, `RET`          |\n            |                  | `LOOP`             | 반복 실행: 카운터 레지스터(`CX`) 값이 0이 될 때까지 점프.                                              | `LOOP 0x400`                |\n            |                  | `CMP`              | 두 값을 비교. 조건부 점프와 함께 사용.                                                                 | `CMP AX, BX`                |\n            | **입출력 제어** | `IN`                | 지정된 포트에서 데이터를 읽음.                                                                        | `IN AL, 0x60`               |\n            |                  | `OUT`               | 지정된 포트로 데이터를 출력.                                                                          | `OUT 0x60, AL`              |\n            |                  | `HLT`              | 시스템을 중지하거나 대기 상태로 전환.                                                                  | `HLT`                       |\n            |                  | `NOP`              | 아무 작업도 하지 않음 (대기).                                                                          | `NOP`                       |\n        ## 기계어 몰라 번역해줘!\n        > 어셈블리어로 변역\n        - 비교\n            | **특성/기능**          | **CISC (Complex Instruction Set Computer)**                | **RISC (Reduced Instruction Set Computer)**                |\n            |-----------------------|-----------------------------------------------------------|-----------------------------------------------------------|\n            | **설계 철학**         | 복잡한 명령어를 포함하여 한 번에 많은 작업을 처리.           | 단순하고 적은 수의 명령어를 빠르게 실행.                   |\n            | **명령어 수**         | 수백 개에서 수천 개.                                       | 수십 개에서 백여 개.                                       |\n            | **명령어 구조**       | 다양한 길이의 명령어를 지원.                                | 고정 길이 명령어.                                           |\n            | **명령어 처리 속도**  | 상대적으로 느림(복잡한 디코딩).                             | 매우 빠름(파이프라이닝 최적화).                             |\n            | **주요 사용 사례**    | x86(인텔, AMD), VAX, IBM 메인프레임 등.                    | ARM, MIPS, RISC-V, PowerPC 등.                             |\n            | **데이터 전송**       | `MOV AX, [1000H]` (메모리에서 레지스터로 이동)             | `LW R1, 0(R2)` (메모리에서 레지스터로 이동)               |\n            | **산술 연산**         | `ADD AX, BX` (두 레지스터 덧셈)                            | `ADD R1, R2, R3` (두 레지스터 덧셈)                       |\n            | **메모리 접근**       | `ADD AX, [1000H]` (메모리 값과 덧셈)                        | `LW R1, 0(R2)`<br>`ADD R3, R1, R4` (로드 후 계산)         |\n            | **스택 연산**         | `PUSH AX` (레지스터 값을 스택에 저장)                       | `SW R1, -4(SP)`<br>`ADDI SP, SP, -4` (메모리 저장 후 스택 포인터 조정) |\n            | **조건부 분기**       | `JZ 0x100` (값이 0이면 분기)                              | `BEQ R1, R2, 0x100` (값이 같으면 분기)                    |\n            | **함수 호출**         | `CALL 0x200` (서브루틴 호출)                              | `JAL 0x200` (서브루틴 호출)                               |\n            | **비트 연산**         | `AND AX, BX` (두 값의 비트 AND)                            | `AND R1, R2, R3` (두 값의 비트 AND)                       |\n        ## 읽고 읽고 실행!\n        > 명령어를 읽고 데이터를 읽고 실행\n        - 인출 사이클: 명령어를 CPU로\n        - 실행 사이클: CPU가 명령 실행\n        - 간접 사이클: 데이터를 CPU로\n        - 데이터가 필요없다면 간접 스킵\n        ```\n        이것이 취업을 위한 컴퓨터 과학이다 \n        with CS 기술 면접을 기반으로 작성한 글입니다.\n        ```\n    "},post$j={title:"오픽241120",time:"241120_0",tags:[tags.englishConversation],content:`
+      1. In my house, there is a huge sofa in the middle of the living room.
+      2. When I'm at home, I spend most of my time on the sofa.
+      3. In my room. I have a desk a bed and a closet.
+      4. My closet is pretty big because I share it with my sister.
+      5. In the kitchen, there is a big dining table where we have dinner together
+      6. It's a big closet with small drawers. So I store most of my wardrobe in it.
+      7. There are so many useful home appliances.
+      8. I always use the microwave to heat up my food and drinks.
+      9. There are many smaller devices I like such as the blender and the kettle.
+      10. I use the blender every morning to make some apple juice.
+      11. My favorite actor is Matt Damon.
+      12. He actually becomes the charactor, and it's so believable.
+      13. He studied for his undergraduate degree at Harvard, and he even writes scenarios.
+      14. I usually go to the theater in my neighborhood.
+      15. It's very big with lots of screenings. So I can always watch a movie whenever I want.
+      16. At the theater, I get my tickets from the ticket booth.
+      17. I never let my friend talk because it really distracts me.
+      18. I checked from the internet to see what's recently been released.
+      19. I wanted to see the film because I had read quite good compliments on the movie.
+      20. The actress, Natalie Portman also won the Best Actress Oscar.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$i={title:"플랫폼",time:"241120_1",tags:[tags.softwareDevelopment],content:`
         ## 애플리케이션 구동에 필요한 SW 환경!
         > 플랫폼 내에서는 상호 호환이 가능한 결합체
         - 유형: 싱글, 투, 멀티
@@ -4663,7 +4375,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$6={title:"운영체제",tag:"#시스템 분석 #종류",content:`
+    `},post$h={title:"운영체제",time:"241120_2",tags:[tags.softwareDevelopment],content:`
         ## 컴퓨터를 더 쉽게 사용하기 위한 SW!
         > 하드웨어 및 소프트웨어 자원을 효율적으로 관리하며 공통된 기능 제공
         - 현행 시스템 분석
@@ -4674,7 +4386,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$5={title:"네트워크",tag:"#데이터 #방식 #망 #장비 #시스템",content:`
+    `},post$g={title:"네트워크",time:"241120_3",tags:[tags.softwareDevelopment],content:`
         ## 서로 데이터를 교환하는 기술!
         > 데이터 링크는 유무선 매체로 성립
         - 현행 시스템 분석
@@ -4688,7 +4400,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$4={title:"DBMS",tag:"#기능 #분석",content:`
+    `},post$f={title:"DBMS",time:"241120_4",tags:[tags.softwareDevelopment],content:`
         ## 데이터 집합, 저장, 관리 제공!
         > 데이터베이스 기능 제공하는 응용 프로그램
         - 기능
@@ -4706,7 +4418,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$3={title:"비즈니스 융합",tag:"#유형 #절차",content:`
+    `},post$e={title:"비즈니스 융합",time:"241120_5",tags:[tags.softwareDevelopment],content:`
         ## 혁신을 위한 기업 활동!
         > 새로운 비즈니스 모델로 범위 확대
         - 유형
@@ -4725,7 +4437,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$2={title:"요구분석",tag:"#특징 #절차 #기술 #모델링 기법",content:`
+    `},post$d={title:"요구분석",time:"241120_6",tags:[tags.softwareDevelopment],content:`
         ## 사용자의 요구를 목표!
         > 모호한 부분 거르기, 방식 정하기
         - 특징: 요구 이해, 문서화, 소단위 명세서, 도메인 분석
@@ -4766,7 +4478,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$1={title:"UML",tag:"#다이어그램 #관계 #스테레오 타입",content:`
+    `},post$c={title:"UML",time:"241120_7",tags:[tags.softwareDevelopment],content:`
         ## 객체 지향 SW 개발 표준화 범용 모델링 언어!
         > 명세화, 시각화, 문서화, 모델링 기술, 방법론
         - 특징: 가시화, 구축, 명세화, 문서화
@@ -4807,7 +4519,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post={title:"에자일",tag:"#특징 #유형",content:`
+    `},post$b={title:"에자일",time:"241120_8",tags:[tags.softwareDevelopment],content:`
         ## 개발과 함께 즉시 피드백!
         > 잦은 배포, 변화에 신속한 대응
         - 특징: 기능 중심, 개인과 소통, 짧은 계획, 실행에 가치, 피드백
@@ -4863,7 +4575,295 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},posts$1=[[post$n,post$m,post$l,post$k,post$j,post$i,post$h,post$g,post$f,post$e,post$d,post$c],[],[],[post$b,post$a,post$9,post$8],[],[],[],[],[],[post$7,post$6,post$5,post$4,post$3,post$2,post$1,post],[],[],[],[],[],[],[],[],[],[]],SpiralContainer=dt.div`
+    `},post$a={title:"오픽241121",time:"241121_0",tags:[tags.englishConversation],content:`
+      1. My best friend, Kim and I have the same taste in music.
+      2. We usually go for a drink and share our feelings about the concert.
+      3. I like to attend the concerts of my favorite singers.
+      4. I like musicians who play hip hop and dance music.
+      5. I may not be able to see them in person ever again in my life.
+      6. I often go to classic concerts like symphony or piano recitals.
+      7. Since then, I've become a huge fan of live concerts.
+      8. At the concert hall, we saw many Korean musicians came to see Lady Gaga.
+      9. She was actually really good at singing and the concert was amazing.
+      10. Kim and I were so impressed, and I definitely want to go see her again.
+      11. When you walk through the gate, you can see a lot of trees and lawn.
+      12. There is a small pond inside the park.
+      13. When I go to the park, I usually take a walk first.
+      14. It takes about 15 minutes to walk around the whole park, So, I walk a few laps around the park.
+      15. We have a nice conversation while walking back home.
+      16. I lie down on the grass and read a book.
+      17. I want to jog there but end up just walking.
+      18. We found a nice spot to sit and put a blanket on the grass.
+      19. We spent a whole afternoon in the park.
+      20. When I visited the park that I usually go to, I actually ran into my ex-girlfriend.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$9={title:"오픽241125",time:"241125_0",tags:[tags.englishConversation],content:`
+      1. You can make any kind of fried rice by adding whatever you want.
+      2. To make it, you need a bowl of rice and egg and any ingredients you want to put in the rice.
+      3. Stir fry them until they look good.
+      4. When it's ready, put an egg fried Sunnyside on the top and enjoy your dish.
+      5. They're easy to make but the taste isn't guaranteed.
+      6. The first time I cooked was when I made dinner for my family.
+      7. I decided to make seafood pasta for the main dish.
+      8. It was her first time to actually cook besides instant noodles.
+      9. She googled the recipe and bought every ingredient she needed.
+      10. When she got home after the delivery, her brother told her how salty her chocolate was.
+      11. My MP3 player is very small and light, but it contains thousands of songs I like.
+      12. I like dance and Hip-hop music the most because they cheer me up.
+      13. Sometimes I listen to Jazz and classical music before I go to bed.
+      14. My favorite singer and composer is JYP.
+      15. I love his music because he composes great melodies and lyrics.
+      16. I just like the way he thinks and expresses himself.
+      17. Most of his songs are very popular in Korea.
+      18. I was so excited to have a portable music device.
+      19. I always carried it with me, and I was always listening to music.
+      20. I could focus well with some background music.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$8={title:"오픽241126",time:"241126_0",tags:[tags.englishConversation],content:`
+      1. I don't need a companion to jog because I just like running and listening to music.
+      2. I like to run on a treadmill.
+      3. When I jog, I need a good pair of running shoes.
+      4. I also put on some sunblock before I jog.
+      5. I decided to jog because I was gaining weight.
+      6. I wanted to lose some weight and I decided to jog
+      7. I jog because I want to keep in shape.
+      8. I knew I'd be more tired if I skipped exercising.
+      9. I turned around and ran back home, but I was already soaked in the heavy rain.
+      10. I learned to check the weather before I go jogging.
+      11. I go to a gym at least three times a week to work out.
+      12. When I first started to work out, I was extremely tired.
+      13. The main purpose of going to a gym is to stay fit.
+      14. I was a little overweight when I was a kid.
+      15. It was not easy to lose weight. So I never miss my workout.
+      16. The gym I go to has a lot of exercise equipment.
+      17. I often have difficulties because in order to do weight training properly.
+      18. Without anyone spotting you, you might drop the dumbbell.
+      19. At the gym, I first do stretch, so I won't get hurt during my workout.
+      20. After I'm done with running, I do weight training to build up some muscles.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$7={title:"오픽241127",time:"241127_0",tags:[tags.englishConversation],content:`
+      1. I once won the race in the women's 100m freestyle.
+      2. I know all the strokes, and my favorite stroke is freestyle.
+      3. My mom signed me up for swimming lessons at a sports center.
+      4. He actually was a really good swimmer, and I learned from him a lot.
+      5. I think of him is a great instructor, but I'm still a little scared of him.
+      6. Indoor pools were boring. So, I asked my parents to take me to the beach.
+      7. My mom made me wear a life jacket.
+      8. I got very tired and had no energy to swim, and of course, I was pretty far from the shore.
+      9. I started to drown and I was so scared.
+      10. It was the scariest thing ever. And since then, I don't really like to swim in the ocean.
+      11. It's a used mountain bike with 24 gears.
+      12. I usually go riding on my bike along the bank.
+      13. I always wear my helmet when I ride my bike.
+      14. My dad put two training wheels on the reer wheel so that I would't fall down.
+      15. Bicycles with four wheels don't go as fast as two wheeled ones.
+      16. He held my bike from the back until I could ride by myself.
+      17. He showed me wounds he got from mountain biking.
+      18. I decided to give it a try.
+      19. Suddenly, a dog jumped in front of me, and I had to slam on the brakes.
+      20. I couldn't hear his owner calling out the dog's name.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$6={title:"오픽241128",time:"241128_0",tags:[tags.englishConversation],content:`
+      1. My first international trip was to Canada.
+      2. I had traveled to many different spots in Korea, but it was my first time traveling overseas.
+      3. I had made my first passport as well because it was our first family vacation outside Korea.
+      4. I don't know why  my dad chose Canada as our first destination.
+      5. I always try to pack light when I travel.
+      6. Having a heavy or big suitcase actually could be a big hassle.
+      7. I also pack an emergency medical kit whenever I travel.
+      8. I'd like to travel there because I want to see pyramids and other ancient building.
+      9. I've always had an admiration for Egypt.
+      10. When I get there, I would like to take pictures of the great ancient architecture.
+      11. I love going to Jeju Island because I think it is the most beautiful island in Korea.
+      12. A lot of movie and drama scenes were filmed there.
+      13. Since it is an island seafood, that is extremely fresh and delicious.
+      14. I would most likely go to Jeju Island for my domestic trip.
+      15. I always bring at least one sweater to a trip even if the place is hot.
+      16. After packing clothes, I packed all the toiletries and cosmetics.
+      17. The last things I pack or my passport, travel guide and wallet.
+      18. My passport is not necessary, if I am traveling within my country.
+      19. A travel guide is always useful even if you know the place well.
+      20. I would love to go to places I've been, which I do not remember.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$5={title:"오픽241129",time:"241129_0",tags:[tags.englishConversation],content:`
+      1. What are your operating hours?
+      2. Do I need a reservation, or can I walk in?
+      3. Are you open on weekends or holidays?
+      4. Do you offer any discounts or promotions?
+      5. What forms of payment do you accept?
+      6. Is there parking available nearby?
+      7. Do you have Wi-Fi access for customers?
+      8. Are there any upcoming events or specials?
+      9. Can I place an order for takeout or delivery?
+      10. Are there any vegetarian or vegan options on the menu?
+      11. How far in advance do I need to book for the service?
+      12. Are pets allowed in your establishment?
+      13. What is the average wait time during peak hours?
+      14. Do you have a customer loyalty program?
+      15. Are there any age restrictions for entry?
+      16. Can I bring my own food or drink?
+      17. What is your cancellation policy?
+      18. Do you have gift cards available for purchase?
+      19. How do I reach your customer service department?
+      20. Is there a lost and found service on the premises?
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$4={title:"오픽241202",time:"241202_0",tags:[tags.englishConversation],content:`
+      1. Excuse me, I purchased this item recently and it doesn't fit. Can I exchange it for a different size?
+      2. Hi, I ordered this online, but there seeems to be a defect. Can I get a replacement or a refund?
+      3. I received the wrong item in my online order. How can we proceed with correcting this?
+      4. This product is not what I expected. Can I return it and get a refund?
+      5. I have a receipt for this purchase, and it's within the return period. Can I get a refund?
+      6. My online order hasn't arrived, and it's past the estimated delivery date. Can you assist me?
+      7. I'd like to cancel my online order. How can I go about doing that?
+      8. There was an issue with my meel, it's not what I ordered. Can you replace it or refund me?
+      9. My food order was delivered cold. Can I get a replacement or a refund.
+      10. I found a defect in this product I bought in-store. Can I exchange it or get a refund?
+      11. The quality of this item doesn't meet my expectations. Can I return it for a refund?
+      12. I booked tickets for the wrong date for the theater. Is there any way to exchange them?
+      13. There was an issue with my hotel room, it doesn't match my reservation. Can it be corrected?
+      14. I accidentally made a duplicate online purchase. Can I cancel one of the orders?
+      15. I bought this item as a gift, but the recipient already has one. Can I return it for store credit?
+      16. The shoes I ordered  online are uncomfortable. Can I return or exchange them?
+      17. The item I received online doesn't match the description. Can I get a refund?
+      18. I accidentally ordered the wrong size online. Can I exchange it for the correct size?
+      19. The movie I purchased online won't play. Can you help troubleshoot the issue?
+      20. I was overcharged for my hotel stay. Can you review the charges and correct the billing?
+      21. I lost my receipt, but I'd like to return this item. Is there an alternative way to process the return?
+      22. I bought this item in-store, but it's damaged. Can I get a replacement or a refund?
+      23. The online item I received is not the color I expected. Can I exchange it for a different color?
+      24. My theater tickets were charged twice. Can you help resolve this billing issue?
+      25. I made a mistake in my online order, can I modify it before it ships?
+      26. I received a damaged product in my online order. How can we proceed with a replacement?
+      27. The hotel room doesn't match the amenities described in the reservation. Can this be addressed?
+      28. i accidentally spilled something on the clothing I just bought. Can I still return it?
+      29. The online order confirmation email hasn't arrived. Can you resend it or confirm my order status?
+      30. The service at the restaurant was unsatisfactory. Can the bill be adjusted accordinglY?
+
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$3={title:"오픽241203",time:"241203_0",tags:[tags.englishConversation],content:`
+      1. Once, I purchased a smartphone online, expecting top-notch performance basedon the advertised specifications.
+      However, upon receiving it, I realized the battery life was significantly shorter thanexpected, and the camera quality was subpar. Despite the promising features
+      listed, they didn't meet my standards. It was frustrating because I heavily relied onthese aspects for work and personal use. I had to go through the hassle of
+      returning the device and finding an alternative that better suited my needs,
+      emphasizing the importance of thorough research before making tech purchases.
+      2. Yes, I remember a time when I had planned a trip to attend a music festival with some friends during the summer. We had bought the concert tickets months in advance and were eagerly looking forward to it. However, just a week before the trip, an unexpected family emergency arose, and I had to cancel my plans at the last minute.
+      I immediately contacted my friends and informed them about the situation. They were understanding but disappointed, as we had all been excited about the trip. Then, I reached out to the festival organizers to inquire about the possibility of
+      getting a refund or rescheduling the tickets. Thankfully, they had a policy for emergencies like mine, and they allowed me to either get a refund or transfer my tickets to next year's festival.
+      After weighing my options, I decided to transfer my tickets to the next year's event since I didn't want to miss out on the
+      experience entirely. I made sure to note the new dates and put them in my calendar. Although it was disappointing to miss out on the trip with my friends, I was relieved that I could still attend the festival the following year. It taught me the
+      importance of being flexible and proactive when dealing with unexpected changes in plans.
+      3. Certainly! One particularly memorable travel experience happened during a trip to Japan a couple of years ago. It was a solo journey, and I was exploring the beautiful city of Kyoto during the cherry blossom season.
+      I vividly remember walking through the historic streets of Gion, admiring the traditional wooden machiya houses and the serene
+      atmosphere. As I turned a corner, I stumbled upon a small, hidden temple tucked away from the bustling crowds. Intrigued, I
+      decided to explore it further.
+      Inside the temple grounds, I discovered a group of local musicians setting up for a traditional Japanese music performance. It was
+      completely unexpected, and I felt like I had stumbled upon a hidden gem. As the musicians began to play, the tranquil melody of the shamisen and the haunting sound of the shakuhachi flute filled the air, creating a magical atmosphere.
+      I sat down on a nearby bench and allowed myself to be fully immersed in the experience. The combination of the music, the cherryblossoms swaying gently in the breeze, and the peaceful surroundings created a moment of pure serenity and beauty.
+      What made this experience truly unforgettable was the spontaneity and serendipity of the encounter. It was a reminder that
+      sometimes the most memorable moments happen when we least expect them, and it left me with a deep appreciation for the
+      beauty and wonder of travel.
+      4. Once, during a trip from New York City to London, my flight got canceled unexpectedly
+      due to bad weather in London. It was a chaotic scene at the airport as passengers
+      scrambled to find solutions. After a long wait, I managed to secure a seat on the next day's
+      flight. I had to quickly arrange accommodation for the night and explore the city in the
+      meantime. Despite the inconvenience, I made the most of it, enjoying the local cuisine and
+      atmosphere. The following day, I finally boarded the flight to London, grateful to continue
+      my journey. This experience taught me the importance of patience and resilience when
+      dealing with unexpected travel challenges.
+      5. Once, I was traveling to Paris for a business conference. However, upon arriving at the airport, I
+      realized I had misread the departure time, and I had missed my flight. Panicked, I quickly
+      contacted the airline to explore my options. After some tense moments, they managed to
+      rebook me on a later flight with a layover. I had to endure a longer journey with the layover, but eventually, I made it to Paris just in time for the conference. It was a stressful experience, but it
+      taught me the importance of double-checking travel details and staying calm in unexpected
+      situations.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$2={title:"오픽241204",time:"241204_0",tags:[tags.englishConversation],content:`
+      1. Yes, I've had the opportunity to travel to several countries, including Japan. One striking
+      difference I noticed in Japan compared to my home country is the geography. While my
+      country has vast open plains and mountain ranges, Japan is characterized by its
+      mountainous terrain and dense urban areas. The landscape in Japan is incredibly diverse,
+      with lush forests, volcanic peaks, and coastal regions. Additionally, Japan's unique
+      geography influences its culture and lifestyle, with traditions like hot spring bathing and
+      terraced rice paddies flourishing in the mountainous regions. Overall, experiencing Japan's
+      geography firsthand was both fascinating and enriching, offering a different perspective on
+      natural landscapes and human interaction with the environment.
+      2. Yes, I've rented a car from a rental agency before. It was during a family vacation to
+      California. We rented the car to have the flexibility to explore various attractions and
+      scenic routes along the coast. We picked up the car at the airport upon our arrival. The
+      rental process was smooth, and the staff provided helpful information about the vehicle
+      and driving regulations. Throughout our trip, the car offered convenience and freedom,
+      allowing us to visit remote destinations and travel at our own pace. Returning the car was
+      equally straightforward, and overall, the experience enhanced our travel experience,
+      making it more enjoyable and memorable.
+      3. During a vacation to Thailand with friends, we decided to explore the lesser-known island
+      of Koh Lanta. One evening, while strolling along the beach, we stumbled upon a gathering
+      of locals and tourists celebrating a traditional Thai festival called Loy Krathong. Intrigued,
+      we joined in the festivities, which included floating candle-lit baskets on the water to pay
+      respect to the goddess of water. As the night progressed, we found ourselves immersed in
+      the vibrant atmosphere, surrounded by the glow of lanterns and the sound of traditional
+      music. It was a magical and unexpected experience that allowed us to connect with the
+      local culture in a meaningful way, leaving us with cherished memories of our time in
+      Thailand.
+      4. One special experience that taught me a lot about Korea was during the 2018 Winter
+      Olympics held in Pyeongchang. It was a moment of national pride and excitement as the
+      world turned its attention to Korea. Through this event, I learned about Korea's ability to
+      host large-scale international events with precision and hospitality. I witnessed the unity
+      and enthusiasm of the Korean people as they cheered for their athletes and celebrated
+      their cultural heritage. The Olympics showcased Korea's rich history, modern
+      infrastructure, and commitment to excellence on a global stage. It was a reminder of
+      Korea's capacity to inspire and unite people from diverse backgrounds through the power
+      of sports and shared values.
+      5. Yes, I've had an experience where I lost something important. It was during a trip to Europe
+      when I misplaced my passport. I realized it was missing just as I was about to check in for my
+      flight back home. Panic set in as I frantically searched through my belongings and retraced my
+      steps. Eventually, I remembered leaving it at a café I had visited earlier that day. I rushed back
+      to the café, and thankfully, they had kept it safe for me. It was a stressful experience, but it
+      taught me the importance of being vigilant with important documents and double-checking
+      before leaving any place.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},post$1={title:"오픽241205",time:"241205_0",tags:[tags.englishConversation],content:`
+      1. My favorite actor is Matt Damon.
+      2. He actually becomes the character, and it's so believable.
+      3. He studied for his undergraduate degree at Harvard, and he even writes scenarios.
+      4. I usually go to the theater in my neighborhood.
+      5. It's very big with lots of screenings. So I can always watch a movie whenever I want.
+      6. At the theater, I get my ticket from the ticket booth.
+      7. I never let my friend talk because it really distracts me.
+      8. I checked from the internet to see what's recently been released.
+      9. I wanted to see the film because I had read quite good compliments on the movie.
+      10. The actress, Natalie Portman also won the Best Actress Oscar.
+      11. My best friend, Kim and I have the same taste in music.
+      12. We usually go for a drink and share our feelings about the convert.
+      13. I like to attend the concerts of my favorite singers.
+      14. I like musicians who play hip hop and dance music.
+      15. I may not be able to see them in person ever again in my life.
+      16. I often go to classic concerts like symphony or piano recitals.
+      17. Since then, I've become a huge fan of live concerts.
+      18. At the concert hall, we saw many Korean musicians came to see Lady Gaga.
+      19. She was actually really good at singing, and the concert was amazing.
+      20. Kim and I were so impressed, and I definitely want to go see her again.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},posts$1=[post$o,post$n,post$m,post$l,post$k,post$j,post$i,post$h,post$g,post$f,post$e,post$d,post$c,post$b,post$a,post$9,post$8,post$7,post$6,post$5,post$4,post$3,post$2,post$1],SpiralContainer=dt.div`
   width: 100%;
   max-width: 720px;
   height: calc(100vh - 84px);
@@ -5024,7 +5024,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   width: 100%;
   padding-bottom: 20px;
   border-bottom: 1px dashed ${COLORS.text};
-`,Card=({post:a})=>{const[e,o]=reactExports.useState(!1),d=()=>o(!0),b=()=>o(!1);return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsxs(CardContainer,{onClick:d,children:[jsxRuntimeExports.jsx(Title,{children:a.title}),jsxRuntimeExports.jsx(Tag,{children:a.tag})]}),e&&jsxRuntimeExports.jsx(Modal,{children:jsxRuntimeExports.jsxs(ModalContent,{children:[jsxRuntimeExports.jsx(BackButtonContainer,{children:jsxRuntimeExports.jsx(BackButton,{onClick:b,children:"⫷"})}),jsxRuntimeExports.jsxs(Content,{children:[jsxRuntimeExports.jsxs(ContentHeader,{children:[jsxRuntimeExports.jsx(Title,{children:a.title}),jsxRuntimeExports.jsx(Tag,{children:a.tag})]}),jsxRuntimeExports.jsx(MarkdownRenderer,{content:a.content})]})]})})]})},titles$1=["영어회화","용어정리","알고리즘","컴퓨터 구조","운영체제","자료구조","네트워크","데이터베이스","컴퓨터 구조","소프트웨어 설계","소프트웨어 개발","데이터베이스 구축","프로그래밍 언어 활용","정보시스템 구축관리"].map((a,e)=>`${e+1}. ${a}`),Blog=()=>{const[a,e]=reactExports.useState(0),[o,d]=reactExports.useState(!1),b=tt=>{e(tt),d(!0)};return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsx(Spiral,{titles:titles$1,onSquareClick:b}),jsxRuntimeExports.jsx(Modal$1,{isOpen:o,onClose:()=>d(!1),title:titles$1[a],children:posts$1[a].length===0?jsxRuntimeExports.jsx("p",{children:"아직 게시글이 없습니다."}):posts$1[a].map((tt,nt)=>jsxRuntimeExports.jsx(Card,{post:tt},nt))})]})},BoardContainer$1=dt.div`
+`,Card=({post:a})=>{const[e,o]=reactExports.useState(!1),d=()=>o(!0),b=()=>o(!1),tt=nt=>`20${nt.slice(0,2)}년 ${nt.slice(2,4)}월 ${nt.slice(4,6)}일`;return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsxs(CardContainer,{onClick:d,children:[jsxRuntimeExports.jsx(Title,{children:a.title}),jsxRuntimeExports.jsx(Tag,{children:tt(a.time)})]}),e&&jsxRuntimeExports.jsx(Modal,{children:jsxRuntimeExports.jsxs(ModalContent,{children:[jsxRuntimeExports.jsx(BackButtonContainer,{children:jsxRuntimeExports.jsx(BackButton,{onClick:b,children:"⫷"})}),jsxRuntimeExports.jsxs(Content,{children:[jsxRuntimeExports.jsxs(ContentHeader,{children:[jsxRuntimeExports.jsx(Title,{children:a.title}),jsxRuntimeExports.jsx(Tag,{children:`${tt(a.time)} | ${a.time[7]}`}),jsxRuntimeExports.jsx(Tag,{children:a.tags})]}),jsxRuntimeExports.jsx(MarkdownRenderer,{content:a.content})]})]})})]})},Blog=()=>{const[a,e]=reactExports.useState({}),[o,d]=reactExports.useState(0),[b,tt]=reactExports.useState(!1),nt=st=>{d(st),tt(!0)};return reactExports.useEffect(()=>{const st={};tagValues.forEach(ot=>{st[ot]=[]}),posts$1.forEach(ot=>{st[tagValues[0]].push(ot),ot.tags.forEach(ht=>{st[ht].push(ot)})}),e(st)},[]),jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsx(Spiral,{titles:tagValues,onSquareClick:nt}),jsxRuntimeExports.jsx(Modal$1,{isOpen:b,onClose:()=>tt(!1),title:tagValues[o],children:a[tagValues[o]]&&a[tagValues[o]].slice(0).reverse().map((st,ot)=>jsxRuntimeExports.jsx(Card,{post:st},ot))})]})},BoardContainer$1=dt.div`
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -5079,7 +5079,31 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   cursor: pointer;
   color: ${a=>a.$isActive?COLORS.text:COLORS.primary};
   border-bottom: ${a=>a.$isActive?`2px solid ${COLORS.text}`:"none"};
-`,posts=[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]],titles=[{url:"CNN",name:"수화 번역을 위한 CNN 하드웨어 가속기"},{url:"내맘탭",name:"내 맘대로 꽂아 쓰는 멀티탭"},{url:"오토인코더",name:"BPSK와 오토인코더"},{url:"티피에스",name:"날씨에 따른 태양광 발전량 예측"},{url:"유포스",name:"AWS 기반 UPOS Service Solution"},{url:"닥카",name:"웹 IoT RC카 Dach Car"},{url:"노블리TV",name:"홀로 어르신을 위한 노블리 TV"},{url:"토키도키",name:"일본어 회화 학습 플랫폼 토키도키"},{url:"블록홈즈",name:"부동산 안전거래 플랫폼 블록홈즈"}],ProjectContainer=dt.div`
+`,titles={CNN:{url:"CNN",name:"수화 번역을 위한 CNN 하드웨어 가속기"},myTab:{url:"myTab",name:"내 맘대로 꽂아 쓰는 멀티탭"},autoencoder:{url:"autoencoder",name:"BPSK와 오토인코더"},tps:{url:"tps",name:"날씨에 따른 태양광 발전량 예측"},upos:{url:"upos",name:"AWS 기반 UPOS Service Solution"},dachCar:{url:"dachCar",name:"웹 IoT RC카 Dach Car"},noblyTV:{url:"noblyTV",name:"홀로 어르신을 위한 노블리 TV"},talkyDoki:{url:"talkyDoki",name:"일본어 회화 학습 플랫폼 토키도키"},blockHolmes:{url:"blockHolmes",name:"부동산 안전거래 플랫폼 블록홈즈"}},titleValues=Object.values(titles),post={title:"오픽241205",time:"241205_0",tags:[titles.blockHolmes.name],content:`
+      1. My favorite actor is Matt Damon.
+      2. He actually becomes the character, and it's so believable.
+      3. He studied for his undergraduate degree at Harvard, and he even writes scenarios.
+      4. I usually go to the theater in my neighborhood.
+      5. It's very big with lots of screenings. So I can always watch a movie whenever I want.
+      6. At the theater, I get my ticket from the ticket booth.
+      7. I never let my friend talk because it really distracts me.
+      8. I checked from the internet to see what's recently been released.
+      9. I wanted to see the film because I had read quite good compliments on the movie.
+      10. The actress, Natalie Portman also won the Best Actress Oscar.
+      11. My best friend, Kim and I have the same taste in music.
+      12. We usually go for a drink and share our feelings about the convert.
+      13. I like to attend the concerts of my favorite singers.
+      14. I like musicians who play hip hop and dance music.
+      15. I may not be able to see them in person ever again in my life.
+      16. I often go to classic concerts like symphony or piano recitals.
+      17. Since then, I've become a huge fan of live concerts.
+      18. At the concert hall, we saw many Korean musicians came to see Lady Gaga.
+      19. She was actually really good at singing, and the concert was amazing.
+      20. Kim and I were so impressed, and I definitely want to go see her again.
+      \`\`\`
+      강지완 오픽TV를 기반으로 작성한 글입니다.
+      \`\`\`
+  `},posts=[post],ProjectContainer=dt.div`
   max-width: 720px;
   width: 100%;
   height: calc(100vh - 84px);
@@ -5103,7 +5127,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   @media (max-width: 720px) {
     width: 100%;
   }
-`,Project=()=>{const a="projects/",[e,o]=reactExports.useState(0),[d,b]=reactExports.useState(!1),tt=nt=>{o(nt),b(!0)};return jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsx(ProjectContainer,{children:jsxRuntimeExports.jsx(ProjectImgContainer,{children:titles.map((nt,st)=>jsxRuntimeExports.jsx(ProjectImg,{onClick:()=>{tt(st)},$imgUrl:a+nt.url+".png"},st))})}),jsxRuntimeExports.jsx(Modal$1,{isOpen:d,onClose:()=>b(!1),title:titles[e].name,children:posts[e].length===0?jsxRuntimeExports.jsx("p",{children:"아직 게시글이 없습니다."}):posts[e].map((nt,st)=>jsxRuntimeExports.jsx(Card,{post:nt},st))})]})},MENU_ITEMS=[{type:BOARD_TYPES.intro,label:"소개"},{type:BOARD_TYPES.blog,label:"블로그"},{type:BOARD_TYPES.project,label:"프로젝트"}],Board=({toggleBoard:a})=>{const[e,o]=reactExports.useState(BOARD_TYPES.intro);return jsxRuntimeExports.jsx(BoardContainer$1,{children:jsxRuntimeExports.jsxs(BoardContent,{children:[jsxRuntimeExports.jsxs(BoardHeader,{children:[jsxRuntimeExports.jsx(BoardTitle,{onClick:a,children:"ssO_Ong"}),jsxRuntimeExports.jsx(BoardMenus,{children:MENU_ITEMS.map(d=>jsxRuntimeExports.jsx(BoardMenu,{onClick:()=>o(d.type),$isActive:e===d.type,children:d.label},d.type))})]}),e===BOARD_TYPES.intro&&jsxRuntimeExports.jsx(Intro,{}),e===BOARD_TYPES.blog&&jsxRuntimeExports.jsx(Blog,{}),e===BOARD_TYPES.project&&jsxRuntimeExports.jsx(Project,{})]})})},HomeContainer=dt.div`
+`,Project=()=>{const a="projects/",[e,o]=reactExports.useState({}),[d,b]=reactExports.useState(0),[tt,nt]=reactExports.useState(!1),st=ot=>{b(ot),nt(!0)};return reactExports.useEffect(()=>{const ot={};titleValues.forEach(ht=>{ot[ht.name]=[]}),posts.forEach(ht=>{ot[titleValues[0].name].push(ht),ht.tags.forEach(ft=>{ot[ft].push(ht)})}),o(ot)},[]),jsxRuntimeExports.jsxs(jsxRuntimeExports.Fragment,{children:[jsxRuntimeExports.jsx(ProjectContainer,{children:jsxRuntimeExports.jsx(ProjectImgContainer,{children:titleValues.slice(0).reverse().map((ot,ht)=>jsxRuntimeExports.jsx(ProjectImg,{onClick:()=>{st(ht)},$imgUrl:a+ot.url+".png"},ht))})}),jsxRuntimeExports.jsx(Modal$1,{isOpen:tt,onClose:()=>nt(!1),title:titleValues[d].name,children:e[titleValues[d].name]&&e[titleValues[d].name].slice(0).reverse().map((ot,ht)=>jsxRuntimeExports.jsx(Card,{post:ot},ht))})]})},MENU_ITEMS=[{type:BOARD_TYPES.intro,label:"소개"},{type:BOARD_TYPES.blog,label:"블로그"},{type:BOARD_TYPES.project,label:"프로젝트"}],Board=({toggleBoard:a})=>{const[e,o]=reactExports.useState(BOARD_TYPES.intro);return jsxRuntimeExports.jsx(BoardContainer$1,{children:jsxRuntimeExports.jsxs(BoardContent,{children:[jsxRuntimeExports.jsxs(BoardHeader,{children:[jsxRuntimeExports.jsx(BoardTitle,{onClick:a,children:"ssO_Ong"}),jsxRuntimeExports.jsx(BoardMenus,{children:MENU_ITEMS.map(d=>jsxRuntimeExports.jsx(BoardMenu,{onClick:()=>o(d.type),$isActive:e===d.type,children:d.label},d.type))})]}),e===BOARD_TYPES.intro&&jsxRuntimeExports.jsx(Intro,{}),e===BOARD_TYPES.blog&&jsxRuntimeExports.jsx(Blog,{}),e===BOARD_TYPES.project&&jsxRuntimeExports.jsx(Project,{})]})})},HomeContainer=dt.div`
   width: 100%;
   height: 100%;
   position: relative;
