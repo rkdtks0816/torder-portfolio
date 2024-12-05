@@ -1,11 +1,13 @@
-import React, { useState } from "react";
-import { posts, Post } from "@/posts";
+import React, { useEffect, useState } from "react";
+import { posts } from "@/widgets/Blog/posts";
 import Spiral from "@/features/Spiral";
 import Modal from "@/components/Modal";
 import Card from "@/components/Card";
-import { titles } from "./BlogTitles";
+import { tagValues } from "./BlogTags";
+import { Post } from "@/shared/types/post";
 
 const Blog: React.FC = () => {
+  const [splitPosts, setSplitPosts] = useState<Record<string, Post[]>>({});
   const [nowIndex, setNowIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,21 +16,40 @@ const Blog: React.FC = () => {
     setIsOpen(true);
   };
 
+  useEffect(() => {
+    const tagPosts: Record<string, Post[]> = {};
+
+    // 초기화: 각 태그에 빈 배열 할당
+    tagValues.forEach((tag) => {
+      tagPosts[tag] = [];
+    });
+
+    // 게시글을 태그별로 분류
+    posts.forEach((post) => {
+      tagPosts[tagValues[0]].push(post);
+      post.tags.forEach((tag) => {
+        tagPosts[tag].push(post);
+      });
+    });
+
+    setSplitPosts(tagPosts);
+  }, []);
+
   return (
     <>
-      <Spiral titles={titles} onSquareClick={handleSquareClick} />
+      <Spiral titles={tagValues} onSquareClick={handleSquareClick} />
       <Modal
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
-        title={titles[nowIndex]}
+        title={tagValues[nowIndex]}
       >
-        {posts[nowIndex].length === 0 ? (
-          <p>아직 게시글이 없습니다.</p>
-        ) : (
-          posts[nowIndex].map((post: Post, index: number) => (
-            <Card key={index} post={post} />
-          ))
-        )}
+        {splitPosts[tagValues[nowIndex]] &&
+          splitPosts[tagValues[nowIndex]]
+            .slice(0)
+            .reverse()
+            .map((post: Post, index: number) => (
+              <Card key={index} post={post} />
+            ))}
       </Modal>
     </>
   );
