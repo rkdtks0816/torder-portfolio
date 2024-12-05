@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import { posts, Post } from "@/projects";
+import React, { useEffect, useState } from "react";
+import { posts } from "@/widgets/Project/projects";
+import { Post } from "@/shared/types/post";
 import Modal from "@/components/Modal";
 import Card from "@/components/Card";
-import { Title, titles } from "./ProjectTitles";
+import { Title, titleValues } from "./ProjectTitles";
 import {
   ProjectContainer,
   ProjectImg,
@@ -11,42 +12,64 @@ import {
 
 const Project: React.FC = () => {
   const BASE_URL = "projects/";
+  const [splitPosts, setSplitPosts] = useState<Record<string, Post[]>>({});
   const [nowIndex, setNowIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-
 
   const handleSquareClick = (index: number) => {
     setNowIndex(index);
     setIsOpen(true);
   };
 
+  useEffect(() => {
+    const titlePosts: Record<string, Post[]> = {};
+
+    // 초기화: 각 태그에 빈 배열 할당
+    titleValues.forEach((title) => {
+      titlePosts[title.name] = [];
+    });
+
+    // 게시글을 태그별로 분류
+    posts.forEach((post) => {
+      titlePosts[titleValues[0].name].push(post);
+      post.tags.forEach((tag) => {
+        titlePosts[tag].push(post);
+      });
+    });
+
+    setSplitPosts(titlePosts);
+  }, []);
+
   return (
     <>
       <ProjectContainer>
         <ProjectImgContainer>
-          {titles.map((title: Title, index: number) => (
-            <ProjectImg
-              onClick={() => {
-                handleSquareClick(index);
-              }}
-              key={index}
-              $imgUrl={BASE_URL + title.url + ".png"}
-            />
-          ))}
+          {titleValues
+            .slice(0)
+            .reverse()
+            .map((title: Title, index: number) => (
+              <ProjectImg
+                onClick={() => {
+                  handleSquareClick(index);
+                }}
+                key={index}
+                $imgUrl={BASE_URL + title.url + ".png"}
+              />
+            ))}
         </ProjectImgContainer>
       </ProjectContainer>
       <Modal
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
-        title={titles[nowIndex].name}
+        title={titleValues[nowIndex].name}
       >
-        {posts[nowIndex].length === 0 ? (
-          <p>아직 게시글이 없습니다.</p>
-        ) : (
-          posts[nowIndex].map((post: Post, index: number) => (
-            <Card key={index} post={post} />
-          ))
-        )}
+        {splitPosts[titleValues[nowIndex].name] &&
+          splitPosts[titleValues[nowIndex].name]
+            .slice(0)
+            .reverse()
+            .map((post: Post, index: number) => (
+              <Card key={index} post={post} />
+            ))}
       </Modal>
     </>
   );

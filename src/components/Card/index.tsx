@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import MarkdownRenderer from "@/components/MarkdownRenderer";
 import * as CardStyles from "./CardStyles";
-
-interface Post {
-  title: string;
-  tag: string;
-  content: string;
-}
+import { Post } from "@/shared/types/post";
 
 const Card: React.FC<{ post: Post }> = ({ post }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,11 +9,14 @@ const Card: React.FC<{ post: Post }> = ({ post }) => {
   const handleClick = () => setIsOpen(true);
   const handleClose = () => setIsOpen(false);
 
+  const changeTime = (time: string) =>
+    `20${time.slice(0, 2)}년 ${time.slice(2, 4)}월 ${time.slice(4, 6)}일`;
+
   return (
     <>
       <CardStyles.CardContainer onClick={handleClick}>
         <CardStyles.Title>{post.title}</CardStyles.Title>
-        <CardStyles.Tag>{post.tag}</CardStyles.Tag>
+        <CardStyles.Tag>{changeTime(post.time)}</CardStyles.Tag>
       </CardStyles.CardContainer>
 
       {isOpen && (
@@ -32,7 +30,10 @@ const Card: React.FC<{ post: Post }> = ({ post }) => {
             <CardStyles.Content>
               <CardStyles.ContentHeader>
                 <CardStyles.Title>{post.title}</CardStyles.Title>
-                <CardStyles.Tag>{post.tag}</CardStyles.Tag>
+                <CardStyles.Tag>{`${changeTime(post.time)} | ${
+                  post.time[7]
+                }`}</CardStyles.Tag>
+                <CardStyles.Tag>{post.tags}</CardStyles.Tag>
               </CardStyles.ContentHeader>
               <MarkdownRenderer content={post.content} />
             </CardStyles.Content>
