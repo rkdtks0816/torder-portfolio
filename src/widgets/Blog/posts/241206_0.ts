@@ -2,8 +2,8 @@ import { Post } from "@/shared/types/post";
 import { tags } from "../BlogTags";
 
 const post: Post = {
-  title: `오픽241121`,
-  time: "241121_0",
+  title: `오픽241206`,
+  time: "241206_0",
   tags: [tags.englishConversation],
   content: `
       1. When you walk through the gate, you can see a lot of trees and lawn.
