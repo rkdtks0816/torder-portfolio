@@ -13,6 +13,7 @@ export const titles = {
   noblyTV: { url: "noblyTV", name: "홀로 어르신을 위한 노블리 TV" },
   talkyDoki: { url: "talkyDoki", name: "일본어 회화 학습 플랫폼 토키도키" },
   blockHolmes: { url: "blockHolmes", name: "부동산 안전거래 플랫폼 블록홈즈" },
+  myPersonalHomepage: { url: "myPersonalHomepage", name: "나만의 홈페이지" },
 };
 
 export const titleValues = Object.values(titles);

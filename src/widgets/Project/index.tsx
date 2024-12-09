@@ -50,7 +50,7 @@ const Project: React.FC = () => {
             .map((title: Title, index: number) => (
               <ProjectImg
                 onClick={() => {
-                  handleSquareClick(index);
+                  handleSquareClick(titleValues.length - index - 1);
                 }}
                 key={index}
                 $imgUrl={BASE_URL + title.url + ".png"}
