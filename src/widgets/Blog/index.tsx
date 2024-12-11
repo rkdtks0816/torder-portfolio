@@ -31,7 +31,6 @@ const Blog: React.FC = () => {
         tagPosts[tag].push(post);
       });
     });
-
     setSplitPosts(tagPosts);
   }, []);
 
