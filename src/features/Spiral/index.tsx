@@ -37,7 +37,9 @@ const Spiral: React.FC<SpiralProps> = ({ titles, onSquareClick }) => {
             onSquareClick(nowIndex + i);
           }}
         >
-          {title}
+            <SpiralStyles.SpiralSquareTitle>
+                {title}
+            </SpiralStyles.SpiralSquareTitle>
         </SpiralStyles.SpiralSquare>
       );
     });
