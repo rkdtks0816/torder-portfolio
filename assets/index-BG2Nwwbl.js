@@ -5293,15 +5293,19 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   padding: 10px;
   border-radius: 10px 10px 0 0;
   cursor: pointer;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   &:nth-child(1) {
     font-size: ${a=>a.$size*.044}vh;
     transform: rotate(${a=>a.$rotation}deg)
       translateY(${a=>-1*a.$distance-4}vh); /* 5vh 추가 이동 */
     width: fit-content;
   }
+`,SpiralSquareTitle=dt.div`
+  max-width: 100%;
+  width: fit-content;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `,RotatedButtonContainer=dt.div`
   position: absolute;
   bottom: 10%;
@@ -5318,7 +5322,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),Vt=Ht,Ot=Rt),Lt===void
   font-size: 5vh;
   color: ${COLORS.text};
   z-index: 1000;
-`,Spiral=({titles:a,onSquareClick:e})=>{const[o,d]=reactExports.useState(0),b=nt=>{o+nt<0?d(0):o+nt>=a.length?d(a.length-1):d(o+nt)},tt=a.slice(o,Math.min(a.length,o+20)).map((nt,st)=>{const ot=70-st*3,ht=st*45,ft=20-.8*st,mt=(o+st+1)%2===0;return jsxRuntimeExports.jsx(SpiralSquare,{$size:ot,$rotation:ht,$distance:ft,$isEven:mt,onClick:()=>{st!==0&&d(o+st),e(o+st)},children:nt},st)});return jsxRuntimeExports.jsxs(SpiralContainer,{children:[jsxRuntimeExports.jsx(SpiralSquareContainer,{children:tt}),jsxRuntimeExports.jsxs(RotatedButtonContainer,{children:[jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>b(-1),children:"⫷"}),jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>d(0),children:"↻"}),jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>b(1),children:"⫸"})]})]})},ModalOverlay=dt.div`
+`,Spiral=({titles:a,onSquareClick:e})=>{const[o,d]=reactExports.useState(0),b=nt=>{o+nt<0?d(0):o+nt>=a.length?d(a.length-1):d(o+nt)},tt=a.slice(o,Math.min(a.length,o+20)).map((nt,st)=>{const ot=70-st*3,ht=st*45,ft=20-.8*st,mt=(o+st+1)%2===0;return jsxRuntimeExports.jsx(SpiralSquare,{$size:ot,$rotation:ht,$distance:ft,$isEven:mt,onClick:()=>{st!==0&&d(o+st),e(o+st)},children:jsxRuntimeExports.jsx(SpiralSquareTitle,{children:nt})},st)});return jsxRuntimeExports.jsxs(SpiralContainer,{children:[jsxRuntimeExports.jsx(SpiralSquareContainer,{children:tt}),jsxRuntimeExports.jsxs(RotatedButtonContainer,{children:[jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>b(-1),children:"⫷"}),jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>d(0),children:"↻"}),jsxRuntimeExports.jsx(RotatedButton,{onClick:()=>b(1),children:"⫸"})]})]})},ModalOverlay=dt.div`
   position: fixed;
   top: 0;
   left: 0;
