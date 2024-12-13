@@ -8,6 +8,7 @@ export const tags = {
   javaScript: "자바스크립트",
   bfs: "BFS",
   binarySearch: "이진탐색",
+  loop: "반복문",
   // operatingSystem: "운영체제",
   // network: "네트워크",
   // database: "데이터베이스",
