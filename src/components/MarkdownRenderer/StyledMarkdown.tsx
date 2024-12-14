@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import ReactMarkdown from "react-markdown";
 
-export const StyledMarkdown = styled(ReactMarkdown)`
+export const StyledMarkdown = styled.div`
   /* 본문 텍스트 스타일 */
   p {
     margin: 8px 0;
