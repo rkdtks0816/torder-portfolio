@@ -1,129 +1,74 @@
 import styled from "styled-components";
-import ReactMarkdown from "react-markdown";
+import { COLORS } from "@/shared/constants/colors";
 
-export const StyledMarkdown = styled(ReactMarkdown)`
-  /* 본문 텍스트 스타일 */
-  p {
-    margin: 8px 0;
-    line-height: 1.6;
-    font-size: 15px;
-    color: #3a3a3a;
-  }
+export const StyledMarkdown = styled.div`
+  line-height: 1.7;
+  letter-spacing: -0.004em;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 
-  /* 헤더 스타일 */
   h1,
   h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin: 16px 0 8px;
-    font-weight: 600;
-    line-height: 1.4;
-    color: #1f2937;
-  }
-
-  h1 {
-    font-size: 26px;
-  }
-
-  h2 {
-    font-size: 22px;
-  }
-
   h3 {
-    font-size: 18px;
+    margin-top: 2rem;
   }
-
-  h4,
-  h5,
-  h6 {
-    font-size: 16px;
+  hr {
+    margin: 2rem 0;
   }
-
-  /* 리스트 스타일 */
-  ul,
-  ol {
-    padding-left: 12px;
-    margin: 8px 0;
-    line-height: 1.5;
-  }
-
-  ul li {
-    list-style-type: disc;
-    margin-left: 16px;
-  }
-
-  ol li {
-    list-style-type: decimal;
-    margin-left: 16px;
-  }
-
-  /* 코드 블록 스타일 */
-  pre {
-    background-color: #f3f4f6;
-    padding: 10px 14px;
-    margin: 12px 0;
-    border-radius: 8px;
-    overflow-x: auto;
-    font-size: 14px;
-  }
-
-  code {
-    background-color: #e2e8f0;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-family: "Fira Code", monospace;
-    font-size: 14px;
-    color: #374151;
-  }
-
-  /* 인라인 코드 */
-  pre > code {
-    background-color: inherit;
-    padding: 0;
-  }
-
-  /* 테이블 스타일 */
-  table {
-    width: 100%;
-    margin: 12px 0;
-    border-collapse: collapse;
-  }
-
-  th,
-  td {
-    padding: 10px 12px;
-    border: 1px solid #e5e7eb;
-    text-align: left;
-    font-size: 14px;
-  }
-
-  th {
-    background-color: #f9fafb;
-    font-weight: 600;
-    color: #111827;
-  }
-
-  /* 링크 스타일 */
   a {
-    color: #2563eb;
+    color: ${COLORS.text};
     text-decoration: none;
-    font-weight: 500;
-    &:hover {
-      text-decoration: underline;
-      color: #1e40af;
-    }
   }
 
-  /* 인용문 스타일 */
+  img {
+    display: block;
+    margin: 3rem auto;
+    max-width: 100%;
+  }
+  code {
+    background: #e9ecef;
+    padding: 0.4em 0.6em;
+    font-size: 0.75rem;
+    border-radius: 3px;
+  }
+  pre {
+    font-size: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    line-height: 1.5;
+    overflow-x: auto;
+    letter-spacing: 0px;
+    background: #fbfcfd;
+  }
+  pre code {
+    background: #fbfcfd;
+  }
   blockquote {
-    margin: 10px 0;
-    padding-left: 16px;
-    border-left: 4px solid #10b981;
-    color: #4b5563;
-    background-color: #f0fdf4;
-    font-style: italic;
-    font-size: 15px;
+    margin: 2rem 0;
+    border-left: 4px solid ${COLORS.text};
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #f8f9fa;
+    padding: 1rem 1rem 1rem 2rem;
+  }
+  table {
+    margin: 0.5rem 0;
+    min-width: 40%;
+    max-width: 100%;
+    border: 2px solid ${COLORS.text};
+    border-collapse: collapse;
+    font-size: 0.875rem;
+  }
+  table thead > tr > th {
+    border-bottom: 2px dotted ${COLORS.text};
+  }
+  table th,
+  table td {
+    word-break: break-word;
+    padding: 0.5rem;
+  }
+  table td + td,
+  table th + th {
+    border-left: 1px dotted ${COLORS.text};
   }
 `;
