@@ -10,7 +10,7 @@ function parseMarkdown(markdown: string) {
 
   // 코드 블럭 보호: 임시 토큰으로 치환
   const codeBlocks: string[] = [];
-  html = html.replace(/```\n([\s\S]*?)```/g, (_, code) => {
+  html = html.replace(/```\s*\n([\s\S]*?)\n\s*```/g, (_, code) => {
     const index = codeBlocks.length;
     codeBlocks.push(code);
     return `<CODEBLOCK${index}>`;
@@ -118,27 +118,20 @@ function parseMarkdown(markdown: string) {
   });
   html = result;
 
-  html = html.replace(/^(.*?)###\s+(.*)$/gm, "$1<h3>$2</h3>"); // h3 처리
-  html = html.replace(/^(.*?)##\s+(.*)$/gm, "$1<h2>$2</h2>"); // h2 처리
-  html = html.replace(/^(.*?)#\s+(.*)$/gm, "$1<h1>$2</h1>"); // h1 처리
-  html = html.replace(
-    /(\s+)```([\s\S]*?)```/gm,
-    "$1<pre><code>$2</code></pre>"
-  ); // 코드블록
-  html = html.replace(/^(.*?)[-*_]{3,}$/gm, "$1<hr>"); // 구분선
-  html = html.replace(/^(.*?)`([^`]+)`/gm, "$1<code>$2</code>"); // 인라인 코드
-  html = html.replace(/^(.*?)\*\*(.*?)\*\*/gm, "$1<strong>$2</strong>"); // 굵은 텍스트
-  html = html.replace(/^(.*?)\_(.*?)\_/gm, "$1<em>$2</em>"); // 기울임 텍스트
-  html = html.replace(/^(.*?)\~~(.*?)\~~/gm, "$1<del>$2</del>"); // 기울임 텍스트
-  html = html.replace(
-    /^(.*?)!\[(.*?)\]\((.*?)\)/gm,
-    '$1<img src="$3" alt="$2">\n'
-  ); // 이미지
-  html = html.replace(/^(.*?)\[(.*?)\]\((.*?)\)/gm, '$1<a href="$3">$2</a>'); // 링크
+  html = html.replace(/###\s+(.*)$/gm, "<h3>$1</h3>"); // h3 처리
+  html = html.replace(/##\s+(.*)$/gm, "<h2>$1</h2>"); // h2 처리
+  html = html.replace(/#\s+(.*)$/gm, "<h1>$1</h1>"); // h1 처리
+  html = html.replace(/[-*_]{3,}$/gm, "<hr>"); // 구분선
+  html = html.replace(/`([^`]+)`/gm, "<code>$1</code>"); // 인라인 코드
+  html = html.replace(/\*\*(.*?)\*\*/gm, "<strong>$1</strong>"); // 굵은 텍스트
+  html = html.replace(/\_(.*?)\_/gm, "<em>$1</em>"); // 기울임 텍스트
+  html = html.replace(/\~~(.*?)\~~/gm, "<del>$1</del>"); // 기울임 텍스트
+  html = html.replace(/!\[(.*?)\]\((.*?)\)/gm, '<img src="$2" alt="$1">\n'); // 이미지
+  html = html.replace(/\[(.*?)\]\((.*?)\)/gm, '<a href="$2">$1</a>'); // 링크
   html = html.replace(/^(?!<.*?>)(.+)$/gm, "<p>$1</p>"); // 글자만 있는 줄
   html = html.replace(/<CODEBLOCK(\d+)>/g, (_, index) => {
     const code = codeBlocks[parseInt(index)];
-    return `<pre><code>${escapeHtml(code)}</code></pre>`;
+    return `<pre><code>\n${escapeHtml(code)}\n\n</code></pre>`;
   });
   function escapeHtml(code: string) {
     return code
