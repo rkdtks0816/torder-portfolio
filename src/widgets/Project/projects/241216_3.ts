@@ -1,10 +1,10 @@
 import { Post } from "@/shared/types/post";
-import { tags } from "../BlogTags";
+import { titles } from "../ProjectTitles";
 
 const post: Post = {
   title: `마크다운 구현`,
   time: "241216_3",
-  tags: [tags.frontEnd, tags.javaScript],
+  tags: [titles.myPersonalHomepage.name],
   content: `
     # 제목 1
     가장 큰 제목입니다.
@@ -36,10 +36,9 @@ const post: Post = {
 
     ## 텍스트 서식
     - **굵은 텍스트**
-    - *기울임 텍스트*
-    - ***굵고 기울임 텍스트***
-    - ~~취소선~~
+    - _기울임 텍스트_
     - **_굵고 기울임 텍스트_**
+    - ~~취소선~~
 
     ---
 
@@ -57,11 +56,12 @@ const post: Post = {
     \`console.log("Hello, World!");\`
 
     ### 코드 블록
-    \`\`\`javascript
-    function greet(name) {
-      console.log(\`Hello, ${name}!\`);
-    }
-    greet("ChatGPT");
+    \`\`\`
+
+function greet(name) {
+  console.log(\`Hello, ${name}!\`);
+}
+greet("ChatGPT");
     \`\`\`
 
     ---
@@ -83,7 +83,7 @@ const post: Post = {
     ## 표
     | 열1       | 열2       | 열3       |
     |-----------|-----------|-----------|
-    | 데이터1   | 데이터2   | 데이터3   |
+    | 데이터1   | 데이터2  | 데이터3   |
     | 데이터4   | 데이터5   | 데이터6   |
 
     ---
@@ -100,15 +100,8 @@ const post: Post = {
 
     ---
 
-    ## 이스케이프 문자
-    - \*\*굵게\*\* → **굵게 아님**
-    - \*기울임\* → *기울임 아님*
-    - \`코드\` → \`코드\`
-
-    ---
-
     ## 라인 구분
-    한 줄 띄우지 않고 줄바꿈하려면 두 개의 공백을 넣습니다.  
+    한 줄 띄우지 않고 줄바꿈하려면 두 개의 공백을 넣습니다.
     이 줄은 위 줄과 연결됩니다.
 
     한 줄 띄우고 싶다면 빈 줄을 추가하세요.
@@ -117,9 +110,9 @@ const post: Post = {
 
     ## 특수 문자
     HTML 엔티티를 사용할 수 있습니다:  
-    - &amp; → &  
-    - &lt; → <  
-    - &gt; → >
+    - & a m p ; → &  
+    - & l t ; → <  
+    - & g t ; → >
   `,
 };
 

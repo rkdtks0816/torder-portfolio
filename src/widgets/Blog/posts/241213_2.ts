@@ -13,7 +13,9 @@ const post: Post = {
 		\`const visited = new Set();\`
 		3. 첫번째 노드 방문 처리
 		\`visited.add(start);\`
+
 		---
+		
 		### 탐색
 		1. 조건: 큐에 노드가 있다면 반복
 		\`while (queue.length > 0)\` 

@@ -11,7 +11,6 @@ const Card: React.FC<{ post: Post }> = ({ post }) => {
 
   const changeTime = (time: string) =>
     `20${time.slice(0, 2)}년 ${time.slice(2, 4)}월 ${time.slice(4, 6)}일`;
-
   return (
     <>
       <CardStyles.CardContainer onClick={handleClick}>
@@ -33,7 +32,7 @@ const Card: React.FC<{ post: Post }> = ({ post }) => {
                 <CardStyles.Tag>{`${changeTime(post.time)} | ${
                   post.time[7]
                 }`}</CardStyles.Tag>
-                <CardStyles.Tag>{post.tags}</CardStyles.Tag>
+                <CardStyles.Tag>{"#" + post.tags.join(" #")}</CardStyles.Tag>
               </CardStyles.ContentHeader>
               <MarkdownRenderer content={post.content} />
             </CardStyles.Content>
