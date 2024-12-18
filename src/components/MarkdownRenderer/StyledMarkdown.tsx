@@ -3,7 +3,7 @@ import { COLORS } from "@/shared/constants/colors";
 
 export const StyledMarkdown = styled.div`
   line-height: 1.7;
-  letter-spacing: -0.004em;
+  letter-spacing: 0.004em;
   word-break: keep-all;
   overflow-wrap: break-word;
 

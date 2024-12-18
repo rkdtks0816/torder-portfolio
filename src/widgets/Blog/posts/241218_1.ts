@@ -3,7 +3,7 @@ import { tags } from "../BlogTags";
 
 const post: Post = {
   title: `자바스크립트 정렬`,
-  time: "241218_0",
+  time: "241218_1",
   tags: [tags.algorithm, tags.javaScript],
   content: `
 
