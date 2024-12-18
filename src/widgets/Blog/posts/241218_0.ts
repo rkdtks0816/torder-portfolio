@@ -26,6 +26,7 @@ const post: Post = {
       18. The evening sunset in the park is more beautiful than anything else
       19. As the sun sets, the atmosphere of the park becomes more fascinating, shining a warm light on everything
       20. The park is home to a diverse range of wildlife, including birds and squirrels 
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

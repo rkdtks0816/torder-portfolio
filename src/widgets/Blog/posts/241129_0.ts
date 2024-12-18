@@ -26,6 +26,7 @@ const post: Post = {
       18. Do you have gift cards available for purchase?
       19. How do I reach your customer service department?
       20. Is there a lost and found service on the premises?
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

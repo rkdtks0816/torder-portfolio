@@ -26,6 +26,7 @@ const post: Post = {
       18. Says who?
       19. Show me how it's done
       20. Show me what you got
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

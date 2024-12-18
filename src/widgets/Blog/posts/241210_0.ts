@@ -26,6 +26,7 @@ const post: Post = {
       18. I'm listening
       19. I'm way out of line
       20. Is that what I think it is?
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

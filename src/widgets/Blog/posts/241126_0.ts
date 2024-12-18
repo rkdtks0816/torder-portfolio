@@ -26,6 +26,7 @@ const post: Post = {
       18. Without anyone spotting you, you might drop the dumbbell.
       19. At the gym, I first do stretch, so I won't get hurt during my workout.
       20. After I'm done with running, I do weight training to build up some muscles.
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

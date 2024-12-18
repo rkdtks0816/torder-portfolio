@@ -26,6 +26,7 @@ const post: Post = {
       18. At the concert hall, we saw many Korean musicians came to see Lady Gaga.
       19. She was actually really good at singing, and the concert was amazing.
       20. Kim and I were so impressed, and I definitely want to go see her again.
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

@@ -26,6 +26,7 @@ const post: Post = {
       18. I decided to give it a try.
       19. Suddenly, a dog jumped in front of me, and I had to slam on the brakes.
       20. I couldn't hear his owner calling out the dog's name.
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

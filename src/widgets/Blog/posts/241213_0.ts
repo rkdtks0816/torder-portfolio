@@ -27,6 +27,7 @@ const post: Post = {
       19. You heard me
       20. You made your point
       21. You tell me!
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

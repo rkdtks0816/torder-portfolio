@@ -10,7 +10,7 @@ function parseMarkdown(markdown: string) {
 
   // 코드 블럭 보호: 임시 토큰으로 치환
   const codeBlocks: string[] = [];
-  html = html.replace(/```\s*\n([\s\S]*?)\n\s*```/g, (_, code) => {
+  html = html.replace(/(?<!\\)(?<!`)```s*\n([\s\S]*?)\s*```/g, (_, code) => {
     const index = codeBlocks.length;
     codeBlocks.push(code);
     return `<CODEBLOCK${index}>`;
@@ -21,12 +21,13 @@ function parseMarkdown(markdown: string) {
   const tagStack: string[] = [];
   let indentSizes = [-1];
   let currentQuoteLevel = 0;
+  let inBlockquote = false;
   let tableLines: string[] = [];
   let inTable = false;
 
   lines.forEach((line) => {
     // 표 감지
-    if (line.match(/\|.*\|$/)) {
+    if (line.match(/(?<!\\)(?<!\|)\|.*\|$/)) {
       inTable = true;
       tableLines.push(line.trim());
       return;
@@ -55,12 +56,8 @@ function parseMarkdown(markdown: string) {
     }
 
     // 들여쓰기 끝
-    const emptyLine = line.match(/^(\s*)$/);
+    const emptyLine = line.match(/^(?<!\\)(\s*)$/);
     if (emptyLine) {
-      while (currentQuoteLevel > 0) {
-        result += `</blockquote>\n`;
-        currentQuoteLevel--;
-      }
       while (tagStack.length > 0) {
         const lastTag = tagStack.pop();
         result += `</li></${lastTag}>\n`;
@@ -70,7 +67,7 @@ function parseMarkdown(markdown: string) {
     }
 
     // 인용문 처리
-    const quoteMatch = line.match(/^(\s*)>(>*)\s*(.*)/);
+    const quoteMatch = line.match(/^(\s*)(?<!\\)(?<!>)>(>*)\s*(.*)/);
     if (quoteMatch) {
       const quoteLevel = quoteMatch[2].length + 1; // 현재 인용문 깊이
       line = quoteMatch[3];
@@ -84,10 +81,17 @@ function parseMarkdown(markdown: string) {
         result += `<blockquote>`;
         currentQuoteLevel++;
       }
+      inBlockquote = true;
+    } else if (inBlockquote) {
+      while (currentQuoteLevel > 0) {
+        result += `</blockquote>\n`;
+        currentQuoteLevel--;
+      }
+      inBlockquote = false;
     }
 
     // 리스트 항목 처리
-    const listMatch = line.match(/^(.*?)([-*]|\d+\.)\s+(.*)/);
+    const listMatch = line.match(/^(.*?)(?<!\\)(?<![-*]|\d+\.)([-*]|\d+\.)\s+(.*)/);
     if (listMatch) {
       let lastindentSize = indentSizes[indentSizes.length - 1];
       const nowindentSize = listMatch[1].length; // 들여쓰기 길이
@@ -110,7 +114,6 @@ function parseMarkdown(markdown: string) {
         result += `</li><li>${content}`;
       }
     } else {
-      if (indentSizes.length > 1) result += `<br>`;
       result += `${line.trim()}\n`;
     }
 
@@ -118,16 +121,19 @@ function parseMarkdown(markdown: string) {
   });
   html = result;
 
-  html = html.replace(/###\s+(.*)$/gm, "<h3>$1</h3>"); // h3 처리
-  html = html.replace(/##\s+(.*)$/gm, "<h2>$1</h2>"); // h2 처리
-  html = html.replace(/#\s+(.*)$/gm, "<h1>$1</h1>"); // h1 처리
-  html = html.replace(/[-*_]{3,}$/gm, "<hr>"); // 구분선
-  html = html.replace(/`([^`]+)`/gm, "<code>$1</code>"); // 인라인 코드
-  html = html.replace(/\*\*(.*?)\*\*/gm, "<strong>$1</strong>"); // 굵은 텍스트
-  html = html.replace(/\_(.*?)\_/gm, "<em>$1</em>"); // 기울임 텍스트
-  html = html.replace(/\~~(.*?)\~~/gm, "<del>$1</del>"); // 기울임 텍스트
-  html = html.replace(/!\[(.*?)\]\((.*?)\)/gm, '<img src="$2" alt="$1">\n'); // 이미지
-  html = html.replace(/\[(.*?)\]\((.*?)\)/gm, '<a href="$2">$1</a>'); // 링크
+  html = html.replace(/(?<!\\)(?<!#)####\s+(.*)$/gm, "<h4>$1</h4>");
+  html = html.replace(/(?<!\\)(?<!#)###\s+(.*)$/gm, "<h3>$1</h3>");
+  html = html.replace(/(?<!\\)(?<!#)##\s+(.*)$/gm, "<h2>$1</h2>");
+  html = html.replace(/(?<!\\)(?<!#)#\s+(.*)$/gm, "<h1>$1</h1>");
+  html = html.replace(/(?<!\\)(?<![-*_])[-*_]{3,}$/gm, "<hr>"); // 구분선
+  html = html.replace(/(?<!\\)(?<!`)`(.*?)`/gm, "<code>$1</code>"); // 인라인 코드
+  html = html.replace(/(?<!\\)(?<!\*)\*\*(.*?)\*\*/gm, "<strong>$1</strong>"); // 굵은 텍스트
+  html = html.replace(/(?<!\\)(?<!\_)\_(.*?)\_/gm, "<em>$1</em>"); // 기울임 텍스트
+  html = html.replace(/(?<!\\)(?<!\~)\~~(.*?)\~~/gm, "<del>$1</del>"); // 취소선 텍스트
+  html = html.replace(/(?<!\\)(?<!\^)\^(.*?)\^/gm, "<sup>$1</sup>"); // 윗첨자 텍스트
+  html = html.replace(/(?<!\\)(?<!\~)\~(.*?)\~/gm, "<sub>$1</sub>"); // 아래첨자 텍스트
+  html = html.replace(/(?<!\\)(?<!!)!\[(.*?)\]\((.*?)\)/gm, '<img src="$2" alt="$1">\n'); // 이미지
+  html = html.replace(/(?<!\\)(?<!\[)\[(.*?)\]\((.*?)\)/gm, '<a href="$2">$1</a>'); // 링크
   html = html.replace(/^(?!<.*?>)(.+)$/gm, "<p>$1</p>"); // 글자만 있는 줄
   html = html.replace(/<CODEBLOCK(\d+)>/g, (_, index) => {
     const code = codeBlocks[parseInt(index)];

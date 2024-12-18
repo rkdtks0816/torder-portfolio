@@ -26,6 +26,7 @@ const post: Post = {
       18. I can't get enough of her
       19. I could do with a cold beer
       20. I got this
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

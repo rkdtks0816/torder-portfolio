@@ -26,6 +26,7 @@ const post: Post = {
       18. My passport is not necessary, if I am traveling within my country.
       19. A travel guide is always useful even if you know the place well.
       20. I would love to go to places I've been, which I do not remember.
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

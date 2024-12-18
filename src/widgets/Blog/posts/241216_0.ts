@@ -26,6 +26,7 @@ const post: Post = {
       18. The laundry room is conveniently located near the bedrooms
       19. The dining room has a large table that can seat eight people
       20. The home gym is equipped with exercise equipment for staying fit
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

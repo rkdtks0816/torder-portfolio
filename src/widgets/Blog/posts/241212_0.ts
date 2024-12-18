@@ -26,6 +26,7 @@ const post: Post = {
     18. Welcome to my world
     19. We'll see about that
     20. We're done here
+    
     \`\`\`
     강지완 오픽TV를 기반으로 작성한 글입니다.
     \`\`\`

@@ -26,6 +26,7 @@ const post: Post = {
       18. My apartment is small and cozy.
       19. I hope I could get a top-floor apartment so that nobody lives above me.
       20. When it gets really cold in Korea, the water pipes can freeze.
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

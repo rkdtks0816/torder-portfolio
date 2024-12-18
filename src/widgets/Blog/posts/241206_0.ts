@@ -26,6 +26,7 @@ const post: Post = {
       18. It was her first time to actually cook besides instant noodles.
       19. She googled the recipe and bought every ingredient she needed.
       20. When she got home after the delivery, her brother told her how salty her chocolate was.
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

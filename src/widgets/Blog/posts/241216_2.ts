@@ -14,7 +14,7 @@ const post: Post = {
     
     ### **2. 프로젝트 초기화**
     #### **1) 프로젝트 생성**
-    \`\`\`bash
+    \`\`\`
     npx create-next-app@latest my-next-app
     # 또는
     yarn create next-app my-next-app
@@ -26,14 +26,14 @@ const post: Post = {
       - ESLint 설정 여부 등 선택 가능
     
     #### **2) 디렉토리 이동**
-    \`\`\`bash
+    \`\`\`
     cd my-next-app
     \`\`\`
     
     ---
     
     ### **3. 개발 서버 실행**
-    \`\`\`bash
+    \`\`\`
     npm run dev
     # 또는
     yarn dev
@@ -45,7 +45,7 @@ const post: Post = {
     ---
     
     ### **4. 기본 디렉토리 구조**
-    \`\`\`plaintext
+    \`\`\`
     my-next-app/
     ├── pages/          # 페이지 컴포넌트를 저장
     │   ├── index.js    # 홈 페이지
@@ -62,7 +62,7 @@ const post: Post = {
     ### **5. 기본 파일 수정**
     #### **홈 페이지 수정**
     - \`pages/index.js\` 파일을 열고 기본 코드를 수정:
-    \`\`\`javascript
+    \`\`\`
     export default function Home() {
       return (
         <div>
@@ -74,7 +74,7 @@ const post: Post = {
     
     #### **CSS 스타일 추가**
     - \`styles/globals.css\`에 글로벌 스타일 추가:
-    \`\`\`css
+    \`\`\`
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -88,7 +88,7 @@ const post: Post = {
     ### **6. 페이지 추가**
     #### **새로운 페이지 생성**
     - \`pages/about.js\` 파일을 생성:
-    \`\`\`javascript
+    \`\`\`
     export default function About() {
       return (
         <div>
@@ -106,7 +106,7 @@ const post: Post = {
     ### **7. API 라우트 추가**
     #### **간단한 API 예제**
     - \`pages/api/hello.js\` 파일을 생성:
-    \`\`\`javascript
+    \`\`\`
     export default function handler(req, res) {
       res.status(200).json({ message: 'Hello, Next.js API!' });
     }
@@ -127,7 +127,7 @@ const post: Post = {
     
     ### **추가 팁**
     - TypeScript 사용:
-      \`\`\`bash
+      \`\`\`
       npx create-next-app@latest --typescript
       \`\`\`
     - 라우팅, SSR, SSG 등 심화 기능은 공식 문서에서 참고: [Next.js 공식 문서](https://nextjs.org/docs)

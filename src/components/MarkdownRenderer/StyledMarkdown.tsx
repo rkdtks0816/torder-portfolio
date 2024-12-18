@@ -44,7 +44,7 @@ export const StyledMarkdown = styled.div`
     background: #fbfcfd;
   }
   blockquote {
-    margin: 2rem 0;
+    margin: 0.5rem 0;
     border-left: 4px solid ${COLORS.text};
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;

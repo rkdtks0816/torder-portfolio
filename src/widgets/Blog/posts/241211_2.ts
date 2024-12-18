@@ -10,7 +10,7 @@ const post: Post = {
 
     ---
 
-    ### 1. **\`Map\`의 주요 특징**
+    ### \`Map\`의 주요 특징
     | 특징                     | 설명                                                                                 |
     |--------------------------|--------------------------------------------------------------------------------------|
     | **키의 데이터 타입**      | 키로 모든 데이터 타입(원시값, 객체)을 사용할 수 있음.                                 |
@@ -21,9 +21,9 @@ const post: Post = {
 
     ---
 
-    ### 2. **Map 메서드**
+    ### **Map 메서드**
     #### (1) **값 추가**
-    \`\`\`javascript
+    \`\`\`
     const map = new Map();
     map.set("key1", "value1");
     map.set(42, "value2");
@@ -31,37 +31,37 @@ const post: Post = {
     \`\`\`
 
     #### (2) **값 가져오기**
-    \`\`\`javascript
+    \`\`\`
     console.log(map.get("key1")); // "value1"
     \`\`\`
 
     #### (3) **값 삭제**
-    \`\`\`javascript
+    \`\`\`
     map.delete(42);
     console.log(map.has(42)); // false
     \`\`\`
 
     #### (4) **키 존재 여부 확인**
-    \`\`\`javascript
+    \`\`\`
     console.log(map.has("key1")); // true
     \`\`\`
 
     #### (5) **반복**
-    \`\`\`javascript
+    \`\`\`
     for (const [key, value] of map) {
         console.log(key, value);
     }
     \`\`\`
 
     #### (6) **초기화**
-    \`\`\`javascript
+    \`\`\`
     map.clear();
     console.log(map.size); // 0
     \`\`\`
 
     ---
 
-    ### 3. **HashMap과 TreeMap의 비교**
+    ### **HashMap과 TreeMap의 비교**
     \`Map\`은 JavaScript에서 기본 제공하는 키-값 저장 구조입니다. Java와 같은 언어에서는 \`HashMap\`과 \`TreeMap\`이라는 별도의 구현체를 제공합니다. 다음은 두 자료구조의 비교입니다:
 
     | **특징**         | **HashMap**                                                         | **TreeMap**                                                                 |
@@ -75,7 +75,7 @@ const post: Post = {
 
     ---
 
-    ### 4. **JavaScript \`Map\` vs Java \`HashMap\`/\`TreeMap\` 비교**
+    ### **JavaScript \`Map\` vs Java \`HashMap\`/\`TreeMap\` 비교**
     JavaScript의 \`Map\`은 해시 기반이지만, 구체적인 내부 구현은 명시되어 있지 않습니다. 아래는 JavaScript의 \`Map\`과 Java의 \`HashMap\` 및 \`TreeMap\`의 차이를 간단히 비교한 표입니다:
 
     | **특징**          | **JavaScript \`Map\`**            | **Java \`HashMap\`**              | **Java \`TreeMap\`**              |

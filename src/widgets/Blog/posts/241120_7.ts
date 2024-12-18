@@ -36,12 +36,12 @@ const post: Post = {
             > 기본 요소 외 확장 메커니즘
             - 길러멧: << >>
             - 유형
-                - <<include>>
-                - <<extend>>
-                - <<interface>>
-                - <<entity>>
-                - <<boundary>>
-                - <<control>>
+                - << include >>
+                - << extend >>
+                - << interface >>
+                - << entity >>
+                - << boundary >>
+                - << control >>
          
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.

@@ -41,6 +41,7 @@ const post: Post = {
       rebook me on a later flight with a layover. I had to endure a longer journey with the layover, but eventually, I made it to Paris just in time for the conference. It was a stressful experience, but it
       taught me the importance of double-checking travel details and staying calm in unexpected
       situations.
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

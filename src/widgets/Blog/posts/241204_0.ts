@@ -48,6 +48,7 @@ const post: Post = {
       to the café, and thankfully, they had kept it safe for me. It was a stressful experience, but it
       taught me the importance of being vigilant with important documents and double-checking
       before leaving any place.
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

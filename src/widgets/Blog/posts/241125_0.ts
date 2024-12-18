@@ -26,6 +26,7 @@ const post: Post = {
       18. I was so excited to have a portable music device.
       19. I always carried it with me, and I was always listening to music.
       20. I could focus well with some background music.
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

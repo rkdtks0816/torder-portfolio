@@ -26,6 +26,7 @@ const post: Post = {
       18. I checked from the internet to see what's recently been released.
       19. I wanted to see the film because I had read quite good compliments on the movie.
       20. The actress, Natalie Portman also won the Best Actress Oscar.
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`

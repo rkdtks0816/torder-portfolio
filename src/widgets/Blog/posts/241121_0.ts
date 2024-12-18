@@ -26,6 +26,7 @@ const post: Post = {
       18. We found a nice spot to sit and put a blanket on the grass.
       19. We spent a whole afternoon in the park.
       20. When I visited the park that I usually go to, I actually ran into my ex-girlfriend.
+      
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
