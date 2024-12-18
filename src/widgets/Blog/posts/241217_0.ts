@@ -6,26 +6,26 @@ const post: Post = {
   time: "241217_0",
   tags: [tags.englishConversation],
   content: `
-      1. The menu offers a variety of teas, including herbal blends and exotic flavors
-      2. The cafe's French pastries are authentically crunchy and melt in your mouth
-      3. The cafe offers a wide selection of vegan and gluten-free options for health-conscious customers
-      4. The window seats offer a beautiful view of the bustling street outside
-      5. The cafe's cappuccinos are topped with a perfect frothy layer of foam
-      6. The cafe's location is central, making it a convenient spot for meeting friends
-      7. The cafe's window seats provide the perfect opportunity for people-watching
-      8. The cafe's bookshelves are stocked with a diverse selection of reading materials
-      9. The barista skillfully crafts intricate latte art on each coffee, making it a visual delight
-      10. You can order a custom-made coffee with your choice of beans and milk
-      11. The park is surrounded by beautiful trees and flowers
-      12. There are benches scattered around for people to rest
-      13. There is a large pond in the middle of the park
-      14. The park is well-maintained and clean
-      15. The park has a lot of colorful flowers
-      16. The park offers a great view of the city skyline
-      17. The park is filled with lush greenery and vibrant flowers
-      18. There is a playground with swings and slides for children
-      19. Children are running and playing on the playground equipment
-      20. Families are having picnics in the shade of the trees
+      1. There are walking paths that go around the park
+      2. People are strolling along the winding pathways
+      3. Couples are having romantic moments on the park benches
+      4. The sound of birds chirping adds to the peaceful atmosphere
+      5. The park is a perfect place to relax and escape from the bustling city life
+      6. Picnic tables are available for visitors to use
+      7. The park has a dedicated area for outdoor concerts and performances
+      8. There are various recreational facilities such as basketball courts and picnic areas
+      9. In the evenings, the park is beautifully lit with decorative lights
+      10. Sculptures and art installations are scattered throughout the park, providing artistic inspiration
+      11. The park offers a quiet and peaceful atmosphere, making it the perfect place to relax and escape from busy city life
+      12. The park is equipped with clean restrooms and convenient amenities for visitors
+      13. During the spring, cherry blossoms create a breathtaking sea of pink and white petals
+      14. Joggers and cyclists enjoy the park's well-maintained trails
+      15. The park is a serene oasis in the midst of the crowded city
+      16. A sense of serenity envelops the park, making it an ideal spot for meditation
+      17. There's a small cafe where visitors can grab a snack or a refreshing drink
+      18. The evening sunset in the park is more beautiful than anything else
+      19. As the sun sets, the atmosphere of the park becomes more fascinating, shining a warm light on everything
+      20. The park is home to a diverse range of wildlife, including birds and squirrels 
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
