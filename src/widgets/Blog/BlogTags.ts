@@ -1,8 +1,10 @@
+import { BackButton } from './../../components/Card/CardStyles';
 export const tags = {
   all: "전체 게시글",
   englishConversation: "영어회화",
   algorithm: "알고리즘",
   frontEnd: "프론트엔드",
+  backEnd: "백엔드",
   computerArchitecture: "컴퓨터 구조",
   dataStructure: "자료구조",
   softwareDevelopment: "소프트웨어 개발",
