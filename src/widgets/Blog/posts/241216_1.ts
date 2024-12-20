@@ -4,7 +4,7 @@ import { tags } from "../BlogTags";
 const post: Post = {
   title: `Next.js 개요`,
   time: "241216_1",
-  tags: [tags.frontEnd, tags.nextJS],
+  tags: [tags.frontEnd, tags.backEnd, tags.nextJS],
   content: `
     ## React 기반 오픈 소스 웹 개발 "프레임워크"
     ### 주요 특징
