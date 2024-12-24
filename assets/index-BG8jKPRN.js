@@ -4136,7 +4136,7 @@ ${gt(_t)}
   .empty {
     background-color: ${COLORS.accent};
   }
-`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(s=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:s.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,a)=>jsxRuntimeExports.jsx("div",{className:a<s.level?"filled":"empty"},a))})]},s.label))})]})]}),tags={all:"전체 게시글",englishConversation:"영어회화",algorithm:"알고리즘",frontEnd:"프론트엔드",backEnd:"백엔드",computerArchitecture:"컴퓨터 구조",dataStructure:"자료구조",softwareDevelopment:"소프트웨어 개발",nextJS:"Next.js",flutter:"플러터",javaScript:"자바스크립트",bfs:"BFS",binarySearch:"이진탐색",loop:"반복문"},tagValues=Object.values(tags),post$N={title:"컴퓨터 구조 개요",time:"241106_1",tags:[tags.computerArchitecture],content:`
+`,Intro=()=>jsxRuntimeExports.jsxs(IntroContainer,{children:[jsxRuntimeExports.jsx(IntroSongKangSan,{src:"intro/songkangsan.png"}),jsxRuntimeExports.jsxs(IntroInfoContainer,{children:[jsxRuntimeExports.jsxs(IntroInfo,{children:[jsxRuntimeExports.jsxs(IntroTitle,{children:[jsxRuntimeExports.jsx("div",{className:"name",children:TITLE.name}),jsxRuntimeExports.jsx("div",{children:TITLE.title})]}),jsxRuntimeExports.jsx(IntroBox,{children:jsxRuntimeExports.jsx(MarkdownRenderer,{content:INTRODUCTION})})]}),jsxRuntimeExports.jsx(IntroStack,{children:SKILLS.map(s=>jsxRuntimeExports.jsxs("div",{className:"scoreContainer",children:[jsxRuntimeExports.jsx("div",{className:"label",children:s.label}),jsxRuntimeExports.jsx("div",{className:"score",children:[...Array(5)].map((e,a)=>jsxRuntimeExports.jsx("div",{className:a<s.level?"filled":"empty"},a))})]},s.label))})]})]}),tags={all:"전체 게시글",englishConversation:"영어회화",algorithm:"알고리즘",frontEnd:"프론트엔드",backEnd:"백엔드",computerArchitecture:"컴퓨터 구조",dataStructure:"자료구조",softwareDevelopment:"소프트웨어 개발",nextJS:"Next.js",flutter:"플러터",javaScript:"자바스크립트",cpp:"C++",bfs:"BFS",binarySearch:"이진탐색",loop:"반복문",map:"map"},tagValues=Object.values(tags),post$O={title:"컴퓨터 구조 개요",time:"241106_1",tags:[tags.computerArchitecture],content:`
         ## 컴퓨터는 0과 1만 이해할 수 있다!
         > 0과 1로 이루어진 데이터와 명령어에 의해 작동
         ### 데이터
@@ -4181,7 +4181,7 @@ ${gt(_t)}
         이것이 취업을 위한 컴퓨터 과학이다 
         with CS 기술 면접을 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$M={title:"오픽241119",time:"241119_0",tags:[tags.englishConversation],content:`
+    `},post$N={title:"오픽241119",time:"241119_0",tags:[tags.englishConversation],content:`
       1. I like my neighborhood because it's a quiet and convenient place to live.
       2. I live in an apartment complex near the downtown area.
       3. Although it's close to downtown, my town is pretty quiet.
@@ -4206,7 +4206,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$L={title:"비트와 바이트",time:"241119_1",tags:[tags.computerArchitecture],content:`
+  `},post$M={title:"비트와 바이트",time:"241119_1",tags:[tags.computerArchitecture],content:`
         ## 8비트는 1바이트!
         - 이전 단위 1000개
             - kB, MB, GB, TB
@@ -4220,7 +4220,7 @@ ${gt(_t)}
         이것이 취업을 위한 컴퓨터 과학이다 
         with CS 기술 면접을 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$K={title:"데이터",time:"241119_2",tags:[tags.computerArchitecture],content:`
+    `},post$L={title:"데이터",time:"241119_2",tags:[tags.computerArchitecture],content:`
         ### 2진수는 너무 길다!
         > 10진수를 2진수, 16진수로
         - 2진법: 0b~
@@ -4263,7 +4263,7 @@ ${gt(_t)}
         이것이 취업을 위한 컴퓨터 과학이다 
         with CS 기술 면접을 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$J={title:"명령어",time:"241119_3",tags:[tags.computerArchitecture],content:"\n        ## 일해라 + 컴퓨터!\n        > 연산코드 + 오퍼랜드\n\n        - 오퍼랜드: 데이터 저장 위치\n        - 연산코드\n        \n            | **분류**        | **연산 코드**       | **설명**                                                                                              | **예시**                    |\n            |------------------|---------------------|------------------------------------------------------------------------------------------------------|-----------------------------|\n            | **데이터 전송** | `MOV`               | 데이터 복사. 레지스터, 메모리, 즉시값 간의 데이터 이동.                                                | `MOV AX, BX` (AX ← BX)      |\n            |                  | `PUSH` / `POP`     | 스택에 데이터를 저장(`PUSH`)하거나 꺼냄(`POP`).                                                        | `PUSH AX`, `POP BX`         |\n            |                  | `LOAD` / `STORE`   | 메모리에서 레지스터로 데이터 로드(`LOAD`), 레지스터에서 메모리로 저장(`STORE`).                          | `LOAD R1, 0x1000`           |\n            |                  | `LEA`              | 메모리 주소 계산 및 로드.                                                                             | `LEA DX, [BX+SI]`           |\n            | **산술 연산**   | `ADD`               | 두 값을 더함.                                                                                        | `ADD AX, BX` (AX ← AX + BX) |\n            |                  | `SUB`               | 두 값을 뺌.                                                                                          | `SUB AX, BX` (AX ← AX - BX) |\n            |                  | `MUL` / `DIV`      | 곱셈(`MUL`), 나눗셈(`DIV`).                                                                           | `MUL AX`                    |\n            |                  | `INC` / `DEC`      | 값을 1 증가(`INC`), 1 감소(`DEC`).                                                                    | `INC AX`, `DEC BX`          |\n            | **논리 연산**   | `AND`               | 비트 단위로 AND 연산.                                                                                 | `AND AX, BX`                |\n            |                  | `OR`                | 비트 단위로 OR 연산.                                                                                  | `OR AX, BX`                 |\n            |                  | `XOR`               | 비트 단위로 XOR 연산.                                                                                 | `XOR AX, BX`                |\n            |                  | `NOT`               | 비트를 반전.                                                                                         | `NOT AX`                    |\n            |                  | `SHL` / `SHR`      | 비트를 왼쪽으로 이동(`SHL`), 오른쪽으로 이동(`SHR`).                                                   | `SHL AX, 1`                 |\n            | **제어 흐름 변경** | `JMP`               | 무조건적인 분기.                                                                                      | `JMP 0x200`                 |\n            |                  | `JE` / `JNE`       | 조건부 분기: 값이 같으면 점프(`JE`), 값이 다르면 점프(`JNE`).                                          | `JE 0x300`                  |\n            |                  | `CALL` / `RET`     | 서브루틴 호출(`CALL`), 서브루틴에서 복귀(`RET`).                                                       | `CALL FUNC`, `RET`          |\n            |                  | `LOOP`             | 반복 실행: 카운터 레지스터(`CX`) 값이 0이 될 때까지 점프.                                              | `LOOP 0x400`                |\n            |                  | `CMP`              | 두 값을 비교. 조건부 점프와 함께 사용.                                                                 | `CMP AX, BX`                |\n            | **입출력 제어** | `IN`                | 지정된 포트에서 데이터를 읽음.                                                                        | `IN AL, 0x60`               |\n            |                  | `OUT`               | 지정된 포트로 데이터를 출력.                                                                          | `OUT 0x60, AL`              |\n            |                  | `HLT`              | 시스템을 중지하거나 대기 상태로 전환.                                                                  | `HLT`                       |\n            |                  | `NOP`              | 아무 작업도 하지 않음 (대기).                                                                          | `NOP`                       |\n        \n        ## 기계어 몰라 번역해줘!\n        > 어셈블리어로 변역\n\n        - 비교\n            | **특성/기능**          | **CISC (Complex Instruction Set Computer)**                | **RISC (Reduced Instruction Set Computer)**                |\n            |-----------------------|-----------------------------------------------------------|-----------------------------------------------------------|\n            | **설계 철학**         | 복잡한 명령어를 포함하여 한 번에 많은 작업을 처리.           | 단순하고 적은 수의 명령어를 빠르게 실행.                   |\n            | **명령어 수**         | 수백 개에서 수천 개.                                       | 수십 개에서 백여 개.                                       |\n            | **명령어 구조**       | 다양한 길이의 명령어를 지원.                                | 고정 길이 명령어.                                           |\n            | **명령어 처리 속도**  | 상대적으로 느림(복잡한 디코딩).                             | 매우 빠름(파이프라이닝 최적화).                             |\n            | **주요 사용 사례**    | x86(인텔, AMD), VAX, IBM 메인프레임 등.                    | ARM, MIPS, RISC-V, PowerPC 등.                             |\n            | **데이터 전송**       | `MOV AX, [1000H]` (메모리에서 레지스터로 이동)             | `LW R1, 0(R2)` (메모리에서 레지스터로 이동)               |\n            | **산술 연산**         | `ADD AX, BX` (두 레지스터 덧셈)                            | `ADD R1, R2, R3` (두 레지스터 덧셈)                       |\n            | **메모리 접근**       | `ADD AX, [1000H]` (메모리 값과 덧셈)                        | `LW R1, 0(R2)`<br>`ADD R3, R1, R4` (로드 후 계산)         |\n            | **스택 연산**         | `PUSH AX` (레지스터 값을 스택에 저장)                       | `SW R1, -4(SP)`<br>`ADDI SP, SP, -4` (메모리 저장 후 스택 포인터 조정) |\n            | **조건부 분기**       | `JZ 0x100` (값이 0이면 분기)                              | `BEQ R1, R2, 0x100` (값이 같으면 분기)                    |\n            | **함수 호출**         | `CALL 0x200` (서브루틴 호출)                              | `JAL 0x200` (서브루틴 호출)                               |\n            | **비트 연산**         | `AND AX, BX` (두 값의 비트 AND)                            | `AND R1, R2, R3` (두 값의 비트 AND)                       |\n        \n        ## 읽고 읽고 실행!\n        > 명령어를 읽고 데이터를 읽고 실행\n\n        - 인출 사이클: 명령어를 CPU로\n        - 실행 사이클: CPU가 명령 실행\n        - 간접 사이클: 데이터를 CPU로\n        - 데이터가 필요없다면 간접 스킵\n        \n        ```\n        이것이 취업을 위한 컴퓨터 과학이다 \n        with CS 기술 면접을 기반으로 작성한 글입니다.\n        ```\n    "},post$I={title:"오픽241120",time:"241120_0",tags:[tags.englishConversation],content:`
+    `},post$K={title:"명령어",time:"241119_3",tags:[tags.computerArchitecture],content:"\n        ## 일해라 + 컴퓨터!\n        > 연산코드 + 오퍼랜드\n\n        - 오퍼랜드: 데이터 저장 위치\n        - 연산코드\n        \n            | **분류**        | **연산 코드**       | **설명**                                                                                              | **예시**                    |\n            |------------------|---------------------|------------------------------------------------------------------------------------------------------|-----------------------------|\n            | **데이터 전송** | `MOV`               | 데이터 복사. 레지스터, 메모리, 즉시값 간의 데이터 이동.                                                | `MOV AX, BX` (AX ← BX)      |\n            |                  | `PUSH` / `POP`     | 스택에 데이터를 저장(`PUSH`)하거나 꺼냄(`POP`).                                                        | `PUSH AX`, `POP BX`         |\n            |                  | `LOAD` / `STORE`   | 메모리에서 레지스터로 데이터 로드(`LOAD`), 레지스터에서 메모리로 저장(`STORE`).                          | `LOAD R1, 0x1000`           |\n            |                  | `LEA`              | 메모리 주소 계산 및 로드.                                                                             | `LEA DX, [BX+SI]`           |\n            | **산술 연산**   | `ADD`               | 두 값을 더함.                                                                                        | `ADD AX, BX` (AX ← AX + BX) |\n            |                  | `SUB`               | 두 값을 뺌.                                                                                          | `SUB AX, BX` (AX ← AX - BX) |\n            |                  | `MUL` / `DIV`      | 곱셈(`MUL`), 나눗셈(`DIV`).                                                                           | `MUL AX`                    |\n            |                  | `INC` / `DEC`      | 값을 1 증가(`INC`), 1 감소(`DEC`).                                                                    | `INC AX`, `DEC BX`          |\n            | **논리 연산**   | `AND`               | 비트 단위로 AND 연산.                                                                                 | `AND AX, BX`                |\n            |                  | `OR`                | 비트 단위로 OR 연산.                                                                                  | `OR AX, BX`                 |\n            |                  | `XOR`               | 비트 단위로 XOR 연산.                                                                                 | `XOR AX, BX`                |\n            |                  | `NOT`               | 비트를 반전.                                                                                         | `NOT AX`                    |\n            |                  | `SHL` / `SHR`      | 비트를 왼쪽으로 이동(`SHL`), 오른쪽으로 이동(`SHR`).                                                   | `SHL AX, 1`                 |\n            | **제어 흐름 변경** | `JMP`               | 무조건적인 분기.                                                                                      | `JMP 0x200`                 |\n            |                  | `JE` / `JNE`       | 조건부 분기: 값이 같으면 점프(`JE`), 값이 다르면 점프(`JNE`).                                          | `JE 0x300`                  |\n            |                  | `CALL` / `RET`     | 서브루틴 호출(`CALL`), 서브루틴에서 복귀(`RET`).                                                       | `CALL FUNC`, `RET`          |\n            |                  | `LOOP`             | 반복 실행: 카운터 레지스터(`CX`) 값이 0이 될 때까지 점프.                                              | `LOOP 0x400`                |\n            |                  | `CMP`              | 두 값을 비교. 조건부 점프와 함께 사용.                                                                 | `CMP AX, BX`                |\n            | **입출력 제어** | `IN`                | 지정된 포트에서 데이터를 읽음.                                                                        | `IN AL, 0x60`               |\n            |                  | `OUT`               | 지정된 포트로 데이터를 출력.                                                                          | `OUT 0x60, AL`              |\n            |                  | `HLT`              | 시스템을 중지하거나 대기 상태로 전환.                                                                  | `HLT`                       |\n            |                  | `NOP`              | 아무 작업도 하지 않음 (대기).                                                                          | `NOP`                       |\n        \n        ## 기계어 몰라 번역해줘!\n        > 어셈블리어로 변역\n\n        - 비교\n            | **특성/기능**          | **CISC (Complex Instruction Set Computer)**                | **RISC (Reduced Instruction Set Computer)**                |\n            |-----------------------|-----------------------------------------------------------|-----------------------------------------------------------|\n            | **설계 철학**         | 복잡한 명령어를 포함하여 한 번에 많은 작업을 처리.           | 단순하고 적은 수의 명령어를 빠르게 실행.                   |\n            | **명령어 수**         | 수백 개에서 수천 개.                                       | 수십 개에서 백여 개.                                       |\n            | **명령어 구조**       | 다양한 길이의 명령어를 지원.                                | 고정 길이 명령어.                                           |\n            | **명령어 처리 속도**  | 상대적으로 느림(복잡한 디코딩).                             | 매우 빠름(파이프라이닝 최적화).                             |\n            | **주요 사용 사례**    | x86(인텔, AMD), VAX, IBM 메인프레임 등.                    | ARM, MIPS, RISC-V, PowerPC 등.                             |\n            | **데이터 전송**       | `MOV AX, [1000H]` (메모리에서 레지스터로 이동)             | `LW R1, 0(R2)` (메모리에서 레지스터로 이동)               |\n            | **산술 연산**         | `ADD AX, BX` (두 레지스터 덧셈)                            | `ADD R1, R2, R3` (두 레지스터 덧셈)                       |\n            | **메모리 접근**       | `ADD AX, [1000H]` (메모리 값과 덧셈)                        | `LW R1, 0(R2)`<br>`ADD R3, R1, R4` (로드 후 계산)         |\n            | **스택 연산**         | `PUSH AX` (레지스터 값을 스택에 저장)                       | `SW R1, -4(SP)`<br>`ADDI SP, SP, -4` (메모리 저장 후 스택 포인터 조정) |\n            | **조건부 분기**       | `JZ 0x100` (값이 0이면 분기)                              | `BEQ R1, R2, 0x100` (값이 같으면 분기)                    |\n            | **함수 호출**         | `CALL 0x200` (서브루틴 호출)                              | `JAL 0x200` (서브루틴 호출)                               |\n            | **비트 연산**         | `AND AX, BX` (두 값의 비트 AND)                            | `AND R1, R2, R3` (두 값의 비트 AND)                       |\n        \n        ## 읽고 읽고 실행!\n        > 명령어를 읽고 데이터를 읽고 실행\n\n        - 인출 사이클: 명령어를 CPU로\n        - 실행 사이클: CPU가 명령 실행\n        - 간접 사이클: 데이터를 CPU로\n        - 데이터가 필요없다면 간접 스킵\n        \n        ```\n        이것이 취업을 위한 컴퓨터 과학이다 \n        with CS 기술 면접을 기반으로 작성한 글입니다.\n        ```\n    "},post$J={title:"오픽241120",time:"241120_0",tags:[tags.englishConversation],content:`
       1. In my house, there is a huge sofa in the middle of the living room.
       2. When I'm at home, I spend most of my time on the sofa.
       3. In my room. I have a desk a bed and a closet.
@@ -4288,7 +4288,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$H={title:"플랫폼",time:"241120_1",tags:[tags.softwareDevelopment],content:`
+  `},post$I={title:"플랫폼",time:"241120_1",tags:[tags.softwareDevelopment],content:`
         ## 애플리케이션 구동에 필요한 SW 환경!
         > 플랫폼 내에서는 상호 호환이 가능한 결합체
          
@@ -4305,7 +4305,7 @@ ${gt(_t)}
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$G={title:"운영체제",time:"241120_2",tags:[tags.softwareDevelopment],content:`
+    `},post$H={title:"운영체제",time:"241120_2",tags:[tags.softwareDevelopment],content:`
         ## 컴퓨터를 더 쉽게 사용하기 위한 SW!
         > 하드웨어 및 소프트웨어 자원을 효율적으로 관리하며 공통된 기능 제공
          
@@ -4317,7 +4317,7 @@ ${gt(_t)}
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$F={title:"네트워크",time:"241120_3",tags:[tags.softwareDevelopment],content:`
+    `},post$G={title:"네트워크",time:"241120_3",tags:[tags.softwareDevelopment],content:`
         ## 서로 데이터를 교환하는 기술!
         > 데이터 링크는 유무선 매체로 성립
          
@@ -4332,7 +4332,7 @@ ${gt(_t)}
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$E={title:"DBMS",time:"241120_4",tags:[tags.softwareDevelopment],content:`
+    `},post$F={title:"DBMS",time:"241120_4",tags:[tags.softwareDevelopment],content:`
         ## 데이터 집합, 저장, 관리 제공!
         > 데이터베이스 기능 제공하는 응용 프로그램
          
@@ -4351,7 +4351,7 @@ ${gt(_t)}
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$D={title:"비즈니스 융합",time:"241120_5",tags:[tags.softwareDevelopment],content:`
+    `},post$E={title:"비즈니스 융합",time:"241120_5",tags:[tags.softwareDevelopment],content:`
         ## 혁신을 위한 기업 활동!
         > 새로운 비즈니스 모델로 범위 확대
          
@@ -4371,7 +4371,7 @@ ${gt(_t)}
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$C={title:"요구분석",time:"241120_6",tags:[tags.softwareDevelopment],content:`
+    `},post$D={title:"요구분석",time:"241120_6",tags:[tags.softwareDevelopment],content:`
         ## 사용자의 요구를 목표!
         > 모호한 부분 거르기, 방식 정하기
 
@@ -4415,7 +4415,7 @@ ${gt(_t)}
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$B={title:"UML",time:"241120_7",tags:[tags.softwareDevelopment],content:`
+    `},post$C={title:"UML",time:"241120_7",tags:[tags.softwareDevelopment],content:`
         ## 객체 지향 SW 개발 표준화 범용 모델링 언어!
         > 명세화, 시각화, 문서화, 모델링 기술, 방법론
         - 특징: 가시화, 구축, 명세화, 문서화
@@ -4456,7 +4456,7 @@ ${gt(_t)}
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$A={title:"에자일",time:"241120_8",tags:[tags.softwareDevelopment],content:`
+    `},post$B={title:"에자일",time:"241120_8",tags:[tags.softwareDevelopment],content:`
         ## 개발과 함께 즉시 피드백!
         > 잦은 배포, 변화에 신속한 대응
         - 특징: 기능 중심, 개인과 소통, 짧은 계획, 실행에 가치, 피드백
@@ -4512,7 +4512,7 @@ ${gt(_t)}
         \`\`\`
         수제비 2023 정보처리기사 필기를 기반으로 작성한 글입니다.
         \`\`\`
-    `},post$z={title:"오픽241121",time:"241121_0",tags:[tags.englishConversation],content:`
+    `},post$A={title:"오픽241121",time:"241121_0",tags:[tags.englishConversation],content:`
       1. My best friend, Kim and I have the same taste in music.
       2. We usually go for a drink and share our feelings about the concert.
       3. I like to attend the concerts of my favorite singers.
@@ -4537,7 +4537,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$y={title:"오픽241125",time:"241125_0",tags:[tags.englishConversation],content:`
+  `},post$z={title:"오픽241125",time:"241125_0",tags:[tags.englishConversation],content:`
       1. You can make any kind of fried rice by adding whatever you want.
       2. To make it, you need a bowl of rice and egg and any ingredients you want to put in the rice.
       3. Stir fry them until they look good.
@@ -4562,7 +4562,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$x={title:"오픽241126",time:"241126_0",tags:[tags.englishConversation],content:`
+  `},post$y={title:"오픽241126",time:"241126_0",tags:[tags.englishConversation],content:`
       1. I don't need a companion to jog because I just like running and listening to music.
       2. I like to run on a treadmill.
       3. When I jog, I need a good pair of running shoes.
@@ -4587,7 +4587,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$w={title:"오픽241127",time:"241127_0",tags:[tags.englishConversation],content:`
+  `},post$x={title:"오픽241127",time:"241127_0",tags:[tags.englishConversation],content:`
       1. I once won the race in the women's 100m freestyle.
       2. I know all the strokes, and my favorite stroke is freestyle.
       3. My mom signed me up for swimming lessons at a sports center.
@@ -4612,7 +4612,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$v={title:"오픽241128",time:"241128_0",tags:[tags.englishConversation],content:`
+  `},post$w={title:"오픽241128",time:"241128_0",tags:[tags.englishConversation],content:`
       1. My first international trip was to Canada.
       2. I had traveled to many different spots in Korea, but it was my first time traveling overseas.
       3. I had made my first passport as well because it was our first family vacation outside Korea.
@@ -4637,7 +4637,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$u={title:"오픽241129",time:"241129_0",tags:[tags.englishConversation],content:`
+  `},post$v={title:"오픽241129",time:"241129_0",tags:[tags.englishConversation],content:`
       1. What are your operating hours?
       2. Do I need a reservation, or can I walk in?
       3. Are you open on weekends or holidays?
@@ -4662,7 +4662,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$t={title:"오픽241202",time:"241202_0",tags:[tags.englishConversation],content:`
+  `},post$u={title:"오픽241202",time:"241202_0",tags:[tags.englishConversation],content:`
       1. Excuse me, I purchased this item recently and it doesn't fit. Can I exchange it for a different size?
       2. Hi, I ordered this online, but there seeems to be a defect. Can I get a replacement or a refund?
       3. I received the wrong item in my online order. How can we proceed with correcting this?
@@ -4697,7 +4697,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$s={title:"오픽241203",time:"241203_0",tags:[tags.englishConversation],content:`
+  `},post$t={title:"오픽241203",time:"241203_0",tags:[tags.englishConversation],content:`
       1. Once, I purchased a smartphone online, expecting top-notch performance basedon the advertised specifications.
       However, upon receiving it, I realized the battery life was significantly shorter thanexpected, and the camera quality was subpar. Despite the promising features
       listed, they didn't meet my standards. It was frustrating because I heavily relied onthese aspects for work and personal use. I had to go through the hassle of
@@ -4737,7 +4737,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$r={title:"오픽241204",time:"241204_0",tags:[tags.englishConversation],content:`
+  `},post$s={title:"오픽241204",time:"241204_0",tags:[tags.englishConversation],content:`
       1. Yes, I've had the opportunity to travel to several countries, including Japan. One striking
       difference I noticed in Japan compared to my home country is the geography. While my
       country has vast open plains and mountain ranges, Japan is characterized by its
@@ -4784,7 +4784,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$q={title:"오픽241205",time:"241205_0",tags:[tags.englishConversation],content:`
+  `},post$r={title:"오픽241205",time:"241205_0",tags:[tags.englishConversation],content:`
       1. My favorite actor is Matt Damon.
       2. He actually becomes the character, and it's so believable.
       3. He studied for his undergraduate degree at Harvard, and he even writes scenarios.
@@ -4809,7 +4809,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$p={title:"오픽241206",time:"241206_0",tags:[tags.englishConversation],content:`
+  `},post$q={title:"오픽241206",time:"241206_0",tags:[tags.englishConversation],content:`
       1. When you walk through the gate, you can see a lot of trees and lawn.
       2. There is a small pond inside the park.
       3. When I go to the park, I usually take a walk first.
@@ -4834,7 +4834,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$o={title:"미드101문장241209",time:"241209_0",tags:[tags.englishConversation],content:`
+  `},post$p={title:"미드101문장241209",time:"241209_0",tags:[tags.englishConversation],content:`
       1. Allow me.
       2. Be my guest
       3. Come on, spill it
@@ -4859,7 +4859,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$n={title:"미드101문장241210",time:"241210_0",tags:[tags.englishConversation],content:`
+  `},post$o={title:"미드101문장241210",time:"241210_0",tags:[tags.englishConversation],content:`
       1. I got to thinking about fate
       2. I got your back
       3. I just came to hang out
@@ -4884,7 +4884,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$m={title:"미드101문장241211",time:"241211_0",tags:[tags.englishConversation],content:`
+  `},post$n={title:"미드101문장241211",time:"241211_0",tags:[tags.englishConversation],content:`
       1. It doesn't feel right
       2. It makes me want to die
       3. It's a phase
@@ -4909,7 +4909,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$l={title:"적정한 값 찾기",time:"241211_1",tags:[tags.algorithm,tags.javaScript,tags.binarySearch],content:`
+  `},post$m={title:"적정한 값 찾기",time:"241211_1",tags:[tags.algorithm,tags.javaScript,tags.binarySearch],content:`
     1. **최대, 최솟값 찾기**
       - Math.max, Math.min은 입력 크기에 따라 시간 복잡도가 증가
       - 문제에서 주어진 최대/최소값을 활용하여 효율적인 탐색 필요
@@ -4951,7 +4951,7 @@ ${gt(_t)}
         return answer;
     }
     \`\`\`
-  `},post$k={title:"자바스크립트 Map",time:"241211_2",tags:[tags.algorithm,tags.dataStructure,tags.javaScript],content:`
+  `},post$l={title:"자바스크립트 Map",time:"241211_2",tags:[tags.algorithm,tags.dataStructure,tags.javaScript],content:`
     ## \`Map\`은 키-값 쌍을 저장하는 데이터 구조
 
     ---
@@ -5038,7 +5038,7 @@ ${gt(_t)}
     - **TreeMap**: 이진 검색 트리 기반, 정렬된 키 순서 필요 시 적합.
 
     JavaScript \`Map\`은 HashMap에 가까운 동작을 하지만, TreeMap과 같은 정렬 기반 동작이 필요하면 별도로 구현
-`},post$j={title:"미드101문장241212",time:"241212_0",tags:[tags.englishConversation],content:`
+`},post$k={title:"미드101문장241212",time:"241212_0",tags:[tags.englishConversation],content:`
     1. Spare me!
     2. Tell me about it
     3. That leaves us with one choice
@@ -5063,7 +5063,7 @@ ${gt(_t)}
     \`\`\`
     강지완 오픽TV를 기반으로 작성한 글입니다.
     \`\`\`
-  `},post$i={title:"미드101문장241213",time:"241213_0",tags:[tags.englishConversation],content:`
+  `},post$j={title:"미드101문장241213",time:"241213_0",tags:[tags.englishConversation],content:`
       1. We're in the middle of nowhere
       2. What are the odds?
       3. What are you doing with it
@@ -5089,7 +5089,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$h={title:"자바스크립트 반복문",time:"241213_0",tags:[tags.algorithm,tags.javaScript,tags.loop],content:`      
+  `},post$i={title:"자바스크립트 반복문",time:"241213_0",tags:[tags.algorithm,tags.javaScript,tags.loop],content:`      
       ## **기본 비교**
       
       | **특징**          | **\`reduce\`**                            | **\`map\`**                        | **\`forEach\`**                     | **\`for\`**                           |
@@ -5214,7 +5214,7 @@ ${gt(_t)}
       - **\`map\`**: 배열을 변환하여 새 배열 생성.
       - **\`forEach\`**: 부수 효과를 수행하며 요소를 단순히 순회.
       - **\`for\`**: 자유롭고 세밀한 반복 제어가 필요한 경우.
-  `},post$g={title:"자바스크립트 BFS",time:"241213_2",tags:[tags.algorithm,tags.javaScript,tags.bfs],content:`
+  `},post$h={title:"자바스크립트 BFS",time:"241213_2",tags:[tags.algorithm,tags.javaScript,tags.bfs],content:`
 		### 초기화
 		1. 큐 생성 + 첫번째 노드 추가<br>
 		\`const queue = [start];\`
@@ -5238,7 +5238,7 @@ ${gt(_t)}
 				- 범위 밖
 
 		---
-  `},post$f={title:"오픽241216",time:"241216_0",tags:[tags.englishConversation],content:`
+  `},post$g={title:"오픽241216",time:"241216_0",tags:[tags.englishConversation],content:`
       1. The neighborhood is quiet and safe, with friendly neighbors
       2. The house is conveniently located near schools, parks, and shopping centers
       3. My bedrooms are cozy and comfortable, perfect for a good night's sleep
@@ -5263,7 +5263,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$e={title:"Next.js 개요",time:"241216_1",tags:[tags.frontEnd,tags.backEnd,tags.nextJS],content:`
+  `},post$f={title:"Next.js 개요",time:"241216_1",tags:[tags.frontEnd,tags.backEnd,tags.nextJS],content:`
     ## React 기반 오픈 소스 웹 개발 "프레임워크"
     ### 주요 특징
     1. **서버 사이드 렌더링(SSR)**
@@ -5301,7 +5301,7 @@ ${gt(_t)}
     ### 단점
     - **학습 곡선**: React와 기본 웹 개발 개념에 익숙하지 않으면 처음에는 복잡할 수 있음.
     - **서버 관리 필요**: SSR을 사용할 경우 서버 환경 설정이 추가로 필요.
-  `},post$d={title:"Next.js 시작",time:"241216_2",tags:[tags.frontEnd,tags.nextJS],content:`
+  `},post$e={title:"Next.js 시작",time:"241216_2",tags:[tags.frontEnd,tags.nextJS],content:`
     ### **1. 사전 준비**
     - **Node.js**: Next.js는 Node.js 환경에서 실행 (최소 Node.js 16.8 이상 필요)
     - **패키지 매니저**: npm 또는 Yarn을 사용 (권장: npm)
@@ -5427,7 +5427,7 @@ ${gt(_t)}
       npx create-next-app@latest --typescript
       \`\`\`
     - 라우팅, SSR, SSG 등 심화 기능은 공식 문서에서 참고: [Next.js 공식 문서](https://nextjs.org/docs)
-  `},post$c={title:"오픽241217",time:"241217_0",tags:[tags.englishConversation],content:`
+  `},post$d={title:"오픽241217",time:"241217_0",tags:[tags.englishConversation],content:`
       1. The menu offers a variety of teas, including herbal blends and exotic flavors
       2. The cafe's French pastries are authentically crunchy and melt in your mouth
       3. The cafe offers a wide selection of vegan and gluten-free options for health-conscious customers
@@ -5452,7 +5452,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$b={title:"자바스크립트 정규식",time:"241217_1",tags:[tags.javaScript],content:`
+  `},post$c={title:"자바스크립트 정규식",time:"241217_1",tags:[tags.javaScript],content:`
     > 문자열에서 특정 패턴을 찾거나, 치환, 추출하는 데 사용되는 \`도구\`
 
     ## 정규식 작성 방법
@@ -5590,7 +5590,7 @@ ${gt(_t)}
 
     ---
 
-  `},post$a={title:"오픽241218",time:"241218_0",tags:[tags.englishConversation],content:`
+  `},post$b={title:"오픽241218",time:"241218_0",tags:[tags.englishConversation],content:`
       1. There are walking paths that go around the park
       2. People are strolling along the winding pathways
       3. Couples are having romantic moments on the park benches
@@ -5615,7 +5615,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$9={title:"자바스크립트 정렬",time:"241218_1",tags:[tags.algorithm,tags.javaScript],content:`
+  `},post$a={title:"자바스크립트 정렬",time:"241218_1",tags:[tags.algorithm,tags.javaScript],content:`
 
     ### **1. \`sort()\` 메서드 기본 동작**
     - 기본적으로, \`sort()\`는 배열의 요소를 **문자열로 변환한 후 사전순으로 정렬**
@@ -5712,7 +5712,7 @@ ${gt(_t)}
 
     ---
 
-  `},post$8={title:"자바스크립트 Math",time:"241218_2",tags:[tags.algorithm,tags.javaScript],content:"\n\n    ### **1. Math 객체의 주요 상수**\n    `Math` 객체는 몇 가지 유용한 상수를 제공합니다:\n\n    | 상수            | 설명                                | 값                 |\n    |-----------------|-----------------------------------|-------------------|\n    | `Math.PI`       | 원주율(π)                         | 3.141592653589793 |\n    | `Math.E`        | 자연로그의 밑(e)                   | 2.718281828459045 |\n    | `Math.LN2`      | 2의 자연로그                      | 0.6931471805599453 |\n    | `Math.LN10`     | 10의 자연로그                     | 2.302585092994046 |\n    | `Math.LOG2E`    | e의 밑을 2로 하는 로그값          | 1.4426950408889634 |\n    | `Math.LOG10E`   | e의 밑을 10으로 하는 로그값       | 0.4342944819032518 |\n    | `Math.SQRT2`    | 2의 제곱근                        | 1.4142135623730951 |\n    | `Math.SQRT1_2`  | 1/2의 제곱근                     | 0.7071067811865476 |\n\n    ---\n\n    ### **2. Math 메서드**\n    #### 1) 기본적인 수학 계산\n    - **`Math.abs(x)`**: x의 절댓값\n      ```\n      Math.abs(-5); // 5\n      ```\n\n    - **`Math.sign(x)`**: x의 부호를 반환 (`1`, `-1`, `0`)\n      ```\n      Math.sign(-3); // -1\n      Math.sign(0);  // 0\n      Math.sign(5);  // 1\n      ```\n\n    - **`Math.floor(x)`**: x를 내림 (소수점 버림)\n      ```\n      Math.floor(4.7); // 4\n      ```\n\n    - **`Math.ceil(x)`**: x를 올림\n      ```\n      Math.ceil(4.2); // 5\n      ```\n\n    - **`Math.round(x)`**: x를 반올림\n      ```\n      Math.round(4.5); // 5\n      Math.round(4.4); // 4\n      ```\n\n    - **`Math.trunc(x)`**: x의 소수점 이하를 버림\n      ```\n      Math.trunc(4.9); // 4\n      Math.trunc(-4.9); // -4\n      ```\n\n    ---\n\n    #### 2) 제곱근, 지수 및 로그\n    - **`Math.sqrt(x)`**: x의 제곱근\n      ```\n      Math.sqrt(9); // 3\n      ```\n\n    - **`Math.cbrt(x)`**: x의 세제곱근\n      ```\n      Math.cbrt(27); // 3\n      ```\n\n    - **`Math.pow(x, y)`**: x의 y 제곱\n      ```\n      Math.pow(2, 3); // 8\n      ```\n\n    - **`Math.exp(x)`**: e^x^ 반환\n      ```\n      Math.exp(1); // 2.718281828459045\n      ```\n\n    - **`Math.log(x)`**: x의 자연로그\n      ```\n      Math.log(Math.E); // 1\n      ```\n\n    - **`Math.log10(x)`**: x의 밑을 10으로 하는 로그\n      ```\n      Math.log10(100); // 2\n      ```\n\n    - **`Math.log2(x)`**: x의 밑을 2로 하는 로그\n      ```\n      Math.log2(8); // 3\n      ```\n\n    ---\n\n    #### 3) 삼각 함수\n    - **`Math.sin(x)`**, **`Math.cos(x)`**, **`Math.tan(x)`**: x가 라디안일 때의 사인, 코사인, 탄젠트 값을 반환\n      ```\n      Math.sin(Math.PI / 2); // 1\n      Math.cos(Math.PI);     // -1\n      Math.tan(0);           // 0\n      ```\n\n    - **`Math.asin(x)`**, **`Math.acos(x)`**, **`Math.atan(x)`**: 아크 사인, 아크 코사인, 아크 탄젠트 값을 반환\n      ```\n      Math.asin(1); // Math.PI / 2\n      ```\n\n    - **`Math.atan2(y, x)`**: (x, y) 좌표의 각도(라디안) 반환\n      ```\n      Math.atan2(1, 1); // Math.PI / 4\n      ```\n\n    ---\n\n    #### 4) 랜덤 및 기타 메서드\n    - **`Math.random()`**: 0 이상 1 미만의 난수를 반환\n      ```\n      Math.random(); // 예: 0.847602329123\n      ```\n\n    - **`Math.max(...values)`**, **`Math.min(...values)`**: 전달받은 값 중 최대값/최소값 반환\n      ```\n      Math.max(1, 2, 3); // 3\n      Math.min(1, 2, 3); // 1\n      ```\n\n    ---\n\n    ### **3. Math.random()를 활용한 범위 난수 생성**\n    #### 1) 특정 범위의 정수 난수\n    0 이상 100 이하의 정수 난수를 생성하는 방법:\n    ```\n    const randomInt = Math.floor(Math.random() * 101);\n    ```\n\n    #### 2) 특정 범위의 실수 난수\n    1 이상 10 미만의 실수 난수를 생성하는 방법:\n    ```\n    const randomFloat = Math.random() * (10 - 1) + 1;\n    ```\n\n    ---\n\n    ### **4. Math와 함께 사용하면 좋은 팁**\n    1. **소수점 반올림 및 자리수 제한**\n      - 소수점 n자리까지 반올림:\n        ```\n        const num = 3.141592;\n        const rounded = Math.round(num * 100) / 100; // 3.14\n        ```\n\n    2. **각도와 라디안 변환**\n      - 각도를 라디안으로 변환:\n        ```\n        const radians = (degrees) => (degrees * Math.PI) / 180;\n        ```\n      - 라디안을 각도로 변환:\n        ```\n        const degrees = (radians) => (radians * 180) / Math.PI;\n        ```\n\n    ---\n\n  "},post$7={title:"오픽241219",time:"241219_0",tags:[tags.englishConversation],content:`
+  `},post$9={title:"자바스크립트 Math",time:"241218_2",tags:[tags.algorithm,tags.javaScript],content:"\n\n    ### **1. Math 객체의 주요 상수**\n    `Math` 객체는 몇 가지 유용한 상수를 제공합니다:\n\n    | 상수            | 설명                                | 값                 |\n    |-----------------|-----------------------------------|-------------------|\n    | `Math.PI`       | 원주율(π)                         | 3.141592653589793 |\n    | `Math.E`        | 자연로그의 밑(e)                   | 2.718281828459045 |\n    | `Math.LN2`      | 2의 자연로그                      | 0.6931471805599453 |\n    | `Math.LN10`     | 10의 자연로그                     | 2.302585092994046 |\n    | `Math.LOG2E`    | e의 밑을 2로 하는 로그값          | 1.4426950408889634 |\n    | `Math.LOG10E`   | e의 밑을 10으로 하는 로그값       | 0.4342944819032518 |\n    | `Math.SQRT2`    | 2의 제곱근                        | 1.4142135623730951 |\n    | `Math.SQRT1_2`  | 1/2의 제곱근                     | 0.7071067811865476 |\n\n    ---\n\n    ### **2. Math 메서드**\n    #### 1) 기본적인 수학 계산\n    - **`Math.abs(x)`**: x의 절댓값\n      ```\n      Math.abs(-5); // 5\n      ```\n\n    - **`Math.sign(x)`**: x의 부호를 반환 (`1`, `-1`, `0`)\n      ```\n      Math.sign(-3); // -1\n      Math.sign(0);  // 0\n      Math.sign(5);  // 1\n      ```\n\n    - **`Math.floor(x)`**: x를 내림 (소수점 버림)\n      ```\n      Math.floor(4.7); // 4\n      ```\n\n    - **`Math.ceil(x)`**: x를 올림\n      ```\n      Math.ceil(4.2); // 5\n      ```\n\n    - **`Math.round(x)`**: x를 반올림\n      ```\n      Math.round(4.5); // 5\n      Math.round(4.4); // 4\n      ```\n\n    - **`Math.trunc(x)`**: x의 소수점 이하를 버림\n      ```\n      Math.trunc(4.9); // 4\n      Math.trunc(-4.9); // -4\n      ```\n\n    ---\n\n    #### 2) 제곱근, 지수 및 로그\n    - **`Math.sqrt(x)`**: x의 제곱근\n      ```\n      Math.sqrt(9); // 3\n      ```\n\n    - **`Math.cbrt(x)`**: x의 세제곱근\n      ```\n      Math.cbrt(27); // 3\n      ```\n\n    - **`Math.pow(x, y)`**: x의 y 제곱\n      ```\n      Math.pow(2, 3); // 8\n      ```\n\n    - **`Math.exp(x)`**: e^x^ 반환\n      ```\n      Math.exp(1); // 2.718281828459045\n      ```\n\n    - **`Math.log(x)`**: x의 자연로그\n      ```\n      Math.log(Math.E); // 1\n      ```\n\n    - **`Math.log10(x)`**: x의 밑을 10으로 하는 로그\n      ```\n      Math.log10(100); // 2\n      ```\n\n    - **`Math.log2(x)`**: x의 밑을 2로 하는 로그\n      ```\n      Math.log2(8); // 3\n      ```\n\n    ---\n\n    #### 3) 삼각 함수\n    - **`Math.sin(x)`**, **`Math.cos(x)`**, **`Math.tan(x)`**: x가 라디안일 때의 사인, 코사인, 탄젠트 값을 반환\n      ```\n      Math.sin(Math.PI / 2); // 1\n      Math.cos(Math.PI);     // -1\n      Math.tan(0);           // 0\n      ```\n\n    - **`Math.asin(x)`**, **`Math.acos(x)`**, **`Math.atan(x)`**: 아크 사인, 아크 코사인, 아크 탄젠트 값을 반환\n      ```\n      Math.asin(1); // Math.PI / 2\n      ```\n\n    - **`Math.atan2(y, x)`**: (x, y) 좌표의 각도(라디안) 반환\n      ```\n      Math.atan2(1, 1); // Math.PI / 4\n      ```\n\n    ---\n\n    #### 4) 랜덤 및 기타 메서드\n    - **`Math.random()`**: 0 이상 1 미만의 난수를 반환\n      ```\n      Math.random(); // 예: 0.847602329123\n      ```\n\n    - **`Math.max(...values)`**, **`Math.min(...values)`**: 전달받은 값 중 최대값/최소값 반환\n      ```\n      Math.max(1, 2, 3); // 3\n      Math.min(1, 2, 3); // 1\n      ```\n\n    ---\n\n    ### **3. Math.random()를 활용한 범위 난수 생성**\n    #### 1) 특정 범위의 정수 난수\n    0 이상 100 이하의 정수 난수를 생성하는 방법:\n    ```\n    const randomInt = Math.floor(Math.random() * 101);\n    ```\n\n    #### 2) 특정 범위의 실수 난수\n    1 이상 10 미만의 실수 난수를 생성하는 방법:\n    ```\n    const randomFloat = Math.random() * (10 - 1) + 1;\n    ```\n\n    ---\n\n    ### **4. Math와 함께 사용하면 좋은 팁**\n    1. **소수점 반올림 및 자리수 제한**\n      - 소수점 n자리까지 반올림:\n        ```\n        const num = 3.141592;\n        const rounded = Math.round(num * 100) / 100; // 3.14\n        ```\n\n    2. **각도와 라디안 변환**\n      - 각도를 라디안으로 변환:\n        ```\n        const radians = (degrees) => (degrees * Math.PI) / 180;\n        ```\n      - 라디안을 각도로 변환:\n        ```\n        const degrees = (radians) => (radians * 180) / Math.PI;\n        ```\n\n    ---\n\n  "},post$8={title:"오픽241219",time:"241219_0",tags:[tags.englishConversation],content:`
       1. The film captivated my attention from the very beginning
       2. The plot of the movie was full of unexpected twists and turns
       3. The movie is based on a true story
@@ -5737,7 +5737,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$6={title:"오픽241220",time:"241220_0",tags:[tags.englishConversation],content:`
+  `},post$7={title:"오픽241220",time:"241220_0",tags:[tags.englishConversation],content:`
       1. The costumes and set design transport you to another era
       2. The ending is bittersweet
       3. The action sequences are intense and pulse-pounding
@@ -5762,7 +5762,7 @@ ${gt(_t)}
       \`\`\`
       강지완 오픽TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},post$5={title:"CSR, SSR, SSG",time:"241220_1",tags:[tags.frontEnd,tags.backEnd],content:`
+  `},post$6={title:"CSR, SSR, SSG",time:"241220_1",tags:[tags.frontEnd,tags.backEnd],content:`
     ### **1. CSR (Client-Side Rendering: 클라이언트 사이드 렌더링)**
 
     - **설명:** 브라우저에서 모든 작업이 처리됩니다. 초기에는 빈 HTML 파일만 제공되고, 자바스크립트를 통해 데이터를 가져와 브라우저에서 페이지를 렌더링합니다.
@@ -5863,7 +5863,7 @@ ${gt(_t)}
     - **사용자 인터렉션 중심 애플리케이션:** CSR 사용.
     - **자주 업데이트되지 않는 콘텐츠:** SSG로 최적화. 
 
-  `},post$4={title:"플러터 개요",time:"241220_2",tags:[tags.frontEnd,tags.flutter],content:`
+  `},post$5={title:"플러터 개요",time:"241220_2",tags:[tags.frontEnd,tags.flutter],content:`
     > **구글(Google)**에서 개발한 오픈소스 UI 소프트웨어 개발 키트(SDK)
 
     ---
@@ -5959,7 +5959,7 @@ ${gt(_t)}
     - Google은 지속적으로 Flutter를 업데이트하며 멀티 플랫폼 개발의 표준으로 자리 잡고 있습니다.
     - **Fuchsia OS**와 같은 Google의 차세대 운영체제에서도 Flutter가 기본 UI 프레임워크로 사용될 가능성이 높습니다.
 
-  `},post$3={title:"플러터 시작",time:"241220_3",tags:[tags.frontEnd,tags.flutter],content:`
+  `},post$4={title:"플러터 시작",time:"241220_3",tags:[tags.frontEnd,tags.flutter],content:`
 
     ### **1. 환경 설정**
 
@@ -6119,7 +6119,7 @@ ${gt(_t)}
       [Flutter 위젯 카탈로그](https://flutter.dev/docs/development/ui/widgets)
 
     ---
-  `},post$2={title:"오픽241224",time:"241224_0",tags:[tags.englishConversation],content:`
+  `},post$3={title:"오픽241224",time:"241224_0",tags:[tags.englishConversation],content:`
       1. I live with my parents
       2. My father works for the government
       3. My wife works as a foreign language instructure
@@ -6144,7 +6144,214 @@ ${gt(_t)}
       \`\`\`
       토익스피킹.오픽 해커스TV를 기반으로 작성한 글입니다.
       \`\`\`
-  `},posts$1=[post$N,post$M,post$L,post$K,post$J,post$I,post$H,post$G,post$F,post$E,post$D,post$C,post$B,post$A,post$z,post$y,post$x,post$w,post$v,post$u,post$t,post$s,post$r,post$q,post$p,post$o,post$n,post$m,post$l,post$k,post$j,post$i,post$h,post$g,post$f,post$e,post$d,post$c,post$b,post$a,post$9,post$8,post$7,post$6,post$5,post$4,post$3,post$2],SpiralContainer=dt.div`
+  `},post$2={title:"C++ map",time:"241224_1",tags:[tags.dataStructure,tags.cpp,tags.map],content:`
+    > **키-값 쌍**으로 저장하는 컨테이너
+    ---
+
+    ## \`std::map\`
+
+    ### **특징**
+    1. **자동 정렬**:
+      - 삽입된 데이터가 항상 키를 기준으로 정렬됩니다.
+      - 기본 정렬은 **오름차순**이며, 필요하면 사용자 정의 비교 함수로 커스터마이징 가능합니다.
+    2. **중복 키 허용 안 함**:
+      - 키는 고유해야 하며, 동일한 키가 삽입되면 기존 값이 덮어씌워집니다.
+    3. **시간 복잡도**:
+      - **삽입, 삭제, 검색**: (O(log n)).
+    4. 내부적으로 **Red-Black Tree(이진 검색 트리)**를 사용해 데이터를 저장
+
+    ### **사용 예제**
+
+    \`\`\`
+    #include <iostream>
+    #include <map>
+    using namespace std;
+
+    int main() {
+        map<int, string> myMap;
+
+        myMap[10] = "Ten";
+        myMap[5] = "Five";
+        myMap[20] = "Twenty";
+
+        for (auto it : myMap) {
+            cout << it.first << ": " << it.second << endl;
+        }
+
+        return 0;
+    }
+    \`\`\`
+
+    **출력:**
+    \`\`\`
+    5: Five
+    10: Ten
+    20: Twenty
+    \`\`\`
+
+    ### **\`std::map\` 주요 메서드**
+
+    | 메서드                      | 설명                                              |
+    |-----------------------------|---------------------------------------------------|
+    | \`insert(pair)\`              | 키-값 쌍 삽입                                     |
+    | \`erase(key)\`                | 해당 키를 가진 요소 삭제                          |
+    | \`find(key)\`                 | 해당 키를 가진 요소를 검색                        |
+    | \`size()\`                    | 저장된 요소의 개수 반환                           |
+    | \`empty()\`                   | 컨테이너가 비었는지 여부 반환                     |
+    | \`clear()\`                   | 모든 요소 제거                                    |
+    | \`lower_bound(key)\`          | 주어진 키 이상의 첫 번째 요소 반환                |
+    | \`upper_bound(key)\`          | 주어진 키보다 큰 첫 번째 요소 반환                |
+
+    ### **장점과 단점**
+
+    | **장점**                        | **단점**                          |
+    |---------------------------------|-----------------------------------|
+    | 키가 정렬된 상태로 저장됨        | 검색 속도가 \`std::unordered_map\`보다 느림 |
+    | 범위 검색이 용이 (\`lower_bound\`, \`upper_bound\`) | 메모리 사용량이 다소 큼            |
+
+    ---
+
+    ## **\`std::unordered_map\`**
+
+    ### **특징**
+    1. **정렬 없음**:
+      - 데이터는 해시 테이블에 저장되며, 삽입 순서나 키의 크기에 관계없이 저장됩니다.
+    2. **중복 키 허용 안 함**:
+      - 키는 고유해야 하며, 동일한 키가 삽입되면 기존 값이 덮어씌워집니다.
+    3. **시간 복잡도**:
+      - **삽입, 삭제, 검색**: (O(1)) (평균), (O(n)) (최악; 해시 충돌 발생 시).
+    4. 내부적으로 **해시 테이블**을 사용하여 데이터의 저장과 검색 속도를 최적화
+
+    ### **사용 예제**
+
+    \`\`\`
+    #include <iostream>
+    #include <unordered_map>
+    using namespace std;
+
+    int main() {
+        unordered_map<int, string> myMap;
+
+        myMap[10] = "Ten";
+        myMap[5] = "Five";
+        myMap[20] = "Twenty";
+
+        for (auto it : myMap) {
+            cout << it.first << ": " << it.second << endl;
+        }
+
+        return 0;
+    }
+    \`\`\`
+
+    **출력 (순서 무작위):**
+    \`\`\`
+    20: Twenty
+    5: Five
+    10: Ten
+    \`\`\`
+
+    ### **\`std::unordered_map\` 주요 메서드**
+
+    \`std::unordered_map\`은 \`std::map\`과 동일한 메서드를 대부분 지원
+
+    ### **장점과 단점**
+
+    | **장점**                          | **단점**                                  |
+    |-----------------------------------|------------------------------------------|
+    | 검색 속도가 평균적으로 빠름         | 키가 정렬되지 않음                       |
+    | 메모리 사용량이 상대적으로 적음     | 해시 충돌이 많을 경우 성능 저하 가능 (O(n)) |
+
+    ### **사용자 정의 해시 함수**
+
+    \`std::unordered_map\`에서 **복합 자료형**(예: \`std::pair\`나 사용자 정의 클래스)을 키로 사용할 때 필요
+    ### **구조**
+    1. **비교 연산자 정의**:
+      - 두 키가 같은지 비교하기 위한 \`operator==\`를 정의합니다.
+    2. **해시 함수 정의**:
+      - 키의 해시 값을 생성하는 함수(\`std::hash\` 기반)를 정의합니다.
+
+    ### **사용 예제**
+
+    #### 1. \`std::pair\`를 키로 사용하는 경우
+    \`\`\`
+    #include <iostream>
+    #include <unordered_map>
+    using namespace std;
+
+    // 사용자 정의 해시 함수
+    struct pair_hash {
+        template <class T1, class T2>
+        size_t operator()(const pair<T1, T2>& p) const {
+            auto h1 = hash<T1>{}(p.first);
+            auto h2 = hash<T2>{}(p.second);
+            return h1 ^ (h2 << 1);
+        }
+    };
+
+    int main() {
+        unordered_map<pair<int, int>, string, pair_hash> myMap;
+
+        myMap[{1, 2}] = "A";
+        myMap[{3, 4}] = "B";
+
+        cout << myMap[{1, 2}] << endl;  // 출력: A
+        cout << myMap[{3, 4}] << endl;  // 출력: B
+
+        return 0;
+    }
+    \`\`\`
+    #### 2. 사용자 정의 클래스의 해시
+    \`\`\`
+    #include <iostream>
+    #include <unordered_map>
+    using namespace std;
+
+    struct Point {
+        int x, y;
+
+        // 비교 연산자 정의
+        bool operator==(const Point& other) const {
+            return x == other.x && y == other.y;
+        }
+    };
+
+    // 사용자 정의 해시 함수
+    struct PointHash {
+        size_t operator()(const Point& p) const {
+            auto h1 = hash<int>{}(p.x);
+            auto h2 = hash<int>{}(p.y);
+            return h1 ^ (h2 << 1);
+        }
+    };
+
+    int main() {
+        unordered_map<Point, string, PointHash> myMap;
+
+        myMap[{1, 2}] = "Point A";
+        myMap[{3, 4}] = "Point B";
+
+        cout << myMap[{1, 2}] << endl; // 출력: Point A
+        cout << myMap[{3, 4}] << endl; // 출력: Point B
+
+        return 0;
+    }
+    \`\`\`
+
+    ---
+
+    ## **\`std::map\` vs \`std::unordered_map\` 비교**
+
+    | **특징**             | **\`std::map\`**                 | **\`std::unordered_map\`**        |
+    |----------------------|-------------------------------|----------------------------------|
+    | **내부 구현**         | 이진 검색 트리 (Red-Black Tree) | 해시 테이블                     |
+    | **시간 복잡도**       | 삽입, 삭제, 검색 (O(log n))  | 삽입, 삭제, 검색 (O(1)) (평균) |
+    | **키 정렬**           | 자동으로 오름차순 정렬         | 정렬되지 않음                   |
+    | **중복 키**           | 허용하지 않음                 | 허용하지 않음                   |
+    | **사용 사례**         | 정렬이 필요하거나 순서가 중요한 경우 | 빠른 검색이 중요한 경우         |
+
+    ---
+  `},posts$1=[post$O,post$N,post$M,post$L,post$K,post$J,post$I,post$H,post$G,post$F,post$E,post$D,post$C,post$B,post$A,post$z,post$y,post$x,post$w,post$v,post$u,post$t,post$s,post$r,post$q,post$p,post$o,post$n,post$m,post$l,post$k,post$j,post$i,post$h,post$g,post$f,post$e,post$d,post$c,post$b,post$a,post$9,post$8,post$7,post$6,post$5,post$4,post$3,post$2],SpiralContainer=dt.div`
   width: 100%;
   max-width: 720px;
   height: calc(100vh - 84px);
