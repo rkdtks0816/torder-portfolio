@@ -1,6 +1,6 @@
 // pages/index.tsx
-import Home from "@/widgets/Home";
+import { Title } from "@/widgets";
 
 export default function Index() {
-  return <Home />;
+  return <Title />;
 }

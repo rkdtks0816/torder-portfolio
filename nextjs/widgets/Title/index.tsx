@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
@@ -9,10 +10,10 @@ const Title: React.FC = () => {
   const controlsRef = useRef<any>(null);
   const [currentModel, setCurrentModel] = useState(0);
   const [animate, setAnimate] = useState(false);
-  const models = ["falling.glb", "developer.glb", "sso_ong.glb"];
+  const models = ["/falling.glb", "/developer.glb", "/sso_ong.glb"];
 
   const handleRefresh = () => {
-    controlsRef.current.reset();
+    controlsRef.current?.reset();
     setCurrentModel(0);
     setAnimate(!animate);
   };
