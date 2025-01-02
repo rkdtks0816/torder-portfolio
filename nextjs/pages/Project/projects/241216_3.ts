@@ -1,4 +1,4 @@
-import { Post } from "@/shared/types/post";
+import { Post } from "@/shared/interfaces/post";
 import { titles } from "../ProjectTitles";
 
 const post: Post = {

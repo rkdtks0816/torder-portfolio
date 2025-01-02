@@ -4,7 +4,7 @@ import Spiral from "@/features/Spiral";
 import Modal from "@/components/Modal";
 import Card from "@/components/Card";
 import { tagValues } from "./BlogTags";
-import { Post } from "@/shared/types/post";
+import { Post } from "@/shared/interfaces/post";
 
 const Blog: React.FC = () => {
   const [splitPosts, setSplitPosts] = useState<Record<string, Post[]>>({});

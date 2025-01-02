@@ -1,106 +1,86 @@
-"use client";
-
-import React, { useEffect, useRef, useState } from "react";
-import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+import React, { useRef, useEffect, useState } from "react";
+import { useThreeScene } from "@/hooks/useThreeScene";
 import { useModel } from "@/hooks/useModel";
 
-interface ThreeSceneProps {
-  modelUrl: string; // 로드할 3D 모델의 URL
-  setCurrentModel: (value: React.SetStateAction<number>) => void; // 축소 애니메이션 완료 후 호출될 콜백 함수
-  controlsRef: React.RefObject<OrbitControls | null>; // 외부에서 접근 가능한 OrbitControls 참조
-}
+const ThreeScene: React.FC<{
+  isRefresh: boolean;
+  setIsRefresh: React.Dispatch<React.SetStateAction<boolean>>;
+}> = ({ isRefresh, setIsRefresh }) => {
+  const models = ["/falling.glb", "/developer.glb", "/sso_ong.glb"];
+  const initSpeed = 0.00003;
+  const initDelay = 10;
+  const mountRef = useRef<HTMLDivElement>(null!);
+  const { renderer, camera, scene, controls } = useThreeScene(mountRef);
+  const animationIdRef = useRef<number | null>(null);
+  const scaleRef = useRef(1); // 스케일 값 관리
+  const speedRef = useRef(initSpeed); // 속도 값 관리
+  const delayRef = useRef(initDelay); // 모델 변경 딜레이
+  const [curModel, setCurModel] = useState(0);
+  const model = useModel(models[curModel]);
 
-const ThreeScene: React.FC<ThreeSceneProps> = ({
-  modelUrl,
-  setCurrentModel,
-  controlsRef,
-}) => {
-  const mountRef = useRef<HTMLDivElement>(null); // 렌더링 영역 참조
-  const model = useModel(modelUrl); // 3D 모델 로드
-  const [sceneComponents, setSceneComponents] = useState<{
-    renderer: THREE.WebGLRenderer;
-    camera: THREE.PerspectiveCamera;
-    scene: THREE.Scene;
-  } | null>(null); // 씬 관련 객체 저장
-
-  // 씬 초기화
   useEffect(() => {
-    const renderer = new THREE.WebGLRenderer({ antialias: true });
-    const camera = new THREE.PerspectiveCamera(
-      75,
-      window.innerWidth / window.innerHeight,
-      0.1,
-      1000
-    );
-    const scene = new THREE.Scene();
-    const controls = new OrbitControls(camera, renderer.domElement);
+    if (
+      !renderer.current ||
+      !camera.current ||
+      !scene.current ||
+      !controls.current ||
+      !model
+    )
+      return;
 
-    camera.position.set(0, 1.5, 5);
-    controls.enableZoom = false;
-    controls.enablePan = false;
-
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    mountRef.current?.appendChild(renderer.domElement);
-
-    const ambientLight = new THREE.AmbientLight(0xffffff, 3);
-    const pointLight = new THREE.PointLight(0xffffff, 6);
-    pointLight.position.set(1, 2.3, 1);
-    scene.add(ambientLight, pointLight);
-
-    setSceneComponents({ renderer, camera, scene });
-
-    // 외부에서 제어할 수 있도록 controlsRef에 할당
-    if (controlsRef) {
-      controlsRef.current = controls;
-    }
-
-    const handleResize = () => {
-      renderer.setSize(window.innerWidth, window.innerHeight);
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-      controls.dispose();
-      renderer.dispose();
-      mountRef.current?.removeChild(renderer.domElement);
-    };
-  }, []);
-
-  // 모델 및 애니메이션 추가
-  useEffect(() => {
-    if (!sceneComponents || !model) return;
-
-    const { renderer, camera, scene } = sceneComponents;
-    scene.add(model);
-
-    let frameCount = 0;
-    const maxFrames = 120;
+    model.scale.set(scaleRef.current, scaleRef.current, scaleRef.current);
+    scene.current.add(model);
 
     const animate = () => {
-      if (frameCount < maxFrames) {
-        const scale = 1 - frameCount / maxFrames;
-        model.scale.set(scale, scale, scale);
-        model.position.y = scale * 0.5;
-
-        renderer.render(scene, camera);
-        frameCount++;
-        requestAnimationFrame(animate);
-      } else {
-        setCurrentModel((prev) => (prev + 1) % 3); // 애니메이션 완료 시 모델 변경
+      if (
+        !renderer.current ||
+        !camera.current ||
+        !scene.current ||
+        !controls.current ||
+        !model
+      )
+        return;
+      if (isRefresh) {
+        setIsRefresh(false);
+        scaleRef.current = 0;
+        setCurModel(2);
+        delayRef.current = initDelay;
+        camera.current?.position.set(0, 1.5, 5);
       }
+      // 스케일 감소 로직
+      if (scaleRef.current > speedRef.current * 10) {
+        speedRef.current += 0.0002; // 감소 속도 증가
+        scaleRef.current -= speedRef.current; // 스케일 감소
+      } else if (delayRef.current > 0) {
+        if (delayRef.current === initDelay) {
+          setCurModel((prev) => (prev + 1) % models.length);
+        }
+        delayRef.current--;
+        scaleRef.current = 0; // 모델 사라짐
+      } else {
+        // 모델 변경 및 초기화
+        scaleRef.current = 1; // 스케일 초기화
+        speedRef.current = initSpeed; // 속도 초기화
+        delayRef.current = initDelay; // 딜레이 초기화
+      }
+
+      model.scale.set(scaleRef.current, scaleRef.current, scaleRef.current);
+
+      controls.current.update();
+      renderer.current.render(scene.current, camera.current);
+      animationIdRef.current = requestAnimationFrame(animate);
     };
 
     animate();
 
     return () => {
-      scene.remove(model); // 모델 제거
+      if (animationIdRef.current) {
+        cancelAnimationFrame(animationIdRef.current);
+        animationIdRef.current = null;
+      }
+      scene.current?.remove(model);
     };
-  }, [sceneComponents, model, setCurrentModel]);
+  }, [model, isRefresh]);
 
   return <div ref={mountRef} style={{ width: "100%", height: "100%" }} />;
 };

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MarkdownRenderer from "@/components/MarkdownRenderer";
 import * as CardStyles from "./CardStyles";
-import { Post } from "@/shared/types/post";
+import { Post } from "@/shared/interfaces/post";
 
 const Card: React.FC<{ post: Post }> = ({ post }) => {
   const [isOpen, setIsOpen] = useState(false);

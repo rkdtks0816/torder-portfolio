@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { posts } from "@/pages/Project/projects";
-import { Post } from "@/shared/types/post";
+import { Post } from "@/shared/interfaces/post";
 import Modal from "@/components/Modal";
 import Card from "@/components/Card";
 import { Title, titleValues } from "./ProjectTitles";
