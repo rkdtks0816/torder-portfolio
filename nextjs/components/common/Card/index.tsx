@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MarkdownRenderer from "@/components/common/MarkdownRenderer";
-import * as CardStyles from "./CardStyles";
+import * as CardStyles from "./styles";
 import { Post } from "@/shared/interfaces/post";
 
 const Card: React.FC<{ post: Post }> = ({ post }) => {

@@ -5,7 +5,7 @@ import {
   ModalTitle,
   CloseButton,
   ModalContainer,
-} from "./ModalStyles";
+} from "./styles";
 
 interface ModalProps {
   isOpen: boolean;

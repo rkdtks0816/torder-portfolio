@@ -1,4 +1,3 @@
-import { BackButton } from "../../components/Card/CardStyles";
 export const tags = {
   all: "전체 게시글",
   englishConversation: "영어회화",

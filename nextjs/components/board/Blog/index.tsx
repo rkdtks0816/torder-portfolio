@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Spiral from "@/components/common/Spiral";
 import Modal from "@/components/common/Modal";
 import Card from "@/components/common/Card";
-import { tagValues } from "./BlogTags";
+import { tagValues } from "./tags";
 import { Post } from "@/shared/interfaces/post";
 import { posts } from "./posts";
 

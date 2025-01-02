@@ -2,12 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Post } from "@/shared/interfaces/post";
 import Modal from "@/components/common/Modal";
 import Card from "@/components/common/Card";
-import { Title, titleValues } from "./ProjectTitles";
-import {
-  ProjectContainer,
-  ProjectImg,
-  ProjectImgContainer,
-} from "./ProjectStyles";
+import { Title, titleValues } from "./titles";
+import { ProjectContainer, ProjectImg, ProjectImgContainer } from "./styles";
 import { posts } from "./projects";
 
 const Project: React.FC = () => {

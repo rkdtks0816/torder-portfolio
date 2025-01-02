@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import * as SpiralStyles from "./SpiralStyles";
+import * as SpiralStyles from "./styles";
 
 interface SpiralProps {
   titles: string[];

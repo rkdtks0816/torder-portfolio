@@ -1,6 +1,6 @@
 import React from "react";
 import DOMPurify from "isomorphic-dompurify";
-import { StyledMarkdown } from "./StyledMarkdown";
+import { StyledMarkdown } from "./styles";
 
 interface MarkdownRendererProps {
   content: string;

@@ -1,5 +1,5 @@
 import { Post } from "@/shared/interfaces/post";
-import { titles } from "../ProjectTitles";
+import { titles } from "../titles";
 
 const post: Post = {
   title: `개요`,

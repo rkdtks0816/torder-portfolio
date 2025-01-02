@@ -1,5 +1,5 @@
 import { Post } from "@/shared/interfaces/post";
-import { tags } from "../BlogTags";
+import { tags } from "../tags";
 
 const post: Post = {
   title: `CSR, SSR, SSG`,
