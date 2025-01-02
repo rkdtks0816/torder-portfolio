@@ -46,5 +46,8 @@ import index_241220_0 from './241220_0';
 import index_241220_1 from './241220_1';
 import index_241220_2 from './241220_2';
 import index_241220_3 from './241220_3';
+import index_241224_0 from './241224_0';
+import index_241224_1 from './241224_1';
+import index_241224_2 from './241224_2';
 
-export const posts = [index_241106_1, index_241119_0, index_241119_1, index_241119_2, index_241119_3, index_241120_0, index_241120_1, index_241120_2, index_241120_3, index_241120_4, index_241120_5, index_241120_6, index_241120_7, index_241120_8, index_241121_0, index_241125_0, index_241126_0, index_241127_0, index_241128_0, index_241129_0, index_241202_0, index_241203_0, index_241204_0, index_241205_0, index_241206_0, index_241209_0, index_241210_0, index_241211_0, index_241211_1, index_241211_2, index_241212_0, index_241213_0, index_241213_1, index_241213_2, index_241216_0, index_241216_1, index_241216_2, index_241217_0, index_241217_1, index_241218_0, index_241218_1, index_241218_2, index_241219_0, index_241220_0, index_241220_1, index_241220_2, index_241220_3];
+export const posts = [index_241106_1, index_241119_0, index_241119_1, index_241119_2, index_241119_3, index_241120_0, index_241120_1, index_241120_2, index_241120_3, index_241120_4, index_241120_5, index_241120_6, index_241120_7, index_241120_8, index_241121_0, index_241125_0, index_241126_0, index_241127_0, index_241128_0, index_241129_0, index_241202_0, index_241203_0, index_241204_0, index_241205_0, index_241206_0, index_241209_0, index_241210_0, index_241211_0, index_241211_1, index_241211_2, index_241212_0, index_241213_0, index_241213_1, index_241213_2, index_241216_0, index_241216_1, index_241216_2, index_241217_0, index_241217_1, index_241218_0, index_241218_1, index_241218_2, index_241219_0, index_241220_0, index_241220_1, index_241220_2, index_241220_3, index_241224_0, index_241224_1, index_241224_2];

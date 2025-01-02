@@ -1,4 +1,3 @@
-import { BackButton } from "./../../components/Card/CardStyles";
 export const tags = {
   all: "전체 게시글",
   englishConversation: "영어회화",
@@ -11,9 +10,11 @@ export const tags = {
   nextJS: "Next.js",
   flutter: "플러터",
   javaScript: "자바스크립트",
+  cpp: "C++",
   bfs: "BFS",
   binarySearch: "이진탐색",
   loop: "반복문",
+  map: "map",
   // operatingSystem: "운영체제",
   // network: "네트워크",
   // database: "데이터베이스",
