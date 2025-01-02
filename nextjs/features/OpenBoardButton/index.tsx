@@ -1,9 +1,13 @@
 import React, { useEffect, useRef } from "react";
+import { useRouter } from "next/router";
 import LottieComponent from "@/entities/lottie";
 import clickTornado from "./asset/click_rornado.json";
+import { OpenBoardButtonContainer } from "./styles";
+import { PATH_BOARD } from "@/shared/constants/paths";
 
 const OpenBoardButton: React.FC = () => {
   const lottieRef = useRef<any>(null);
+  const router = useRouter();
 
   useEffect(() => {
     if (lottieRef.current) {
@@ -11,7 +15,11 @@ const OpenBoardButton: React.FC = () => {
     }
   }, []);
 
-  return <LottieComponent lottieRef={lottieRef} animationData={clickTornado} />;
+  return (
+    <OpenBoardButtonContainer onClick={() => router.push(PATH_BOARD)}>
+      <LottieComponent lottieRef={lottieRef} animationData={clickTornado} />
+    </OpenBoardButtonContainer>
+  );
 };
 
 export default OpenBoardButton;

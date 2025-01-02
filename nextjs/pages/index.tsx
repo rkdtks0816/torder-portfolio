@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import ThreeScene from "@/components/ThreeScene";
 import { TitleContainer } from "@/styles/TitleStyles";
 import TitleHeader from "@/features/TitleHeader";
+import OpenBoardButton from "@/features/OpenBoardButton";
 
 const Title: React.FC = () => {
   const [isRefresh, setIsRefresh] = useState(false);
@@ -14,6 +15,7 @@ const Title: React.FC = () => {
     <TitleContainer>
       <ThreeScene isRefresh={isRefresh} setIsRefresh={setIsRefresh} />
       <TitleHeader onRefresh={handleRefresh} />
+      <OpenBoardButton />
     </TitleContainer>
   );
 };
