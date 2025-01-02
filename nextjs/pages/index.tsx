@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import ThreeScene from "@/components/ThreeScene";
+import ThreeScene from "@/components/common/ThreeScene";
 import { TitleContainer } from "@/styles/TitleStyles";
-import TitleHeader from "@/features/TitleHeader";
-import OpenBoardButton from "@/features/OpenBoardButton";
+import TitleHeader from "@/components/title/TitleHeader";
+import OpenBoardButton from "@/components/common/OpenBoardButton";
 
 const Title: React.FC = () => {
   const [isRefresh, setIsRefresh] = useState(false);

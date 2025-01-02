@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import { BOARD_TYPES } from "./BoardTypes";
-import Intro from "../Intro";
-import Blog from "../Blog";
 import {
   BoardContainer,
   BoardContent,
@@ -9,8 +6,16 @@ import {
   BoardTitle,
   BoardMenus,
   BoardMenu,
-} from "./BoardStyles";
-import Project from "../Project";
+} from "./styles";
+import Intro from "@/components/board/Intro";
+import Blog from "@/components/board/Blog";
+import Project from "@/components/board/Project";
+
+const BOARD_TYPES = {
+  intro: "intro",
+  blog: "blog",
+  project: "project",
+};
 
 const MENU_ITEMS = [
   { type: BOARD_TYPES.intro, label: "소개" },

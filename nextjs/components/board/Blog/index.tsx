@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { posts } from "@/pages/Blog/posts";
-import Spiral from "@/features/Spiral";
-import Modal from "@/components/Modal";
-import Card from "@/components/Card";
+import Spiral from "@/components/common/Spiral";
+import Modal from "@/components/common/Modal";
+import Card from "@/components/common/Card";
 import { tagValues } from "./BlogTags";
 import { Post } from "@/shared/interfaces/post";
+import { posts } from "./posts";
 
 const Blog: React.FC = () => {
   const [splitPosts, setSplitPosts] = useState<Record<string, Post[]>>({});

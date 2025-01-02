@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { posts } from "@/pages/Project/projects";
 import { Post } from "@/shared/interfaces/post";
-import Modal from "@/components/Modal";
-import Card from "@/components/Card";
+import Modal from "@/components/common/Modal";
+import Card from "@/components/common/Card";
 import { Title, titleValues } from "./ProjectTitles";
 import {
   ProjectContainer,
   ProjectImg,
   ProjectImgContainer,
 } from "./ProjectStyles";
+import { posts } from "./projects";
 
 const Project: React.FC = () => {
   const BASE_URL = "projects/";

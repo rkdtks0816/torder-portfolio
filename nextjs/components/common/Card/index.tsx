@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MarkdownRenderer from "@/components/MarkdownRenderer";
+import MarkdownRenderer from "@/components/common/MarkdownRenderer";
 import * as CardStyles from "./CardStyles";
 import { Post } from "@/shared/interfaces/post";
 

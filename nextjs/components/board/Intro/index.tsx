@@ -1,5 +1,5 @@
 import React from "react";
-import MarkdownRenderer from "@/components/MarkdownRenderer";
+import MarkdownRenderer from "@/components/common/MarkdownRenderer";
 import { TITLE, INTRODUCTION, SKILLS } from "./IntroData";
 import {
   IntroContainer,
