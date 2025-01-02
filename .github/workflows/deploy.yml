@@ -23,13 +23,17 @@ jobs:
         with:
           node-version: "20"
 
-      # 3. 의존성 설치
-      - name: Install dependencies
-        run: npm install
-
-      # 4. 게시물 인덱스 생성
+      # 3. 게시물 인덱스 생성
       - name: Generate Posts Index
-        run: node ./src/generate-index.js
+        run: node ./react/src/generate-index.js
+
+      # 4. React 프로젝트 빌드
+      - name: Build React Project
+        working-directory: ./react
+        run: |
+          npm install
+          npm run build
+
 
       # 5. 프로젝트 빌드
       - name: Build project
@@ -39,6 +43,7 @@ jobs:
       - name: Deploy to GitHub Pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: ./react
         run: |
           git config user.name "rkdtks0816"
           git config user.email "rkdtks0816@naver.com"
