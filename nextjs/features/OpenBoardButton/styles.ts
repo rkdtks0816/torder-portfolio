@@ -6,8 +6,8 @@ export const OpenBoardButtonContainer = styled.div`
   left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
