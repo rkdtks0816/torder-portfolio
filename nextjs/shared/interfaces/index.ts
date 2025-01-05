@@ -1,4 +1,5 @@
-export * from "./tags";
-export * from "./posts";
+export * from "./tag";
+export * from "./post";
+export * from "./title";
 
-import { Tag, Post } from "@/shared/interfaces";
+import { Tag, Post, Title } from "@/shared/interfaces";

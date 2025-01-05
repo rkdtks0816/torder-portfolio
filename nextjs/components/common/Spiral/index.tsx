@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import * as SpiralStyles from "./styles";
+import { Tag } from "@/shared/interfaces";
 
 interface SpiralProps {
-  titles: string[];
+  titles: Tag[];
   onSquareClick: (index: number) => void;
 }
 
@@ -37,9 +38,9 @@ const Spiral: React.FC<SpiralProps> = ({ titles, onSquareClick }) => {
             onSquareClick(nowIndex + i);
           }}
         >
-            <SpiralStyles.SpiralSquareTitle>
-                {title}
-            </SpiralStyles.SpiralSquareTitle>
+          <SpiralStyles.SpiralSquareTitle>
+            {title.name}
+          </SpiralStyles.SpiralSquareTitle>
         </SpiralStyles.SpiralSquare>
       );
     });

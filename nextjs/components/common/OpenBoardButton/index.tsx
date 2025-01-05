@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import LottieComponent from "@/components/common/Lottie";
 import clickTornado from "./asset/click_rornado.json";
 import { OpenBoardButtonContainer } from "./styles";
-import { PATH_BOARD } from "@/shared/constants/paths";
+import { PATHS } from "@/shared/constants";
 
 const OpenBoardButton: React.FC = () => {
   const lottieRef = useRef<any>(null);
@@ -16,7 +16,7 @@ const OpenBoardButton: React.FC = () => {
   }, []);
 
   return (
-    <OpenBoardButtonContainer onClick={() => router.push(PATH_BOARD)}>
+    <OpenBoardButtonContainer onClick={() => router.push(PATHS.BOARD)}>
       <LottieComponent lottieRef={lottieRef} animationData={clickTornado} />
     </OpenBoardButtonContainer>
   );
