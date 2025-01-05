@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
-import LottieComponent from "@/entities/lottie";
+import LottieComponent from "@/components/common/Lottie";
 import clickTornado from "./asset/click_rornado.json";
 import { OpenBoardButtonContainer } from "./styles";
 import { PATH_BOARD } from "@/shared/constants/paths";

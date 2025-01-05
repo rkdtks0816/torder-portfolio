@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import ThreeScene from "@/components/common/ThreeScene";
+import ThreeScene from "@/components/title/ThreeScene";
 import { TitleContainer } from "@/styles/TitleStyles";
 import TitleHeader from "@/components/title/TitleHeader";
 import OpenBoardButton from "@/components/common/OpenBoardButton";

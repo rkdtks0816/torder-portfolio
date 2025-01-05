@@ -1,7 +1,7 @@
 import React from "react";
 import rotate360 from "./asset/360.json";
 import refresh from "./asset/refresh.json";
-import LottieComponent from "@/entities/lottie";
+import LottieComponent from "@/components/common/Lottie";
 import { HeaderContainer, HeaderRefreshBtn } from "./styles";
 
 interface TitleHeaderProps {
