@@ -3,12 +3,17 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 interface CrudOptions {
   dbName: string;
   collectionName: string;
+  token?: string | null; // 인증 토큰 (선택 사항, 나머지 요청에 필요)
 }
 
-export default function useCrud({ dbName, collectionName }: CrudOptions) {
+export default function useCrud({
+  dbName,
+  collectionName,
+  token,
+}: CrudOptions) {
   const queryClient = useQueryClient();
 
-  // Read
+  // Read (누구나 볼 수 있음)
   const fetchData = useQuery({
     queryKey: ["data", dbName, collectionName],
     queryFn: async () => {
@@ -23,12 +28,18 @@ export default function useCrud({ dbName, collectionName }: CrudOptions) {
     staleTime: 1000 * 60 * 5, // 5분 동안 데이터 캐싱
   });
 
-  // Create
+  // Create (토큰 필요)
   const createData = useMutation({
     mutationFn: async (data: object) => {
+      if (!token) {
+        throw new Error("Authentication token is missing");
+      }
       const response = await fetch("/api/data/create", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
         body: JSON.stringify({ dbName, collectionName, data }),
       });
       if (!response.ok) {
@@ -44,12 +55,18 @@ export default function useCrud({ dbName, collectionName }: CrudOptions) {
     },
   });
 
-  // Update
+  // Update (토큰 필요)
   const updateData = useMutation({
     mutationFn: async ({ id, updates }: { id: string; updates: object }) => {
+      if (!token) {
+        throw new Error("Authentication token is missing");
+      }
       const response = await fetch("/api/data/update", {
         method: "PUT",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
         body: JSON.stringify({ dbName, collectionName, id, updates }),
       });
       if (!response.ok) {
@@ -65,12 +82,18 @@ export default function useCrud({ dbName, collectionName }: CrudOptions) {
     },
   });
 
-  // Delete
+  // Delete (토큰 필요)
   const deleteData = useMutation({
     mutationFn: async (id: string) => {
+      if (!token) {
+        throw new Error("Authentication token is missing");
+      }
       const response = await fetch("/api/data/delete", {
         method: "DELETE",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
         body: JSON.stringify({ dbName, collectionName, id }),
       });
       if (!response.ok) {

@@ -1,4 +1,6 @@
-import React, { useRef, useState } from "react";
+"use client";
+
+import React, { useRef, useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import MarkdownRenderer from "@/components/common/MarkdownRenderer";
 import {
@@ -12,18 +14,25 @@ import {
   ButtonContainer,
   PreViewContent,
 } from "./styles";
-import { COLLECTIONS, DATABASES } from "@/shared/constants";
+import { COLLECTIONS, DATABASES, PATHS } from "@/shared/constants";
 import useCrud from "@/hooks/useCrud";
+import { useAuth } from "@/hooks/useAuth"; // 로그인 상태 확인 훅
 import { Tag } from "@/shared/interfaces";
+import { useToken } from "@/hooks/useToken";
 
 const Write: React.FC = () => {
+  const { isAuthenticated } = useAuth(); // 로그인 상태 확인
+  const { getToken } = useToken(); // 토큰 가져오기
+  const token = getToken(); // 현재 토큰 가져오기
   const { createData } = useCrud({
     dbName: DATABASES.CONTENT,
     collectionName: COLLECTIONS.BLOG.POSTS,
+    token,
   });
   const { fetchData, createData: createTag } = useCrud({
     dbName: DATABASES.CONTENT,
     collectionName: COLLECTIONS.BLOG.TAGS,
+    token,
   });
 
   const {
@@ -42,6 +51,13 @@ const Write: React.FC = () => {
   const [newTag, setNewTag] = useState("");
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const router = useRouter();
+
+  // 로그인 상태 확인: 인증되지 않은 경우 로그인 페이지로 리다이렉트
+  useEffect(() => {
+    if (isAuthenticated === false) {
+      router.push("/login");
+    }
+  }, [isAuthenticated, router]);
 
   const toggleTag = (tag: Tag) => {
     if (selectedTags.some((t) => t._id === tag._id)) {
@@ -72,6 +88,7 @@ const Write: React.FC = () => {
       content: inputContent,
     };
     createData.mutate(postData);
+    router.push(PATHS.BOARD);
   };
 
   const handleTextareaInput = () => {
@@ -80,6 +97,11 @@ const Write: React.FC = () => {
       textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`; // 컨텐츠에 맞게 높이 설정
     }
   };
+
+  // 인증되지 않은 경우 로딩 중 메시지 표시
+  if (!isAuthenticated) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <WriteContainer>
