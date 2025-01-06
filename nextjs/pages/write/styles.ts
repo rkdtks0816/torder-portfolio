@@ -2,22 +2,29 @@ import { COLORS } from "@/shared/constants";
 import styled from "styled-components";
 
 export const WriteContainer = styled.div`
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0px;
 `;
 
 export const WriteContent = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const Content = styled.div`
-  margin: 50px auto 0 auto;
-  padding: 20px;
   max-width: 600px;
   width: calc(100% - 40px);
+  margin-top: 90px;
+  padding: 0 20px;
   height: fit-content;
+`;
+
+export const PreViewContent = styled.div`
+  max-width: 560px;
+  width: calc(100% - 40px);
+  margin: 90px 20px 0 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 `;
 
 export const ContentHeader = styled.div`
@@ -28,9 +35,9 @@ export const ContentHeader = styled.div`
 
 export const WriteTitle = styled.div`
   input {
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 8px;
-    margin-top: 5px;
+    margin-bottom: 20px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -38,17 +45,11 @@ export const WriteTitle = styled.div`
 `;
 
 export const WriteTag = styled.div`
-  h4 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
   div.tag-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 15px;
+    gap: 10px;
+    margin-bottom: 20px;
   }
 
   div.add-tag {
@@ -67,7 +68,7 @@ export const WriteTag = styled.div`
       padding: 5px 10px;
       border-radius: 5px;
       border: none;
-      background-color: #0070f3;
+      background-color: ${COLORS.text};
       color: #fff;
       cursor: pointer;
     }
@@ -77,24 +78,29 @@ export const WriteTag = styled.div`
 export const TagButton = styled.button<{ selected: boolean }>`
   padding: 5px 10px;
   border-radius: 15px;
-  border: 1px solid #ccc;
-  background-color: ${(props) => (props.selected ? "#0070f3" : "#fff")};
-  color: ${(props) => (props.selected ? "#fff" : "#000")};
+  border: 1px solid ${COLORS.secondary};
+  background-color: ${(props) => (props.selected ? `${COLORS.text}` : "#fff")};
+  color: ${(props) => (props.selected ? "#fff" : `${COLORS.text}`)};
   cursor: pointer;
 `;
 
 export const ContentInput = styled.textarea`
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  height: 200px;
+  margin-top: 20px;
+  padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  resize: none;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1.5;
+  box-sizing: border-box;
 `;
 
 export const ButtonContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 10px;
   margin-top: 20px;
 
   button {
@@ -104,14 +110,14 @@ export const ButtonContainer = styled.div`
   }
 
   button.submit {
-    background-color: #0070f3;
+    background-color: ${COLORS.text};
     color: #fff;
     border: none;
   }
 
   button.cancel {
-    background-color: #f5f5f5;
-    color: #000;
-    border: 1px solid #ccc;
+    background-color: #fff;
+    color: ${COLORS.text};
+    border: 1px solid ${COLORS.secondary};
   }
 `;

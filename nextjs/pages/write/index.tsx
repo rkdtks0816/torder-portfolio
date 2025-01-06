@@ -1,16 +1,16 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useRouter } from "next/router";
 import MarkdownRenderer from "@/components/common/MarkdownRenderer";
 import {
   WriteContainer,
   WriteContent,
-  Content,
   ContentHeader,
   WriteTitle,
   WriteTag,
   TagButton,
   ContentInput,
   ButtonContainer,
+  PreViewContent,
 } from "./styles";
 import { COLLECTIONS, DATABASES } from "@/shared/constants";
 import useCrud from "@/hooks/useCrud";
@@ -40,6 +40,7 @@ const Write: React.FC = () => {
   const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
   const [inputContent, setInputContent] = useState("");
   const [newTag, setNewTag] = useState("");
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
   const router = useRouter();
 
   const toggleTag = (tag: Tag) => {
@@ -73,65 +74,73 @@ const Write: React.FC = () => {
     createData.mutate(postData);
   };
 
+  const handleTextareaInput = () => {
+    if (textareaRef.current) {
+      textareaRef.current.style.height = "auto"; // 초기화
+      textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`; // 컨텐츠에 맞게 높이 설정
+    }
+  };
+
   return (
     <WriteContainer>
       <WriteContent>
-        <Content>
-          <ContentHeader>
-            <WriteTitle>
+        <ContentHeader>
+          <WriteTitle>
+            <input
+              type="text"
+              value={inputTitle}
+              onChange={(e) => setInputTitle(e.target.value)}
+              required
+              placeholder="제목을 입력하세요."
+            />
+          </WriteTitle>
+          <WriteTag>
+            {tagsLoading && <p>Loading tags...</p>}
+            {tagsError && <p>Failed to load tags</p>}
+            {!tagsLoading && !tagsError && tags && (
+              <div className="tag-list">
+                {tags.map((tag) => (
+                  <TagButton
+                    key={tag._id}
+                    onClick={() => toggleTag(tag)}
+                    selected={selectedTags.some((t) => t._id === tag._id)}
+                  >
+                    {tag.name}
+                  </TagButton>
+                ))}
+              </div>
+            )}
+            <div className="add-tag">
               <input
                 type="text"
-                value={inputTitle}
-                onChange={(e) => setInputTitle(e.target.value)}
-                required
-                placeholder="제목을 입력하세요."
+                value={newTag}
+                onChange={(e) => setNewTag(e.target.value)}
+                placeholder="새 태그 추가"
               />
-            </WriteTitle>
-            <WriteTag>
-              <h4>Tags</h4>
-              {tagsLoading && <p>Loading tags...</p>}
-              {tagsError && <p>Failed to load tags</p>}
-              {!tagsLoading && !tagsError && tags && (
-                <div className="tag-list">
-                  {tags.map((tag) => (
-                    <TagButton
-                      key={tag._id}
-                      onClick={() => toggleTag(tag)}
-                      selected={selectedTags.some((t) => t._id === tag._id)}
-                    >
-                      {tag.name}
-                    </TagButton>
-                  ))}
-                </div>
-              )}
-              <div className="add-tag">
-                <input
-                  type="text"
-                  value={newTag}
-                  onChange={(e) => setNewTag(e.target.value)}
-                  placeholder="새 태그 추가"
-                />
-                <button onClick={handleAddTag}>Add Tag</button>
-              </div>
-            </WriteTag>
-          </ContentHeader>
-          <ContentInput
-            value={inputContent}
-            onChange={(e) => setInputContent(e.target.value)}
-            required
-            placeholder="내용을 입력하세요."
-          />
-          <MarkdownRenderer content={inputContent} />
-        </Content>
+              <button onClick={handleAddTag}>Add Tag</button>
+            </div>
+          </WriteTag>
+        </ContentHeader>
+        <ContentInput
+          ref={textareaRef}
+          value={inputContent}
+          onChange={(e) => setInputContent(e.target.value)}
+          onInput={handleTextareaInput}
+          required
+          placeholder="내용을 입력하세요."
+        />
         <ButtonContainer>
-          <button className="submit" onClick={handleSubmit}>
-            Submit
-          </button>
           <button className="cancel" onClick={() => router.back()}>
             Cancel
           </button>
+          <button className="submit" onClick={handleSubmit}>
+            Submit
+          </button>
         </ButtonContainer>
       </WriteContent>
+      <PreViewContent>
+        <MarkdownRenderer content={inputContent} />
+      </PreViewContent>
     </WriteContainer>
   );
 };
