@@ -7,21 +7,6 @@ import useCrud from "@/hooks/useCrud";
 import { COLLECTIONS, DATABASES } from "@/shared/constants";
 
 const Blog: React.FC = () => {
-  const { fetchData: postsFetchData } = useCrud({
-    dbName: DATABASES.CONTENT,
-    collectionName: COLLECTIONS.BLOG.POSTS,
-  });
-
-  const {
-    data: posts,
-    isLoading: postsLoading,
-    isError: postsError,
-  } = postsFetchData as {
-    data: Post[] | undefined;
-    isLoading: boolean;
-    isError: boolean;
-  };
-
   const { fetchData: tagsFetchData } = useCrud({
     dbName: DATABASES.CONTENT,
     collectionName: COLLECTIONS.BLOG.TAGS,
@@ -37,60 +22,69 @@ const Blog: React.FC = () => {
     isError: boolean;
   };
 
-  const [splitPosts, setSplitPosts] = useState<Record<string, Post[]>>({});
+  const [query, setQuery] = useState<Record<string, any>>({});
+  const { fetchData: postsFetchData } = useCrud({
+    dbName: DATABASES.CONTENT,
+    collectionName: COLLECTIONS.BLOG.POSTS,
+    query,
+  });
+  const {
+    data: posts,
+    isLoading: postsLoading,
+    isError: postsError,
+  } = postsFetchData as {
+    data: Post[] | undefined;
+    isLoading: boolean;
+    isError: boolean;
+  };
+  const [allTags, setAllTags] = useState<Tag[]>([]);
   const [nowIndex, setNowIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    if (tags && tags.length > 0) {
+      const allPostsTag: Tag = { name: "전체 게시글", _id: "all-posts" };
+      setAllTags([allPostsTag, ...tags]);
+    }
+  }, [tags]);
+
+  // 태그 클릭 시 게시글 쿼리 변경
   const handleSquareClick = (index: number) => {
     setNowIndex(index);
     setIsOpen(true);
+
+    const selectedTag = allTags[index]?.name;
+    const newQuery =
+      index === 0
+        ? {} // "전체 게시글" 쿼리 없음
+        : { tags: { $in: [selectedTag] } }; // 특정 태그 필터링
+
+    setQuery(newQuery); // query를 변경하면 React Query가 자동으로 데이터를 가져옴
   };
-
-  useEffect(() => {
-    if (!tags || !posts) return;
-    const tagPosts: Record<string, Post[]> = {};
-
-    // 초기화: 각 태그에 빈 배열 할당
-    tags.forEach((tag) => {
-      tagPosts[tag.name] = [];
-    });
-
-    // 게시글을 태그별로 분류
-    posts.forEach((post) => {
-      tagPosts[tags[0].name].push(post);
-      post.tags.forEach((tag) => {
-        tagPosts[tag].push(post);
-      });
-    });
-    console.log(tagPosts);
-    setSplitPosts(tagPosts);
-  }, []);
 
   return (
     <>
       {/* 로딩 상태 표시 */}
-      {(tagsLoading || postsLoading) && <div>Loading...</div>}
+      {tagsLoading && <div>Loading tags...</div>}
+      {tagsError && <div>Error loading tags.</div>}
 
-      {/* 에러 상태 표시 */}
-      {(tagsError || postsError) && (
-        <div>Something went wrong while loading data.</div>
-      )}
-
-      {/* 데이터가 있을 때만 렌더링 */}
-      {tags && posts && (
+      {/* 태그와 게시글 */}
+      {allTags.length > 0 && (
         <>
-          <Spiral titles={tags} onSquareClick={handleSquareClick} />
+          <Spiral titles={allTags} onSquareClick={handleSquareClick} />
           <Modal
             isOpen={isOpen}
             onClose={() => setIsOpen(false)}
-            title={tags[nowIndex]?.name}
+            title={allTags[nowIndex]?.name}
           >
-            {splitPosts[tags[nowIndex]?.name] &&
-              splitPosts[tags[nowIndex]?.name]
+            {postsLoading && <div>Loading posts...</div>}
+            {postsError && <div>Error loading posts.</div>}
+            {posts &&
+              posts
                 .slice(0)
                 .reverse()
                 .map((post: Post, index: number) => (
-                  <Card key={index} post={post} />
+                  <Card key={post._id || index} post={post} />
                 ))}
           </Modal>
         </>

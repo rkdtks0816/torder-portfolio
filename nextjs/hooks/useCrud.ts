@@ -3,22 +3,25 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 interface CrudOptions {
   dbName: string;
   collectionName: string;
-  token?: string | null; // 인증 토큰 (선택 사항, 나머지 요청에 필요)
+  token?: string | null;
+  query?: Record<string, any>;
 }
 
 export default function useCrud({
   dbName,
   collectionName,
   token,
+  query,
 }: CrudOptions) {
   const queryClient = useQueryClient();
 
   // Read (누구나 볼 수 있음)
   const fetchData = useQuery({
-    queryKey: ["data", dbName, collectionName],
+    queryKey: ["data", dbName, collectionName, query],
     queryFn: async () => {
+      const queryString = encodeURIComponent(JSON.stringify(query));
       const response = await fetch(
-        `/api/data/read?dbName=${dbName}&collectionName=${collectionName}`
+        `/api/data/read?dbName=${dbName}&collectionName=${collectionName}&${queryString}`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch data");
