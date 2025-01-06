@@ -98,10 +98,10 @@ const Project: React.FC = () => {
           <Modal
             isOpen={isOpen}
             onClose={() => setIsOpen(false)}
-            title={titles[nowIndex].name}
+            title={titles[nowIndex]?.name}
           >
-            {splitPosts[titles[nowIndex].name] &&
-              splitPosts[titles[nowIndex].name]
+            {splitPosts[titles[nowIndex]?.name] &&
+              splitPosts[titles[nowIndex]?.name]
                 .slice(0)
                 .reverse()
                 .map((post: Post, index: number) => (
