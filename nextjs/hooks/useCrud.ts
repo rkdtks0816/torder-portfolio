@@ -21,7 +21,7 @@ export default function useCrud({
     queryFn: async () => {
       const queryString = encodeURIComponent(JSON.stringify(query));
       const response = await fetch(
-        `/api/data/read?dbName=${dbName}&collectionName=${collectionName}&${queryString}`
+        `/api/data/read?dbName=${dbName}&collectionName=${collectionName}&query=${queryString}`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch data");

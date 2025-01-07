@@ -60,6 +60,14 @@ export const BoardMenus = styled.div`
   gap: 20px;
   justify-content: space-between;
   align-items: center;
+
+  :last-child {
+    font-size: 14px;
+    color: #fff;
+    background: ${COLORS.text};
+    border-radius: 5px;
+    padding: 5px;
+  }
 `;
 
 export const BoardMenu = styled.div<{ $isActive: boolean }>`

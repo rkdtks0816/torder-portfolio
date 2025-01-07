@@ -16,7 +16,7 @@ const OpenBoardButton: React.FC = () => {
   }, []);
 
   return (
-    <OpenBoardButtonContainer onClick={() => router.push(PATHS.BOARD)}>
+    <OpenBoardButtonContainer onClick={() => router.push(PATHS.INTRO)}>
       <LottieComponent lottieRef={lottieRef} animationData={clickTornado} />
     </OpenBoardButtonContainer>
   );

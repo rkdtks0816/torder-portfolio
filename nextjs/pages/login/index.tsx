@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { useLogin } from "@/hooks/useLogin";
 import { useAuth } from "@/hooks/useAuth"; // 로그인 상태 확인 훅
+import { LoginButton, LoginForm, LoginInput } from "./styles";
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");
@@ -27,32 +28,25 @@ export default function LoginPage() {
   }
 
   return (
-    <div>
-      <h1>로그인</h1>
-      <form onSubmit={onSubmit}>
-        <div>
-          <label>사용자명:</label>
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label>비밀번호:</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        {error && <p style={{ color: "red" }}>{error}</p>}
-        <button type="submit" disabled={isLoading}>
-          {isLoading ? "로그인 중..." : "로그인"}
-        </button>
-      </form>
-    </div>
+    <LoginForm onSubmit={onSubmit}>
+      <LoginInput
+        type="text"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+        placeholder="아이디를 입력하세요."
+        required
+      />
+      <LoginInput
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        placeholder="비밀번호를 입력하세요."
+        required
+      />
+      {error && <p style={{ color: "red" }}>{error}</p>}
+      <LoginButton type="submit" disabled={isLoading}>
+        {isLoading ? "로그인 중..." : "로그인"}
+      </LoginButton>
+    </LoginForm>
   );
 }

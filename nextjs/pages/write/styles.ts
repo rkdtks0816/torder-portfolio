@@ -34,13 +34,15 @@ export const ContentHeader = styled.div`
 `;
 
 export const WriteTitle = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
   input {
-    width: calc(100% - 20px);
-    padding: 8px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 8px;
     border-radius: 5px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
   }
 `;
 

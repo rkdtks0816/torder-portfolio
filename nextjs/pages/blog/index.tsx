@@ -4,7 +4,8 @@ import Modal from "@/components/common/Modal";
 import Card from "@/components/common/Card";
 import { Post, Tag } from "@/shared/interfaces";
 import useCrud from "@/hooks/useCrud";
-import { COLLECTIONS, DATABASES } from "@/shared/constants";
+import { COLLECTIONS, DATABASES, PATHS } from "@/shared/constants";
+import Board from "@/components/common/Board";
 
 const Blog: React.FC = () => {
   const { fetchData: tagsFetchData } = useCrud({
@@ -63,33 +64,41 @@ const Blog: React.FC = () => {
   };
 
   return (
-    <>
-      {/* 로딩 상태 표시 */}
-      {tagsLoading && <div>Loading tags...</div>}
-      {tagsError && <div>Error loading tags.</div>}
-
-      {/* 태그와 게시글 */}
-      {allTags.length > 0 && (
+    <Board
+      RenderComponent={
         <>
-          <Spiral titles={allTags} onSquareClick={handleSquareClick} />
-          <Modal
-            isOpen={isOpen}
-            onClose={() => setIsOpen(false)}
-            title={allTags[nowIndex]?.name}
-          >
-            {postsLoading && <div>Loading posts...</div>}
-            {postsError && <div>Error loading posts.</div>}
-            {posts &&
-              posts
-                .slice(0)
-                .reverse()
-                .map((post: Post, index: number) => (
-                  <Card key={post._id || index} post={post} />
-                ))}
-          </Modal>
+          {/* 로딩 상태 표시 */}
+          {tagsLoading && <div>Loading tags...</div>}
+          {tagsError && <div>Error loading tags.</div>}
+
+          {/* 태그와 게시글 */}
+          {allTags.length > 0 && (
+            <>
+              <Spiral titles={allTags} onSquareClick={handleSquareClick} />
+              <Modal
+                isOpen={isOpen}
+                onClose={() => setIsOpen(false)}
+                title={allTags[nowIndex]?.name}
+              >
+                {postsLoading && <div>Loading posts...</div>}
+                {postsError && <div>Error loading posts.</div>}
+                {posts &&
+                  posts
+                    .slice(0)
+                    .reverse()
+                    .map((post: Post, index: number) => (
+                      <Card
+                        key={post._id || index}
+                        post={post}
+                        path={PATHS.BLOG.ROOT}
+                      />
+                    ))}
+              </Modal>
+            </>
+          )}
         </>
-      )}
-    </>
+      }
+    />
   );
 };
 

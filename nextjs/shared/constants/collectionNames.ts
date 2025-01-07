@@ -5,7 +5,7 @@ export const COLLECTIONS = {
     POSTS: "blogPosts",
   },
   PROJECT: {
-    TAGS: "projectTags",
+    TITLES: "projectTitles",
     POSTS: "projectPosts",
   },
 };

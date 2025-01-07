@@ -21,17 +21,18 @@ import { Tag } from "@/shared/interfaces";
 import { useToken } from "@/hooks/useToken";
 
 const Write: React.FC = () => {
+  const [isBlog, setIsBlog] = useState(true);
   const { isAuthenticated } = useAuth(); // 로그인 상태 확인
   const { getToken } = useToken(); // 토큰 가져오기
   const token = getToken(); // 현재 토큰 가져오기
   const { createData } = useCrud({
     dbName: DATABASES.CONTENT,
-    collectionName: COLLECTIONS.BLOG.POSTS,
+    collectionName: isBlog ? COLLECTIONS.BLOG.POSTS : COLLECTIONS.PROJECT.POSTS,
     token,
   });
   const { fetchData, createData: createTag } = useCrud({
     dbName: DATABASES.CONTENT,
-    collectionName: COLLECTIONS.BLOG.TAGS,
+    collectionName: isBlog ? COLLECTIONS.BLOG.TAGS : COLLECTIONS.PROJECT.TITLES,
     token,
   });
 
@@ -49,6 +50,7 @@ const Write: React.FC = () => {
   const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
   const [inputContent, setInputContent] = useState("");
   const [newTag, setNewTag] = useState("");
+  const [newUrl, setNewUrl] = useState("");
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const router = useRouter();
 
@@ -69,11 +71,15 @@ const Write: React.FC = () => {
 
   const handleAddTag = () => {
     if (newTag.trim() === "") return;
+    if (!isBlog && newUrl.trim() === "") return;
 
-    const tagData = { name: newTag.trim() };
+    const tagData = isBlog
+      ? { name: newTag.trim() }
+      : { name: newTag.trim(), url: newUrl.trim() };
     createTag.mutate(tagData, {
       onSuccess: () => {
         setNewTag("");
+        setNewUrl("");
         fetchData.refetch();
       },
     });
@@ -88,7 +94,9 @@ const Write: React.FC = () => {
       content: inputContent,
     };
     createData.mutate(postData);
-    router.push(PATHS.BOARD);
+    router.push(
+      (isBlog ? PATHS.BLOG.ROOT : PATHS.PROJECT.ROOT) + `/${inputTitle}`
+    );
   };
 
   const handleTextareaInput = () => {
@@ -115,6 +123,12 @@ const Write: React.FC = () => {
               required
               placeholder="제목을 입력하세요."
             />
+            <TagButton
+              onClick={() => setIsBlog((pre) => !pre)}
+              selected={!isBlog}
+            >
+              {isBlog ? "블로그" : "프로젝트"}
+            </TagButton>
           </WriteTitle>
           <WriteTag>
             {tagsLoading && <p>Loading tags...</p>}
@@ -139,6 +153,14 @@ const Write: React.FC = () => {
                 onChange={(e) => setNewTag(e.target.value)}
                 placeholder="새 태그 추가"
               />
+              {!isBlog && (
+                <input
+                  type="text"
+                  value={newUrl}
+                  onChange={(e) => setNewUrl(e.target.value)}
+                  placeholder="새 Url 추가"
+                />
+              )}
               <button onClick={handleAddTag}>Add Tag</button>
             </div>
           </WriteTag>
