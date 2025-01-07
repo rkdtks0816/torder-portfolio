@@ -19,7 +19,7 @@ function parseMarkdown(markdown: string) {
   const lines = html.split("\n");
   let result = "";
   const tagStack: string[] = [];
-  let indentSizes = [-1];
+  const indentSizes = [-1];
   let currentQuoteLevel = 0;
   let inBlockquote = false;
   let tableLines: string[] = [];

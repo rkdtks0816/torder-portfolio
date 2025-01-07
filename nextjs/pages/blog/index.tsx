@@ -23,7 +23,7 @@ const Blog: React.FC = () => {
     isError: boolean;
   };
 
-  const [query, setQuery] = useState<Record<string, any>>({});
+  const [query, setQuery] = useState<Record<string, unknown>>({});
   const { fetchData: postsFetchData } = useCrud({
     dbName: DATABASES.CONTENT,
     collectionName: COLLECTIONS.BLOG.POSTS,

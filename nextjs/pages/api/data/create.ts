@@ -1,12 +1,15 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import jwt from "jsonwebtoken";
+import jwt, { JwtPayload } from "jsonwebtoken";
 import clientPromise from "@/lib/mongodb";
 
+interface ExtendedRequest extends NextApiRequest {
+  user?: string | JwtPayload;
+}
 // JWT 인증 미들웨어 함수
 const authenticateToken = (
-  req: NextApiRequest,
+  req: ExtendedRequest,
   res: NextApiResponse,
-  next: Function
+  next: (error?: unknown) => void
 ) => {
   const authHeader = req.headers.authorization;
   const token = authHeader && authHeader.split(" ")[1];
@@ -22,9 +25,10 @@ const authenticateToken = (
     }
 
     const decoded = jwt.verify(token, secretKey); // 토큰 검증
-    (req as any).user = decoded; // 검증된 사용자 정보 추가
+    req.user = decoded; // 검증된 사용자 정보 추가
     next(); // 다음 핸들러로 이동
-  } catch (error) {
+  } catch (err) {
+    console.error("JWT verification error:", err);
     res.status(403).json({ message: "Invalid or expired token" });
   }
 };

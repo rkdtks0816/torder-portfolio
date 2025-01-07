@@ -4,9 +4,10 @@ import LottieComponent from "@/components/common/Lottie";
 import clickTornado from "./asset/click_rornado.json";
 import { OpenBoardButtonContainer } from "./styles";
 import { PATHS } from "@/shared/constants";
+import { LottieRefCurrentProps } from "lottie-react";
 
 const OpenBoardButton: React.FC = () => {
-  const lottieRef = useRef<any>(null);
+  const lottieRef = useRef<LottieRefCurrentProps | null>(null);
   const router = useRouter();
 
   useEffect(() => {

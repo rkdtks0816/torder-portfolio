@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { COLORS } from "@/shared/constants/colors";
 
 export const CardContainer = styled.div`
   width: fit-content;

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useRouter } from "next/router";
 import MarkdownRenderer from "@/components/common/MarkdownRenderer";
 import { Post } from "@/shared/interfaces/post";
@@ -18,7 +18,7 @@ import { DATABASES } from "@/shared/constants";
 const Detail: React.FC<{
   redirect: string;
   collection: string;
-  query: Record<string, any>;
+  query: Record<string, unknown>;
 }> = ({ redirect, collection, query }) => {
   const router = useRouter();
 

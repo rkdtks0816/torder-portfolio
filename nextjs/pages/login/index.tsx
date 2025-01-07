@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { useLogin } from "@/hooks/useLogin";
 import { useAuth } from "@/hooks/useAuth"; // 로그인 상태 확인 훅
-import { LoginButton, LoginForm, LoginInput } from "./styles";
+import { LoginButton, LoginForm, LoginInput } from "../../styles/LoginStyles";
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");

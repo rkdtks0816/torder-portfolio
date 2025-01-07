@@ -1,6 +1,6 @@
 import React from "react";
 import MarkdownRenderer from "@/components/common/MarkdownRenderer";
-import { TITLE, INTRODUCTION, SKILLS } from "./data";
+import { TITLE, INTRODUCTION, SKILLS } from "@/shared/constants";
 import {
   IntroContainer,
   IntroSongKangSan,
@@ -9,7 +9,7 @@ import {
   IntroTitle,
   IntroBox,
   IntroStack,
-} from "./styles";
+} from "../../styles/IntroStyles";
 import Board from "@/components/common/Board";
 
 const Intro: React.FC = () => {

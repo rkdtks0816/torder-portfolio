@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Modal from "@/components/common/Modal";
 import Card from "@/components/common/Card";
-import { ProjectContainer, ProjectImg, ProjectImgContainer } from "./styles";
+import { ProjectContainer, ProjectImg, ProjectImgContainer } from "../../styles/ProjectStyles";
 import { Post, Title } from "@/shared/interfaces";
 import useCrud from "@/hooks/useCrud";
 import { COLLECTIONS, DATABASES, PATHS } from "@/shared/constants";
@@ -25,7 +25,7 @@ const Project: React.FC = () => {
     isError: boolean;
   };
 
-  const [query, setQuery] = useState<Record<string, any>>({});
+  const [query, setQuery] = useState<Record<string, unknown>>({});
   const { fetchData: postsFetchData } = useCrud({
     dbName: DATABASES.CONTENT,
     collectionName: COLLECTIONS.PROJECT.POSTS,

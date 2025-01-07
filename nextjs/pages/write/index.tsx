@@ -13,7 +13,7 @@ import {
   ContentInput,
   ButtonContainer,
   PreViewContent,
-} from "./styles";
+} from "../../styles/WriteStyles";
 import { COLLECTIONS, DATABASES, PATHS } from "@/shared/constants";
 import useCrud from "@/hooks/useCrud";
 import { useAuth } from "@/hooks/useAuth"; // 로그인 상태 확인 훅
