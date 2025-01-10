@@ -15,26 +15,15 @@ export const BoardContainer = styled.div`
 `;
 
 export const BoardContent = styled.div`
-  width: 1830px;
+  width: calc(100% - 40px);
+  max-width: 600px;
+  position: relative;
   height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-
-  @media (max-width: 1870px) {
-    width: 1460px;
-  }
-  @media (max-width: 1500px) {
-    width: 1090px;
-  }
-  @media (max-width: 1130px) {
-    width: 720px;
-  }
-  @media (max-width: 760px) {
-    width: calc(100% - 40px);
-  }
 `;
 
 export const BoardHeader = styled.div`
@@ -60,14 +49,6 @@ export const BoardMenus = styled.div`
   gap: 20px;
   justify-content: space-between;
   align-items: center;
-
-  :last-child {
-    font-size: 14px;
-    color: #fff;
-    background: ${COLORS.text};
-    border-radius: 5px;
-    padding: 5px;
-  }
 `;
 
 export const BoardMenu = styled.div<{ $isActive: boolean }>`
@@ -75,4 +56,20 @@ export const BoardMenu = styled.div<{ $isActive: boolean }>`
   color: ${(props) => (props.$isActive ? COLORS.text : COLORS.primary)};
   border-bottom: ${(props) =>
     props.$isActive ? `2px solid ${COLORS.text}` : "none"};
+`;
+
+export const PlusButton = styled.div<{ $isAuthenticated: boolean }>`
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  background: ${(props) => (props.$isAuthenticated ? COLORS.text : "#ccc")};
+  border-radius: 50%;
+  padding: 1px;
+  cursor: pointer;
 `;

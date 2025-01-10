@@ -6,6 +6,7 @@ import {
   BoardTitle,
   BoardMenus,
   BoardMenu,
+  PlusButton,
 } from "./styles";
 import { PATHS } from "@/shared/constants";
 import { useRouter } from "next/router";
@@ -23,10 +24,6 @@ const Board: React.FC<BoardProps> = ({ RenderComponent }) => {
     { path: PATHS.INTRO, label: "소개" },
     { path: PATHS.BLOG.ROOT, label: "블로그" },
     { path: PATHS.PROJECT.ROOT, label: "프로젝트" },
-    {
-      path: isAuthenticated === false ? PATHS.LOGIN : PATHS.WRITE,
-      label: isAuthenticated === false ? "로그인" : "글쓰기",
-    },
   ];
 
   return (
@@ -49,6 +46,14 @@ const Board: React.FC<BoardProps> = ({ RenderComponent }) => {
           </BoardMenus>
         </BoardHeader>
         {RenderComponent}
+        {router.pathname !== PATHS.INTRO && (
+          <PlusButton
+            $isAuthenticated={isAuthenticated === true}
+            onClick={() => router.push(PATHS.WRITE)}
+          >
+            +
+          </PlusButton>
+        )}
       </BoardContent>
     </BoardContainer>
   );
