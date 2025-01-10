@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useLogin } from "@/hooks/useLogin";
 import { useAuth } from "@/hooks/useAuth"; // 로그인 상태 확인 훅
 import { LoginButton, LoginForm, LoginInput } from "../../styles/LoginStyles";
+import { PATHS } from "@/shared/constants";
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");
@@ -29,6 +30,7 @@ export default function LoginPage() {
 
   return (
     <LoginForm onSubmit={onSubmit}>
+      <div>게시글 작성을 위해 로그인</div>
       <LoginInput
         type="text"
         value={username}
@@ -47,6 +49,7 @@ export default function LoginPage() {
       <LoginButton type="submit" disabled={isLoading}>
         {isLoading ? "로그인 중..." : "로그인"}
       </LoginButton>
+      <div onClick={() => router.push(PATHS.ROOT)}>홈으로</div>
     </LoginForm>
   );
 }
