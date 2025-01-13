@@ -6,7 +6,6 @@ import {
   BoardTitle,
   BoardMenus,
   BoardMenu,
-  PlusButton,
 } from "./styles";
 import { PATHS } from "@/shared/constants";
 import { useRouter } from "next/router";
@@ -18,7 +17,6 @@ interface BoardProps {
 
 const Board: React.FC<BoardProps> = ({ RenderComponent }) => {
   const router = useRouter();
-  const { isAuthenticated } = useAuth();
 
   const MENU_ITEMS = [
     { path: PATHS.INTRO, label: "소개" },
@@ -46,14 +44,6 @@ const Board: React.FC<BoardProps> = ({ RenderComponent }) => {
           </BoardMenus>
         </BoardHeader>
         {RenderComponent}
-        {router.pathname !== PATHS.INTRO && (
-          <PlusButton
-            $isAuthenticated={isAuthenticated === true}
-            onClick={() => router.push(PATHS.WRITE)}
-          >
-            +
-          </PlusButton>
-        )}
       </BoardContent>
     </BoardContainer>
   );

@@ -6,6 +6,7 @@ import { Post, Tag } from "@/shared/interfaces";
 import useCrud from "@/hooks/useCrud";
 import { COLLECTIONS, DATABASES, PATHS } from "@/shared/constants";
 import Board from "@/components/common/Board";
+import PlusButton from "@/components/common/PlusButton";
 
 const Blog: React.FC = () => {
   const { fetchData: tagsFetchData } = useCrud({
@@ -94,6 +95,7 @@ const Blog: React.FC = () => {
                       />
                     ))}
               </Modal>
+              <PlusButton />
             </>
           )}
         </>

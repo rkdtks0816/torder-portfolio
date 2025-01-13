@@ -57,19 +57,3 @@ export const BoardMenu = styled.div<{ $isActive: boolean }>`
   border-bottom: ${(props) =>
     props.$isActive ? `2px solid ${COLORS.text}` : "none"};
 `;
-
-export const PlusButton = styled.div<{ $isAuthenticated: boolean }>`
-  position: absolute;
-  right: 10px;
-  bottom: 30px;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  color: #fff;
-  background: ${(props) => (props.$isAuthenticated ? COLORS.text : "#ccc")};
-  border-radius: 50%;
-  padding: 1px;
-  cursor: pointer;
-`;

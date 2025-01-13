@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import Modal from "@/components/common/Modal";
 import Card from "@/components/common/Card";
-import { ProjectContainer, ProjectImg, ProjectImgContainer } from "../../styles/ProjectStyles";
+import {
+  ProjectContainer,
+  ProjectImg,
+  ProjectImgContainer,
+} from "../../styles/ProjectStyles";
 import { Post, Title } from "@/shared/interfaces";
 import useCrud from "@/hooks/useCrud";
 import { COLLECTIONS, DATABASES, PATHS } from "@/shared/constants";
 import Board from "@/components/common/Board";
+import PlusButton from "@/components/common/PlusButton";
 
 const Project: React.FC = () => {
   const BASE_URL = "projects/";
@@ -100,6 +105,7 @@ const Project: React.FC = () => {
                       />
                     ))}
               </Modal>
+              <PlusButton />
             </>
           )}
         </>
