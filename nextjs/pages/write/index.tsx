@@ -93,10 +93,17 @@ const Write: React.FC = () => {
       tags: tagsArray,
       content: inputContent,
     };
-    createData.mutate(postData);
-    router.push(
-      (isBlog ? PATHS.BLOG.ROOT : PATHS.PROJECT.ROOT) + `/${inputTitle}`
-    );
+
+    createData.mutate(postData, {
+      onSuccess: () => {
+        router.push(
+          (isBlog ? PATHS.BLOG.ROOT : PATHS.PROJECT.ROOT) + `/${inputTitle}`
+        );
+      },
+      onError: (error) => {
+        console.error("Failed to create post:", error);
+      },
+    });
   };
 
   const handleTextareaInput = () => {
