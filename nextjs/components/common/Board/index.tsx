@@ -9,7 +9,6 @@ import {
 } from "./styles";
 import { PATHS } from "@/shared/constants";
 import { useRouter } from "next/router";
-import { useAuth } from "@/hooks/useAuth";
 
 interface BoardProps {
   RenderComponent: React.ReactNode;
